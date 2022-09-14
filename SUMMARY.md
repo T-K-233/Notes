@@ -45,6 +45,7 @@
 ## STM32
 
 * [Using Nucleo STLink to Flash Off-board Chips](stm32/using-nucleo-stlink-to-flash-off-board-chips.md)
+* [Setting up STM32CubeID](stm32/setting-up-stm32cubeid.md)
 * [STM32CubeIDE Settings](stm32/stm32cubeide-settings.md)
 * [0. Template Project](stm32/0.-template-project.md)
 * [1. GPIO](stm32/1.-gpio.md)

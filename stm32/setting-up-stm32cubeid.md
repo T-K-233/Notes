@@ -1,0 +1,40 @@
+# Setting up STM32CubeID
+
+## 1. Download STM32CubeIDE
+
+Go to STM32CubeIDE [download page](https://www.st.com/en/development-tools/stm32cubeide.html#st\_description\_sec-nav-tab). Click the "Get Software" Button.&#x20;
+
+_Note: The button may take a while to load._
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Select the appropriate operating system and click "Get lastest"
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+Log in to your _myST_ account.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Extract the installer from the downloaded zip file and run it.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Choose an appropriate installation location.
+
+_Note: It's recommended to remote the version number from the installation folder. CubeIDE can auto-upgrade the software, but it will not update the folder name._
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link drivers. Then, click "Install".
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
