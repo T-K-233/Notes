@@ -72,3 +72,8 @@
 ***
 
 * [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
+
+## Finance
+
+* [Tax Stuff](finance/tax-stuff.md)
+* [Page 2](finance/page-2.md)
