@@ -18,7 +18,7 @@ Select the appropriate operating system and click "Get lastest"
 
 Log in to your _myST_ account.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 Extract the installer from the downloaded zip file and run it.
 

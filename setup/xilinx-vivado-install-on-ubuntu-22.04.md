@@ -16,9 +16,13 @@ sudo ./Xilinx_Unified_2022.1_0420_0327_Lin64.bin
 
 
 
-Follow the commands in the installer. Installation directory is `/documents/Xilinx`
+<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
-After install, we need another dependency:
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Follow the commands in the installer. Installation directory is `%HOME%/Documents/Xilinx`
+
+After installation, we need another dependency:
 
 ```
 sudo apt install libtinfo5
