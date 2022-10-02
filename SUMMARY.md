@@ -68,6 +68,7 @@
 
 * [Arty 35T / 100T UART Pins](verilog/arty-35t-100t-uart-pins.md)
 * [Arty DDR](verilog/arty-ddr.md)
+* [Arty Flow](verilog/arty-flow.md)
 * [Installing Chipyard](verilog/installing-chipyard.md)
 
 ***

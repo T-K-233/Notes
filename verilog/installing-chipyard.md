@@ -10,7 +10,7 @@ Ubuntu 22.04.1 LTS
 
 {% embed url="https://github.com/conda-forge/miniforge/releases" %}
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 tk@TK-Framework-Laptop:~/Downloads$ ./Mambaforge-4.14.0-0-Linux-x86_64.sh 

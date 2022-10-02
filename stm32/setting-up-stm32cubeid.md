@@ -6,13 +6,13 @@ Go to STM32CubeIDE [download page](https://www.st.com/en/development-tools/stm32
 
 _Note: The button may take a while to load._
 
-<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 Select the appropriate operating system and click "Get lastest"
 
-<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -30,11 +30,11 @@ Choose an appropriate installation location.
 
 _Note: It's recommended to remote the version number from the installation folder. CubeIDE can auto-upgrade the software, but it will not update the folder name._
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link drivers. Then, click "Install".
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
