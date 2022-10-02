@@ -1,5 +1,11 @@
 # Xilinx Vivado Install on Ubuntu 22.04
 
+Reference Official Tutorial:
+
+{% embed url="https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-sdk" %}
+
+
+
 Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx\_Unified\_2022.1\_0420\_0327\_Lin64.bin).
 
 After download, run the following command to grant executable right to the binary file.
@@ -56,6 +62,8 @@ source ~/.bashrc
 
 
 
+### Install cable drivers
+
 To connect to boards, we need to install additional drivers by running
 
 ```
@@ -63,4 +71,11 @@ cd ~/Documents/Xilinx/Vivado/2022.1/data/xicom/cable_drivers/lin64/install_scrip
 sudo ./install_drivers
 ```
 
-![](<../.gitbook/assets/image (53).png>)
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Install board support files
+
+
+
