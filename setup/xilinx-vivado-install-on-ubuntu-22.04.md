@@ -48,6 +48,12 @@ We can also add it to PATH by
 export PATH="/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH"
 ```
 
+and then
+
+```
+source ~/.bashrc
+```
+
 
 
 To connect to boards, we need to install additional drivers by running
