@@ -18,7 +18,7 @@ Select the appropriate operating system and click "Get lastest"
 
 Log in to your _myST_ account.
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Extract the installer from the downloaded zip file and run it.
 
@@ -36,5 +36,5 @@ _Note: It's recommended to remote the version number from the installation folde
 
 Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link drivers. Then, click "Install".
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

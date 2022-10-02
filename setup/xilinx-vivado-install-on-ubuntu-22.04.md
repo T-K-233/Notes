@@ -16,7 +16,7 @@ sudo ./Xilinx_Unified_2022.1_0420_0327_Lin64.bin
 
 
 
-<figure><img src="../.gitbook/assets/image (101) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -39,7 +39,13 @@ sudo apt install libtinfo5
 Start vivado by running
 
 ```
-/documents/Xilinx/Vivado/2022.1/bin/vivado
+~/Documents/Xilinx/Vivado/2022.1/bin/vivado
+```
+
+We can also add it to PATH by
+
+```
+export PATH="/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH"
 ```
 
 
