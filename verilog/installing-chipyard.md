@@ -20,7 +20,7 @@ tk@TK-Framework-Laptop:~/Downloads$ ./Mambaforge-4.14.0-0-Linux-x86_64.sh
 
 
 
-<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
