@@ -61,6 +61,7 @@
 * [11. DAC](stm32/11.-dac.md)
 * [12. SD Card](stm32/12.-sd-card.md)
 * [12. SD Card](stm32/12.-sd-card-1.md)
+* [16. Ethernet](stm32/16.-ethernet.md)
 * [20. FreeRTOS](stm32/20.-freertos.md)
 * [21. Changing STM32 Default Boot Option](stm32/21.-changing-stm32-default-boot-option.md)
 

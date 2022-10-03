@@ -26,7 +26,7 @@ Launch "Label Printer DriverSetup" from start menu
 
 Windows will prompt this message when the USB is plugged in for the first time.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 If the text is not exactly matching the ones in the image above, power-cycle the printer and try again.
 
