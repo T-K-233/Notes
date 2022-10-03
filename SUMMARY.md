@@ -16,7 +16,7 @@
 * [ODrive Setup](setup/odrive-setup.md)
 * [Clang-Format Style Config](setup/clang-format-style-config.md)
 * [MJBOTS Moteus setup](setup/mjbots-moteus-setup.md)
-* [OpenAI gym + Mujoco Setup](setup/openai-gym-+-mujoco-setup.md)
+* [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
 
 ## Mechanical
 
