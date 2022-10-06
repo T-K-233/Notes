@@ -17,6 +17,18 @@ PATH=/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH
 
 
 ```
+source ./env.sh
+```
+
+
+
+```
+cd fpga
+```
+
+
+
+```
 make SUB_PROJECT=arty bitstream
 ```
 
