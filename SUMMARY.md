@@ -32,6 +32,7 @@
 * [Using Oscilloscope: x1 vs x10](electrical/using-oscilloscope-x1-vs-x10.md)
 * [ESP32 Cam](electrical/esp32-cam.md)
 * [FOC BLDC Controller Dev Log](electrical/foc-bldc-controller-dev-log.md)
+* [LiPo Safety](electrical/lipo-safety.md)
 
 ## Network
 
