@@ -193,3 +193,30 @@ Device Status:     0x0000
   (Bus Powered)
 ```
 
+
+
+
+
+### Device not connected
+
+```bash
+(base) tk@TK-Avenue-Ubuntu:~/Desktop/HAL/jtag$ openocd -f osciarty.cfg 
+Open On-Chip Debugger 0.11.0-rc1+dev (SiFive OpenOCD 0.10.0-2020.12.1)
+Licensed under GNU GPL v2
+For bug reports:
+        https://github.com/sifive/freedom-tools/issues
+Info : clock speed 2000 kHz
+Error: JTAG scan chain interrogation failed: all ones
+Error: Check JTAG interface, timings, target power, etc.
+Error: Trying to use configured scan chain anyway...
+Error: riscv.cpu: IR capture error; saw 0x1f not 0x01
+Warn : Bypassing JTAG setup events due to errors
+Error: Unsupported DTM version: 15
+Warn : target riscv.cpu examination failed
+Info : starting gdb server for riscv.cpu on 3333
+Info : Listening on port 3333 for gdb connections
+Error: Target not examined yet
+
+Error: Unsupported DTM version: 15
+```
+
