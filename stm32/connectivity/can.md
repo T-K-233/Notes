@@ -175,5 +175,5 @@ The STM32 G series supports FDCAN, which is a more advanced version of CAN that 
 
 FDCAN can be configured to be backward-compatible with CAN2.0.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 

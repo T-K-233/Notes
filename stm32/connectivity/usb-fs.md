@@ -1,4 +1,4 @@
-# 15. USB FS
+# USB - FS
 
 main.c:
 

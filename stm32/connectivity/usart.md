@@ -1,6 +1,6 @@
 # USART
 
-A minimal UART setup can be achieved by setting up the [Starter Project](../getting-started/running-a-starter-project.md). This section will introduce some advanced concepts like interrupt and DMA transfer.
+A minimal UART setup can be achieved by setting up the [Starter Project](../getting-started-stm32-edition/running-a-starter-project.md). This section will introduce some advanced concepts like interrupt and DMA transfer.
 
 
 

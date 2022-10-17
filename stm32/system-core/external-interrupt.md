@@ -1,2 +1,2 @@
-# 8. External Interrupt
+# External Interrupt
 

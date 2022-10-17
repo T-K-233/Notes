@@ -14,7 +14,7 @@ Just change the Native Interface to libusb-win32 driver solves the problem.
 
 ![](<../.gitbook/assets/image (48).png>)
 
-![](<../.gitbook/assets/image (128).png>)
+![](<../.gitbook/assets/image (128) (1).png>)
 
 
 

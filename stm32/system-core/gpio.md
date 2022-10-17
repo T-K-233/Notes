@@ -8,7 +8,7 @@ We will demonstrate how to set up a generic GPIO output pin with the LED, and a 
 
 ## 1. Configure STM32
 
-First, set the configuration from the [Starter Project](../getting-started/running-a-starter-project.md).
+First, set the configuration from the [Starter Project](../getting-started-stm32-edition/running-a-starter-project.md).
 
 
 
@@ -26,7 +26,7 @@ Save the .ioc file and generate code.
 
 ## 2. Code
 
-First, add the code from the [Starter Project](../getting-started/running-a-starter-project.md).
+First, add the code from the [Starter Project](../getting-started-stm32-edition/running-a-starter-project.md).
 
 
 

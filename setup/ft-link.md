@@ -34,4 +34,4 @@ Select the target driver to be "WinUSB", and click the "Replace Driver" button.
 
 After loading the driver, only USB Serial Converter B should be shown under the Universal Serial Bus controllers. Interface 0 should be shown as Dual RS232 device under Universal Serial Bus devices.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

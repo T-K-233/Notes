@@ -46,10 +46,10 @@
 
 ## STM32
 
-* [Getting Started](stm32/getting-started/README.md)
-  * [Setting up STM32CubeIDE](stm32/getting-started/setting-up-stm32cubeide.md)
-  * [Running A Starter Project](stm32/getting-started/running-a-starter-project.md)
-  * [Changing STM32CubeIDE Settings](stm32/getting-started/changing-stm32cubeide-settings.md)
+* [Getting Started - STM32 Edition](stm32/getting-started-stm32-edition/README.md)
+  * [Setting up STM32CubeIDE](stm32/getting-started-stm32-edition/setting-up-stm32cubeide.md)
+  * [Running A Starter Project](stm32/getting-started-stm32-edition/running-a-starter-project.md)
+  * [Changing STM32CubeIDE Settings](stm32/getting-started-stm32-edition/changing-stm32cubeide-settings.md)
 * [Misc](stm32/misc/README.md)
   * [Using Nucleo STLink to Flash Off-board Chips](stm32/misc/using-nucleo-stlink-to-flash-off-board-chips.md)
   * [Changing STM32 Default Boot Option](stm32/misc/changing-stm32-default-boot-option.md)
