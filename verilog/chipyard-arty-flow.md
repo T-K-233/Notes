@@ -1,6 +1,6 @@
 # Chipyard Arty Flow
 
-```
+```bash
 cd chipyard
 
 ./scripts/init-fpga.sh
@@ -10,25 +10,25 @@ cd chipyard
 
 add vivado to env.sh script
 
-```
+```bash
 PATH=/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH
 ```
 
 
 
-```
+```bash
 source ./env.sh
 ```
 
 
 
-```
+```bash
 cd fpga
 ```
 
 
 
-```
+```bash
 make SUB_PROJECT=arty bitstream
 ```
 
@@ -38,19 +38,19 @@ make SUB_PROJECT=arty bitstream
 
 The FT Link comes with vendor id of `0403` and device id of `6010`. To see if the device is connected, type
 
-```
+```bash
 lsusb
 ```
 
 or&#x20;
 
-```
+```bash
 lsusb -d 0403:6010
 ```
 
 to see the specific device:
 
-```
+```bash
 lsusb -d 0403:6010
 Bus 003 Device 014: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
 ```
@@ -59,7 +59,7 @@ Bus 003 Device 014: ID 0403:6010 Future Technology Devices International, Ltd FT
 
 With the `-v` option, we can see more information
 
-```
+```bash
 lsusb -d 0403:6010 -v
 
 Bus 003 Device 014: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
@@ -155,13 +155,13 @@ Device Descriptor:
 
 To grant permission to this device, we need to add
 
-```
+```bash
 sudoedit /etc/udev/rules.d/99-openocd.rules
 ```
 
 Add the following test to the file:
 
-```
+```bash
 SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE:="0666"
 ```
 
@@ -169,13 +169,13 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE:="0666"
 
 Now, when running the command
 
-```
+```bash
 lsusb -d 0403:6010 -v
 ```
 
 &#x20;we should able to see more device status:
 
-```
+```bash
 lsusb -d 0403:6010 -v
 
 Bus 003 Device 015: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC

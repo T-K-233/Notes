@@ -24,7 +24,7 @@
 
 Configuration Parameters:
 
-```
+```bash
 
 
 Vivado Project Options:

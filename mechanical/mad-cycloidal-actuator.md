@@ -6,7 +6,7 @@ Go in an active sketch plane
 
 Run the following script:
 
-```
+```python
 
 import math
 
@@ -182,7 +182,7 @@ Then we get the cycloidal gear profile
 
 ![](<../.gitbook/assets/image (144).png>)
 
-```
+```python
 Pins and housing
 ════════════════
   rr     28.0000 mm
