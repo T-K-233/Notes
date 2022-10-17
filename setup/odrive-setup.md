@@ -20,7 +20,7 @@ Just change the Native Interface to libusb-win32 driver solves the problem.
 
 {% embed url="https://www.aliexpress.com/item/2251832533667878.html?gatewayAdapt=4itemAdapt" %}
 
-```
+```python
 odrv0.axis0.motor.config.pole_pairs = 7
 
 odrv0.axis0.motor.config.torque_constant = 0.024323529411764706

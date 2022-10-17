@@ -22,3 +22,9 @@ TIM4 is reserved to be an internal system scheduling timer, but can also be conf
 
 ![](<../.gitbook/assets/image (69).png>)
 
+
+
+#### STM32G431CBT6
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+

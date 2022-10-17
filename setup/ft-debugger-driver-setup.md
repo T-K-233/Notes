@@ -2,9 +2,9 @@
 
 
 
-Download VCP Drivers [here](https://ftdichip.com/drivers/vcp-drivers/).
+Download FT2232 Drivers from [here](https://ftdichip.com/drivers/vcp-drivers/). Select the VCP driver.
 
-Click the "setup executable" text to download the actual installer.
+Scroll down and click the "setup executable" text to download the executable installer.
 
 ![](<../.gitbook/assets/image (18).png>)
 
@@ -26,13 +26,39 @@ FTDI CDM Driver Package - VCP Driver (07/05/2021 2.12.36.4)
 
 
 
-Plug in the FT Debugger.
+Plug in the FT LINK debugger.
 
-There will be several possible drivers that Windows will decide to assign to it automatically. The correct one will be "USB Composite Device".
+After the FT LINK debugger is inserted, now we should see two USB Serial Converters under the "Universal Serial Bus controllers" tag in device manager
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
-If it appears to be a different one, right-click the device and select "Update driver". For example, here Windows recognize the debugger as a "Dual RS232" device.
+Then, we use [zadig](https://zadig.akeo.ie/#google\_vignette) to load the correct driver of the device.
+
+Open zadig, check Options -> List All Devices.
+
+In the main dropdown menu, select "Dual RS232 (Interface 0). Make sure the Interface 0 is selected, instead of 1.
+
+Select the target driver to be "WinUSB", and click the "Replace Driver" button.
+
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+After loading the driver, only USB Serial Converter B should be shown under the Universal Serial Bus controllers. Interface 0 should be shown as Dual RS232 device under Universal Serial Bus devices.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+#### Fixing Driver
+
+It's possible that sometimes even after setting up the debugger following the instructions above, the driver is broken. Here's the procedure of resetting the driver.
+
+
+
+If in the device manager, the device appears to be a different name, right-click the device and select "Update driver". For example, here Windows recognize the debugger as a "Dual RS232" device.
 
 ![](<../.gitbook/assets/image (39).png>)
 
@@ -57,14 +83,6 @@ Select the "USB Composite Device"
 
 
 \<TODO>
-
-
-
-
-
-This is the correct combination
-
-![](<../.gitbook/assets/image (102).png>)
 
 
 
