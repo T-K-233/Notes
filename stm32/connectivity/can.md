@@ -1,6 +1,6 @@
-# 5. CAN
+# CAN
 
-## \[0] Pin Map
+## 0. Pin Map
 
 On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
@@ -11,13 +11,13 @@ On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
 
 
-## \[1] Configure STM32
+## 1. Configure STM32
 
 First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
 
 
 
-Assuming system clock at 160MHz.
+Assuming system clock is configured to be **160 MHz**.
 
 
 
@@ -31,15 +31,17 @@ Set **Bit Timings Parameters** -> **Time Quanta in Bit Segment 1** to 3.&#x20;
 
 Set **Bit Timings Parameters** -> **Time Quanta in Bit Segment 2** to 1.
 
-This way, we get a 250 kbps CAN bus with a sampling point at 75% position.
+This way, we get a **250 kbps** CAN bus with a sampling point at **75%** position.
 
-The optimal sampling point is 87.5%, and we are pretty close to it.
+We can also change the prescaler value to **16** to get a **500 kbps** bus, or **8** to get a **1 Mbps** bus.
+
+
+
+The optimal sampling point is **87.5%**, and we are pretty close to it.
 
 This is a useful website for [CAN bit-timing](http://www.bittiming.can-wiki.info/).
 
-![](<../.gitbook/assets/image (5) (1) (1).png>)
-
-We can also change the prescaler value to 16 to get a 500k bus, or 8 to get a 1000k bus.
+![](<../../.gitbook/assets/image (5) (1) (1).png>)
 
 
 
@@ -49,13 +51,13 @@ To debug the CAN bus, set **Advanced Parameters** -> **Operating Mode** to "Loop
 
 &#x20;
 
-![](<../.gitbook/assets/image (142).png>)
+![](<../../.gitbook/assets/image (142).png>)
 
 
 
-Errata: When using loopback mode, the RX pin should still be pulled-up externally. We can do this simply by configuring the PA11 GPIO to enable the internal pull-up resistor, but please remember to do this. Otherwise, the HAL\_CAN\_Start() method will timeout. Detailed information can be found [here](https://electronics.stackexchange.com/questions/353005/can-initialization-timeout-error-in-stm32f4).
+> Errata: When using loopback mode, the RX pin should still be pulled-up externally. We can do this simply by configuring the PA11 GPIO to enable the internal pull-up resistor, but please remember to do this. Otherwise, the `HAL_CAN_Start()` method will timeout. Detailed information can be found [here](https://electronics.stackexchange.com/questions/353005/can-initialization-timeout-error-in-stm32f4).
 
-## \[2] Code
+## 2. Code
 
 First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
 
@@ -63,7 +65,7 @@ First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.
 
 In `main.c`, add the following code
 
-```
+```c
   /* USER CODE BEGIN 2 */
 
   uint8_t counter = 0;
@@ -94,7 +96,7 @@ In `main.c`, add the following code
   /* USER CODE END 2 */
 ```
 
-```
+```c
     /* USER CODE BEGIN 3 */
     // CAN TX
     uint32_t tx_mailbox;
@@ -153,13 +155,13 @@ After saving, upload the code.
 
 Detailed information on how CAN filter works can be found [here](https://schulz-m.github.io/2017/03/23/stm32-can-id-filter/).
 
-## \[3] Result
+## 3. Result
 
 
 
 
 
-### \[4] Using both CAN1 and CAN2
+## 4. Using both CAN1 and CAN2
 
 {% embed url="https://stackoverflow.com/questions/65290032/using-both-can1-can2-both-in-stm32f446-properly" %}
 
@@ -167,7 +169,11 @@ Detailed information on how CAN filter works can be found [here](https://schulz-
 
 
 
-FD CAN
+## 5. FDCAN
 
+The STM32 G series supports FDCAN, which is a more advanced version of CAN that features a higher data rate and larger data frame sizes.&#x20;
 
+FDCAN can be configured to be backward-compatible with CAN2.0.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 

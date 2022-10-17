@@ -1,38 +1,38 @@
-# 1. GPIO
+# GPIO
 
-## 1.0 Pin Map
+## 0. Pin Map
 
 On the STM32F446RET6 Nucleo board, the LD2 LED is connected to PA5, and the USER Button is connected to PC13.
 
 We will demonstrate how to set up a generic GPIO output pin with the LED, and a generic GPIO input pin with the user button.
 
-## 1.1 Configure STM32
+## 1. Configure STM32
 
-First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+First, set the configuration from the [Starter Project](../getting-started/running-a-starter-project.md).
 
 
 
 Click on **PA5**, set it to "GPIO\_Output".
 
-![](<../.gitbook/assets/image (107).png>)
+![](<../../.gitbook/assets/image (107).png>)
 
 
 
 Click on **PC13**, set it to "GPIO\_Input".
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 Save the .ioc file and generate code.
 
-## 1.2 Code
+## 2. Code
 
-First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+First, add the code from the [Starter Project](../getting-started/running-a-starter-project.md).
 
 
 
 In `main.c`, add the following code
 
-```
+```c
   /* USER CODE BEGIN 2 */
   char str[64];
   /* USER CODE END 2 */
@@ -56,15 +56,15 @@ In `main.c`, add the following code
   /* USER CODE END 3 */
 ```
 
-![](<../.gitbook/assets/image (119).png>)
+![](<../../.gitbook/assets/image (119).png>)
 
 
 
 After saving, upload the code
 
-## 1.3 Result
+## 3. Result
 
 We can see LED LD2 blinking, and when we press/release the USER Button, the serial output changes.
 
-![](<../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28).png>)
 

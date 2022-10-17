@@ -1,6 +1,6 @@
-# 4. SPI
+# SPI
 
-## \[0] Pin Map
+## 0. Pin Map
 
 On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
@@ -13,7 +13,7 @@ On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
 
 
-## \[1] Configure STM32
+## 1. Configure STM32
 
 First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
 
@@ -33,15 +33,15 @@ Set **Clock Parameters** -> **Prescaler** to 128 or more, to ensure the Baud Rat
 
 
 
-![](<../.gitbook/assets/image (135).png>)
+![](<../../.gitbook/assets/image (135).png>)
 
 
 
-Errata: the hardware-driven NSS on STM32 is a bit mysterious. It seems that we need to deinit the SPI module and re-init can it toggle the CS pin. Also, the CS pin is open-drain, so it requires an external pull-up resistor to function. We will save all the hassle and just use software-controlled CS pin. Detailed discussion of NSS can be found [here](https://stackoverflow.com/questions/35780290/how-to-use-hardware-nss-spi-on-stm32f4).
+> Errata: the hardware-driven NSS on STM32 is a bit mysterious. It seems that we need to deinit the SPI module and re-init to control the CS pin. Also, the CS pin is open-drain, so it requires an external pull-up resistor to function. We will save all the hassle and just use software-controlled CS pin. Detailed discussion of hardware NSS can be found [here](https://stackoverflow.com/questions/35780290/how-to-use-hardware-nss-spi-on-stm32f4).
 
 
 
-## \[2] Code
+## 2. Code
 
 First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
 
@@ -49,7 +49,7 @@ First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.
 
 In `main.c`, add the following code
 
-```
+```c
   /* USER CODE BEGIN 2 */
   char str[64];
   /* USER CODE END 2 */
@@ -91,13 +91,13 @@ In `main.c`, add the following code
 
 After saving, upload the code.
 
-## \[3] Result
+## 3. Result
 
 
 
 After connecting an RFID-RC522 SPI module, we can see that we can read the register from the sensor. The SPI signal looks like this:
 
-![](<../.gitbook/assets/image (118).png>)
+![](<../../.gitbook/assets/image (118).png>)
 
 
 

@@ -1,4 +1,4 @@
-# 21. Changing STM32 Default Boot Option
+# Changing STM32 Default Boot Option
 
 By factory default, STM will select the boot mode from BOOT0 and BOOT1 pins. However, we may want to use those pins for other IO functions.
 
@@ -6,17 +6,17 @@ Fortunately, for STM32G4 series, we can configure the default boot method by set
 
 
 
-<figure><img src="../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
 The Flash option bytes are locked during normal operation, and there's a special sequence that we need to execute in order to unlock it.
 
-<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 We use HAL functions to achieve this.
 
@@ -24,7 +24,7 @@ We use HAL functions to achieve this.
 
 By default, the value stored in the option byte is `0xFFEFF8AA` which means that the device will boot from boot pin's selection.
 
-<figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 In order to force it boot from flash, we need to clear the nSWBOOT0 pin, thus changing it to `0xFBEFF8AA`.
 
@@ -59,6 +59,6 @@ And sometimes, it's possible that the boot pin is tied to high, and the device w
 
 To temporarily change the code so that it will assume the device starts from SRAM, we need to uncomment the `USER_VECT_TAB_ADDRESS` in `system_stm32g4xx.c`. This way, the vector table will be allocated to the correct address, and the reset handler can direct the program counter to correct location.&#x20;
 
-<figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
 After changing, we need to power cycle the MCU to make it take effect.&#x20;
