@@ -52,6 +52,7 @@
 * [Misc](stm32/misc/README.md)
   * [Using Nucleo STLink to Flash Off-board Chips](stm32/misc/using-nucleo-stlink-to-flash-off-board-chips.md)
   * [Changing STM32 Default Boot Option](stm32/misc/changing-stm32-default-boot-option.md)
+  * [Flash Option Byte Recovery](stm32/misc/flash-option-byte-recovery.md)
 * [System Core](stm32/system-core/README.md)
   * [GPIO](stm32/system-core/gpio.md)
   * [External Interrupt](stm32/system-core/external-interrupt.md)
