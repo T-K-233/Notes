@@ -88,3 +88,9 @@
 ## Finance
 
 * [Finance](finance/tax-stuff.md)
+* [Page 3](finance/page-3.md)
+* [Page 2](finance/page-2.md)
+
+## Life
+
+* [Page 4](life/page-4.md)
