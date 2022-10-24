@@ -177,9 +177,89 @@ Dependent tax credit ($500 for non-child), child tax credit (for child under 17)
 
 
 
+## Investment Vehicles
+
+### Business Structure 商业实体种类
+
+#### Sole Proprietorship 个人独资
+
+If owner dies, the business dies.
+
+The proprietor has **unlimited personal liability**.
+
+#### **Partnership 合伙**
+
+General partner has unlimited liability; Limited partner has limited liability, which is the amount of their investment
+
+Partnership does not pay federal income tax
+
+Form K-1 is used for filing tax
+
+#### Corporation 企业
+
+Dividends: distribute a part of the corporation's after-tax profit to its shareholders --> dividends are taxed twice
+
+**Charter Corporation (C-Corp)**: Most common one, pay dividends to shareholders
+
+**Subchapter S Corporation (S-Corp)**: do not pay dividends, tax is reported directly by shareholders similar to a partnership
+
+**Limited Liability Corporation (LLC)**: do not pay dividends, usually well suited for single owner
 
 
-&#x20;
+
+### Bonds
+
+obligate the issuer to pay a specified amount of interest for a specified amount of time, and then repay the bond holder the face amount of bond.
+
+Bonds issued by corporations (corporate bonds) are secured by corporate asset. Interest is tax-deductible to the corporation as expense, and taxable to bondholder as ordinary income.
+
+Bonds issued by state and local government (**municipal bonds**) are secured by assets, taxes, revenue, or assessments. Insterest is free from federal income tax.
+
+
+
+When interest rate rise, existing bonds decline in market value; when interest rate fall, existing bonds rise in market value.
+
+
+
+### Mutual Fund
+
+professionally managed portfolios consist of stocks, bonds, and other investment divided into shares.&#x20;
+
+NAV: total value of fund's holdings divided by the number of fund's shares.
+
+
+
+
+
+### Stock Discipline
+
+Never borrow money to buy stock
+
+Do not try to predict market timing and trend
+
+Invest in stocks with money you don't need in 5 years
+
+Dollar-cost averaging - invest a fixed amount of money in shares of a stock on a regular time schedule
+
+Rebalancing the stock portfolio at least every year
+
+
+
+#### Market Cap
+
+\= price of single share x total number of shares
+
+#### P/E ratio
+
+Price per earnings ratio = price of a single share divided by the earnings of that share
+
+It tells what the market is currently paying for each dollar of earnings
+
+#### PEG rate
+
+P/E ratio / expected growth rate
+
+
 
 ### Form W-4
 
