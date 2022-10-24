@@ -87,4 +87,4 @@
 
 ## Finance
 
-* [Tax Stuff](finance/tax-stuff.md)
+* [Finance](finance/finance.md)
