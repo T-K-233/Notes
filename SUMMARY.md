@@ -7,7 +7,7 @@
 * [Using JADENS Thermal Label Printer](setup/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](setup/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Github-Related Info](setup/github-related-info.md)
-* [FT Debugger Driver Setup](setup/ft-debugger-driver-setup.md)
+* [FT LINK JTAG Debugger Driver Setup](setup/ft-link-jtag-debugger-driver-setup.md)
 * [Windows Ubuntu Dual Boot](setup/windows-ubuntu-dual-boot.md)
 * [Xilinx Vivado Install on Ubuntu 22.04](setup/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](setup/setup-risc-v-development-environment-on-windows.md)

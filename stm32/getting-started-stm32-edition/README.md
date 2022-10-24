@@ -1,6 +1,6 @@
 # Getting Started - STM32 Edition
 
-Hi hi, this is -T.K.-.
+HiHi, this is -T.K.-.
 
 Here's a text version of the STM32 tutorials (or lab notes).
 

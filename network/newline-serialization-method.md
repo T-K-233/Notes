@@ -8,7 +8,7 @@
 
 ### Initialization
 
-```
+```c
 NLSMSerial.init(115200);
 ```
 
@@ -16,7 +16,7 @@ NLSMSerial.init(115200);
 
 ### Receive
 
-```
+```c
 uint8_t buffer[128];
 uint16_t rx_size = NLSMSerial.receive(buffer, 128);
 ```
@@ -25,7 +25,7 @@ uint16_t rx_size = NLSMSerial.receive(buffer, 128);
 
 ### Transmit
 
-```
+```c
 uint8_t buffer[128];
 uint16_t tx_size = 1;
 NLSMSerial.transmit(buffer, tx_size);
@@ -35,7 +35,7 @@ NLSMSerial.transmit(buffer, tx_size);
 
 ## Python
 
-```
+```python
 import serial
 
 class NLSMSerial:
@@ -93,7 +93,7 @@ class NLSMSerial:
 
 ### Arduino
 
-```
+```c
 #include "NLSMSerial.h"
 
 uint8_t buffer[128];
@@ -112,7 +112,7 @@ void loop() {
 
 ### Python
 
-```
+```python
 import struct
 import logging
 import json
