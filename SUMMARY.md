@@ -2,6 +2,37 @@
 
 * [Home](README.md)
 
+## STM32
+
+* [Getting Started - STM32 Edition](stm32/getting-started-stm32-edition/README.md)
+  * [Setting up STM32CubeIDE](stm32/getting-started-stm32-edition/setting-up-stm32cubeide.md)
+  * [Running A Starter Project](stm32/getting-started-stm32-edition/running-a-starter-project.md)
+  * [Changing STM32CubeIDE Settings](stm32/getting-started-stm32-edition/changing-stm32cubeide-settings.md)
+* [Misc](stm32/misc/README.md)
+  * [Using Nucleo STLink to Flash Off-board Chips](stm32/misc/using-nucleo-stlink-to-flash-off-board-chips.md)
+  * [Changing STM32 Default Boot Option](stm32/misc/changing-stm32-default-boot-option.md)
+  * [Flash Option Byte Recovery](stm32/misc/flash-option-byte-recovery.md)
+* [System Core](stm32/system-core/README.md)
+  * [GPIO](stm32/system-core/gpio.md)
+  * [External Interrupt](stm32/system-core/external-interrupt.md)
+* [Analog](stm32/analog/README.md)
+  * [ADC](stm32/analog/adc.md)
+  * [DAC](stm32/analog/dac.md)
+* [Timers](stm32/timers/README.md)
+  * [RTC](stm32/timers/rtc.md)
+  * [TIM](stm32/timers/tim.md)
+* [Connectivity](stm32/connectivity/README.md)
+  * [CAN](stm32/connectivity/can.md)
+  * [Ethernet](stm32/connectivity/ethernet.md)
+  * [I2C](stm32/connectivity/i2c.md)
+  * [SPI](stm32/connectivity/spi.md)
+  * [SPI - SD Card](stm32/connectivity/spi-sd-card.md)
+  * [USART](stm32/connectivity/usart.md)
+  * [USB - FS](stm32/connectivity/usb-fs.md)
+  * [USB - HS](stm32/connectivity/usb-hs.md)
+* [Middleware](stm32/middleware/README.md)
+  * [FreeRTOS](stm32/middleware/freertos.md)
+
 ## Setup
 
 * [Using JADENS Thermal Label Printer](setup/using-jadens-thermal-label-printer.md)
@@ -42,37 +73,6 @@
 ## Maintainance Log
 
 * [RISC-V Toolbox Website](maintainance-log/risc-v-toolbox-website.md)
-
-## STM32
-
-* [Getting Started - STM32 Edition](stm32/getting-started-stm32-edition/README.md)
-  * [Setting up STM32CubeIDE](stm32/getting-started-stm32-edition/setting-up-stm32cubeide.md)
-  * [Running A Starter Project](stm32/getting-started-stm32-edition/running-a-starter-project.md)
-  * [Changing STM32CubeIDE Settings](stm32/getting-started-stm32-edition/changing-stm32cubeide-settings.md)
-* [Misc](stm32/misc/README.md)
-  * [Using Nucleo STLink to Flash Off-board Chips](stm32/misc/using-nucleo-stlink-to-flash-off-board-chips.md)
-  * [Changing STM32 Default Boot Option](stm32/misc/changing-stm32-default-boot-option.md)
-  * [Flash Option Byte Recovery](stm32/misc/flash-option-byte-recovery.md)
-* [System Core](stm32/system-core/README.md)
-  * [GPIO](stm32/system-core/gpio.md)
-  * [External Interrupt](stm32/system-core/external-interrupt.md)
-* [Analog](stm32/analog/README.md)
-  * [ADC](stm32/analog/adc.md)
-  * [DAC](stm32/analog/dac.md)
-* [Timers](stm32/timers/README.md)
-  * [RTC](stm32/timers/rtc.md)
-  * [TIM](stm32/timers/tim.md)
-* [Connectivity](stm32/connectivity/README.md)
-  * [CAN](stm32/connectivity/can.md)
-  * [Ethernet](stm32/connectivity/ethernet.md)
-  * [I2C](stm32/connectivity/i2c.md)
-  * [SPI](stm32/connectivity/spi.md)
-  * [SPI - SD Card](stm32/connectivity/spi-sd-card.md)
-  * [USART](stm32/connectivity/usart.md)
-  * [USB - FS](stm32/connectivity/usb-fs.md)
-  * [USB - HS](stm32/connectivity/usb-hs.md)
-* [Middleware](stm32/middleware/README.md)
-  * [FreeRTOS](stm32/middleware/freertos.md)
 
 ## Verilog
 
