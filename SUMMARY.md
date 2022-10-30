@@ -34,6 +34,14 @@
 * [Middleware](stm32/middleware/README.md)
   * [FreeRTOS](stm32/middleware/freertos.md)
 
+## Chipyard SoC
+
+* [Arty 35T / 100T UART Pins](chipyard-soc/arty-35t-100t-uart-pins.md)
+* [Arty DDR](chipyard-soc/arty-ddr.md)
+* [Installing Chipyard](chipyard-soc/installing-chipyard.md)
+* [GDB debugging OsciArty](chipyard-soc/gdb-debugging-osciarty.md)
+* [Chipyard Arty Flow](chipyard-soc/chipyard-arty-flow.md)
+
 ## Setup
 
 * [Using JADENS Thermal Label Printer](setup/using-jadens-thermal-label-printer.md)
@@ -74,13 +82,6 @@
 ## Maintainance Log
 
 * [RISC-V Toolbox Website](maintainance-log/risc-v-toolbox-website.md)
-
-## Verilog
-
-* [Arty 35T / 100T UART Pins](verilog/arty-35t-100t-uart-pins.md)
-* [Arty DDR](verilog/arty-ddr.md)
-* [Installing Chipyard](verilog/installing-chipyard.md)
-* [Chipyard Arty Flow](verilog/chipyard-arty-flow.md)
 
 ***
 
