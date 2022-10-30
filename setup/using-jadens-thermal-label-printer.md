@@ -18,7 +18,7 @@ Download setup file from url and open
 
 Launch "Label Printer DriverSetup" from start menu
 
-<img src="../.gitbook/assets/image (20).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (20) (1).png" alt="" data-size="original">
 
 
 
