@@ -86,5 +86,5 @@ Reference [semver.org](https://semver.org) for more information on versioning.
 
 
 ```bash
-git filter-branch --tree-filter 'rm -f DVD-rip' HEAD
+git filter-branch --tree-filter "rm -f path/to/your/file" HEAD
 ```
