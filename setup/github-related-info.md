@@ -77,3 +77,14 @@ The version number in the filename should be three Arabic numbers with dots in b
 
 Reference [semver.org](https://semver.org) for more information on versioning.
 
+
+
+
+
+### Git remove large files from history
+
+
+
+```bash
+git filter-branch --tree-filter 'rm -f DVD-rip' HEAD
+```
