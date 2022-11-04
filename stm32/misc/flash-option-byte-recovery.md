@@ -12,6 +12,22 @@ x/16 0x40022000
 
 
 
+
+
+### 1. change debugger to use ST-Link (OpenOCD)
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+In startup behavior, uncheck "Download" to prevent debugger from flashing Flash.&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
 ```c
 // FLASH->CR
 x 0x40022014
