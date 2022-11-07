@@ -38,6 +38,7 @@
 
 * [Arty 35T / 100T UART Pins](chipyard-soc/arty-35t-100t-uart-pins.md)
 * [Arty DDR](chipyard-soc/arty-ddr.md)
+* [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Installing Chipyard](chipyard-soc/installing-chipyard.md)
 * [GDB debugging OsciArty](chipyard-soc/gdb-debugging-osciarty.md)
 * [Chipyard Arty Flow](chipyard-soc/chipyard-arty-flow.md)

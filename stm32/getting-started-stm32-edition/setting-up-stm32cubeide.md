@@ -30,7 +30,7 @@ Choose an appropriate installation location.
 
 _Note: It's recommended to remote the version number from the installation folder. CubeIDE can auto-upgrade the software, but it will not update the folder name._
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

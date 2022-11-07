@@ -30,7 +30,7 @@ Plug in the FT LINK debugger.
 
 After the FT LINK debugger is inserted, now we should see two USB Serial Converters under the "Universal Serial Bus controllers" tag in device manager
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -48,7 +48,7 @@ Select the target driver to be "WinUSB", and click the "Replace Driver" button.
 
 After loading the driver, only USB Serial Converter B should be shown under the Universal Serial Bus controllers. Interface 0 should be shown as Dual RS232 device under Universal Serial Bus devices.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -78,7 +78,7 @@ Select "Browse my computer for drivers".
 
 Select the "USB Composite Device"
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 
 

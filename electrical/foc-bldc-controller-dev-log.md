@@ -22,7 +22,7 @@ DMA 设置成 Circular，并且将 DMA Continuous Requests 设置为 Enable，�
 
 ![](<../.gitbook/assets/image (82).png>)
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 ![](<../.gitbook/assets/image (117).png>)
 
