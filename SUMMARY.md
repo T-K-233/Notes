@@ -66,12 +66,16 @@
 
 ## Electrical
 
+* [Recoil FOC Motor Controller](electrical/recoil-foc-motor-controller/README.md)
+  * [0x00. Theory of Operation](electrical/recoil-foc-motor-controller/0x00.-theory-of-operation.md)
+  * [0x01. Components](electrical/recoil-foc-motor-controller/0x01.-components.md)
+  * [0x02. Implementation](electrical/recoil-foc-motor-controller/0x02.-implementation.md)
+  * [0x03. Application](electrical/recoil-foc-motor-controller/0x03.-application.md)
 * [Wiring Convention](electrical/wiring-convention.md)
 * [MCU Pinmap Convention](electrical/mcu-pinmap-convention.md)
 * [PCB Design and Manufacturing Conventions](electrical/pcb-design-and-manufacturing-conventions.md)
 * [Using Oscilloscope: x1 vs x10](electrical/using-oscilloscope-x1-vs-x10.md)
 * [ESP32 Cam](electrical/esp32-cam.md)
-* [FOC BLDC Controller Dev Log](electrical/foc-bldc-controller-dev-log.md)
 * [LiPo Safety](electrical/lipo-safety.md)
 
 ## Network
