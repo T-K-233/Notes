@@ -66,6 +66,7 @@
 
 ## Electrical
 
+* [A Note on the Polarity of the Famous TT Motor](electrical/a-note-on-the-polarity-of-the-famous-tt-motor.md)
 * [Recoil FOC Motor Controller](electrical/recoil-foc-motor-controller/README.md)
   * [0x00. Theory of Operation](electrical/recoil-foc-motor-controller/0x00.-theory-of-operation.md)
   * [0x01. Components](electrical/recoil-foc-motor-controller/0x01.-components.md)
