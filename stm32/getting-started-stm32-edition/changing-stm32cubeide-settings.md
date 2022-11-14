@@ -48,7 +48,7 @@ Click **Apply and Close** button
 
 Right-click on any file that needs to be formatted. Select **Source** -> **Format**.
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (22) (1).png>)
 
 
 
@@ -84,7 +84,7 @@ Select the correct COM port. Click **Finish**.
 
 Change Encoding to "UTF-8". Click **Ok**.
 
-![](<../../.gitbook/assets/image (27).png>)
+![](<../../.gitbook/assets/image (27) (1).png>)
 
 
 

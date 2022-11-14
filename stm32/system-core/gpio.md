@@ -20,7 +20,7 @@ Click on **PA5**, set it to "GPIO\_Output".
 
 Click on **PC13**, set it to "GPIO\_Input".
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16) (1).png>)
 
 Save the .ioc file and generate code.
 
@@ -66,5 +66,5 @@ After saving, upload the code
 
 We can see LED LD2 blinking, and when we press/release the USER Button, the serial output changes.
 
-![](<../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28) (1).png>)
 

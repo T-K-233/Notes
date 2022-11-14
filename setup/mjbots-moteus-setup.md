@@ -16,7 +16,7 @@ py -m moteus.moteus_tool --target 1 --calibrate
 
 ![](<../.gitbook/assets/image (120).png>)
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (15) (1).png>)
 
 
 

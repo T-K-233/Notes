@@ -36,7 +36,7 @@ Select **Connectivity** -> **USART2**.
 
 Set **Mode** to be Asynchronous.
 
-![](<../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 
 
