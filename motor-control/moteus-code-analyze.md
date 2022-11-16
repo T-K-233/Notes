@@ -8,9 +8,11 @@
 
 ## Position Sampling
 
+[article](https://jpieper.com/2021/05/10/filtering-encoder-values-in-moteus/)
+
 Using All-Digital Phase Locked Loop filter
 
-[article](https://jpieper.com/2021/05/10/filtering-encoder-values-in-moteus/) explaining how Moteus uses this
+
 
 Handled in `motor_position.h`
 
@@ -31,6 +33,8 @@ velocity += dt \* filter.ki \* error
 
 
 ## Position Control with Vel and Acc Limit
+
+[article](https://jpieper.com/2022/04/08/velocity-and-acceleration-limited-trajectories/)
 
 User will issue position control command
 
