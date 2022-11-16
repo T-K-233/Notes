@@ -2,13 +2,15 @@
 
 ## Current Sampling
 
-
+[article](https://jpieper.com/2020/08/24/stm32g4-adc-and-low-torque-operation/)
 
 
 
 ## Position Sampling
 
 [article](https://jpieper.com/2021/05/10/filtering-encoder-values-in-moteus/)
+
+[encoder calibration](https://jpieper.com/2019/01/26/encoder-autocalibration/)
 
 Using All-Digital Phase Locked Loop filter
 
