@@ -35,30 +35,45 @@
 * [Middleware](stm32/middleware/README.md)
   * [FreeRTOS](stm32/middleware/freertos.md)
 
-## Chipyard SoC
+## Chipyard SoC / FPGA
 
-* [Arty 35T / 100T UART Pins](chipyard-soc/arty-35t-100t-uart-pins.md)
-* [Arty DDR](chipyard-soc/arty-ddr.md)
-* [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
-* [Installing Chipyard](chipyard-soc/installing-chipyard.md)
-* [GDB debugging OsciArty](chipyard-soc/gdb-debugging-osciarty.md)
-* [Chipyard Arty Flow](chipyard-soc/chipyard-arty-flow.md)
+* [Installing Chipyard](chipyard-soc-fpga/installing-chipyard.md)
+* [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
+* [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
+* [Arty 35T / 100T UART Pins](chipyard-soc-fpga/arty-35t-100t-uart-pins.md)
+* [Arty DDR](chipyard-soc-fpga/arty-ddr.md)
+* [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
+* [GDB debugging OsciArty](chipyard-soc-fpga/gdb-debugging-osciarty.md)
+* [Chipyard Arty Flow](chipyard-soc-fpga/chipyard-arty-flow.md)
+* [FT LINK JTAG Debugger Driver Setup](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
+
+## Motor Control
+
+* [Recoil FOC Motor Controller](motor-control/recoil-foc-motor-controller/README.md)
+  * [0x00. Theory of Operation](motor-control/recoil-foc-motor-controller/0x00.-theory-of-operation.md)
+  * [0x01. Components](motor-control/recoil-foc-motor-controller/0x01.-components.md)
+  * [0x02. Implementation](motor-control/recoil-foc-motor-controller/0x02.-implementation.md)
+  * [0x03. Application](motor-control/recoil-foc-motor-controller/0x03.-application.md)
+* [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
+* [Moteus Control Loop Analyze](motor-control/moteus-control-loop-analyze.md)
+* [ODrive Setup](motor-control/odrive-setup.md)
+* [Page 5](motor-control/page-5.md)
+
+## Tools
+
+* [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
+* [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
+* [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
+* [Page 6](tools/page-6.md)
 
 ## Setup
 
-* [Using JADENS Thermal Label Printer](setup/using-jadens-thermal-label-printer.md)
-* [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](setup/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Github-Related Info](setup/github-related-info.md)
-* [FT LINK JTAG Debugger Driver Setup](setup/ft-link-jtag-debugger-driver-setup.md)
-* [Windows Ubuntu Dual Boot](setup/windows-ubuntu-dual-boot.md)
-* [Xilinx Vivado Install on Ubuntu 22.04](setup/xilinx-vivado-install-on-ubuntu-22.04.md)
-* [Setup RISC-V Development Environment on Windows](setup/setup-risc-v-development-environment-on-windows.md)
 * [Raspberry Pi Setup](setup/raspberry-pi-setup.md)
-* [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
-* [ODrive Setup](setup/odrive-setup.md)
 * [Clang-Format Style Config](setup/clang-format-style-config.md)
-* [MJBOTS Moteus setup](setup/mjbots-moteus-setup.md)
 * [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
+* [Windows Ubuntu Dual Boot](setup/windows-ubuntu-dual-boot.md)
+* [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
 
 ## Mechanical
 
@@ -68,15 +83,9 @@
 ## Electrical
 
 * [A Note on the Polarity of the Famous TT Motor](electrical/a-note-on-the-polarity-of-the-famous-tt-motor.md)
-* [Recoil FOC Motor Controller](electrical/recoil-foc-motor-controller/README.md)
-  * [0x00. Theory of Operation](electrical/recoil-foc-motor-controller/0x00.-theory-of-operation.md)
-  * [0x01. Components](electrical/recoil-foc-motor-controller/0x01.-components.md)
-  * [0x02. Implementation](electrical/recoil-foc-motor-controller/0x02.-implementation.md)
-  * [0x03. Application](electrical/recoil-foc-motor-controller/0x03.-application.md)
 * [Wiring Convention](electrical/wiring-convention.md)
 * [MCU Pinmap Convention](electrical/mcu-pinmap-convention.md)
 * [PCB Design and Manufacturing Conventions](electrical/pcb-design-and-manufacturing-conventions.md)
-* [Using Oscilloscope: x1 vs x10](electrical/using-oscilloscope-x1-vs-x10.md)
 * [ESP32 Cam](electrical/esp32-cam.md)
 * [LiPo Safety](electrical/lipo-safety.md)
 
