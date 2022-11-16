@@ -55,7 +55,7 @@
   * [0x02. Implementation](motor-control/recoil-foc-motor-controller/0x02.-implementation.md)
   * [0x03. Application](motor-control/recoil-foc-motor-controller/0x03.-application.md)
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
-* [Moteus Control Loop Analyze](motor-control/moteus-control-loop-analyze.md)
+* [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
 * [Page 5](motor-control/page-5.md)
 

@@ -20,7 +20,7 @@ For Arty board bought from Amazon recently, the Flash chip should be "s25fl128xx
 
 The exact chip can be found using this method from Arty's [User Manual](https://digilent.com/reference/programmable-logic/arty-a7/reference-manual?redirect=1#quad-spi\_flash).
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Click OK.&#x20;
 
