@@ -57,7 +57,7 @@
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
-* [Page 5](motor-control/page-5.md)
+* [All Digital Phase-Locked Loop Filter](motor-control/all-digital-phase-locked-loop-filter.md)
 
 ## Tools
 
