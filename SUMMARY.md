@@ -65,6 +65,7 @@
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
 * [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
+* [Linux Mount SD Card](tools/linux-mount-sd-card.md)
 * [Page 6](tools/page-6.md)
 
 ## Setup
