@@ -1,6 +1,8 @@
-# Windows Ubuntu Dual Boot
+# Windows Ubuntu Dual Boot Issues
 
 {% embed url="https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader" %}
+
+### Windows Linux timestamp difference issue
 
 ### Let Linux to use local time
 
@@ -20,7 +22,7 @@ timedatectl
 
 
 
-undo this change:
+To undo this change:
 
 ```
 timedatectl set-local-rtc 0 --adjust-system-clock

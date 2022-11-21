@@ -64,6 +64,7 @@
 * [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
+* [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
 * [Page 6](tools/page-6.md)
 
 ## Setup
@@ -72,7 +73,6 @@
 * [Raspberry Pi Setup](setup/raspberry-pi-setup.md)
 * [Clang-Format Style Config](setup/clang-format-style-config.md)
 * [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
-* [Windows Ubuntu Dual Boot](setup/windows-ubuntu-dual-boot.md)
 * [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
 
 ## Mechanical
