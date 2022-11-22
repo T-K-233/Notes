@@ -45,6 +45,7 @@
 * [GDB debugging OsciArty](chipyard-soc-fpga/gdb-debugging-osciarty.md)
 * [Chipyard Arty Flow](chipyard-soc-fpga/chipyard-arty-flow.md)
 * [FT LINK JTAG Debugger Driver Setup](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
+* [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 
 ## Motor Control
 
