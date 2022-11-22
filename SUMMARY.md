@@ -23,15 +23,14 @@
   * [TIM](stm32/timers/tim.md)
 * [Connectivity](stm32/connectivity/README.md)
   * [UART](stm32/connectivity/uart.md)
+  * [USART](stm32/connectivity/usart.md)
   * [CAN](stm32/connectivity/can.md)
-  * [Ethernet](stm32/connectivity/ethernet.md)
   * [I2C](stm32/connectivity/i2c.md)
   * [SPI](stm32/connectivity/spi.md)
-* [NTC Temperature Sense Resistor Value Calculation](stm32/ntc-temperature-sense-resistor-value-calculation/README.md)
-  * [SPI - SD Card](stm32/ntc-temperature-sense-resistor-value-calculation/spi-sd-card.md)
-  * [USART](stm32/ntc-temperature-sense-resistor-value-calculation/usart.md)
-  * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
-  * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
+  * [SPI - SD Card](stm32/connectivity/spi-sd-card.md)
+  * [Ethernet](stm32/connectivity/ethernet.md)
+  * [USB - FS](stm32/connectivity/usb-fs.md)
+  * [USB - HS](stm32/connectivity/usb-hs.md)
 * [Middleware](stm32/middleware/README.md)
   * [FreeRTOS](stm32/middleware/freertos.md)
 
@@ -57,6 +56,7 @@
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
+* [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 * [All Digital Phase-Locked Loop Filter](motor-control/all-digital-phase-locked-loop-filter.md)
 
 ## Tools
