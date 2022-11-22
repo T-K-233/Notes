@@ -26,3 +26,10 @@ Mount
 mount /dev/sdd2 /mnt/sdcard
 ```
 
+
+
+Unmount
+
+```bash
+umount /mnt/sdcard
+```
