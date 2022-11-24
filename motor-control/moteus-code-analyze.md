@@ -44,7 +44,7 @@ User will issue position control command
 d pos 0 0 0.1
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 which will be handled by the `ISR_DoPosition()` function in `bldc_servo.cc`
 

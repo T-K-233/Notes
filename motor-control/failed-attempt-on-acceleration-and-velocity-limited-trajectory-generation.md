@@ -127,13 +127,19 @@ After manually posing some finish constraint the actuator work as expected. Howe
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+### <mark style="color:red;">SAFETY</mark> <mark style="color:red;"></mark><mark style="color:red;">**REMINDER**</mark>
+
+The above code does not handle velocity / torque bounds. So if the position target cannot be satisfied (bridge is powered off in this case), the velocity and position setpoint will grow out of bound, which will lead to abrupt motion when the motor is powered on again, and the motor will overshoot again on the other side if allowed to move freely.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 
 
 
-Also here's some previous codes for reference
+
+Here's some previous not-working codes for reference
 
 ```c
   //  acceleration = trajectory_follower(command_position, command_velocity)
