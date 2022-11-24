@@ -90,7 +90,7 @@ And click this button to open the serial port
 
 Now when we type in one terminal, we can see the contents appear in another terminal, indicating that the connection is established
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
