@@ -131,7 +131,7 @@ After manually posing some finish constraint the actuator work as expected. Howe
 
 The above code does not handle velocity / torque bounds. So if the position target cannot be satisfied (bridge is powered off in this case), the velocity and position setpoint will grow out of bound, which will lead to abrupt motion when the motor is powered on again, and the motor will overshoot again on the other side if allowed to move freely.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -220,3 +220,10 @@ Here's some previous not-working codes for reference
 //    + controller->position_kd * velocity_error
 //    + controller->position_integrator;
 ```
+
+
+
+After switching to cascaded controller, there's still some oscillations
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
