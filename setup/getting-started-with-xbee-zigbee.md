@@ -10,7 +10,7 @@ First, we need to wire up the XBee. Originally, I was going to use an Arduino UN
 
 Then I realized that I can just use a plain USB-TTL converter to establish the link between the XBee module with the computer. I’m using the Rath RA-LINK module, originally designed for the GD32VF series MCU. We will just use the serial converter function of this debugger.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 An additional benefit of this setup is that both end are using the 2.0mm pitch Dupont connector. (Viva la metric unit!)
 

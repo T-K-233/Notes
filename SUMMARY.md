@@ -55,6 +55,7 @@
   * [0x02. Implementation](motor-control/recoil-foc-motor-controller/0x02.-implementation.md)
   * [0x03. Application](motor-control/recoil-foc-motor-controller/0x03.-application.md)
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
+* [Failed Attempt on Acceleration- and Velocity-Limited Trajectory Generation](motor-control/failed-attempt-on-acceleration-and-velocity-limited-trajectory-generation.md)
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
