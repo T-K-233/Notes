@@ -1,4 +1,4 @@
-# Arty DDR
+# Arty 35T Using DDR DRAM
 
 ![](<../.gitbook/assets/image (9) (1) (1).png>)
 
@@ -17,6 +17,10 @@
 ![](<../.gitbook/assets/image (101) (1).png>)
 
 ![](<../.gitbook/assets/image (112).png>)
+
+The pin configuration file can be downloaded [here](https://github.com/Digilent/Arty/tree/master/Resources/Arty\_MIG\_DDR3?\_ga=2.161862332.183027093.1669435108-1257577490.1663646590).
+
+It seems that Vivado cannot load the `mig.prj` file, so the only way is to set up the project manually and import the `Arty_C_mig.ucf` pinout file....
 
 ![](<../.gitbook/assets/image (9) (1).png>)
 
