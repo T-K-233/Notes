@@ -54,6 +54,7 @@
   * [0x01. Components](motor-control/recoil-foc-motor-controller/0x01.-components.md)
   * [0x02. Implementation](motor-control/recoil-foc-motor-controller/0x02.-implementation.md)
   * [0x03. Application](motor-control/recoil-foc-motor-controller/0x03.-application.md)
+* [New Controller Board Soldering & Power-on Checklist](motor-control/new-controller-board-soldering-and-power-on-checklist.md)
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
 * [Failed Attempt on Acceleration- and Velocity-Limited Trajectory Generation](motor-control/failed-attempt-on-acceleration-and-velocity-limited-trajectory-generation.md)
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
