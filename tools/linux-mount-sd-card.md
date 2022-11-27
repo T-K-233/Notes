@@ -8,7 +8,7 @@ List all the cards by using command. You might want to use sudo priviledge.
 fdisk -l
 ```
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

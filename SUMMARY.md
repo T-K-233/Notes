@@ -27,10 +27,10 @@
   * [CAN](stm32/connectivity/can.md)
   * [I2C](stm32/connectivity/i2c.md)
   * [SPI](stm32/connectivity/spi.md)
-  * [SPI - SD Card](stm32/connectivity/spi-sd-card.md)
+  * [SPI - SD Card](stm32/ntc-temperature-sense-resistor-value-calculation/spi-sd-card.md)
   * [Ethernet](stm32/connectivity/ethernet.md)
-  * [USB - FS](stm32/connectivity/usb-fs.md)
-  * [USB - HS](stm32/connectivity/usb-hs.md)
+  * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
+  * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
 * [Middleware](stm32/middleware/README.md)
   * [FreeRTOS](stm32/middleware/freertos.md)
 
