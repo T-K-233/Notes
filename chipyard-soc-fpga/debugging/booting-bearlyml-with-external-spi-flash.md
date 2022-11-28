@@ -6,6 +6,10 @@ We need to use J-Link to communicate with the board/chip. So run `JLink.exe`
 
 
 
+## J-Link Commands
+
+[Here](https://wiki.segger.com/J-Link\_Commander) and [here](https://docs.rs-online.com/5cbd/0900766b8165024a.pdf) are some references. Can also type `?` in terminal to see list of command.
+
 To connect device
 
 ```
@@ -55,3 +59,23 @@ Go
 Reset
 Step
 ```
+
+
+
+## SPI Wiring
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Sparkfun FE310 Board Connection</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Arty 35T Board Connection</p></figcaption></figure>
+
+
+
+_Note: the #RESET pin need to be tied to HIGH._&#x20;
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

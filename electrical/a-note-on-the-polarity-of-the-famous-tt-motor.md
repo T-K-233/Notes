@@ -2,11 +2,11 @@
 
 I’m using this article to record the polarity (direction) of the TT motor, which is commonly used in hobby models.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 After some testing, we get the following relation between the motor and the wheel:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 We define "positive" direction of the motor to be the counterclockwise rotation of the motor shaft when facing the motor shaft.
 
