@@ -12,7 +12,8 @@
 
   float dx = controller->position_target - controller->position_measured;
   controller->dx = dx;
-  float decel_distance = (controller->velocity_measured * controller->velocity_measured) / (2 * accel);
+  float decel_distance = 
+      (controller->velocity_measured * controller->velocity_measured) / (2 * accel);
   controller->decel_distance = decel_distance;
   if (controller->velocity_measured * dx > 0) {
     if (fabs(dx) > 1.2 * decel_distance) { // accelerate
