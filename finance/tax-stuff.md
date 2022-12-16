@@ -1,6 +1,6 @@
 # Finance
 
-### 收入构成
+### long-term收入构成
 
 **top 1 %** household 年收入 $400,000（月均 $33k），税收贡献 40%
 
@@ -98,6 +98,29 @@ Part A is free to seniors who apply
 **Part A of medicare tax is 2.9% of total earned income without salary cap.**
 
 Part B is optional and means tested
+
+
+
+## Saving Money
+
+Out of all the after-tax income:
+
+save 6 months of "must-have" expenses as an emergency fund. Keep emergency fund in savings account or money market account.
+
+save 20% for long term savings.
+
+
+
+### Automating savings
+
+1. Sign up for 401k plan
+2. Set up your own retirement account (IRA or Roth IRA)
+3. Save more tomorrow ---- increase savings rate when getting a raise etc.
+4. Start with saving something
+
+
+
+
 
 
 
