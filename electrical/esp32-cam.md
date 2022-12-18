@@ -69,7 +69,7 @@ Change the define to use `CAMERA_MODEL_AI_THINKER`.
 
 ![](<../.gitbook/assets/image (1).jpg>)
 
-![](<../.gitbook/assets/image (2).jpg>)
+![](<../.gitbook/assets/image (2) (1).jpg>)
 
 Note: do NOT use the GND pin near U0T pin (the one labeled "GND/R"). That pin does not connect to ground for some of the boards.&#x20;
 

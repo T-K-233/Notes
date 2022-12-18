@@ -10,21 +10,21 @@
 
 Bone Dimension
 
-![](<.gitbook/assets/image (89).png>)
+![](<../.gitbook/assets/image (89).png>)
 
-Number of joints: 29
+Number of joints: 39
 
-&#x20; head: 3
+&#x20; head (neck): 3
 
-&#x20; arm: 6 x 2
+&#x20; arm: (3+2+3) x 2
 
-&#x20; body: 2
+&#x20; body: 6
 
-&#x20; leg: 6 x 2
+&#x20; leg: (3+2+2) x 2
 
+<figure><img src="../.gitbook/assets/image.jpg" alt=""><figcaption></figcaption></figure>
 
-
-
+<figure><img src="../.gitbook/assets/image (2).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Electrical Details
 

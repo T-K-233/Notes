@@ -107,13 +107,13 @@
 
 ***
 
-* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
+* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes/README.md)
+  * [Note on Face Design and Manufacture](remote-controlled-humanoid-robot-whitepaper-and-design-notes/note-on-face-design-and-manufacture.md)
 
 ## Finance
 
 * [Finance](finance/tax-stuff.md)
 * [Page 3](finance/page-3.md)
-* [Page 2](finance/page-2.md)
 
 ## Life
 
