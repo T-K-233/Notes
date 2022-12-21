@@ -22,9 +22,9 @@ Number of joints: 39
 
 &#x20; leg: (3+2+2) x 2
 
-<figure><img src=".gitbook/assets/image (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Electrical Details
 

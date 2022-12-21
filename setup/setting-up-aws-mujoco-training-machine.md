@@ -9,7 +9,7 @@ Install conda from [here](https://conda.io/projects/conda/en/latest/user-guide/i
 ### 1. Create conda environment
 
 ```bash
-conda env create --name biped
+conda create --name biped
 
 conda activate biped
 ```

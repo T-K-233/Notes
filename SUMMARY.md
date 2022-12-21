@@ -75,7 +75,7 @@
 
 ## ML/AI
 
-* [OpenAI gym + Mujoco Setup](ml-ai/openai-gym-+-mujoco-setup.md)
+* [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
 * [Page 2](ml-ai/page-2.md)
 
 ## Setup
