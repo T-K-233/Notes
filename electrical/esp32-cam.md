@@ -67,7 +67,7 @@ Change the define to use `CAMERA_MODEL_AI_THINKER`.
 
 ## Wiring
 
-![](<../.gitbook/assets/image (1).jpg>)
+![](<../.gitbook/assets/image (1) (1).jpg>)
 
 ![](<../.gitbook/assets/image (2) (1).jpg>)
 

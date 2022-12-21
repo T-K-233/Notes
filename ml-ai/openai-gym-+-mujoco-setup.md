@@ -1,5 +1,11 @@
 # OpenAI gym + Mujoco Setup
 
+### Prerequisite
+
+Install conda from [here](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+###
+
 ### 1. Create conda environment
 
 ```bash

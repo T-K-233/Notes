@@ -73,12 +73,16 @@
 * [Linux Mount SD Card](tools/linux-mount-sd-card.md)
 * [Page 6](tools/page-6.md)
 
+## ML/AI
+
+* [OpenAI gym + Mujoco Setup](ml-ai/openai-gym-+-mujoco-setup.md)
+* [Page 2](ml-ai/page-2.md)
+
 ## Setup
 
 * [Github-Related Info](setup/github-related-info.md)
 * [Raspberry Pi Setup](setup/raspberry-pi-setup.md)
 * [Clang-Format Style Config](setup/clang-format-style-config.md)
-* [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
 * [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
 
 ## Mechanical
@@ -107,8 +111,8 @@
 
 ***
 
-* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes/README.md)
-  * [Note on Face Design and Manufacture](remote-controlled-humanoid-robot-whitepaper-and-design-notes/note-on-face-design-and-manufacture.md)
+* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
+  * [Note on Face Design and Manufacture](finance/page-2.md)
 
 ## Finance
 
