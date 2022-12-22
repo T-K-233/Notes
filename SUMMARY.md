@@ -76,7 +76,9 @@
 ## ML/AI
 
 * [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
-* [Page 2](ml-ai/page-2.md)
+* [Omniverse Isaac Sim Setup](ml-ai/omniverse-isaac-sim-setup.md)
+* [Gazebo Setup](ml-ai/gazebo-setup.md)
+* [ROS 2 (Humble) Setup](ml-ai/ros-2-humble-setup.md)
 
 ## Setup
 
