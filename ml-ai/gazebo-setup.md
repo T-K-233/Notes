@@ -72,7 +72,9 @@ rm -rf ~/Desktop/test_ws/install/
 colcon build
 ```
 
+> _The fix method above is found_ [_here_](https://stackoverflow.com/questions/72752937/ros2-importerror-cannot-import-name-generate-py-from-rosidl-generator-py/74159022#74159022)_._
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
