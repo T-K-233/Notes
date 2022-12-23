@@ -66,12 +66,12 @@
 
 ## Tools
 
+* [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu-22.04-standard-installation-procedure.md)
+* [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
+* [Linux Mounting SD Card](tools/linux-mounting-sd-card.md)
 * [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
-* [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
-* [Linux Mount SD Card](tools/linux-mount-sd-card.md)
-* [Ubuntu 22.04 Standard Installation](tools/page-6.md)
 
 ## ML/AI
 
