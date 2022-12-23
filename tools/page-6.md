@@ -91,7 +91,44 @@ _Note: EFI System Partition needs to be greater than 35 MB in size, and Ubuntu d
 
 ### Page 5
 
+**Where are you**
 
+Los Angeles
+
+
+
+### Page 6
+
+**Your name**
+
+TK
+
+**Your computer's name**
+
+Some-Computer-Name
+
+**Pick a username**
+
+tk
+
+**Choose a password**
+
+········
+
+**Comfirm your password**
+
+········
+
+* [x] Log in automatically
+* [ ] Require my password to log in
+
+
+
+* [ ] Use Active Directory (default)
+
+
+
+### After Installation
 
 
 
