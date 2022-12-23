@@ -226,5 +226,5 @@ Here's some previous not-working codes for reference
 
 After switching to cascaded controller, there's still some oscillations
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
