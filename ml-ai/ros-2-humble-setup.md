@@ -1,4 +1,4 @@
-# ROS2 (Humble) Setup
+# ROS 2 (Humble) Setup
 
 {% embed url="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html" %}
 
