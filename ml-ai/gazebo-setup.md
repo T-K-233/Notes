@@ -1,12 +1,3 @@
 # Gazebo Setup
 
-With ROS 2 Humble setup, run
-
-```bash
-sudo apt install ros-humble-gazebo-ros-pkgs
-```
-
-
-
-
-
+[https://classic.gazebosim.org/tutorials?tut=install\_ubuntu](https://classic.gazebosim.org/tutorials?tut=install\_ubuntu)
