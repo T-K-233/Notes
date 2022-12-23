@@ -1,4 +1,6 @@
-# Ubuntu 22.04 Standard Installation
+# Ubuntu 22.04 Standard Installation Procedure
+
+## Installer Setup
 
 ### Page 1
 
@@ -128,7 +130,29 @@ tk
 
 
 
-### After Installation
+## After Installation
+
+### System Update
+
+```bash
+sudo apt update
+
+sudo apt upgrade
+
+sudo reboot
+```
 
 
+
+### Install VS Code
+
+Search and install "vscode" with "Ubuntu Software".
+
+
+
+### Install Google Chrome
+
+Search and download "64 bit .deb" version of "Chrome for Linux" with FireFox.
+
+Right click the downloaded file and select "Open With Other Application". Select "Software Install".
 

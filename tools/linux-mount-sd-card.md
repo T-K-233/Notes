@@ -1,4 +1,4 @@
-# Linux Mount SD Card
+# Linux Mounting SD Card
 
 
 

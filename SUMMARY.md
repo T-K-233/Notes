@@ -66,9 +66,9 @@
 
 ## Tools
 
-* [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu-22.04-standard-installation-procedure.md)
+* [Ubuntu 22.04 Standard Installation Procedure](tools/page-6.md)
 * [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
-* [Linux Mounting SD Card](tools/linux-mounting-sd-card.md)
+* [Linux Mounting SD Card](tools/linux-mount-sd-card.md)
 * [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
@@ -76,7 +76,7 @@
 ## ML/AI
 
 * [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
-* [Omniverse Isaac Sim Setup](ml-ai/page-2.md)
+* [NVIDIA Omniverse Isaac Sim Setup](ml-ai/nvidia-omniverse-isaac-sim-setup.md)
 * [Gazebo Setup](ml-ai/gazebo-setup.md)
 * [ROS 2 (Humble) Setup](ml-ai/ros-2-humble-setup.md)
 
