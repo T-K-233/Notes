@@ -78,6 +78,32 @@ rosdep update
 
 
 
+### Install Colcon
+
+Colcon is a tool used to build ROS 2 software packages.
+
+```bash
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+```
+
+With Ubuntu 22.04 + ROS 2 Humble combination, we also need the following dependencies for building turtlesim:
+
+```bash
+pip install empy
+pip install lark
+```
+
+
+
+Colcon also has a tool, `colcon_cd`, to help navigating to package directories.
+
+We need to source the script to use it ([reference](https://colcon.readthedocs.io/en/released/user/installation.html?highlight=colcon\_cd#quick-directory-changes)), so either source it or add it to `~/.bashrc`
+
+```bash
+source /usr/share/colcon_cd/function/colcon_cd.sh
+```
+
 
 
 

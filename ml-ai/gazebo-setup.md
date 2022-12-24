@@ -18,7 +18,7 @@ Create workspace folder
 
 ```bash
 mkdir -p ~/Desktop/test_ws/src
-cd ~/Desktop/test_ws/src
+cd ~/Desktop/test_ws/src/
 ```
 
 
@@ -41,15 +41,6 @@ rosdep install -i --from-path src --rosdistro humble -y
 
 
 ### Build the workspace
-
-Make sure colcon is installed. Colcon is a tool used to build software packages.
-
-```bash
-sudo apt update
-sudo apt install python3-colcon-common-extensions
-```
-
-
 
 ```bash
 colcon build
@@ -84,6 +75,44 @@ colcon build
 
 ```bash
 source ~/Desktop/test_ws/install/setup.bash
+```
+
+
+
+## RVIZ Setup
+
+{% embed url="https://automaticaddison.com/how-to-load-a-urdf-file-into-rviz-ros-2/" %}
+
+```bash
+sudo apt install ros-humble-joint-state-publisher-gui
+sudo apt install ros-humble-xacro
+```
+
+### Create a ROS 2 Package
+
+Move to the src (source) folder of your workspace and create the package using the following command.
+
+```bash
+cd ~/Desktop/test_ws/src/
+ros2 pkg create --build-type ament_cmake two_wheeled_robot
+```
+
+
+
+Create some extra folders
+
+```bash
+cd ~/Desktop/test_ws/src/two_wheeled_robot/
+mkdir config launch maps meshes models params rviz urdf worlds
+```
+
+
+
+Build the package
+
+```bash
+cd ~/Desktop/test_ws/
+colcon build
 ```
 
 
