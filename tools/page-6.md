@@ -156,3 +156,36 @@ Search and download "64 bit .deb" version of "Chrome for Linux" with FireFox.
 
 Right click the downloaded file and select "Open With Other Application". Select "Software Install".
 
+
+
+### Install ssh
+
+{% embed url="https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/" %}
+
+Install the openssh-server package
+
+```bash
+sudo apt update
+sudo apt install openssh-server
+```
+
+
+
+Verify ssh is running
+
+```bash
+sudo systemctl status ssh
+```
+
+
+
+Config firewall
+
+```bash
+sudo ufw allow ssh
+```
+
+
+
+
+
