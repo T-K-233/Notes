@@ -2,7 +2,7 @@
 
 I’m using the XBee S2C module from Amazon:
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Wiring <a href="#efa0" id="efa0"></a>
 
@@ -10,13 +10,13 @@ First, we need to wire up the XBee. Originally, I was going to use an Arduino UN
 
 Then I realized that I can just use a plain USB-TTL converter to establish the link between the XBee module with the computer. I’m using the Rath RA-LINK module, originally designed for the GD32VF series MCU. We will just use the serial converter function of this debugger.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 An additional benefit of this setup is that both end are using the 2.0mm pitch Dupont connector. (Viva la metric unit!)
 
 Here is the wiring diagram:
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Download XCTU
 
@@ -32,15 +32,15 @@ Insert the USB debugger into the computer and click this button.
 
 In the pop-up menu, we will select the corresponding COM port.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
 
 It will automatically search for the device.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 And then display its settings
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 We will make this first device the station (coordinator), and thus we modify the following fields:
 
@@ -56,7 +56,7 @@ We will make this first device the station (coordinator), and thus we modify the
 
 And update the configuration by clicking this button
 
-<img src="../.gitbook/assets/image (19).png" alt="" data-size="line">
+<img src="../.gitbook/assets/image (19) (2).png" alt="" data-size="line">
 
 
 

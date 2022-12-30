@@ -48,7 +48,7 @@ Click **Apply and Close** button
 
 Right-click on any file that needs to be formatted. Select **Source** -> **Format**.
 
-![](<../../.gitbook/assets/image (22) (1).png>)
+![](<../../.gitbook/assets/image (22) (1) (1).png>)
 
 
 

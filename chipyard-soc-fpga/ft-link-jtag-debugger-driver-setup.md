@@ -6,7 +6,7 @@ Download FT2232 Drivers from [here](https://ftdichip.com/drivers/vcp-drivers/). 
 
 Scroll down and click the "setup executable" text to download the executable installer.
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1).png>)
 
 
 

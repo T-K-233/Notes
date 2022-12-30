@@ -6,7 +6,7 @@
 
 * [Getting Started - STM32 Edition](stm32/getting-started-stm32-edition/README.md)
   * [Setting up STM32CubeIDE](stm32/getting-started-stm32-edition/setting-up-stm32cubeide.md)
-  * [Running A Starter Project](stm32/getting-started-stm32-edition/running-a-starter-project.md)
+  * [Going Through A Starter Project](stm32/getting-started-stm32-edition/going-through-a-starter-project.md)
   * [Changing STM32CubeIDE Settings](stm32/getting-started-stm32-edition/changing-stm32cubeide-settings.md)
 * [Misc](stm32/misc/README.md)
   * [Using Nucleo STLink to Flash Off-board Chips](stm32/misc/using-nucleo-stlink-to-flash-off-board-chips.md)
