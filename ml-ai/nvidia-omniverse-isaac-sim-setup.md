@@ -40,7 +40,7 @@ Download Omniverse from [here](https://www.nvidia.com/en-us/omniverse/download/)
 
 After download, grant the executable right to the .AppImage file.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -56,4 +56,4 @@ Launch the application by either double-clicking it or via the terminal.
 
 Setup the directories in the launcher. Here's an example setup:
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

@@ -114,7 +114,7 @@ In `main.h` and `main.c`, add the following code
 {% tab title="Screenshot" %}
 #### main.h
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 #### main.c
 
@@ -132,7 +132,7 @@ Click the green "run ..." button
 
 If there's a popup menu, click "OK".
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -156,17 +156,17 @@ Thus, a better way of managing the code would be to separate the system-managed 
 
 In the Project Explorer, right click the "Src" folder, select "New -> Source File".
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
 
 Name the file "app.c" and click "Finish".
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
 Similarly, in the Project Explorer, right click the "Inc" folder, select "New -> Header File".
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 
 

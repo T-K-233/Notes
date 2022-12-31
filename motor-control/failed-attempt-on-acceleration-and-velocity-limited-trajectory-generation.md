@@ -56,7 +56,7 @@
 
 
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
 
 The actuator will oscillate around the target position
 
@@ -132,7 +132,7 @@ After manually posing some finish constraint the actuator work as expected. Howe
 
 The above code does not handle velocity / torque bounds. So if the position target cannot be satisfied (bridge is powered off in this case), the velocity and position setpoint will grow out of bound, which will lead to abrupt motion when the motor is powered on again, and the motor will overshoot again on the other side if allowed to move freely.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
