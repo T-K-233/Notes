@@ -172,7 +172,7 @@ Similarly, in the Project Explorer, right click the "Inc" folder, select "New ->
 
 Name the file "app.h" and click "Finish".
 
-<figure><img src="../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, we move all the previous user codes into these newly created files.
 

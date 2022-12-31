@@ -56,4 +56,4 @@ Launch the application by either double-clicking it or via the terminal.
 
 Setup the directories in the launcher. Here's an example setup:
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
