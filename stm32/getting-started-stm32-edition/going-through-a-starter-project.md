@@ -172,7 +172,7 @@ Similarly, in the Project Explorer, right click the "Inc" folder, select "New ->
 
 Name the file "app.h" and click "Finish".
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
 Then, we move all the previous user codes into these newly created files.
 
@@ -194,6 +194,9 @@ Then, we move all the previous user codes into these newly created files.
 #include <stdio.h>
 #include <string.h>
 
+#include "stm32g4xx_hal.h"
+
+
 void APP_init();
 
 void APP_main();
@@ -214,6 +217,7 @@ void APP_main();
  *      Author: TK
  */
 
+#include "app.h"
 
 uint32_t counter = 0;
 

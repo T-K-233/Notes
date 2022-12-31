@@ -8,7 +8,7 @@ Connect the FPGA device, open vivado
 
 In hardware manager, right-click the connected device ("xc7a35t" in this case), select "Add Configuration Memory Device..."
 
-<figure><img src="../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3.
 
