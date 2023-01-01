@@ -2,6 +2,47 @@
 
 
 
+## Maximum & Minimum Math Operation
+
+All the operation is repeated 10000 times with random values
+
+```c
+void APP_main() {
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, 1);
+
+  for (uint16_t i=0; i<10000; i+=1) {
+    volatile float a = (float)rand();
+    volatile float b = (float)rand();
+
+    volatile float c = fmax(a, b);  // or fmaxf(); or fast_fmaxf()
+  }
+
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, 0);
+
+  HAL_Delay(10);
+}
+
+```
+
+
+
+#### fast\_fmaxf implementation
+
+```c
+float fast_fmaxf(float a, float b) {
+  return a > b ? a : b;
+}
+
+```
+
+
+
+<figure><img src="../../.gitbook/assets/fmaxf.png" alt=""><figcaption><p>fmaxf()</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/fast_fmaxf.png" alt=""><figcaption><p>fast_fmaxf()</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/fmax.png" alt=""><figcaption><p>fmax()</p></figcaption></figure>
+
 
 
 
@@ -60,6 +101,7 @@ void APP_main() {
 
   #if !USE_INTERRUPT
     HAL_SPI_TransmitReceive(&hspi1, (uint8_t *)&tx_buffer, (uint8_t *)&rx_buffer, 1, 100);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, 1);
   #else
     HAL_SPI_TransmitReceive_IT(&hspi1, (uint8_t *)&tx_buffer, (uint8_t *)&rx_buffer, 1);
     while (!spi_received) {}

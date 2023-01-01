@@ -53,6 +53,19 @@ It's using blocking encoder read/write.
 
 
 
+Using this line to fence off too-fast CS pin control:
+
+```c
+HAL_GPIO_WritePin(ENC_CS, GPIO_PIN_RESET ); 	// CS low
+HAL_SPI_TransmitReceive(&ENC_SPI, (uint8_t*)encoder->spi_tx_buff, (uint8_t *)encoder->spi_rx_buff, 1, 100);
+while( ENC_SPI.State == HAL_SPI_STATE_BUSY );  					// wait for transmission complete
+HAL_GPIO_WritePin(ENC_CS, GPIO_PIN_SET ); 	// CS high
+```
+
+This shouldn't be necessary when using blocking SPI transaction mode...
+
+
+
 ## The Commutation Loop
 
 ```c
