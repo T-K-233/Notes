@@ -1,4 +1,4 @@
-# Fixing Unitree A1 Robot Dog
+# Fixing the Unitree A1 Robot Dog
 
 So the two Ethernet ports on our A1 robot are broken when running some unstable RL algorithm experiments. And I was asked to fix them.
 
@@ -58,6 +58,10 @@ It's interesting to see that they conformal coated the entire board to make it w
 
 <figure><img src="../.gitbook/assets/5eea29a3e0c8442efb0413ec9ae5905.jpg" alt=""><figcaption><p>High level controller board, back side</p></figcaption></figure>
 
+When taking out the low level controller board, pay special attention to the WiFi MHF4 connector. It is very fragile and easy to tear the pad off.
+
+<figure><img src="../.gitbook/assets/7c4dbb54043d1729914031683dde5a4.jpg" alt=""><figcaption><p>MHF4 connector</p></figcaption></figure>
+
 
 
 <figure><img src="../.gitbook/assets/b858dfc706245b1e1f7bb985ff41003.jpg" alt=""><figcaption><p>Similar marking on the low level controller board</p></figcaption></figure>
@@ -84,13 +88,19 @@ We still need to make a small modification to this part. Because the housing pin
 
 <figure><img src="../.gitbook/assets/cf61de32ace847bcf66459bc14e6773.jpg" alt=""><figcaption><p>left side: before modification; right side: after modification</p></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/7e4aac21ad6c2d7089c2ee4fbff6899.jpg" alt=""><figcaption><p>After modification it fits the footprint</p></figcaption></figure>
 
 
 
+<figure><img src="../.gitbook/assets/6332e28234f4308f49e7d5865f15c71.jpg" alt=""><figcaption><p>Soldered and assebled</p></figcaption></figure>
 
 
 
+## It worked
 
+(at least I did not damage the rest of the components...)
+
+<figure><img src="../.gitbook/assets/983200db067d427b0fc2a6326d7a673.jpg" alt=""><figcaption></figcaption></figure>
 
 
 

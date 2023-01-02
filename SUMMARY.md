@@ -92,7 +92,7 @@
 ## Mechanical
 
 * [MAD Cycloidal Actuator](mechanical/mad-cycloidal-actuator.md)
-* [Fixing Unitree A1 Robot Dog](mechanical/fixing-unitree-a1-robot-dog.md)
+* [Fixing the Unitree A1 Robot Dog](mechanical/fixing-the-unitree-a1-robot-dog.md)
 
 ## Electrical
 
