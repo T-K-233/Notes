@@ -118,6 +118,7 @@
 
 * [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
   * [Note on Face Design and Manufacture](finance/page-2.md)
+* [Some Interview Questions](some-interview-questions.md)
 
 ## Finance
 
