@@ -37,6 +37,7 @@
 
 ## Chipyard SoC / FPGA
 
+* [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
 * [Installing Chipyard](chipyard-soc-fpga/installing-chipyard.md)
 * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
