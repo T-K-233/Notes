@@ -22,7 +22,7 @@ Here is the wiring diagram:
 
 Download XCTU from [here](https://hub.digi.com/support/products/xctu/?path=/support/asset/xctu-v-659-windows-x86x64/).
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 Insert the USB debugger into the computer and click this button.
 
@@ -40,7 +40,7 @@ It will automatically search for the device.
 
 And then display its settings
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 We will make this first device the station (coordinator), and thus we modify the following fields:
 

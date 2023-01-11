@@ -20,7 +20,7 @@ x/16 0x40022000
 
 In startup behavior, uncheck "Download" to prevent debugger from flashing Flash.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
