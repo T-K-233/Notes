@@ -10,7 +10,18 @@ Subsystem Linux: Ubuntu 22.04.1 LTS
 
 
 
-## Clone Chipyard
+## 1. Install conda
+
+Download conda from the miniforge release page.
+
+{% embed url="https://github.com/conda-forge/miniforge/releases" %}
+
+After download, we need to mark the script as executable. Then run the script.
+
+```
+```
+
+## 2. Clone Chipyard
 
 ```bash
 git clone https://github.com/ucb-bar/chipyard.git
@@ -18,9 +29,9 @@ cd chipyard
 git checkout stable
 ```
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-
+## 3. Configure Chipyard
 
 ```bash
 ./build-setup.sh riscv-tools

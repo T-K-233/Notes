@@ -2,7 +2,7 @@
 
 I’m using the XBee S2C module from Amazon:
 
-<figure><img src="../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Wiring <a href="#efa0" id="efa0"></a>
 
@@ -16,31 +16,31 @@ An additional benefit of this setup is that both end are using the 2.0mm pitch D
 
 Here is the wiring diagram:
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Download XCTU
 
 Download XCTU from [here](https://hub.digi.com/support/products/xctu/?path=/support/asset/xctu-v-659-windows-x86x64/).
 
-<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Insert the USB debugger into the computer and click this button.
 
-<img src="../.gitbook/assets/image (26).png" alt="" data-size="line">
+<img src="../.gitbook/assets/image (26) (2).png" alt="" data-size="line">
 
 
 
 In the pop-up menu, we will select the corresponding COM port.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
 
 It will automatically search for the device.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 And then display its settings
 
-<figure><img src="../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 We will make this first device the station (coordinator), and thus we modify the following fields:
 
@@ -56,7 +56,7 @@ We will make this first device the station (coordinator), and thus we modify the
 
 And update the configuration by clicking this button
 
-<img src="../.gitbook/assets/image (19).png" alt="" data-size="line">
+<img src="../.gitbook/assets/image (19) (1).png" alt="" data-size="line">
 
 
 
@@ -78,7 +78,7 @@ Now we are ready to test the connections.
 
 Press this button to switch to the terminal window
 
-<img src="../.gitbook/assets/image (27).png" alt="" data-size="line">
+<img src="../.gitbook/assets/image (27) (1).png" alt="" data-size="line">
 
 
 

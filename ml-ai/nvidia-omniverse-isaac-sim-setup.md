@@ -26,7 +26,7 @@ Restart the computer after installation.
 
 Now, we should be able to run `nvidia-smi`
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -40,7 +40,7 @@ Download Omniverse from [here](https://www.nvidia.com/en-us/omniverse/download/)
 
 After download, grant the executable right to the .AppImage file.
 
-<figure><img src="../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -56,4 +56,4 @@ Launch the application by either double-clicking it or via the terminal.
 
 Setup the directories in the launcher. Here's an example setup:
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>

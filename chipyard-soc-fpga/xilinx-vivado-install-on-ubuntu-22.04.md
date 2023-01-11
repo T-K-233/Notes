@@ -24,13 +24,13 @@ sudo ./Xilinx_Unified_2022.1_0420_0327_Lin64.bin
 
 <figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (4) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Follow the commands in the installer. Installation directory is `~/Documents/Xilinx`
 
-<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

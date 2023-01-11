@@ -46,7 +46,7 @@ rosdep install -i --from-path src --rosdistro humble -y
 colcon build
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 If the above error occurs when building turtlesim, run
 
@@ -65,7 +65,7 @@ colcon build
 
 > _The fix method above is found_ [_here_](https://stackoverflow.com/questions/72752937/ros2-importerror-cannot-import-name-generate-py-from-rosidl-generator-py/74159022#74159022)_._
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

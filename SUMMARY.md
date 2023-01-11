@@ -39,7 +39,7 @@
 
 * [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
 * [Chipyard Environment Setup](chipyard-soc-fpga/chipyard-environment-setup/README.md)
-  * [Installing Chipyard - Ubuntu](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-ubuntu.md)
+  * [Installing Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
   * [Installing Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
 * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)

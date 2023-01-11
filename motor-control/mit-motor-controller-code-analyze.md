@@ -4,11 +4,11 @@
 
 ## Clock Tree
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## NVIC Settings
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 NVIC priority is configured in the code
 
@@ -21,7 +21,7 @@ HAL_NVIC_SetPriority(CAN_ISR, 0x01, 0x01);
 
 ## PowerStage PWM Generation
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
 
 Using DIV/1 prescaler, 0x8CA (2250) period, and center aligned mode -> PWM frequency is 80kHz
 
@@ -29,7 +29,7 @@ With the repetition counter set to 1, the software interrupt frequency is 40kHz.
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 It handles the motor phase inversion at the last stage, before issuing value to TIM.
 
@@ -39,7 +39,7 @@ It handles the motor phase inversion at the last stage, before issuing value to 
 
 ## Current Sampling
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (7).png" alt=""><figcaption></figcaption></figure>
 
 It's using 2 phase current shunt, and using blocking ADC call to sample current.
 
@@ -47,7 +47,7 @@ It's using 2 phase current shunt, and using blocking ADC call to sample current.
 
 ## Encoder
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 It's using blocking encoder read/write.
 

@@ -16,11 +16,11 @@ x/16 0x40022000
 
 ### 1. change debugger to use ST-Link (OpenOCD)
 
-<figure><img src="../../.gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 In startup behavior, uncheck "Download" to prevent debugger from flashing Flash.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -6,7 +6,7 @@ Download FT2232 Drivers from [here](https://ftdichip.com/drivers/vcp-drivers/). 
 
 Scroll down and click the "setup executable" text to download the executable installer.
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18) (1) (1).png>)
 
 
 
@@ -42,13 +42,13 @@ In the main dropdown menu, select "Dual RS232 (Interface 0). Make sure the Inter
 
 Select the target driver to be "WinUSB", and click the "Replace Driver" button.
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 After loading the driver, only USB Serial Converter B should be shown under the Universal Serial Bus controllers. Interface 0 should be shown as Dual RS232 device under Universal Serial Bus devices.
 
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -78,7 +78,7 @@ Select "Browse my computer for drivers".
 
 Select the "USB Composite Device"
 
-![](<../.gitbook/assets/image (12) (1) (1).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 
 

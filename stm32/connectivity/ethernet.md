@@ -16,11 +16,11 @@ Enable Lightweight IP
 
 Disable DHCP and manually set the IP&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 set MEM\_SIZE to 10K
 
-<figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
