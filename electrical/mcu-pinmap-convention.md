@@ -26,5 +26,5 @@ TIM4 is reserved to be an internal system scheduling timer, but can also be conf
 
 #### STM32G431CBT6
 
-<figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (4) (1).png" alt=""><figcaption></figcaption></figure>
 

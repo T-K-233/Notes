@@ -2,8 +2,8 @@
 
 ## Chipyard Installation
 
-{% content-ref url="installing-chipyard.md" %}
-[installing-chipyard.md](installing-chipyard.md)
+{% content-ref url="installing-chipyard-ubuntu.md" %}
+[installing-chipyard-ubuntu.md](installing-chipyard-ubuntu.md)
 {% endcontent-ref %}
 
 RYHH's fork of Chipyard: [https://github.com/ucberkeley-ee290c/arty-chipyard](https://github.com/ucberkeley-ee290c/arty-chipyard) (for OsciArty)

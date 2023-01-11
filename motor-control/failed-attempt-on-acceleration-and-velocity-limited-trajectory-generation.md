@@ -56,7 +56,7 @@
 
 
 
-<figure><img src="../.gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 The actuator will oscillate around the target position
 
@@ -126,7 +126,7 @@ After manually posing some finish constraint the actuator work as expected. Howe
   
 ```
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### <mark style="color:red;">SAFETY</mark> <mark style="color:red;"></mark><mark style="color:red;">**REMINDER**</mark>
 

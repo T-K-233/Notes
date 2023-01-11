@@ -6,7 +6,7 @@ Go to STM32CubeIDE [download page](https://www.st.com/en/development-tools/stm32
 
 _Note: The button may take a while to load._
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -26,7 +26,7 @@ Log in to your _myST_ account.
 
 Extract the installer from the downloaded zip file and run it.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -44,4 +44,4 @@ Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link d
 
 Verify the installation by searching "STM32CubeIDE" in the Windows main menu
 
-<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>

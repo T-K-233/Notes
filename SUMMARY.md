@@ -38,7 +38,10 @@
 ## Chipyard SoC / FPGA
 
 * [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
-* [Installing Chipyard](chipyard-soc-fpga/installing-chipyard.md)
+* [Installation](chipyard-soc-fpga/installation/README.md)
+  * [Installing Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/installation/installing-chipyard-windows-subsystem-linux.md)
+* [Untitled](chipyard-soc-fpga/untitled.md)
+* [Installing Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard-ubuntu.md)
 * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
 * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/arty-35t-100t-uart-pins.md)
@@ -58,6 +61,7 @@
   * [0x01. Components](motor-control/recoil-foc-motor-controller/0x01.-components.md)
   * [0x02. Implementation](motor-control/recoil-foc-motor-controller/0x02.-implementation.md)
   * [0x03. Application](motor-control/recoil-foc-motor-controller/0x03.-application.md)
+* [Recoil Documentation](motor-control/recoil-documentation.md)
 * [New Controller Board Soldering & Power-on Checklist](motor-control/new-controller-board-soldering-and-power-on-checklist.md)
 * [MJBOTS Moteus setup](motor-control/mjbots-moteus-setup.md)
 * [Failed Attempt on Acceleration- and Velocity-Limited Trajectory Generation](motor-control/failed-attempt-on-acceleration-and-velocity-limited-trajectory-generation.md)
@@ -65,7 +69,6 @@
 * [MIT Motor Controller Code Analyze](motor-control/mit-motor-controller-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
-* [All Digital Phase-Locked Loop Filter](motor-control/all-digital-phase-locked-loop-filter.md)
 
 ## Tools
 
@@ -75,6 +78,7 @@
 * [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
+* [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
 
 ## ML/AI
 

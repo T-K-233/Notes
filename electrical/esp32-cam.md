@@ -45,7 +45,7 @@ Go to Tools -> Board -> Boards Manager...
 
 Search and install the esp32.
 
-![](<../.gitbook/assets/image (24) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1).png>)
 
 
 

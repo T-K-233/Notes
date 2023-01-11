@@ -20,7 +20,7 @@ Click on **PA5**, set it to "GPIO\_Output".
 
 Click on **PC13**, set it to "GPIO\_Input".
 
-![](<../../.gitbook/assets/image (16) (1).png>)
+![](<../../.gitbook/assets/image (16) (1) (1).png>)
 
 Save the .ioc file and generate code.
 
