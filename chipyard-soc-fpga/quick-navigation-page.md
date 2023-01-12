@@ -20,8 +20,8 @@ Last semester's code [https://github.com/ucberkeley-ee290c/digital-ml-chip-sw](h
 
 ## Chipyard FPGA Prototyping
 
-{% content-ref url="chipyard-arty-flow.md" %}
-[chipyard-arty-flow.md](chipyard-arty-flow.md)
+{% content-ref url="prototyping-the-soc-on-fpga.md" %}
+[prototyping-the-soc-on-fpga.md](prototyping-the-soc-on-fpga.md)
 {% endcontent-ref %}
 
 [https://github.com/ucberkeley-ee290c/HAL/tree/main/fpga](https://github.com/ucberkeley-ee290c/HAL/tree/main/fpga)
