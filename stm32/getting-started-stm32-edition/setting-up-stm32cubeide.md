@@ -12,7 +12,7 @@ _Note: The button may take a while to load._
 
 Select the appropriate operating system and click "Get lastest"
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
