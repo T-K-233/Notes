@@ -50,6 +50,7 @@
   * [GDB debugging OsciArty](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
 * [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
+* [Preparing SD Card for vcu118 Linux Image](chipyard-soc-fpga/preparing-sd-card-for-vcu118-linux-image.md)
 * [FT LINK JTAG Debugger Driver Setup](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 
