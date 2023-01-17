@@ -60,6 +60,15 @@ The operation has completed successfully.
 
 
 
+```bash
+sudo dd if=~/Desktop/eaglex_bringup/eaglex_bbl.bin of=/dev/sdb1
+
+32768+0 records in
+32768+0 records out
+16777216 bytes (17 MB, 16 MiB) copied, 3.21026 s, 5.2 MB/s
+
+```
+
 
 
 
