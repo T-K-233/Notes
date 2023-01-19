@@ -2,7 +2,7 @@
 
 ## Initialization
 
-We have a bunch of stuff to initialize. The most important thing is the sequence ---- there are some dependencies, and violating them creates a very serious safety hazard.
+We have a bunch of stuff to initialize. The most important aspect is the sequence of these initializations ---- there are some dependencies, and violating them creates a very serious safety hazard.
 
 
 
