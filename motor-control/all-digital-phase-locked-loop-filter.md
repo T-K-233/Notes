@@ -1,5 +1,13 @@
 # Recoil Documentation
 
+## Initialization
+
+We have a bunch of stuff to initialize. The most important thing is the sequence ---- there are some dependencies, and violating them creates a very serious safety hazard.
+
+
+
+
+
 
 
 On power up, the motor controller will initialize itself. The sequence are:
