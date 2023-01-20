@@ -90,6 +90,12 @@ Set mode to MODE\_IDLE, and error code to ERROR\_NO\_ERROR. Exit initialization.
 
 
 
+## State Machine
+
+
+
+
+
 ## Update (Commutation) Routine
 
 
