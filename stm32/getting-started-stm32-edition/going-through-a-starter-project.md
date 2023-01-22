@@ -114,7 +114,7 @@ In `main.h` and `main.c`, add the following code
 {% tab title="Screenshot" %}
 #### main.h
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### main.c
 
@@ -166,7 +166,7 @@ Name the file "app.c" and click "Finish".
 
 Similarly, in the Project Explorer, right click the "Inc" folder, select "New -> Header File".
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 

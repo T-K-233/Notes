@@ -68,7 +68,7 @@ Step
 
 
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (4).png" alt=""><figcaption><p>Sparkfun FE310 Board Connection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (4) (1).png" alt=""><figcaption><p>Sparkfun FE310 Board Connection</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Arty 35T Board Connection</p></figcaption></figure>
 
@@ -78,4 +78,4 @@ _Note: the #RESET pin need to be tied to HIGH._&#x20;
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (6) (1).png" alt=""><figcaption></figcaption></figure>
