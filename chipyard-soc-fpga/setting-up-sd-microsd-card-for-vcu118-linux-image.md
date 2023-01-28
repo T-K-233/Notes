@@ -14,7 +14,7 @@ sudo fdisk -l
 
 Find the target SD card and note down the drive path. Here, it's `/dev/sda` for this 32GB SD card.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -129,7 +129,7 @@ Here's a list of properties of Windows file system
 
 4 is NTFS
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

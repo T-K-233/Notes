@@ -10,7 +10,7 @@
 
 set CH Polarity to Low.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
 
 Do not change PWM Mode. The internal logic is still operating in "PWM mode 1" mode.
 

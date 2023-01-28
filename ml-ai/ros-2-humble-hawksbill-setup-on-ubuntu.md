@@ -1,4 +1,10 @@
-# ROS 2 (Humble) Setup
+# ROS 2 Humble Hawksbill Setup on Ubuntu
+
+## Environment
+
+Ubuntu 22.02
+
+
 
 {% embed url="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html" %}
 

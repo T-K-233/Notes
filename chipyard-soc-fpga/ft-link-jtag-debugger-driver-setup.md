@@ -42,7 +42,7 @@ In the main dropdown menu, select "Dual RS232 (Interface 0). Make sure the Inter
 
 Select the target driver to be "WinUSB", and click the "Replace Driver" button.
 
-<figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

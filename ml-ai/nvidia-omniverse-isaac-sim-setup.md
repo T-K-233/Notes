@@ -26,7 +26,7 @@ Restart the computer after installation.
 
 Now, we should be able to run `nvidia-smi`
 
-<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
