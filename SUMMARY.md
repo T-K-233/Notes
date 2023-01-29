@@ -35,6 +35,8 @@
   * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
 * [Middleware](stm32/middleware/README.md)
   * [FreeRTOS](stm32/middleware/freertos.md)
+* [Software Pack](stm32/software-pack/README.md)
+  * [STMicroelectronics.X-CUBE-AI - Sine Approximator](stm32/software-pack/stmicroelectronics.x-cube-ai-sine-approximator.md)
 
 ## Chipyard SoC / FPGA
 

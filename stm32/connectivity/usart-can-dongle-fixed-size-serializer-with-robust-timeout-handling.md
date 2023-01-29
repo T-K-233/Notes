@@ -29,7 +29,7 @@ Because the TX and RX process of our CAN dongle is independent, and we need to r
 
 First, we enable the NVIC interrupt on UART2.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 At the end of code initialization, we start receiving UART using interrupt.&#x20;
 
