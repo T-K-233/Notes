@@ -2,7 +2,7 @@
 
 ## Preparing Model
 
-
+See this [Google Colab Notebook](https://colab.research.google.com/drive/1S3m5H5iMvbBAEL62\_QmndETPe8HDsVba?usp=sharing).
 
 
 
