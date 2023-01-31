@@ -136,8 +136,8 @@
 ## UW
 
 * [Page 2](uw/page-2.md)
-* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](uw/remote-controlled-humanoid-robot-whitepaper-and-design-notes/README.md)
-  * [Note on Face Design and Manufacture](uw/remote-controlled-humanoid-robot-whitepaper-and-design-notes/note-on-face-design-and-manufacture.md)
+* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
+  * [Note on Face Design and Manufacture](finance/page-2.md)
 
 ## Finance
 
@@ -147,7 +147,7 @@
 ## Life
 
 * [Some Interview Questions](life/some-interview-questions.md)
-* [Health Insurance](life/health-insurance.md)
+* [Health Insurance](life/page-4.md)
 
 ## Group 1
 

@@ -1,6 +1,6 @@
 # Going Through A Starter Project
 
-## 0. Create New Project
+0\. Create New Project
 
 **File** -> **New** -> **STM32 Project**
 
@@ -174,7 +174,7 @@ Name the file "app.h" and click "Finish".
 
 <figure><img src="../../.gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
-Then, we move all the previous user codes into these newly created files.
+Then, we can move all the previous user codes into these newly created files.
 
 {% tabs %}
 {% tab title="Code" %}
@@ -239,7 +239,13 @@ void APP_main() {
 {% endtab %}
 
 {% tab title="Screenshot" %}
+#### app.h
 
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+#### app.c
+
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -288,7 +294,13 @@ Finally, we need to invoke the user application functions in `main.c`
 {% endtab %}
 
 {% tab title="Screenshot" %}
+#### main.h
 
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+#### main.c
+
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
