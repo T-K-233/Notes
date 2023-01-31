@@ -29,7 +29,7 @@ With the repetition counter set to 1, the software interrupt frequency is 40kHz.
 
 
 
-<figure><img src="../.gitbook/assets/image (31) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 It handles the motor phase inversion at the last stage, before issuing value to TIM.
 

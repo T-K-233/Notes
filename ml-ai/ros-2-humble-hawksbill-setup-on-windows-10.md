@@ -65,10 +65,6 @@ choco install -y vcredist2013 vcredist140
 
 
 
-### Install Visual Studio
-
-An easy way to make sure they’re installed is to select the `Desktop development with C++` workflow during the install.
-
 
 
 ### Install OpenSSL
@@ -81,7 +77,13 @@ setx /m OPENSSL_CONF "D:\Documents\OpenSSL-Win64\bin\openssl.cfg"
 
 Add openssl to PATH
 
-`D:\Documents\OpenSSL-Win64\bin\`
+`D:\Documents\OpenSSL-Win64\bin`
+
+
+
+### Install Visual Studio
+
+An easy way to make sure they’re installed is to select the `Desktop development with C++` workflow during the install.
 
 
 
@@ -92,10 +94,10 @@ Download a precompiled version of OpenCV 3.4.6 from [https://github.com/ros2/ros
 
 
 ```powershell
-setx /m OpenCV_DIR "D:\Documents\opencv"
+setx /m OpenCV_DIR "D:\Documents\ros2-humble\tools\opencv"
 ```
 
-Add `D:\Documents\opencv\x64\vc16\bin` to path.
+Add `D:\Documents\ros2-humble\tools\opencv\x64\vc16\bin` to path.
 
 
 
@@ -123,6 +125,15 @@ python -m pip install -U catkin_pkg cryptography empy importlib-metadata lark==1
 
 
 
+### Install Qt5
+
+```powershell
+setx /m Qt5_DIR D:\Documents\Qt\Qt5.12.12\5.12.12\msvc2017_64
+setx /m QT_QPA_PLATFORM_PLUGIN_PATH D:\Documents\Qt\Qt5.12.12\5.12.12\msvc2017_64\plugins\platforms
+```
+
+###
+
 ### Install Graphviz
 
 To run rqt\_graph you need to [download](https://graphviz.gitlab.io/\_pages/Download/Download\_windows.html) and install [Graphviz](https://graphviz.gitlab.io/).&#x20;
@@ -133,21 +144,14 @@ D:\Documents\ros2-windows\tools\Graphviz
 
 
 
-### Install Qt5
-
-```
-setx /m Qt5_DIR D:\Documents\Qt\Qt5.12.12\5.12.12\msvc2017_64
-setx /m QT_QPA_PLATFORM_PLUGIN_PATH D:\Documents\Qt\Qt5.12.12\5.12.12\msvc2017_64\plugins\platforms
-```
-
 
 
 
 
 ### Install ROS2
 
-```
-call D:\Documents\ros2-windows\local_setup.bat
+```bash
+call D:\Documents\ros2-humble\local_setup.bat
 ```
 
 
@@ -155,4 +159,36 @@ call D:\Documents\ros2-windows\local_setup.bat
 
 
 [https://www.reddit.com/r/ROS/comments/b7jsgx/trouble\_installing\_ros\_2\_on\_windows/](https://www.reddit.com/r/ROS/comments/b7jsgx/trouble\_installing\_ros\_2\_on\_windows/)
+
+
+
+[https://answers.ros.org/question/379164/rti-connext-dds-environment-script-not-found-ros2-on-windows/](https://answers.ros.org/question/379164/rti-connext-dds-environment-script-not-found-ros2-on-windows/)
+
+[https://answers.ros.org/question/294209/ros2-command-not-found-in-windows/](https://answers.ros.org/question/294209/ros2-command-not-found-in-windows/)
+
+
+
+Note: need to use cmd.exe, powershell will not work.
+
+
+
+### Install Fast DDS
+
+Download the latest windows release from here:
+
+[https://www.eprosima.com/index.php/component/ars/repository/eprosima-fast-dds](https://www.eprosima.com/index.php/component/ars/repository/eprosima-fast-dds)
+
+
+
+
+
+### Install RTI Connext DDS
+
+
+
+
+
+```
+call "D:\Documents\ros2-humble\tools\rti_context_dds\rti_connext_dds-6.1.1\resource\scripts\rtisetenv_x64Win64VS2017.bat"
+```
 

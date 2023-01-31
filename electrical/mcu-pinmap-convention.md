@@ -4,7 +4,7 @@
 
 #### STM32F103CxTx
 
-![](<../.gitbook/assets/image (33) (1).png>)
+![](<../.gitbook/assets/image (33).png>)
 
 I2C1 is used for connecting to AS5600 magnetic encoder. If incremental encoder is used, then pin PB8, PB9, and PC13 can be used as ABI input.
 

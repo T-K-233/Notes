@@ -10,7 +10,7 @@ See this [Google Colab Notebook](https://colab.research.google.com/drive/1S3m5H5
 
 Go to Help -> Manage Embedded Software Packages
 
-<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (148) (1).png" alt=""><figcaption></figcaption></figure>
 
 Install the latest Artificial Intelligence package under STMicroelectronics -> X-CUBE-AI tab
 
@@ -44,17 +44,17 @@ Click "Add Network", set the model name to desired name, model type to "TFLite",
 
 <figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 We can click the "Show graph" button to visualize the model
 
-<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149) (1).png" alt=""><figcaption></figcaption></figure>
 
 Generate code by saving the .ioc file.
 
 The AI pack related files will be put under "X-CUBE-AI" folder.
 
-<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (151) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

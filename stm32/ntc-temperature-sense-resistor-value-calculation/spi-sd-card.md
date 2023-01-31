@@ -42,7 +42,7 @@ SD card performs read in unit of sectors. The default sector size is 512 bytes.
 
 Set SPI to MODE0, MSB, with a speed not greater than 400kHz.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/image (75).png>)
 

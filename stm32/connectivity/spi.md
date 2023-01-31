@@ -33,7 +33,7 @@ Set **Clock Parameters** -> **Prescaler** to 128 or more, to ensure the Baud Rat
 
 
 
-![](<../../.gitbook/assets/image (135).png>)
+![](<../../.gitbook/assets/image (135) (1).png>)
 
 
 
