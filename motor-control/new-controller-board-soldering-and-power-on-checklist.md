@@ -27,6 +27,12 @@
 
 ### Programming Checklist
 
+
+
+With fresh boards: set optimizations to -O0 when performing Flash option overwrite. The program should be able to boot to main loop (with idle program: blue LED flashes slowly). And then, change optimization back to -O2 and flash again.
+
+
+
 * [ ] Change current loop PID gain to match motor spec.
 * [ ] Set CAN ID.
 * [ ] Set `#define INITIAL_PROG 1`.
