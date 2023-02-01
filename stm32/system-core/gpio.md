@@ -4,6 +4,8 @@
 
 On the STM32F446RET6 Nucleo board, the LD2 LED is connected to PA5, and the USER Button is connected to PC13.
 
+> Note: the LED is active high.
+
 We will demonstrate how to set up a generic GPIO output pin with the LED, and a generic GPIO input pin with the user button.
 
 ## 1. Configure STM32
