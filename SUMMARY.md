@@ -27,6 +27,7 @@
   * [USART](stm32/connectivity/usart.md)
   * [USART - CAN Dongle (Fixed Size Serializer with Robust Timeout Handling)](stm32/connectivity/usart-can-dongle-fixed-size-serializer-with-robust-timeout-handling.md)
   * [CAN](stm32/connectivity/can.md)
+  * [FDCAN](stm32/connectivity/fdcan.md)
   * [I2C](stm32/connectivity/i2c.md)
   * [SPI](stm32/connectivity/spi.md)
   * [SPI - SD Card](stm32/ntc-temperature-sense-resistor-value-calculation/spi-sd-card.md)

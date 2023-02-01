@@ -82,7 +82,7 @@ In `main.c`, add the following code
   filter_config.FilterMaskIdHigh = filter_mask << 5;
   filter_config.FilterMaskIdLow = 0;
   filter_config.FilterScale = CAN_FILTERSCALE_32BIT;
-  filter_config.FilterActivation = ENABLE;
+  filter_config.FilterActivation = CAN_FILTER_ENABLE;
   filter_config.SlaveStartFilterBank = 14;
 
   HAL_CAN_ConfigFilter(&hcan1, &filter_config);
@@ -167,13 +167,11 @@ Detailed information on how CAN filter works can be found [here](https://schulz-
 
 {% embed url="http://www.bittiming.can-wiki.info/" %}
 
+## 5. Interrupt
 
-
-## 5. FDCAN
-
-The STM32 G series supports FDCAN, which is a more advanced version of CAN that features a higher data rate and larger data frame sizes.&#x20;
-
-FDCAN can be configured to be backward-compatible with CAN2.0.
-
-<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
+```c
+HAL_CAN_ConfigFilter(&hcan1, &filter_config);
+HAL_CAN_Start(&hcan1);
+HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+```
 
