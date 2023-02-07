@@ -46,7 +46,7 @@ rosdep install -i --from-path src --rosdistro humble -y
 colcon build
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 If the above error occurs when building turtlesim, run
 

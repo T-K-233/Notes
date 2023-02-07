@@ -40,7 +40,7 @@ Download Omniverse from [here](https://www.nvidia.com/en-us/omniverse/download/)
 
 After download, grant the executable right to the .AppImage file.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
