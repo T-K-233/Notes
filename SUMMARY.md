@@ -86,6 +86,7 @@
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
 * [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
 * [Python Logging Utility](tools/python-logging-utility.md)
+* [3D Printer Profile](tools/3d-printer-profile.md)
 
 ## ML/AI
 
