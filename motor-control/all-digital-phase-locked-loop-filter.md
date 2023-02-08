@@ -12,11 +12,13 @@ For a new chip, we need to set up Flash option bytes first. This is marked by th
 
 When the flag is set, we run the `APP_initFlashOption()` function, which sets the boot method to boot from Flash.
 
+After setting up, we set the LED to indicate the operation is finished, and then halt into an infinite loop to wait for firmware reflash.
+
 
 
 1\.
 
-Then, we enter the normal `MotorController_init()` routine.
+Otherwise, we enter the normal `MotorController_init()` routine.
 
 It will first set mode to `MODE_ERROR` with error code `ERROR_INITIALIZE_ERROR`. This is in case anything interrupts the initialization, then the system won't start. It will also load the `CAN_ID` and `FIRMWARE_VERSION`.
 
@@ -91,6 +93,50 @@ Set mode to MODE\_IDLE, and error code to ERROR\_NO\_ERROR. Exit initialization.
 
 
 ## State Machine
+
+Currently we support the following modes:
+
+**Disabled (sleep)**
+
+In this mode, the PowerStage will not be enabled (ENABLE pin pulled low for DRV835x, and PWM disabled for BESC). Only communication will be running. The motor controller will boot up in this mode. After initialization, the mode will be set to IDLE by the initialize() function.
+
+This is a safe mode.
+
+Note: Disabled is NOT used as a user mode for now.
+
+**Idle**
+
+PWM no output, all FETs are disabled, the motor is in floating mode.
+
+This is a safe mode.
+
+**Damping**
+
+PWM output LOW, all lower FETs are open, the motor is in damping mode.
+
+**Calibration**
+
+This is the only blocking mode that is executed by the main routine.
+
+**Current**
+
+Closed-loop current control. User sets the desired value using `iq_target` and `id_target`
+
+**Torque**
+
+Closed-loop torque control. User sets the desired value using `torque_target`.
+
+
+
+### State Switching
+
+On bootup, the controller will be in DISABLED mode (by default the variable initialized to 0, which is DISABLED; the first line of initialize() will also reset this to ensure this state).
+
+If no error occured during initialization, the state will be changed to IDLE by the last line of initialize().
+
+
+
+State switching is handled by the commutation loop running at 20kHz. The minimal safety requirement is that the commutation loop should always be executed in time and cannot be halted. Otherwise, the state cannot be switched correctly, risking error signal passed to PowerStage.
 
 
 

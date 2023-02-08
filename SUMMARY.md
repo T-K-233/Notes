@@ -79,6 +79,7 @@
 ## Tools
 
 * [Ubuntu 22.04 Standard Installation Procedure](tools/page-6.md)
+* [AS5600 Modification](tools/as5600-modification.md)
 * [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
 * [Linux Mounting SD Card](tools/linux-mount-sd-card.md)
 * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
