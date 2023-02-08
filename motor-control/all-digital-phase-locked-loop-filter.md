@@ -140,6 +140,10 @@ State switching is handled by the commutation loop running at 20kHz. The minimal
 
 
 
+We chose to do this "synchronous" state switch mainly because there's a bunch of variables that need to be reset for some state switches. An alternate way is to keep track of current state and the state we are going to switch to every time we call setMode().
+
+
+
 
 
 ## Update (Commutation) Routine

@@ -1,6 +1,6 @@
 # AS5600 Modification
 
-
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 If want to use 5V on VCC port:
 
