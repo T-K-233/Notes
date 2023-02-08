@@ -101,3 +101,4 @@ After connecting an RFID-RC522 SPI module, we can see that we can read the regis
 
 
 
+[https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0](https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0)
