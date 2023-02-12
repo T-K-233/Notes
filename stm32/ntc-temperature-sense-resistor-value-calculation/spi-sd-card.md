@@ -60,7 +60,9 @@ In the `SDCARD_initializeCard(&card, 2000)` function, we execute the SD card ini
 
 
 
+### Card Used
 
+{% embed url="https://www.amazon.com/gp/product/B010NE3QHQ" %}
 
 
 
