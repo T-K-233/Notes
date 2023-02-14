@@ -53,6 +53,7 @@
 * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Debugging](chipyard-soc-fpga/debugging/README.md)
   * [GDB debugging OsciArty](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
+  * [JTAG and GDB debugging BearlyML](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
 * [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
 * [Build EagleX Linux Image](chipyard-soc-fpga/build-eaglex-linux-image.md)
