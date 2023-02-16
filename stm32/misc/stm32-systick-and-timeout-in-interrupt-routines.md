@@ -120,6 +120,6 @@ We now test peripheral call in blocking mode within the interrupt routine. We wi
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 Turns out that we indeed get stuck in this blocking function, as the `I2C_WaitOnTXISFlagUntilTimeout` implements a timeout mechanism that expects the uwTick to be updated.

@@ -19,6 +19,7 @@
   * [External Interrupt](stm32/system-core/external-interrupt.md)
 * [Analog](stm32/analog/README.md)
   * [ADC](stm32/analog/adc.md)
+  * [OPAMP](stm32/analog/opamp.md)
   * [DAC](stm32/analog/dac.md)
 * [Timers](stm32/timers/README.md)
   * [RTC](stm32/timers/rtc.md)
