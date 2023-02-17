@@ -99,6 +99,7 @@
 * [ROS 2 Humble Hawksbill Setup on Ubuntu](ml-ai/ros-2-humble-hawksbill-setup-on-ubuntu.md)
 * [ROS 2 Humble Hawksbill Setup on Windows 10](ml-ai/ros-2-humble-hawksbill-setup-on-windows-10.md)
 * [Gazebo Setup](ml-ai/gazebo-setup.md)
+* [OnShape to URDF](ml-ai/onshape-to-urdf.md)
 
 ## Setup
 
