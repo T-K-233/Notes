@@ -41,7 +41,7 @@ The optimal sampling point is **87.5%**, and we are pretty close to it.
 
 This is a useful website for [CAN bit-timing](http://www.bittiming.can-wiki.info/).
 
-![](<../../.gitbook/assets/image (5) (1) (1).png>)
+![](<../../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 
 

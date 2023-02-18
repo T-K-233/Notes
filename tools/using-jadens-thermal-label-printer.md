@@ -60,7 +60,7 @@ Open word or any other software and enter print menu
 
 To configure the printer paper size, click the "Printer Properties", and in the "Page Setup" tab, select the size of paper loaded into the printer.
 
-![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 
 

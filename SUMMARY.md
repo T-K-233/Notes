@@ -80,17 +80,20 @@
 
 ## Tools
 
-* [Ubuntu 22.04 Standard Installation Procedure](tools/page-6.md)
+* [Ubuntu](tools/ubuntu/README.md)
+  * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
+  * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
+  * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
+  * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [AS5600 Modification](tools/as5600-modification.md)
-* [Windows Ubuntu Dual Boot Issues](tools/windows-ubuntu-dual-boot-issues.md)
-* [Linux Mounting SD Card](tools/linux-mount-sd-card.md)
-* [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
 * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
 * [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
-* [Python Logging Utility](tools/python-logging-utility.md)
 * [3D Printer Profile](tools/3d-printer-profile.md)
+* [Python](tools/python/README.md)
+  * [PyPi Packaging](tools/python/pypi-packaging.md)
+  * [Python Logging Utility](tools/python/python-logging-utility.md)
 
 ## ML/AI
 
