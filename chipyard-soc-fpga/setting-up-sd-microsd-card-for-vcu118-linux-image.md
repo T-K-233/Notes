@@ -129,7 +129,7 @@ Here's a list of properties of Windows file system
 
 4 is NTFS
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

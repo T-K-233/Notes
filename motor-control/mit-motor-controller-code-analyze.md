@@ -47,7 +47,7 @@ It's using 2 phase current shunt, and using blocking ADC call to sample current.
 
 ## Encoder
 
-<figure><img src="../.gitbook/assets/image (1) (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's using blocking encoder read/write.
 
