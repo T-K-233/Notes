@@ -435,7 +435,6 @@ Window Geometry:
   Width: 1200
   X: 246
   Y: 77
-yaml
 ```
 
 
