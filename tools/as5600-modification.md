@@ -16,4 +16,6 @@ remove R4
 
 If want to use CCW rotation:
 
-tie DIR to VDD
+tie DIR to VDD&#x20;
+
+(can use the 0R jumper to tie DIR pad to top of R1, which is connected to VCC (near the "R1" text side))
