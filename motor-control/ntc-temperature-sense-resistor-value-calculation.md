@@ -4,7 +4,7 @@
 
 NTC resistance follows the formula
 
-<figure><img src="../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Take the 10k [NCP18XH103F03RB](https://www.murata.com/en-eu/api/pdfdownloadapi?cate=\&partno=NCP18XH103F03RB) as example:
 

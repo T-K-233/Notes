@@ -659,6 +659,18 @@ package://mesh.stl -> package://humanoid_v1/meshes/mesh.stl
 
 
 
+4. Collision
+
+```
+% scale(1000) import("extrusion_100mm.stl");
+
+translate([65, 0, 0])
+cube([20, 100, 20], center=true);
+
+```
+
+
+
 
 
 ## Build
