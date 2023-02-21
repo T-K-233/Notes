@@ -33,14 +33,24 @@ With fresh boards: set optimizations to -O0 when performing Flash option overwri
 
 
 
-* [ ] Change current loop PID gain to match motor spec.
+* [ ] Uncomment the corresponding MOTORPROFILE macro define.
 * [ ] Set CAN ID.
-* [ ] Set `#define INITIAL_PROG 1`.
-* [ ] Flash the program.
-* [ ] Power-cycle the board.
-* [ ] Clear`#define INITIAL_PROG 0`.
-* [ ] Enable calibration sequence. Enable position demo if wanted.
-* [ ] Flash the program.
+* [ ] Set `FIRST_TIME_BOOTUP` to 1.&#x20;
+* [ ] Set `LOAD_*_FROM_FLASH`all to 0. Set `SAFETY_WATCHDOG_ENABLED` to 0.
+* [ ] Upload program (may need to update ST Link).
+* [ ] Set `FIRST_TIME_BOOTUP` to 0.
+* [ ] In the initialization part, enable DAMPING mode. In the main loop, print out encoder and bus voltage.
+* [ ] Upload program. Turn on motor power supply. Check serial monitor, examine if encoder reading and bus voltage reading are correct. Turn motor by hand, examine if the motor is in damping mode.
+* [ ] Turn off motor power supply.
+* [ ] In the initialization part, enable CALIBRATION mode.
+* [ ] Upload program and run calibration sequence.
+* [ ] Set `LOAD_*_FROM_FLASH`all to 1.
+* [ ] (optional) Set mode to CURRENT CONTROL and print out current data. Upload program. Examine current waveform and if motor is running correctly.
+* [ ] Set mode to POSITION and uncomment the position setpoint program. Upload program
+* [ ] Set `SAFETY_WATCHDOG_ENABLED` to 0.
+*
+
+
 
 
 
