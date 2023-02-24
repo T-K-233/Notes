@@ -44,9 +44,12 @@
 ## Chipyard SoC / FPGA
 
 * [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
-* [Chipyard Environment Setup](chipyard-soc-fpga/chipyard-environment-setup/README.md)
-  * [Installing Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
-  * [Installing Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
+* [Setting up Chipyard](chipyard-soc-fpga/setting-up-chipyard/README.md)
+  * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-windows-subsystem-linux.md)
+  * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-ubuntu.md)
+  * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
+* [Demo SoC](chipyard-soc-fpga/demo-soc.md)
+* [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
 * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
 * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/arty-35t-100t-uart-pins.md)
@@ -56,7 +59,6 @@
   * [GDB debugging OsciArty](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
   * [JTAG and GDB debugging BearlyML](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
-* [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
 * [Build EagleX Linux Image](chipyard-soc-fpga/build-eaglex-linux-image.md)
 * [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
 * [FT LINK JTAG Debugger Driver Setup](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)

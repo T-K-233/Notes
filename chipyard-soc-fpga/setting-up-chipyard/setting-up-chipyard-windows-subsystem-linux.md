@@ -1,4 +1,4 @@
-# Installing Chipyard - Windows Subsystem Linux
+# Setting up Chipyard - Windows Subsystem Linux
 
 ## System Environment
 
@@ -25,7 +25,10 @@ After download, we need to mark the script as executable. Then run the script.
 
 ```bash
 git clone https://github.com/ucb-bar/chipyard.git
-cd chipyard
+
+export chipyard=/Documents/chipyard
+cd $chipyard
+
 git checkout stable
 ```
 
@@ -34,6 +37,13 @@ git checkout stable
 ## 3. Configure Chipyard
 
 ```bash
-./build-setup.sh riscv-tools
+$chipyard/build-setup.sh riscv-tools
 ```
 
+
+
+Finally, for every new terminal, run
+
+```bash
+source $chipyard/env.sh
+```

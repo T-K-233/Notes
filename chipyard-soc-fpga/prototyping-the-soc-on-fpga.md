@@ -4,12 +4,24 @@ description: Chipyard Arty Flow
 
 # Prototyping the SoC on FPGA
 
+## Setting up Chipyard
 
+We follow the general Chipyard setup procedure:
 
 ```bash
-cd chipyard
+git clone https://github.com/ucb-bar/chipyard.git
 
-./scripts/init-fpga.sh
+export chipyard=/tools/C/chiyufeng/tapeout/chipyard-demo
+
+cd $chipyard
+
+$chipyard/build-setup.sh riscv-tools
+```
+
+Then, for the FPGA flow, we need to do this additional initialization
+
+```bash
+$chipyard/scripts/init-fpga.sh
 ```
 
 
