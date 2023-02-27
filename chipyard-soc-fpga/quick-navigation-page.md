@@ -2,8 +2,8 @@
 
 ## Chipyard Installation
 
-{% content-ref url="setting-up-chipyard/" %}
-[setting-up-chipyard](setting-up-chipyard/)
+{% content-ref url="chipyard-environment-setup/" %}
+[chipyard-environment-setup](chipyard-environment-setup/)
 {% endcontent-ref %}
 
 RYHH's fork of Chipyard: [https://github.com/ucberkeley-ee290c/arty-chipyard](https://github.com/ucberkeley-ee290c/arty-chipyard) (for OsciArty)

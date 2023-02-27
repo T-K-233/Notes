@@ -44,9 +44,9 @@
 ## Chipyard SoC / FPGA
 
 * [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
-* [Setting up Chipyard](chipyard-soc-fpga/setting-up-chipyard/README.md)
-  * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-windows-subsystem-linux.md)
-  * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-ubuntu.md)
+* [Setting up Chipyard](chipyard-soc-fpga/chipyard-environment-setup/README.md)
+  * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
+  * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
   * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
 * [Demo SoC](chipyard-soc-fpga/demo-soc.md)
 * [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
@@ -96,6 +96,7 @@
 * [Python](tools/python/README.md)
   * [PyPi Packaging](tools/python/pypi-packaging.md)
   * [Python Logging Utility](tools/python/python-logging-utility.md)
+  * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
 
 ## ML/AI
 
