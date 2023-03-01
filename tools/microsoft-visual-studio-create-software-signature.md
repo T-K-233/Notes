@@ -8,7 +8,7 @@ create a new UWP project.
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 Go to project Properties
 

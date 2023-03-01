@@ -6,7 +6,7 @@ USB requires a relatively precise 48MHz clock supplied to the peripheral module.
 
 In the RCC section, enable HSE.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Configure the clock tree to supply 48MHz to USB clock domain.
 
@@ -18,13 +18,13 @@ Configure the clock tree to supply 48MHz to USB clock domain.
 
 1.Enable USB FS support
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 Enable USB\_DEVICE
 
 Select class as "Communication Device Class (Vistual Port Com)"
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (8).png" alt=""><figcaption></figcaption></figure>
 
 Generate code
 
@@ -32,7 +32,7 @@ Generate code
 
 In addition to the default folders, it will also generate "USB\_DEVICE" folder.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 In the usbd\_cdc\_if.c file, we have the receive and transmit functions
 
