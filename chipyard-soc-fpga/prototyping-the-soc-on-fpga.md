@@ -6,17 +6,13 @@ description: Chipyard Arty Flow
 
 ## Setting up Chipyard
 
-We follow the general Chipyard setup procedure:
+Follow the following procedure for different operating system:
 
-```bash
-git clone https://github.com/ucb-bar/chipyard.git
+{% content-ref url="chipyard-environment-setup/" %}
+[chipyard-environment-setup](chipyard-environment-setup/)
+{% endcontent-ref %}
 
-export chipyard=/tools/C/chiyufeng/tapeout/chipyard-demo
 
-cd $chipyard
-
-$chipyard/build-setup.sh riscv-tools
-```
 
 Then, for the FPGA flow, we need to do this additional initialization
 
@@ -26,28 +22,38 @@ $chipyard/scripts/init-fpga.sh
 
 
 
+## Setting up Vivado
+
 add vivado to env.sh script
+
+on local machine:
 
 ```bash
 PATH=/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH
 ```
 
-
+on BWRC server:
 
 ```bash
-source ./env.sh
+source /tools/xilinx/Vivado/2022.1/settings64.sh
 ```
 
 
 
+## Building Bitstream
+
 ```bash
-cd fpga
+cd $chipyard/fpga
+```
+
+```bash
+bsub -q ee194 -Is make SUB_PROJECT=arty bitstream
 ```
 
 
 
-```bash
-make SUB_PROJECT=arty bitstream
+```
+bsub -q ee194 -Is make SUB_PROJECT=demosoc bitstream
 ```
 
 
