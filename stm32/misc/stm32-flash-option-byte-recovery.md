@@ -1,4 +1,4 @@
-# Flash Option Byte Recovery
+# STM32 Flash Option Byte Recovery
 
 ## 1. Change debugger Settings
 
@@ -8,7 +8,7 @@ In **Debugger** tab, change **Debug Probe** to "ST-Link (OpenOCD)".
 
 In **Startup** tab, uncheck **Download** to prevent the debugger from flashing Flash.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
