@@ -26,7 +26,7 @@ git checkout stable
 ## 3. Configure Chipyard
 
 ```bash
-./scripts/init-submodules-no-riscv-tools.sh
+$chipyard/scripts/init-submodules-no-riscv-tools.sh
 ```
 
 
