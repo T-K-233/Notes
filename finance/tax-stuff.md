@@ -14,6 +14,14 @@
 
 
 
+### Net worth
+
+if you sell everything you have, and subtract all the debts, how much money do you have?
+
+4.9% of households have 100 million net worth.
+
+
+
 ### Good Debt vs Bad Debt
 
 Good Debt:
@@ -44,6 +52,14 @@ Paying cash does not establish good credit.
 **The best time to establish credit is when you don't need it.**
 
 
+
+Want to keep dept-to-credit ratio around 30%
+
+
+
+one can negotiate the interest rate down
+
+can use three sentences: “Hi, my name is \_\_\_\_. I am a good customer, but I have recently received a couple of pre-approved offers in the mail from other credit card companies with lower APRs and zero balance transfer fees. I want a lower rate of interest on my card, or I will have to cancel my card and switch companies.”
 
 
 
@@ -105,9 +121,25 @@ Part B is optional and means tested
 
 Out of all the after-tax income:
 
-save 6 months of "must-have" expenses as an emergency fund. Keep emergency fund in savings account or money market account.
+save 6 months of "must-have" expenses as an emergency fund. Keep emergency fund in savings accounts or money market accounts.
 
-save 20% for long term savings.
+i.e. monthly spending $4,000 -> emergency fund $24,000.
+
+save 20% for long-term savings.
+
+
+
+1-2-3-4 rule:
+
+10% for short term spending
+
+20% for insurances
+
+30% for high-risk investing
+
+40% for stable long-term investing
+
+
 
 
 
@@ -200,7 +232,11 @@ Dependent tax credit ($500 for non-child), child tax credit (for child under 17)
 
 
 
-## Investment Vehicles
+## Investment
+
+And Jack Bogle, who founded both Vanguard and the first indexed mutual fund, recommends that the percentage of your portfolio invested in the bonds be roughly equal to your age and the percentage in stocks roughly 100 minus your age.
+
+
 
 ### Business Structure 商业实体种类
 
