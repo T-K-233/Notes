@@ -28,7 +28,7 @@ Then, in the Name Style tab, change the following fields:
 
 Variable: Lower Case, "\_" as delimiter
 
-![](<../../.gitbook/assets/image (54).png>)
+![](<../../.gitbook/assets/image (54) (1).png>)
 
 
 

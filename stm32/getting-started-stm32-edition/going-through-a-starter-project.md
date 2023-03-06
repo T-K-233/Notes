@@ -156,7 +156,7 @@ Thus, a better way of managing the code would be to separate the system-managed 
 
 In the Project Explorer, right click the "Src" folder, select "New -> Source File".
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (3).png" alt=""><figcaption></figcaption></figure>
 
 Name the file "app.c" and click "Finish".
 

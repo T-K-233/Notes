@@ -36,7 +36,7 @@ This radio story series of Majo no Tabitabi is a decent training dataset:
 
 To download the audio, use [JiJiDown](https://www.jijidown.com/).
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
 ### Data Preparation
 
@@ -48,7 +48,7 @@ At the beginning and end of each episode, the volume of the background music is 
 
 Also, we can observe that the BGM volume never raise above **-30 dB**. We will since use this value as the noise floor later on.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 Audio export settings:
 
@@ -262,11 +262,11 @@ Open a few audio files to verify that the audio has been sliced correctly.
 
 We can also enable the "Length" property in the file browser to get a sense of the duration of each slice. To do so, select Sort by -> More... and click Length in the right-click menu.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (6).png" alt=""><figcaption></figcaption></figure>
 
 Finally, zip the dataset.
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Setting up the training environment
 

@@ -73,7 +73,7 @@ All of these toolchain executables will run on the host machine, but it knows th
 
 ### Pre-processing Stage
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 The first stage is the pre-processing stage. In this stage, the compiler will resolve all the [compiler macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html) (basically, everything we defined with "#" marks).&#x20;
 
@@ -125,6 +125,42 @@ int main() {
 }
 
 ```
+
+
+
+### Code Generation Stage
+
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+### Assembling Stage
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Linking Stage
+
+
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Format Converison
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
 
 
 

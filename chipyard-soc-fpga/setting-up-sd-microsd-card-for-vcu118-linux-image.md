@@ -14,7 +14,7 @@ sudo fdisk -l
 
 Find the target SD card and note down the drive path. Here, it's `/dev/sda` for this 32GB SD card.
 
-<figure><img src="../.gitbook/assets/image (2) (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
