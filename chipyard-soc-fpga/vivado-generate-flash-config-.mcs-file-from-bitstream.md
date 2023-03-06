@@ -30,7 +30,7 @@ If it asks if you want to program the device now, click No.
 
 Go to top tool bar, select Tools-> Generate Memory Configuration File...
 
-<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

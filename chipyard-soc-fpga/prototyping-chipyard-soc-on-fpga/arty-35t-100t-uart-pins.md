@@ -2,7 +2,7 @@
 
 From the [official constraint file](https://github.com/Digilent/digilent-xdc/blob/master/Arty-A7-35-Master.xdc), the UART interface is labeled `uart_rxd_out` and `uart_txd_in`
 
-![](<../.gitbook/assets/image (110).png>)
+![](<../../.gitbook/assets/image (110).png>)
 
 Note that here, Diligent is labeling the rxd / txd pair with respect to the USB adapter IC, and in / out direction with respect to the DUT (Arty FPGA chip itself).&#x20;
 

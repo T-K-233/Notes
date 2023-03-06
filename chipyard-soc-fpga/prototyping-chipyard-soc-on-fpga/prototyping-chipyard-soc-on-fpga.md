@@ -2,14 +2,14 @@
 description: Chipyard Arty Flow
 ---
 
-# Prototyping the SoC on FPGA
+# Prototyping Chipyard SoC on FPGA
 
 ## Setting up Chipyard
 
 Follow the following procedure for different operating system:
 
-{% content-ref url="chipyard-environment-setup/" %}
-[chipyard-environment-setup](chipyard-environment-setup/)
+{% content-ref url="../chipyard-environment-setup/" %}
+[chipyard-environment-setup](../chipyard-environment-setup/)
 {% endcontent-ref %}
 
 

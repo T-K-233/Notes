@@ -44,16 +44,18 @@
 ## Chipyard SoC / FPGA
 
 * [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
+* [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 * [Setting up Chipyard](chipyard-soc-fpga/chipyard-environment-setup/README.md)
   * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
   * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
   * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
+* [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
+  * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga.md)
+  * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
+  * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
+  * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
 * [Demo SoC](chipyard-soc-fpga/demo-soc.md)
-* [Prototyping the SoC on FPGA](chipyard-soc-fpga/prototyping-the-soc-on-fpga.md)
-* [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
-* [Arty 35T / 100T UART Pins](chipyard-soc-fpga/arty-35t-100t-uart-pins.md)
-* [Arty 35T Using DDR DRAM](chipyard-soc-fpga/arty-35t-using-ddr-dram.md)
 * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Debugging](chipyard-soc-fpga/debugging/README.md)
   * [GDB debugging OsciArty](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
@@ -62,7 +64,6 @@
 * [Build EagleX Linux Image](chipyard-soc-fpga/build-eaglex-linux-image.md)
 * [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
 * [FT LINK JTAG Debugger Driver Setup](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
-* [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 
 ## Motor Control
 
