@@ -77,5 +77,11 @@ sudo ./install_drivers
 
 ### Install board support files
 
+Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent/vivado-boards/archive/master.zip) of Digilent's [vivado-boards](https://github.com/Digilent/vivado-boards) Github repository and extract it.
 
+Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
+
+Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2022.1/data/boards/board_files`). If this folder doesn't exist, create it.
+
+**Copy** all of the folders found in vivado-boards' `new/board_files` folder, then **paste** them into this folder.
 
