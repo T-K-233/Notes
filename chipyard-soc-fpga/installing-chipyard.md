@@ -33,7 +33,8 @@ During installation, the program will prompt you to input the installation locat
 Chipyard also requires the `conda-lock` module.
 
 ```bash
-conda install -n base conda-lock
+conda create -n chipyard
+conda install -n chipyard conda-lock
 conda activate base
 ```
 

@@ -9,7 +9,10 @@ BWRC servers
 ## 1. Set up conda environment
 
 ```bash
-source /tools/C/ee290-sp23/miniconda3/bin/activate
+source /tools/C/chiyufeng/documents/miniconda3/bin/activate
+
+conda install -n base conda-lock
+
 conda activate base
 ```
 
@@ -42,6 +45,9 @@ On newer release branch:
 
 ```bash
 bsub -q ee194 -Is -XF $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
+
+bsub -q ee194 -Is -XF $chipyard/build-setup.sh riscv-tools
+
 ```
 
 
