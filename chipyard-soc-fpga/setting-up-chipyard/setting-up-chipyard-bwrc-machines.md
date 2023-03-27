@@ -38,16 +38,13 @@ ssh -XY bwrcr740-9
 On `stable` branch:
 
 ```
-bsub -q ee194 -Is -XF $chipyard/build-setup.sh riscv-tools
+$chipyard/build-setup.sh riscv-tools
 ```
 
 On newer release branch:
 
 ```bash
-bsub -q ee194 -Is -XF $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
-
-bsub -q ee194 -Is -XF $chipyard/build-setup.sh riscv-tools
-
+$chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
 ```
 
 
