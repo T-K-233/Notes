@@ -14,7 +14,7 @@ Follow the following procedure for different operating system:
 
 
 
-Then, for the FPGA flow, we need to do this additional initialization
+For the FPGA flow, we need to do this additional initialization
 
 ```bash
 $chipyard/scripts/init-fpga.sh

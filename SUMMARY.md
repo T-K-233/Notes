@@ -54,7 +54,7 @@
   * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
   * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
   * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
-* [Demo SoC](chipyard-soc-fpga/demo-soc.md)
+* [Running Chipyard Simulation](chipyard-soc-fpga/running-chipyard-simulation.md)
 * [Setup RISC-V Development Environment on Windows](chipyard-soc-fpga/setup-risc-v-development-environment-on-windows.md)
 * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Debugging](chipyard-soc-fpga/debugging/README.md)
