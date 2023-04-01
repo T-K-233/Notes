@@ -17,6 +17,12 @@ source /tools/C/chiyufeng/documents/vcs_env.sh
 
 
 
+Might also need to run this command to get license
+
+```bash
+source /tools/flexlm/flexlm.s
+```
+
 
 
 ```bash
