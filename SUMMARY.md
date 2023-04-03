@@ -98,6 +98,7 @@
   * [PyPi Packaging](tools/python/pypi-packaging.md)
   * [Python Logging Utility](tools/python/python-logging-utility.md)
   * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
+  * [Retrieve Github user avatar with Github API](tools/python/retrieve-github-user-avatar-with-github-api.md)
 
 ## ML/AI
 
