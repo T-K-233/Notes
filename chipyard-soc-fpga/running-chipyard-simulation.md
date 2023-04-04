@@ -20,7 +20,15 @@ source /tools/C/chiyufeng/documents/vcs_env.sh
 Might also need to run this command to get license
 
 ```bash
-source /tools/flexlm/flexlm.s
+source /tools/flexlm/flexlm.sh
+```
+
+
+
+if run into JDK\_HOME issue (tools.jar not found), do this:
+
+```bash
+export JDK_HOME=/usr/lib/jvm/java-1.8.0/
 ```
 
 
@@ -29,9 +37,22 @@ source /tools/flexlm/flexlm.s
 bsub -q ee194 -Is -XF make CONFIG=BearlyConfig
 ```
 
+<pre class="language-bash"><code class="lang-bash"><strong>make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
+</strong></code></pre>
+
 ```bash
-run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
+bsub -q ee194 -Is -XF verdi
 ```
+
+
+
+```systemverilog
+_core_io_imem_req_bits_pc
+```
+
+
+
+
 
 
 
