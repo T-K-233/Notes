@@ -29,7 +29,9 @@ source /tools/flexlm/flexlm.s
 bsub -q ee194 -Is -XF make CONFIG=BearlyConfig
 ```
 
-
+```bash
+run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
+```
 
 
 
