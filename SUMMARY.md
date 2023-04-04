@@ -49,6 +49,7 @@
   * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
   * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
   * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
+* [Setting up Metals (Scala Language Server)](chipyard-soc-fpga/setting-up-metals-scala-language-server.md)
 * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
   * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga.md)
   * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)

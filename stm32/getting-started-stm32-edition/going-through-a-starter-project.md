@@ -128,7 +128,7 @@ In `main.h` and `main.c`, add the following code
 
 Click the green "run ..." button
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (3).png" alt=""><figcaption></figcaption></figure>
 
 If there's a popup menu, click "OK".
 

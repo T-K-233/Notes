@@ -6,7 +6,7 @@ import time
 import requests
 
 headers = {
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer GITHUB_OAUTH_KEY"
     }
 
 
