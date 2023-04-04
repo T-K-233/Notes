@@ -40,6 +40,15 @@ bsub -q ee194 -Is -XF make CONFIG=BearlyConfig
 <pre class="language-bash"><code class="lang-bash"><strong>make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
 </strong></code></pre>
 
+
+
+```bash
+bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+
+```
+
+
+
 ```bash
 bsub -q ee194 -Is -XF verdi
 ```
