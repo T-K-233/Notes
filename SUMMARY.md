@@ -103,13 +103,16 @@
 
 ## ML/AI
 
+* [ROS 2](ml-ai/ros-2/README.md)
+  * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-ai/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+  * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-ai/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
+* [Google Colab](ml-ai/google-colab/README.md)
+  * [Colab Resource Options](ml-ai/google-colab/colab-resource-options.md)
+  * [so-vits-svc 4.0: Colab Flow](ml-ai/google-colab/so-vits-svc-4.0-colab-flow.md)
 * [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
 * [NVIDIA Omniverse Isaac Sim Setup](ml-ai/nvidia-omniverse-isaac-sim-setup.md)
-* [ROS 2 Humble Hawksbill Setup on Ubuntu](ml-ai/ros-2-humble-hawksbill-setup-on-ubuntu.md)
-* [ROS 2 Humble Hawksbill Setup on Windows 10](ml-ai/ros-2-humble-hawksbill-setup-on-windows-10.md)
 * [Gazebo Setup](ml-ai/gazebo-setup.md)
 * [OnShape to URDF](ml-ai/onshape-to-urdf.md)
-* [so-vits-svc 4.0: CoLab Flow](ml-ai/so-vits-svc-4.0-colab-flow.md)
 
 ## Setup
 

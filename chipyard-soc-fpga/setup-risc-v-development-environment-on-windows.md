@@ -22,7 +22,7 @@ D:\Documents\MSYS2\usr\bin
 
 _Note: the exact path will be different depending on the installation location._
 
-__
+
 
 ## 2. Download RISC-V Toolchain
 

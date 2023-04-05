@@ -65,7 +65,7 @@ Note: on systems where dot and dash are not permitted, use underline instead.
 
 e.g. `vision_processing_v1_0_2.py`, `comm_test_2019_12_04.cpp`
 
-``
+
 
 The version number in the filename should be three Arabic numbers with dots in between.
 

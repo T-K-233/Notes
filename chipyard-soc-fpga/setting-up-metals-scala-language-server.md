@@ -4,7 +4,7 @@
 
 Search for "Metals" in VS Code Extensions.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2.
 
@@ -30,7 +30,7 @@ And set Sbt Script location to:
 /bwrcq/C/chiyufeng/tapeout/sp23-chips/.conda-env/bin/sbt
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## 4.
 

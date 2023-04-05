@@ -1,4 +1,4 @@
-# ROS 2 Humble Hawksbill Setup on Windows 10
+# Setting up ROS 2 Humble Hawksbill on Windows 10
 
 ## Environment
 
@@ -12,7 +12,7 @@ Windows 10
 
 Run PowerShell as admin
 
-<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 Ensure Get-ExecutionPolicy is not Restricted
 
@@ -50,9 +50,9 @@ $env:ChocolateyInstall = "D:\Documents\chocolately"
 PS C:\Windows\system32> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -48,7 +48,7 @@ touch ~/Desktop/humanoid-urdf/src/humanoid_v1/rviz/rviz_basic_settings.rviz
 touch ~/Desktop/humanoid-urdf/src/humanoid_v1/urdf/robot.urdf.xacro
 ```
 
-``
+
 
 `humanoid_v1.launch.py`:&#x20;
 

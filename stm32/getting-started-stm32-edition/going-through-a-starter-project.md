@@ -4,7 +4,7 @@
 
 **File** -> **New** -> **STM32 Project**
 
-****
+
 
 Identify the MCU version that you are using. For this entire tutorial, we will be using STM32F446RET6 unless otherwise noticed.
 
