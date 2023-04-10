@@ -43,12 +43,14 @@ bsub -q ee194 -Is -XF make CONFIG=BearlyConfig
 
 To run the simulation with a program:
 
-<pre class="language-bash"><code class="lang-bash"><strong>bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
+<pre class="language-bash"><code class="lang-bash"><strong>bsub -q ee194 -Is -XF make run-binary CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
 </strong></code></pre>
 
 
 
 To run the simulation with a program, and generate waveform:
+
+timeout\_cycles can be set to a small value to make the waveform dump process faster
 
 ```bash
 bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
