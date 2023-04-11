@@ -1,5 +1,7 @@
 # Running Chipyard Simulation
 
+## 1. Prepare Environment
+
 On BWRC machine, we need to source the vcs simulator path. This can be done by executing the following commands.
 
 ```bash
@@ -25,13 +27,15 @@ source /tools/flexlm/flexlm.sh
 
 
 
-if run into JDK\_HOME issue (tools.jar not found), do this:
+if run into JDK\_HOME issue (JDK/lib/tools.jar not found), do this:
 
 ```bash
 export JDK_HOME=/usr/lib/jvm/java-1.8.0/
 ```
 
 
+
+## 2. Run Simulation
 
 To build simulation code:
 
@@ -58,6 +62,8 @@ bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tes
 ```
 
 
+
+## 3. Examine Waveform
 
 Launch verdi to examine the waveform
 
