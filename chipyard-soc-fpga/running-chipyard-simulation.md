@@ -37,6 +37,12 @@ export JDK_HOME=/usr/lib/jvm/java-1.8.0/
 
 ## 2. Run Simulation
 
+```bash
+cd sims/vcs
+```
+
+
+
 To build simulation code:
 
 ```bash
