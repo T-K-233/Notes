@@ -50,7 +50,7 @@
   * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
   * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
 * [Setting up Metals (Scala Language Server)](chipyard-soc-fpga/setting-up-metals-scala-language-server.md)
-* [RISC-V Toolchain on BWRC](chipyard-soc-fpga/risc-v-toolchain-on-bwrc.md)
+* [RISC-V Toolchain on BWRC](finance/page-3.md)
 * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
   * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga.md)
   * [Xilinx Vivado Install on Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/xilinx-vivado-install-on-ubuntu-22.04.md)
