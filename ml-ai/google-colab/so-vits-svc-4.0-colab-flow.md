@@ -36,7 +36,7 @@ This radio story series of Majo no Tabitabi is a decent training dataset:
 
 To download the audio, use [JiJiDown](https://www.jijidown.com/).
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Data Preparation
 

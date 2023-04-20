@@ -78,7 +78,7 @@ Select "Browse my computer for drivers".
 
 Select the "USB Composite Device"
 
-![](<../.gitbook/assets/image (12) (1) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1) (1).png>)
 
 
 

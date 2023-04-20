@@ -130,7 +130,7 @@ int main() {
 
 ### Code Generation Stage
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -138,7 +138,7 @@ int main() {
 
 ### Assembling Stage
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

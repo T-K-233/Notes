@@ -26,7 +26,7 @@ set MEM\_SIZE to 10K
 
 For Nucleo 144 board, we need to set to LAN8742
 
-<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -22,7 +22,7 @@ Identify the MCU version that you are using. For this entire tutorial, we will b
 
 Search for "STM32F446RET6" and select the first result. Then click **Next**.
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -300,7 +300,7 @@ Finally, we need to invoke the user application functions in `main.c`
 
 #### main.c
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 

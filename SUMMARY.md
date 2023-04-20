@@ -96,6 +96,7 @@
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
 * [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
 * [3D Printer Profile](tools/3d-printer-profile.md)
+* [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 * [Python](tools/python/README.md)
   * [PyPi Packaging](tools/python/pypi-packaging.md)
   * [Python Logging Utility](tools/python/python-logging-utility.md)

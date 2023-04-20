@@ -2,7 +2,7 @@
 
 I’m using this article to record the polarity (direction) of the TT motor, which is commonly used in hobby models.
 
-<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 After some testing, we get the following relation between the motor and the wheel:
 

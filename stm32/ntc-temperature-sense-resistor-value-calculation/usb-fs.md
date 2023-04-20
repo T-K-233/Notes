@@ -32,7 +32,7 @@ Generate code
 
 In addition to the default folders, it will also generate "USB\_DEVICE" folder.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 In the usbd\_cdc\_if.c file, we have the receive and transmit functions
 
