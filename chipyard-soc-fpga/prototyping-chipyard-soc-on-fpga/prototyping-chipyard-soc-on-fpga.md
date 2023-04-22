@@ -47,13 +47,13 @@ cd $chipyard/fpga
 ```
 
 ```bash
-bsub -q ee194 -Is make SUB_PROJECT=arty bitstream
+bsub -q ee194 -Is -XF make SUB_PROJECT=arty bitstream
 ```
 
 
 
 ```
-bsub -q ee194 -Is make SUB_PROJECT=demosoc bitstream
+bsub -q ee194 -Is -XF make SUB_PROJECT=demosoc35 bitstream
 ```
 
 
