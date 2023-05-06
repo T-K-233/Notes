@@ -22,6 +22,8 @@ Add the following plugins
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 Unreal Engine needs a restart.
 
 Before restart, make sure SteamVR is running
@@ -32,7 +34,7 @@ Before restart, make sure SteamVR is running
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +46,7 @@ Create a virtual camera.
 
 Add a "Live Link Controller" component to VCam.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the "Subject Representation" field, select the desired VR device to bind.
 
