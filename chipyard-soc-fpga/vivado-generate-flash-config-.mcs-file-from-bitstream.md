@@ -40,7 +40,7 @@ For Chipyard generated bitstreams, we need to select "SPIx4" as the interface wi
 
 Then, specify the bitstream we want to load to the Flash and click "Ok".
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -48,9 +48,9 @@ Then, specify the bitstream we want to load to the Flash and click "Ok".
 
 Go back to Hardware Manager, right-click the memory device, and then select "Program Configuration Memory Device..."
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 The flashing progress will take about 1 minute to complete.
 

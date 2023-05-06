@@ -8,7 +8,7 @@ Log in to the computer.
 
 Open the "LAS V4.4" software.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 If this window pops up, click "OK".
 
@@ -26,13 +26,13 @@ This is the main UI of the software.
 
 Turn on the light of the microscope by pressing the power button.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 
 
 To do white balance calibration, put a white paper under the scope, and press this button on the software.
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 
 

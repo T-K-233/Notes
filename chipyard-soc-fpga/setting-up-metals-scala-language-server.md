@@ -30,7 +30,7 @@ And set Sbt Script location to:
 /bwrcq/C/chiyufeng/tapeout/sp23-chips/.conda-env/bin/sbt
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## 4.
 

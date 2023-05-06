@@ -28,7 +28,7 @@ Search for "STM32F446RET6" and select the first result. Then click **Next**.
 
 Name the project, select a suitable location, and then keep the following settings. Then click **Finish**.
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -118,7 +118,7 @@ In `main.h` and `main.c`, add the following code
 
 #### main.c
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 

@@ -30,7 +30,7 @@ Plug in the FT LINK debugger.
 
 After the FT LINK debugger is inserted, now we should see two USB Serial Converters under the "Universal Serial Bus controllers" tag in device manager
 
-<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
