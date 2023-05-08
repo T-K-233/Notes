@@ -26,7 +26,7 @@ This is the main UI of the software.
 
 Turn on the light of the microscope by pressing the power button.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
