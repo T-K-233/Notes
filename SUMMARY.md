@@ -115,6 +115,7 @@
 * [NVIDIA Omniverse Isaac Sim Setup](ml-ai/nvidia-omniverse-isaac-sim-setup.md)
 * [Gazebo Setup](ml-ai/gazebo-setup.md)
 * [OnShape to URDF](ml-ai/onshape-to-urdf.md)
+* [so-vits-svc 4.2 Runtime](ml-ai/so-vits-svc-4.2-runtime.md)
 
 ## Setup
 
