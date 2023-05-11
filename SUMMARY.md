@@ -13,6 +13,7 @@
   * [Changing STM32 Default Boot Option](stm32/misc/changing-stm32-default-boot-option.md)
   * [STM32 Flash Option Byte Recovery](stm32/misc/stm32-flash-option-byte-recovery.md)
   * [STM32 Systick and Timeout in Interrupt Routines](stm32/misc/stm32-systick-and-timeout-in-interrupt-routines.md)
+  * [Telesky ST-Link V2 Upgrade Firmware](stm32/misc/telesky-st-link-v2-upgrade-firmware.md)
   * [Some Performance Measurements on STM32 MCUs](stm32/misc/some-performance-measurements-on-stm32-mcus.md)
 * [System Core](stm32/system-core/README.md)
   * [GPIO](stm32/system-core/gpio.md)

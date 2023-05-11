@@ -2,7 +2,7 @@
 
 Go in an active sketch plane
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1).png>)
 
 Run the following script:
 
