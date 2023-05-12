@@ -6,7 +6,7 @@ USB requires a relatively precise 48MHz clock supplied to the peripheral module.
 
 In the RCC section, enable HSE.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Configure the clock tree to supply 48MHz to USB clock domain.
 

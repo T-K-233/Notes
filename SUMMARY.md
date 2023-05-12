@@ -124,6 +124,7 @@
 * [Raspberry Pi Setup](setup/raspberry-pi-setup.md)
 * [Clang-Format Style Config](setup/clang-format-style-config.md)
 * [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
+* [CrazyFlie Setting Up](setup/crazyflie-setting-up.md)
 
 ## Mechanical
 

@@ -6,7 +6,7 @@ I’m using this article to record the polarity (direction) of the TT motor, whi
 
 After some testing, we get the following relation between the motor and the wheel:
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 We define "positive" direction of the motor to be the counterclockwise rotation of the motor shaft when facing the motor shaft.
 

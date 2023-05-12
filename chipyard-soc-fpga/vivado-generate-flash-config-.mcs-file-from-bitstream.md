@@ -50,7 +50,7 @@ Go back to Hardware Manager, right-click the memory device, and then select "Pro
 
 <figure><img src="../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The flashing progress will take about 1 minute to complete.
 

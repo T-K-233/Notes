@@ -227,7 +227,11 @@ To adapt to the motor we are using, we need to edit the model a bit.
 
 
 
-![](<../.gitbook/assets/image (25) (1).png>)
+<div align="center">
+
+<img src="../.gitbook/assets/image (25) (1).png" alt="">
+
+</div>
 
 ![](<../.gitbook/assets/image (100).png>)
 
