@@ -82,6 +82,7 @@
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [MIT Motor Controller Code Analyze](motor-control/mit-motor-controller-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
+* [Current Loop PI Value Tunin](motor-control/current-loop-pi-value-tunin.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 
 ## Tools
