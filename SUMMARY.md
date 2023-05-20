@@ -143,13 +143,13 @@
 
 ## AR/VR/XR
 
-* [Digital-Twin Communication System](ar-vr-xr/digital-twin-communication-system.md)
-* [Unreal Engine Communicate with SteamVR and External Python](ar-vr-xr/unreal-engine-communicate-with-steamvr-and-external-python.md)
+* [Digital-Twin Communication System](network/digital-twin-communication-system.md)
+* [Unreal Engine Communicate with SteamVR and External Python](network/unreal-engine-communicate-with-steamvr-and-external-python.md)
 * [A Note on Coordinate Systems](ar-vr-xr/a-note-on-coordinate-systems.md)
-* [Unreal Engine Socket Communication](ar-vr-xr/unreal-engine-socket-communication.md)
-* [NewLine Serialization Method](ar-vr-xr/newline-serialization-method.md)
-* [Blender Python Related](ar-vr-xr/blender-python-related.md)
-* [Home Network Setup](ar-vr-xr/home-network-setup.md)
+* [Unreal Engine Socket Communication](network/unreal-engine-socket-communication.md)
+* [NewLine Serialization Method](network/newline-serialization-method.md)
+* [Blender Python Related](3d-modeling/blender-python-related.md)
+* [Home Network Setup](network/home-network-setup.md)
 
 ## 3D Modeling
 
