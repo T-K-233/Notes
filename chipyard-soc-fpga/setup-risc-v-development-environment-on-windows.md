@@ -28,6 +28,8 @@ _Note: the exact path will be different depending on the installation location._
 
 Download RISC-V toolchain from [here](https://www.sifive.com/software). We are going to need the toolchain and OpenOCD.
 
+> Update: as of 2023-05-22, SiFive changed their website, and the OpenOCD is no longer available. Use [this link](https://static.dev.sifive.com/dev-tools/riscv-openocd-0.10.0-2020.04.6-x86\_64-w64-mingw32.zip?\_ga=2.194046829.1921518046.1596069236-38171805.1596069236) to download an old version (openocd-0.10.0-2020.04.6).
+
 
 
 Extract them to known locations, and put the path to system PATH.
