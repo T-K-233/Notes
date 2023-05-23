@@ -14,6 +14,8 @@ $$
 C(s) = k_p + \frac{k_i}{s} = \frac{k_p s + k_i}{s}
 $$
 
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
 For series configuration, we have
 
 $$
@@ -23,6 +25,8 @@ $$
 $$
 C(s) = k_p' (1 + \frac{k_i}{s}) = \frac{k_p's + k_p'k_i'}{s}
 $$
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
