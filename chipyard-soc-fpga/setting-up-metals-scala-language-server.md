@@ -10,7 +10,7 @@ Search for "Metals" in VS Code Extensions.
 
 After installation, click "Switch to Pre-Release Version".
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 
 

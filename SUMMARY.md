@@ -44,7 +44,6 @@
 
 ## Chipyard SoC / FPGA
 
-* [Quick Navigation Page](chipyard-soc-fpga/quick-navigation-page.md)
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 * [Setting up Chipyard](chipyard-soc-fpga/chipyard-environment-setup/README.md)
   * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
@@ -64,7 +63,7 @@
 * [Setting up FT-LINK JTAG Debugger](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
 * [Debugging the SoC](chipyard-soc-fpga/debugging/README.md)
   * [Debugging OsciArty with JTAG and command line GDB](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
-  * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging-the-soc/debugging-bearlyml-with-jtag-and-gdb.md)
+  * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
 * [Build EagleX Linux Image](chipyard-soc-fpga/build-eaglex-linux-image.md)
 * [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
