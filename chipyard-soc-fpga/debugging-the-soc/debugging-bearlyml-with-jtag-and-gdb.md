@@ -1,17 +1,62 @@
-# JTAG and GDB debugging BearlyML
+# Debugging BearlyML with JTAG and GDB
 
-## Terminal-Only
+## 1. VS Code Method (Preferred)
+
+In VSCode, search and install the "cortex-debug" extension.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+in the `.vscode` folder, create `launch.json`
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RISC-V Debug",
+      "type": "cortex-debug",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/build/firmware.elf",
+      "request": "launch",
+      "servertype": "openocd",
+      "serverpath": "openocd",
+      "toolchainPrefix": "riscv64-unknown-elf",
+      "configFiles": [
+        "${workspaceRoot}/debug/bearlyml.cfg"
+      ],
+      "searchDir": [],
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none""svdFile": "${workspaceRoot}/debug/bearlyml.svd",
+      "numberOfProcessors": 5,
+      "currentProcessor": 1
+    }
+  ]
+}
+```
+
+
+
+Launch the RISC-V Debug routine.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+## 2. Terminal-Only Method
 
 Terminal A:
 
 ```bash
-openocd -f .\jtag\bearlyml.cfg
+openocd -f .\debug\bearlyml.cfg
 ```
 
 
 
 ```bash
-PS C:\Users\TK\Desktop\HAL> openocd -f .\jtag\bearlyml.cfg
+PS C:\Users\TK\Desktop\HAL> openocd -f .\debug\bearlyml.cfg
 Open On-Chip Debugger 0.11.0-rc1+dev (SiFive OpenOCD 0.10.0-2020.12.1)   
 Licensed under GNU GPL v2
 For bug reports:

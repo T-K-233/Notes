@@ -1,4 +1,4 @@
-# RISC-V Toolchain on BWRC
+# Setting up RV32 Toolchain on BWRC
 
 The default RISCV toolchain that comes with Chipyard does not support RV32 / software floating-point compilation.&#x20;
 

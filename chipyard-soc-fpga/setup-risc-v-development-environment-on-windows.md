@@ -1,4 +1,4 @@
-# Setup RISC-V Development Environment on Windows
+# Setting up RISC-V Development Environment - Windows
 
 ## 1. Download MSYS2.
 

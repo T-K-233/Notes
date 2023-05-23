@@ -44,8 +44,8 @@ Last semester's code [https://github.com/ucberkeley-ee290c/digital-ml-chip-sw](h
 
 {% embed url="https://docs.google.com/presentation/u/1/d/11BuBN2AjHtR5hc7lh9h7Z0UspvnxgiJxumvH6YZSuuI/edit#slide=id.g17303b28b1c_0_0" %}
 
-{% content-ref url="debugging-the-soc/booting-bearlyml-with-external-spi-flash.md" %}
-[booting-bearlyml-with-external-spi-flash.md](debugging-the-soc/booting-bearlyml-with-external-spi-flash.md)
+{% content-ref url="debugging/booting-bearlyml-with-external-spi-flash.md" %}
+[booting-bearlyml-with-external-spi-flash.md](debugging/booting-bearlyml-with-external-spi-flash.md)
 {% endcontent-ref %}
 
 #### PCB

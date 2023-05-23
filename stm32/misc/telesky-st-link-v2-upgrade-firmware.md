@@ -14,4 +14,4 @@ Re-plug the device
 
 Click the "Open in update mode" button again
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
