@@ -1,4 +1,6 @@
-# GDB debugging OsciArty
+# Debugging OsciArty with JTAG and command line GDB
+
+Launching gdb
 
 ```bash
 elf="build/firmware.elf"
@@ -8,8 +10,6 @@ gdb -ex "target extended-remote localhost:3333" \
     -ex "continue" \
     "${elf}"
 ```
-
-
 
 
 
@@ -70,7 +70,7 @@ target extended-remote | \
 
 
 
-### Fix VSCode cannot open COM port issue
+### Fix VSCode cannot open COM port issue on Linux machines
 
 ```bash
 sudo chmod a+rw /dev/ttyUSB3

@@ -1,6 +1,6 @@
-# FT LINK JTAG Debugger Driver Setup
+# Setting up FT-LINK JTAG Debugger
 
-
+## Install Device Driver
 
 Download FT2232 Drivers from [here](https://ftdichip.com/drivers/vcp-drivers/). Select the VCP driver.
 
@@ -97,6 +97,10 @@ Right-click and select Uninstall device. In the pop-up window, check the "Delete
 Unplug and re-plug the device, repeat this for all the possible incorrect drivers.
 
 ![](<../.gitbook/assets/image (50).png>)
+
+
+
+## Pinout
 
 
 
