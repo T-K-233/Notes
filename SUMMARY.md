@@ -85,26 +85,6 @@
 * [Current Loop PI Value Tunin](motor-control/current-loop-pi-value-tunin.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 
-## Tools
-
-* [Ubuntu](tools/ubuntu/README.md)
-  * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
-  * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
-  * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
-  * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
-* [AS5600 Modification](tools/as5600-modification.md)
-* [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
-* [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
-* [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
-* [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
-* [3D Printer Profile](tools/3d-printer-profile.md)
-* [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
-* [Python](tools/python/README.md)
-  * [PyPi Packaging](tools/python/pypi-packaging.md)
-  * [Python Logging Utility](tools/python/python-logging-utility.md)
-  * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
-  * [Retrieve Github user avatar with Github API](tools/python/retrieve-github-user-avatar-with-github-api.md)
-
 ## ML/AI
 
 * [ROS 2](ml-ai/ros-2/README.md)
@@ -119,18 +99,35 @@
 * [OnShape to URDF](ml-ai/onshape-to-urdf.md)
 * [so-vits-svc 4.2 Runtime](ml-ai/so-vits-svc-4.2-runtime.md)
 
-## Setup
+## Tools
 
-* [Github-Related Info](setup/github-related-info.md)
-* [Raspberry Pi Setup](setup/raspberry-pi-setup.md)
-* [Clang-Format Style Config](setup/clang-format-style-config.md)
-* [Getting Started with XBee (ZigBee)](setup/getting-started-with-xbee-zigbee.md)
-* [CrazyFlie Setting Up](setup/crazyflie-setting-up.md)
+* [Ubuntu](tools/ubuntu/README.md)
+  * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
+  * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
+  * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
+  * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
+* [Github-Related Info](tools/github-related-info.md)
+* [Python](tools/python/README.md)
+  * [PyPi Packaging](tools/python/pypi-packaging.md)
+  * [Python Logging Utility](tools/python/python-logging-utility.md)
+  * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
+  * [Retrieve Github user avatar with Github API](tools/python/retrieve-github-user-avatar-with-github-api.md)
+* [SSH](tools/ssh.md)
+* [Raspberry Pi Setup](tools/raspberry-pi-setup.md)
+* [Clang-Format Style Config](tools/clang-format-style-config.md)
+* [CrazyFlie Setting Up](tools/crazyflie-setting-up.md)
+* [Getting Started with XBee (ZigBee)](tools/getting-started-with-xbee-zigbee.md)
+* [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
+* [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
+* [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
+* [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
+* [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 
 ## Mechanical
 
 * [MAD Cycloidal Actuator](mechanical/mad-cycloidal-actuator.md)
 * [Fixing the Unitree A1 Robot Dog](mechanical/fixing-the-unitree-a1-robot-dog.md)
+* [3D Printer Profile](mechanical/3d-printer-profile.md)
 
 ## Electrical
 
@@ -140,6 +137,7 @@
 * [PCB Design and Manufacturing Conventions](electrical/pcb-design-and-manufacturing-conventions.md)
 * [ESP32 Cam](electrical/esp32-cam.md)
 * [LiPo Safety](electrical/lipo-safety.md)
+* [AS5600 Modification](electrical/as5600-modification.md)
 
 ## AR/VR/XR
 
@@ -175,6 +173,8 @@
 
 * [Some Interview Questions](life/some-interview-questions.md)
 * [Health Insurance](life/page-4.md)
+
+## Group 0
 
 ## Group 1
 
