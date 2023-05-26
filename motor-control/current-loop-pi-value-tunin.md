@@ -4,6 +4,8 @@
 
 There are two configurations of PI controller, the parallel configuration (most common one) and the series configuration.
 
+### Parallel PI Controller
+
 For parallel configuration, we have
 
 $$
@@ -16,6 +18,10 @@ $$
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
+
+
+### Serial PI Controller
+
 For series configuration, we have
 
 $$
@@ -27,6 +33,21 @@ C(s) = k_p' (1 + \frac{k_i}{s}) = \frac{k_p's + k_p'k_i'}{s}
 $$
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+The C implementation is
+
+```c
+float kp, ki;
+float target, measured;
+float limit;  // integrator anti-windup value
+float dt;     // loop execution time
+float integrator;
+
+float error = target - measured;
+integrator = clampf(integrator + kp * ki * error * dt, -limit, limit);
+float result = kp * error + integrator;
+
+```
 
 
 
