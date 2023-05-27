@@ -42,7 +42,9 @@ And we can use the `uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)` functio
 
 
 
-To build a simple echo program, we can put the transmit in the receive handler
+### Simple Echo USB VCP Device
+
+To build a simple echo program, we just need to implement the transmit in the USB receive handler.
 
 ```c
 /**
@@ -76,9 +78,11 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
 
 
-Or a hello world program:
+### CAN-USB Adapter
 
-app.c
+Here's a more complete code example, implementing CAN-USB message transfer.
+
+
 
 ```c
 APP_main() {
@@ -88,8 +92,6 @@ APP_main() {
   HAL_Delay(1000);
 }
 ```
-
-<figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
