@@ -6,7 +6,7 @@ When prompt that device fails to enter DFU mode:
 
 Eject ST-Link
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unplug the device, leave the ST-Link upgrade window open
 

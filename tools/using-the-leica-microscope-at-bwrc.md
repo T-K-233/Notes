@@ -8,7 +8,7 @@ Log in to the computer.
 
 Open the "LAS V4.4" software.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 If this window pops up, click "OK".
 
