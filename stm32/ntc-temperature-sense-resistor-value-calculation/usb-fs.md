@@ -85,7 +85,7 @@ Here's a more complete code example, implementing CAN-USB message transfer.
 
 
 ```c
-APP_main() {
+void APP_main() {
   char str[128];
   sprintf(str, "hello\n");
   CDC_Transmit_FS((uint8_t *)str, strlen(str));
@@ -102,25 +102,72 @@ APP_main() {
 main.c:
 
 ```c
+void APP_handleUSBMessage() {
+  // check if the first byte is the correct Start of Frame
+  uint8_t is_valid_frame = usb_rx_buffer[0] == 0xAAU;
+  if (!is_valid_frame) {
+    // if not, discard and continue receiving
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
+    return;
+  }
 
-//    sprintf(str, "hello world\n");
-//    sprintf((char *)usb_tx_buffer, "hello USB\n");
-//    HAL_UART_Transmit(&huart3, (uint8_t *)str, strlen(str), 1000);
-//
-//    CDC_Transmit_FS(usb_tx_buffer, strlen((char *)usb_tx_buffer));
-//
-//    if (usb_rx_size != 0) {
-//      sprintf((char *)usb_tx_buffer, "USB RX: ");
-//      while (CDC_Transmit_FS(usb_tx_buffer, strlen((char *)usb_tx_buffer)) != USBD_OK) {}
-//      while (CDC_Transmit_FS(usb_rx_buffer, strlen((char *)usb_rx_buffer)) != USBD_OK) {}
-//      sprintf((char *)usb_tx_buffer, "\n");
-//      while (CDC_Transmit_FS(usb_tx_buffer, strlen((char *)usb_tx_buffer)) != USBD_OK) {}
-//      usb_rx_size = 0;
-//    }
-//    HAL_Delay(1000);
+  // decode the header section
+  can_tx_frame.id_type = CAN_ID_STANDARD;
+  can_tx_frame.frame_type = CAN_FRAME_DATA;
+  uint32_t timestamp = ((uart_rx_buffer[1])     // timestamp is not used
+                      | (uart_rx_buffer[2] << 8U)
+                      | (uart_rx_buffer[3] << 16U)
+                      | (uart_rx_buffer[4] << 24U));
+  can_tx_frame.size = usb_rx_buffer[5];
+  can_tx_frame.id = (((uint32_t)usb_rx_buffer[6] << 0U)
+                   | ((uint32_t)usb_rx_buffer[7] << 8U)
+                   | ((uint32_t)usb_rx_buffer[8] << 16U)
+                   | ((uint32_t)usb_rx_buffer[9] << 24U));
 
 
+  for (uint16_t i=0; i<can_tx_frame.size; i+=1) {
+    can_tx_frame.data[i] = usb_rx_buffer[10+i];
+  }
 
+  // does not really need this piece of code
+//  if (!HAL_FDCAN_GetTxFifoFreeLevel(&hfdcan1)) {
+//    uint32_t fifo_idx = HAL_FDCAN_GetLatestTxFifoQRequestBuffer(&hfdcan1);
+//    HAL_FDCAN_AbortTxRequest(&hfdcan1, fifo_idx);
+//  }
+  CAN_putTxFrame(&hfdcan1, &can_tx_frame);
+  usb_evt_happened = 1;
+}
+
+void APP_handleCANMessage() {
+  CAN_getRxFrame(&hfdcan1, &can_rx_frame);
+
+  // prepare the USB frame
+  usb_tx_buffer[0] = PYTHONCAN_START_OF_FRAME;
+
+  usb_tx_buffer[1] = 0x00U;  // Timestamp
+  usb_tx_buffer[2] = 0x00U;
+  usb_tx_buffer[3] = 0x00U;
+  usb_tx_buffer[4] = 0x00U;
+
+  usb_tx_buffer[5] = can_rx_frame.size;  // DLC
+
+  usb_tx_buffer[6] = READ_BITS(can_rx_frame.id, 0xFFU);  // ID
+  usb_tx_buffer[7] = READ_BITS(can_rx_frame.id >> 8U, 0xFFU);
+  usb_tx_buffer[8] = READ_BITS(can_rx_frame.id >> 16U, 0xFFU);
+  usb_tx_buffer[9] = READ_BITS(can_rx_frame.id >> 24U, 0xFFU);
+
+  usb_tx_size = 10;
+
+  for (uint16_t i=0; i<can_rx_frame.size; i+=1) {
+    usb_tx_buffer[10+i] = can_rx_frame.data[i];
+  }
+  usb_tx_size += can_rx_frame.size + 1;
+
+  usb_tx_buffer[10+can_rx_frame.size] = PYTHONCAN_END_OF_FRAME;
+
+  CDC_Transmit_FS(usb_tx_buffer, usb_tx_size);
+  can_evt_happened = 1;
+}
 
 ```
 
@@ -134,10 +181,20 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 6 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
+
   usb_rx_size = (uint16_t) *Len;
-  memset(usb_rx_buffer, 0, 256);
+
+  // clear the receive buffer
+  memset(usb_rx_buffer, 0, USB_BUFFER_SIZE);
+
+  // copy the received data to the receive buffer
   memcpy(usb_rx_buffer, Buf, usb_rx_size);
+
+  // clear the original buffer
   memset(Buf, 0, usb_rx_size);
+
+  APP_handleUSBMessage();
+
   return (USBD_OK);
   /* USER CODE END 6 */
 }
