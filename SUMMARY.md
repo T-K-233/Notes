@@ -109,7 +109,7 @@
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [Github-Related Info](tools/github-related-info.md)
 * [Python](tools/python/README.md)
-  * [PyPi Packaging](tools/python/pypi-packaging.md)
+  * [Publish Python Package to PyPi](tools/python/publish-python-package-to-pypi.md)
   * [Python Logging Utility](tools/python/python-logging-utility.md)
   * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
   * [Retrieve Github user avatar with Github API](tools/python/retrieve-github-user-avatar-with-github-api.md)
