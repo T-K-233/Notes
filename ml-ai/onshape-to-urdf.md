@@ -1,12 +1,55 @@
 # OnShape to URDF
 
-Using this plugin:
+## Overview
+
+We will be using the onshape-to-robot plugin to read robot model from Onshape, and export them to a urdf file.
 
 {% embed url="https://github.com/rhoban/onshape-to-robot/" %}
 
+## Installation
+
+```bash
+pip install onshape-to-robot
+```
 
 
-## Set up workspace
+
+Also install ROS2 environment following this guide:
+
+{% content-ref url="ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md" %}
+[setting-up-ros-2-humble-hawksbill-on-ubuntu.md](ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+{% endcontent-ref %}
+
+
+
+## Set up Onshape API access key
+
+Set up an API access key at [OnShape developer portal](https://dev-portal.onshape.com/keys).
+
+
+
+Store the API keys in `./scripts/onshape_api_key.sh`
+
+```sh
+# Obtained at https://dev-portal.onshape.com/keys
+export ONSHAPE_API=https://cad.onshape.com
+export ONSHAPE_ACCESS_KEY=Your_Access_Key
+export ONSHAPE_SECRET_KEY=Your_Secret_Key
+```
+
+
+
+On every new terminal opened, run
+
+```bash
+source ./scripts/onshape_api_key.sh
+```
+
+
+
+## Set up the ROS2 workspace
+
+> This procedure only needs to be performed when initially setting up a new workspace and package.
 
 Create the package
 
@@ -23,7 +66,7 @@ cd ~/Desktop/humanoid-urdf/src/humanoid_v1
 mkdir config launch maps meshes models params rviz urdf worlds
 ```
 
-Build
+Test build
 
 ```bash
 cd ~/Desktop/humanoid-urdf
@@ -32,13 +75,19 @@ colcon build
 
 
 
+If the package is built without error, try the following command.&#x20;
+
 ```
 colcon_cd humanoid_v1
 ```
 
+colcon\_cd should navigate to our package directory `~/Desktop/humanoid-urdf/src/humanoid_v1`
 
 
-## Create Files
+
+### Create Config Files
+
+We need to create these files in the ROS package.
 
 ```bash
 touch ~/Desktop/humanoid-urdf/src/humanoid_v1/launch/humanoid_v1.launch.py
@@ -569,9 +618,7 @@ urdf
 
 
 
-## Change Files
-
-
+### Change Files
 
 Change `package.xml` by adding these lines:
 
@@ -593,7 +640,7 @@ Change `package.xml` by adding these lines:
 
 
 
-Change CMakeLists.txt by adding these lines:
+Change `CMakeLists.txt` by adding these lines:
 
 ```cmake
 # find_package(<dependency> REQUIRED)
@@ -610,9 +657,11 @@ if(BUILD_TESTING)
 
 
 
-## Test Build
+### Test Build
 
-
+```bash
+make ros-build
+```
 
 colcon build
 
@@ -622,7 +671,64 @@ ros2 launch humanoid\_v1 humanoid\_v1.launch.py
 
 
 
+If the following error is raised, we need to install the gui package separately, suggested [here](https://answers.ros.org/question/344992/missing-joint\_state\_publisher\_gui-when-l-run-displaylaunch/).
 
+```bash
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'joint_state_publisher_gui' not found, searching: ['/home/tk/Desktop/humanoid-urdf/install/humanoid_v1', '/opt/ros/humble']"
+```
+
+```bash
+sudo apt install ros-humble-joint-state-publisher-gui
+```
+
+
+
+might also need
+
+```
+sudo apt install ros-humble-xacro
+```
+
+
+
+if running into this error:
+
+```bash
+[rviz2-3] /opt/ros/humble/lib/rviz2/rviz2: symbol lookup error: /snap/core20/current/lib/x86_64-linux-gnu/libpthread.so.0: undefined symbol: __libc_pthread_init, version GLIBC_PRIVATE
+[ERROR] [rviz2-3]: process has died [pid 8882, exit code 127, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/tk/Desktop/humanoid-urdf/install/humanoid_v1/share/humanoid_v1/rviz/rviz_basic_settings.rviz --ros-args -r __node:=rviz2'].
+[joint_state_publisher_gui-1] /usr/bin/python3: symbol lookup error: /snap/core20/current/lib/x86_64-linux-gnu/libpthread.so.0: undefined symbol: __libc_pthread_init, version GLIBC_PRIVATE
+[ERROR] [joint_state_publisher_gui-1]: process has died [pid 8878, exit code 127, cmd '/opt/ros/humble/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args -r __node:=joint_state_publisher_gui'].
+```
+
+
+
+highly possible that this is a VSCode terminal issue. Do
+
+```bash
+unset GTK_PATH
+```
+
+
+
+
+
+
+
+## Export Onshape robot
+
+```bash
+make urdf-build
+```
+
+This command will dump the urdf and related asset files in `./onshape/humanoid_v1` directory, and automatically copy the necessary files to the ROS2 package.
+
+
+
+To clear the previous build, run
+
+```bash
+make urdf-clean
+```
 
 ```
 onshape-to-robot humanoid_v1
@@ -659,7 +765,7 @@ package://mesh.stl -> package://humanoid_v1/meshes/mesh.stl
 
 
 
-4. Collision
+### 4. Collision
 
 ```
 % scale(1000) import("extrusion_100mm.stl");
@@ -685,5 +791,19 @@ and then
 
 ```
 colcon build && ros2 launch humanoid_v1 humanoid_v1.launch.py
+```
+
+
+
+
+
+
+
+```bash
+sudo apt install openscad
+```
+
+```bash
+onshape-to-robot-edit-shape
 ```
 
