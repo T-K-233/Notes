@@ -9,7 +9,8 @@ We will be using the onshape-to-robot plugin to read robot model from Onshape, a
 ## Installation
 
 ```bash
-sudo apt-get install libcanberra-gtk-module
+sudo apt install openscad meshlab
+sudo apt install libcanberra-gtk-module
 ```
 
 ```bash
