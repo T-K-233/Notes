@@ -9,6 +9,10 @@ We will be using the onshape-to-robot plugin to read robot model from Onshape, a
 ## Installation
 
 ```bash
+sudo apt-get install libcanberra-gtk-module
+```
+
+```bash
 pip install onshape-to-robot
 ```
 
@@ -63,7 +67,7 @@ Create additional folders
 
 ```bash
 cd ~/Desktop/humanoid-urdf/src/humanoid_v1
-mkdir config launch maps meshes models params rviz urdf worlds
+mkdir -p config launch maps meshes models params rviz urdf worlds
 ```
 
 Test build
