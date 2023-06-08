@@ -75,6 +75,14 @@ To skip the prompt, do
 
 
 
+If script fails to compile, try running
+
+```bash
+git clean -fxd
+```
+
+
+
 ## 4. On New Terminal
 
 For every new terminal, run the following script.
