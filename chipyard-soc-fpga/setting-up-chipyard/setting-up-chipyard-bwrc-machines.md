@@ -67,6 +67,12 @@ $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
 
 When it prompts whether to continue setup Chipyard, enter `y`.
 
+To skip the prompt, do
+
+```bash
+./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
+```
+
 
 
 ## 4. On New Terminal
