@@ -83,6 +83,15 @@ git clean -fxd
 
 
 
+Worst case, run this to re-link the submodules
+
+```bash
+git submodule deinit -f .
+./scripts/init-submodules-no-riscv-tools.sh 
+```
+
+
+
 ## 4. On New Terminal
 
 For every new terminal, run the following script.
