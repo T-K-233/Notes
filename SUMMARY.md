@@ -82,7 +82,9 @@
 * [Moteus Code Analyze](motor-control/moteus-code-analyze.md)
 * [MIT Motor Controller Code Analyze](motor-control/mit-motor-controller-code-analyze.md)
 * [ODrive Setup](motor-control/odrive-setup.md)
-* [Recoil USB-CAN Adapter Driver Setup](motor-control/recoil-usb-can-adapter-driver-setup.md)
+* [Setting up Recoil USB-CAN Adapter](motor-control/setting-up-recoil-usb-can-adapter/README.md)
+  * [Setting up Recoil USB-CAN Adapter - Ubuntu](motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-ubuntu.md)
+  * [Setting up Recoil USB-CAN Adapter - Windows](motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-windows.md)
 * [Current Loop PI Value Tunin](motor-control/current-loop-pi-value-tunin.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 
@@ -163,7 +165,6 @@
 
 ## UW
 
-* [Page 2](uw/page-2.md)
 * [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
   * [Note on Face Design and Manufacture](finance/page-2.md)
 
