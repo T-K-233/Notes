@@ -30,3 +30,10 @@ After driver installation, the device should appear in the Device Manager.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
+
+
+On Linux:
+
+use `/dev/ttyACM0` port.
