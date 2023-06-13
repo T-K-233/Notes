@@ -22,13 +22,13 @@ In the dropdown menu, select "Recoil USB-CAN Adapter"
 
 Set the target driver to be "USB Serial (CDC)", and click "Replace Driver"
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Verify Install
 
 After driver installation, the device should appear in the Device Manager.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -85,7 +85,6 @@
 * [Setting up Recoil USB-CAN Adapter](motor-control/setting-up-recoil-usb-can-adapter/README.md)
   * [Setting up Recoil USB-CAN Adapter - Ubuntu](motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-ubuntu.md)
   * [Setting up Recoil USB-CAN Adapter - Windows](motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-windows.md)
-* [Current Loop PI Value Tunin](motor-control/current-loop-pi-value-tunin.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 
 ## ML/AI

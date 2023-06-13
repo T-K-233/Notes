@@ -34,7 +34,7 @@ Before restart, make sure SteamVR is running
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +46,7 @@ Create a virtual camera.
 
 Add a "Live Link Controller" component to VCam.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 In the "Subject Representation" field, select the desired VR device to bind.
 
