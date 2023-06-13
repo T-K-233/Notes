@@ -92,7 +92,7 @@ void APP_main() {
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 From the result, we can see that the task should take about 23 ticks to finish, but in the interrupt, the uwTick is not changing.
 

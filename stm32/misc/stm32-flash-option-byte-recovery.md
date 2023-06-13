@@ -74,7 +74,7 @@ set *(int *)0x40022014=(*(int *)0x40022014) | 0x80000000
 
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
