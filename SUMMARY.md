@@ -150,7 +150,6 @@
 * [Unreal Engine Socket Communication](network/unreal-engine-socket-communication.md)
 * [NewLine Serialization Method](network/newline-serialization-method.md)
 * [Blender Python Related](3d-modeling/blender-python-related.md)
-* [Home Network Setup](network/home-network-setup.md)
 
 ## 3D Modeling
 
@@ -166,6 +165,7 @@
 
 * [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
   * [Note on Face Design and Manufacture](finance/page-2.md)
+* [Network Setup](uw/network-setup.md)
 
 ## Finance
 
