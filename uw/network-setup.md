@@ -14,7 +14,7 @@ The top-level routing is handled by the ASUS RT-AC86U router, with a local LAN I
 | DESKTOP-AVENUE                  | 04:92:26:5E:04:5A | 10.0.0.2   |
 |                                 |                   |            |
 | LAPTOP-FRAMEWORK                | BC:09:1B:F4:25:EF | 10.0.0.10  |
-| DESKTOP-PaperWeight (WiFi)      | D0:C6:37:40:63:93 | 10.0.0.13  |
+| DESKTOP-PaperWeight (WiFi)      | D0:C6:37:40:63:93 | 10.0.0.69  |
 | ESP32 IP Camera (in white case) | 4C:EB:D6:61:7B:D8 | 10.0.1.1   |
 | TKAE ASUS Router                | FC:34:97:CF:B2:00 | 10.0.0.233 |
 
