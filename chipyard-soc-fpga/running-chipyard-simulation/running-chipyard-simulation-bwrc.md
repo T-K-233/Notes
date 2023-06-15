@@ -1,4 +1,4 @@
-# Running Chipyard Simulation
+# Running Chipyard Simulation - BWRC
 
 ## 1. Prepare Environment
 
