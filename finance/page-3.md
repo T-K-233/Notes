@@ -11,6 +11,19 @@ cd riscv-gnu-toolchain/
 
 
 
+### Install Prerequisites
+
+on Ubuntu 22.04 machine, we need to do
+
+```bash
+sudo apt update
+sudo apt install gawk
+```
+
+
+
+## Compile
+
 Change "--prefix" to your desired installation directory.
 
 This takes eternity to compile...
