@@ -58,6 +58,15 @@ bsub -q ee194 -Is -XF make SUB_PROJECT=demosoc35 bitstream
 
 
 
+## Setting up FT-LINK debugger (Linux)
+
+```bash
+sudo apt install libconfuse-dev
+sudo apt install libftdi-dev
+```
+
+
+
 #### Linux: change udev rules
 
 The FT Link comes with vendor id of `0403` and device id of `6010`. To see if the device is connected, type
