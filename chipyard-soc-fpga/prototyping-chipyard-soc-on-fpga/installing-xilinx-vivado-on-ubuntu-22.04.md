@@ -57,7 +57,7 @@ sudo apt install libtinfo5
 Start vivado by running
 
 ```bash
-~/Documents/Xilinx/Vivado/2022.1/bin/vivadobash
+~/Documents/Xilinx/Vivado/2022.1/bin/vivado
 ```
 
 We can also add it to PATH by
