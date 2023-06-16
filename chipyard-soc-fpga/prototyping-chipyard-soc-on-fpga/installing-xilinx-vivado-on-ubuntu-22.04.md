@@ -57,13 +57,13 @@ sudo apt install libtinfo5
 Start vivado by running
 
 ```bash
-~/Documents/Xilinx/Vivado/2022.1/bin/vivado
+~/Documents/Xilinx/Vivado/2023.1/bin/vivado
 ```
 
 We can also add it to PATH by
 
 ```bash
-export PATH="/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH"
+export PATH="/home/tk/Documents/Xilinx/Vivado/2023.1/bin:$PATH"
 ```
 
 and then
@@ -79,7 +79,7 @@ source ~/.bashrc
 To connect to boards, we need to install additional drivers by running
 
 ```bash
-cd ~/Documents/Xilinx/Vivado/2022.1/data/xicom/cable_drivers/lin64/install_script/install_drivers
+cd ~/Documents/Xilinx/Vivado/2023.1/data/xicom/cable_drivers/lin64/install_script/install_drivers
 sudo ./install_drivers
 ```
 
@@ -93,7 +93,7 @@ Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent
 
 Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
 
-Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2022.1/data/boards/board_files`). If this folder doesn't exist, create it.
+Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2023.1/data/boards/board_files`). If this folder doesn't exist, create it.
 
 **Copy** all of the folders found in vivado-boards' `new/board_files` folder, then **paste** them into this folder.
 
