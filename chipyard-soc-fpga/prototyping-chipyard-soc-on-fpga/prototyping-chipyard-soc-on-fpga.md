@@ -53,7 +53,7 @@ bsub -q ee194 -Is -XF make SUB_PROJECT=arty bitstream
 
 
 ```
-bsub -q ee194 -Is -XF make SUB_PROJECT=demosoc35 bitstream
+make SUB_PROJECT=ExampleChipArty35TConfig bitstream
 ```
 
 
