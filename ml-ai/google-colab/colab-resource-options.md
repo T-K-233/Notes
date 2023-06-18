@@ -4,7 +4,7 @@
 
 GPU class: Standard, Runtime shape: Standard
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -16,7 +16,7 @@ GPU class: Standard, Runtime shape: High-RAM
 
 GPU class: Premium, Runtime shape: Standard
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

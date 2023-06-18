@@ -26,9 +26,9 @@ SteamVR 1.25.8
 
 Choose "GameModeBase" as the parent class.
 
-<figure><img src="../.gitbook/assets/image (9) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -38,7 +38,7 @@ Choose "GameModeBase" as the parent class.
 
 Finally, update the GameModeBase class
 
-<figure><img src="../.gitbook/assets/image (11) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. External Python server
 

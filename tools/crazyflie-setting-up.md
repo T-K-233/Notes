@@ -12,7 +12,7 @@ Follow the instructions here to set up KVM
 
 {% embed url="https://docs.docker.com/desktop/install/linux-install/#kvm-virtualization-support" %}
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Install Docker
 
@@ -32,7 +32,7 @@ If there is error about "docker-desktop : Depends: docker-ce-cli but it is not i
 systemctl --user start docker-desktop
 ```
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -42,7 +42,7 @@ hello world should be able to run
 docker run hello-world
 ```
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

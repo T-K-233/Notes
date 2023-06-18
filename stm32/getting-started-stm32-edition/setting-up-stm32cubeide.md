@@ -44,4 +44,4 @@ Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link d
 
 Verify the installation by searching "STM32CubeIDE" in the Windows main menu
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>

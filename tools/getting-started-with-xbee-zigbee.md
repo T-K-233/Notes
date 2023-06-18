@@ -2,7 +2,7 @@
 
 I’m using the XBee S2C module from Amazon:
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Wiring <a href="#efa0" id="efa0"></a>
 
@@ -10,19 +10,19 @@ First, we need to wire up the XBee. Originally, I was going to use an Arduino UN
 
 Then I realized that I can just use a plain USB-TTL converter to establish the link between the XBee module with the computer. I’m using the Rath RA-LINK module, originally designed for the GD32VF series MCU. We will just use the serial converter function of this debugger.
 
-<figure><img src="../.gitbook/assets/image (15) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 An additional benefit of this setup is that both end are using the 2.0mm pitch Dupont connector. (Viva la metric unit!)
 
 Here is the wiring diagram:
 
-<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Download XCTU
 
 Download XCTU from [here](https://hub.digi.com/support/products/xctu/?path=/support/asset/xctu-v-659-windows-x86x64/).
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
 Insert the USB debugger into the computer and click this button.
 
@@ -96,7 +96,7 @@ Now when we type in one terminal, we can see the contents appear in another term
 
 P.S. if the wrong configuration is entered in XBee parameters, XCTU will try to perform a revert on the chip
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

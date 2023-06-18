@@ -70,7 +70,7 @@ Step
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (4) (1).png" alt=""><figcaption><p>Sparkfun FE310 Board Connection</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Arty 35T Board Connection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption><p>Arty 35T Board Connection</p></figcaption></figure>
 
 
 

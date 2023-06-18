@@ -32,17 +32,17 @@ Before restart, make sure SteamVR is running
 
 ## 3. Set up VR devices
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 4. Bind to virtual camera
 
 Create a virtual camera.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
 
 Add a "Live Link Controller" component to VCam.
 

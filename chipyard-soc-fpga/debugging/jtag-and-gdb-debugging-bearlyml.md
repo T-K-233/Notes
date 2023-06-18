@@ -4,7 +4,7 @@
 
 In VSCode, search and install the "cortex-debug" extension.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 in the `.vscode` folder, create `launch.json`
 
@@ -41,7 +41,7 @@ in the `.vscode` folder, create `launch.json`
 
 Launch the RISC-V Debug routine.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

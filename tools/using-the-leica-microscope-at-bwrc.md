@@ -4,7 +4,7 @@
 
 Log in to the computer.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open the "LAS V4.4" software.
 
@@ -12,7 +12,7 @@ Open the "LAS V4.4" software.
 
 If this window pops up, click "OK".
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -40,7 +40,7 @@ To do white balance calibration, put a white paper under the scope, and press th
 
 There are two knobs on the scope. The black one controls the focus length, and the white one controls the zoom.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -52,5 +52,5 @@ After framing the die in the center, click "Acquire Image (HDR)" button.
 
 The image will be saved at `C:\Users\Public\Documents\Leica Application Suite\Images\` by default.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
