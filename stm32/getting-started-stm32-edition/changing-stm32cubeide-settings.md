@@ -98,5 +98,5 @@ Goto **Project** -> **Properties**
 
 Goto **C/C++ Build** -> **Settings** -> **MCU Settings**, check the "Use float with printf from newlib-nano" setting.
 
-![](<../../.gitbook/assets/image (43).png>)
+![](<../../.gitbook/assets/image (43) (1).png>)
 
