@@ -41,7 +41,7 @@ cd $chipyard
 
 ## 3. Configure Chipyard
 
-Optionally, ssh to any of the following server for faster setup.
+~~\[Depricated] ssh to any of the following server for faster setup.~~
 
 ```bash
 ssh -XY bwrcr740-8

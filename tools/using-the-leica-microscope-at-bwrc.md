@@ -18,7 +18,7 @@ If this window pops up, click "OK".
 
 This is the main UI of the software.
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
