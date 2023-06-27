@@ -65,6 +65,7 @@
   * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Setting up FT-LINK JTAG Debugger](chipyard-soc-fpga/ft-link-jtag-debugger-driver-setup.md)
 * [Debugging the SoC](chipyard-soc-fpga/debugging/README.md)
+  * [Page 2](chipyard-soc-fpga/debugging-the-soc/page-2.md)
   * [Debugging OsciArty with JTAG and command line GDB](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
   * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
