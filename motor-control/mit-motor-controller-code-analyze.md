@@ -39,7 +39,7 @@ It handles the motor phase inversion at the last stage, before issuing value to 
 
 ## Current Sampling
 
-<figure><img src="../.gitbook/assets/image (4) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's using 2 phase current shunt, and using blocking ADC call to sample current.
 

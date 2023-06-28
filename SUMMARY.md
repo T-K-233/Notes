@@ -167,8 +167,9 @@
 
 ## UW
 
-* [Remote Controlled Humanoid Robot Whitepaper And Design Notes](remote-controlled-humanoid-robot-whitepaper-and-design-notes.md)
-  * [Note on Face Design and Manufacture](finance/page-2.md)
+* [AI233 Design Notes](uw/ai233-design-notes/README.md)
+  * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
+  * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
 * [Network Setup](uw/network-setup.md)
 
 ## Finance
