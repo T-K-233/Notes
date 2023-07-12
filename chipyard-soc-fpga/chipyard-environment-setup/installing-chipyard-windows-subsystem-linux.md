@@ -18,7 +18,8 @@ Download conda from the miniforge release page.
 
 After download, we need to mark the script as executable. Then run the script.
 
-```
+```bash
+chmod +x yourfilename
 ```
 
 ## 2. Clone Chipyard
