@@ -14,7 +14,11 @@ If it errors out, download the "WSL2 Linux kernel update package for x64 machine
 
 
 
+Run this command to verify the current version
 
+```bash
+wsl -l -v
+```
 
 
 
