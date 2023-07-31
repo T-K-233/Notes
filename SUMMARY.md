@@ -108,6 +108,8 @@
 
 ## Tools
 
+* [Windows](tools/windows/README.md)
+  * [Install WSL 2](tools/windows/install-wsl-2.md)
 * [Ubuntu](tools/ubuntu/README.md)
   * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
