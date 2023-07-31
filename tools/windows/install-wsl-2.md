@@ -22,3 +22,11 @@ wsl -l -v
 
 
 
+When success, it should look something like:
+
+```bash
+PS C:\WINDOWS\system32> wsl -l -v
+  NAME      STATE           VERSION
+* Ubuntu    Stopped         2
+```
+
