@@ -6,7 +6,7 @@ Hardware: Framework Laptop i7-1165G7
 
 Operating System: Windows 10 Pro 21H2 Build 19044.2486
 
-Subsystem Linux: Ubuntu 22.04.1 LTS
+Subsystem Linux: Ubuntu 22.04.1 LTS (WSL 2)
 
 
 
@@ -25,9 +25,11 @@ chmod +x yourfilename
 ## 2. Clone Chipyard
 
 ```bash
+cd /home/tk/Desktop
+
 git clone https://github.com/ucb-bar/chipyard.git
 
-export chipyard=/Documents/chipyard
+export chipyard=/home/tk/Desktop/chipyard
 cd $chipyard
 
 git checkout stable
@@ -38,7 +40,7 @@ git checkout stable
 ## 3. Configure Chipyard
 
 ```bash
-$chipyard/build-setup.sh riscv-tools
+./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
 
@@ -46,5 +48,5 @@ $chipyard/build-setup.sh riscv-tools
 Finally, for every new terminal, run
 
 ```bash
-source $chipyard/env.sh
+source ./env.sh
 ```

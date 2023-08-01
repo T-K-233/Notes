@@ -7,7 +7,7 @@ source env.sh
 
 
 ```bash
-cd ./sims/vcs
+cd ./sims/verilator
 ```
 
 
