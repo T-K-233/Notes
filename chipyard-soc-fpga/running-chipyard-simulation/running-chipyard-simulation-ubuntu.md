@@ -1,6 +1,18 @@
 # Running Chipyard Simulation - Ubuntu
 
 ```bash
+source env.sh
+```
+
+
+
+```bash
+cd ./sims/vcs
+```
+
+
+
+```bash
 make run-binary CONFIG=ExampleChipConfig BINARY=../../tests/hello.riscv
 ```
 
