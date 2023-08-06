@@ -132,6 +132,7 @@
 * [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
 * [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 * [Pair XBoxController to Raspberry Pi with Bluetooth](tools/pair-xboxcontroller-to-raspberry-pi-with-bluetooth.md)
+* [SAI Color Flip/Color Inversion](tools/sai-color-flip-color-inversion.md)
 
 ## Mechanical
 
