@@ -110,6 +110,12 @@
 
 * [Windows](tools/windows/README.md)
   * [Install WSL 2](tools/windows/install-wsl-2.md)
+  * [Remove EFI disk partition](tools/windows/remove-efi-disk-partition.md)
+  * [SAI Color Flip/Color Inversion](tools/windows/sai-color-flip-color-inversion.md)
+  * [Microsoft Visual Studio Create Software Signature](tools/windows/microsoft-visual-studio-create-software-signature.md)
+  * [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/windows/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
+  * [Using JADENS Thermal Label Printer](tools/windows/using-jadens-thermal-label-printer.md)
+  * [Getting Started with XBee (ZigBee)](tools/windows/getting-started-with-xbee-zigbee.md)
 * [Ubuntu](tools/ubuntu/README.md)
   * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
@@ -125,14 +131,9 @@
 * [Raspberry Pi Setup](tools/raspberry-pi-setup.md)
 * [Clang-Format Style Config](tools/clang-format-style-config.md)
 * [CrazyFlie Setting Up](tools/crazyflie-setting-up.md)
-* [Getting Started with XBee (ZigBee)](tools/getting-started-with-xbee-zigbee.md)
-* [Using JADENS Thermal Label Printer](tools/using-jadens-thermal-label-printer.md)
-* [Connecting the SIGLENT SDS1104X-U Oscilloscope to Computer](tools/connecting-the-siglent-sds1104x-u-oscilloscope-to-computer.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
-* [Microsoft Visual Studio Create Software Signature](tools/microsoft-visual-studio-create-software-signature.md)
 * [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 * [Pair XBoxController to Raspberry Pi with Bluetooth](tools/pair-xboxcontroller-to-raspberry-pi-with-bluetooth.md)
-* [SAI Color Flip/Color Inversion](tools/sai-color-flip-color-inversion.md)
 
 ## Mechanical
 
