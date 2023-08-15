@@ -180,6 +180,7 @@
 ## Finance
 
 * [Finance](finance/tax-stuff.md)
+* [UC Berkeley Reimbursement](finance/uc-berkeley-reimbursement.md)
 
 ## Life
 
