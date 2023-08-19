@@ -38,7 +38,9 @@ Then, we use [zadig](https://zadig.akeo.ie/#google\_vignette) to load the correc
 
 Open zadig, check Options -> List All Devices.
 
-In the main dropdown menu, select "Dual RS232 (Interface 0). Make sure the Interface 0 is selected, instead of 1.
+In the main dropdown menu, select "**Dual RS232 (Interface 0)**".&#x20;
+
+> _Make sure <mark style="color:red;">**Interface 0**</mark> is selected, not <mark style="color:red;">**Interface 1**</mark>._
 
 Select the target driver to be "WinUSB", and click the "Replace Driver" button.
 
