@@ -40,7 +40,7 @@ _Note: It's recommended to remove the version number from the installation folde
 
 Select the driver. We are only using ST-Link, so no need for the SEGGER J-Link drivers. Then, click "Install".
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Verify the installation by searching "STM32CubeIDE" in the Windows main menu
 
