@@ -32,7 +32,7 @@ Turn on the light of the microscope by pressing the power button.
 
 To do white balance calibration, put a white paper under the scope, and press this button on the software.
 
-<figure><img src="../.gitbook/assets/image (2) (2) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

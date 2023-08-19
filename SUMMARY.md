@@ -110,6 +110,7 @@
 
 * [Windows](tools/windows/README.md)
   * [Install WSL 2](tools/windows/install-wsl-2.md)
+  * [Install Make on Windows](tools/windows/install-make-on-windows.md)
   * [Remove EFI disk partition](tools/windows/remove-efi-disk-partition.md)
   * [SAI Color Flip/Color Inversion](tools/windows/sai-color-flip-color-inversion.md)
   * [Microsoft Visual Studio Create Software Signature](tools/windows/microsoft-visual-studio-create-software-signature.md)
