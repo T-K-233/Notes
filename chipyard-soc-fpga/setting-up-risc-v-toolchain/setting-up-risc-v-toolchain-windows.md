@@ -18,9 +18,9 @@ Download RISC-V toolchain from [here](https://www.sifive.com/software). We are g
 
 > If the link above still does not work, here is the archive links:
 >
-> riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86\_64-w64-mingw32.zip
+> [riscv-openocd-0.10.0-2020.12.1-x86\_64-w64-mingw32.zip](https://github.com/ucb-ee290c/ucb-ee290c.github.io/releases/download/RISCV-Windows-Toolchain/riscv-openocd-0.10.0-2020.12.1-x86\_64-w64-mingw32.zip)
 >
-> riscv-openocd-0.10.0-2020.12.1-x86\_64-w64-mingw32.zip
+> [riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86\_64-w64-mingw32.zip](https://github.com/ucb-ee290c/ucb-ee290c.github.io/releases/download/RISCV-Windows-Toolchain/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86\_64-w64-mingw32.zip)
 
 
 
