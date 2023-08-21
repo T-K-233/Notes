@@ -1,4 +1,13 @@
-# PyPi Packaging
+# Publish Python Package to PyPi
+
+### Prerequisites
+
+```bash
+py -m pip install --upgrade pip
+py -m pip install --upgrade build
+```
+
+
 
 ### Project Directory Structure
 
