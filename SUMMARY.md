@@ -122,6 +122,7 @@
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
   * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
+* [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
 * [Python](tools/python/README.md)
   * [Publish Python Package to PyPi](tools/python/publish-python-package-to-pypi.md)
