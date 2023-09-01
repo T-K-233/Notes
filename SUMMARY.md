@@ -164,9 +164,8 @@
 
 ## 3D Modeling
 
-***
-
-* [Page 1](page-1.md)
+* [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
+* [Page 1](3d-modeling/page-1.md)
 
 ## Maintainance Log
 
@@ -192,5 +191,3 @@
 ## Group 0
 
 ## Group 1
-
-* [Page 5](group-1/page-5.md)
