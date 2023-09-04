@@ -121,6 +121,7 @@
   * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
   * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
+  * [Configure USB Access Permissions on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
@@ -165,7 +166,6 @@
 ## 3D Modeling
 
 * [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
-* [Page 1](3d-modeling/page-1.md)
 
 ## Maintainance Log
 
