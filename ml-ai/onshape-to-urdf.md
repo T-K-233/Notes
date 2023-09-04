@@ -716,6 +716,10 @@ unset GTK_PATH
 
 
 
+## Onshape Modeling Considerations
+
+When making mate connections, always click child component first, and then parent. (bind child to parent).
+
 
 
 ## Export Onshape robot
