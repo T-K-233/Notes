@@ -12,37 +12,59 @@ Reference Official Tutorial:
 
 
 
-## Download and Install Vivado
+## 1. Download and Install Vivado
 
-Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx\_Unified\_2022.1\_0420\_0327\_Lin64.bin).
+Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx\_Unified\_2023.1\_0507\_1903\_Lin64.bin).
 
 After download, run the following command to grant executable right to the binary file.
 
 ```bash
-chmod +x Xilinx_Unified_2023.1_0507_1903_Lin64.bin
+chmod +x ~/Downloads/Xilinx_Unified_2023.1_0507_1903_Lin64.bin
 ```
 
 Then, run the file using&#x20;
 
 ```bash
-sudo ./Xilinx_Unified_2023.1_0507_1903_Lin64.bin
+sudo ~/Downloads/Xilinx_Unified_2023.1_0507_1903_Lin64.bin
 ```
 
 
 
-<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+In the pop-up window, log in with AMD account.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Follow the commands in the installer. Installation directory is `~/Documents/Xilinx`
+Select "Vivado".
+
+<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+
+Select "Vivado ML Standard"
+
+<figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Select installation contents. For Arty 100T, only "Production Devices > 7 Series > Artix-7" needs to be selected.
+
+<figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Accept the License Agreements.
+
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+
+Select the installation path. Here, we will be using `/home/tk/Documents/Xilinx`.
+
+<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-## Install Additional Dependencies
+## 2. Install Additional Dependencies
 
 After installation, we need another dependency:
 
@@ -52,21 +74,23 @@ sudo apt install libtinfo5
 
 
 
-## Launching Vivado
+## 3. Launching Vivado
 
-Start vivado by running
+By default, vivado can only be executed by invoking the program with the installation path:
 
 ```bash
 ~/Documents/Xilinx/Vivado/2023.1/bin/vivado
 ```
 
-We can also add it to PATH by
+
+
+To be able to directly invoke vivado, we need to add the installational path to PATH environment variable.
 
 ```bash
 export PATH="/home/tk/Documents/Xilinx/Vivado/2023.1/bin:$PATH"
 ```
 
-and then
+To make the change effective, run
 
 ```bash
 source ~/.bashrc
@@ -74,7 +98,7 @@ source ~/.bashrc
 
 
 
-## Install cable drivers
+## 4. Install cable drivers
 
 To connect to boards, we need to install additional drivers by running
 
@@ -87,7 +111,7 @@ sudo ./install_drivers
 
 
 
-## Install board support files
+## 5. Install board support files
 
 Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent/vivado-boards/archive/master.zip) of Digilent's [vivado-boards](https://github.com/Digilent/vivado-boards) Github repository and extract it.
 
