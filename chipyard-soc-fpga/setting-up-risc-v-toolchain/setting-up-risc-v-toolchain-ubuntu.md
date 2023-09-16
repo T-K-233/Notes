@@ -1,6 +1,10 @@
 # Setting up RISC-V Toolchain - Ubuntu
 
-## RISC-V Toolchain
+This is the recommended method.
+
+
+
+## 1. Install RISC-V Toolchain
 
 First, we need to install the following dependencies.
 
@@ -40,7 +44,7 @@ make
 
 
 
-## OpenOCD
+## 2. Install OpenOCD
 
 Clone the RISC-V OpenOCD repo
 
