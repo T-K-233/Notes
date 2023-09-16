@@ -1,12 +1,12 @@
 # Setting up Metals (Scala Language Server)
 
-## 1.&#x20;
+## 1. Install the Metals VSCode exension&#x20;
 
 Search for "Metals" in VS Code Extensions.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-## 2.
+## 2. Switch version
 
 After installation, click "Switch to Pre-Release Version".
 
@@ -14,7 +14,7 @@ After installation, click "Switch to Pre-Release Version".
 
 
 
-## 3.&#x20;
+## 3. Set JAVA home
 
 Set Java Home location to:
 
@@ -32,6 +32,9 @@ And set Sbt Script location to:
 
 <figure><img src="../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-## 4.
+## 4. Thank you Reza
 
 Say thank you to Reza!
+
+
+

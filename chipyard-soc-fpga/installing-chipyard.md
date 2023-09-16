@@ -14,9 +14,19 @@ Download conda from the miniforge release page.
 
 {% embed url="https://github.com/conda-forge/miniforge/releases" %}
 
-After download, we need to mark the script as executable. Then run the script.
+Select the corresponding version and download the file ending with ".sh".
+
+<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+
+
+
+After download, we need to mark the script as executable. Right click the file. Under the "Permissions" tab, check the "Allow executing file as program" selection.
 
 <figure><img src="../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Open terminal in the download folder and execute the ".sh" script.
 
 ```bash
 ./Mambaforge-4.14.0-0-Linux-x86_64.sh 
@@ -24,11 +34,15 @@ After download, we need to mark the script as executable. Then run the script.
 
 
 
-During installation, the program will prompt you to input the installation location. Here, we are using `/home/tk/Document/mambaforge`.&#x20;
+Follow the installation prompt. The program will prompt you to input the installation location. Here, we are using `/home/tk/Documents/mambaforge`.&#x20;
 
 <figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-Chipyard also requires the `conda-lock` module.
+## 2. Install conda-lock
+
+Chipyard also requires the `conda-lock` module. Install `conda-lock` by executing the following commands.
+
+> **Note**: after installing conda, the `conda` path is not added to the PATH environment variable of the current terminal. If the `conda: command not found` error occured, open a new terminal (or source `~./bashrc`).
 
 ```bash
 conda install -n base conda-lock==1.4.0
@@ -37,12 +51,14 @@ conda activate base
 
 
 
-## 2. Clone Chipyard
+## 3. Clone Chipyard
+
+Open terminal in a known location. Here, we will use the directory `/home/tk/Desktop/`. In the terminal, execute the following command.
 
 ```bash
 git clone https://github.com/ucb-bar/chipyard.git
 
-export chipyard=/Documents/chipyard
+export chipyard=/home/tk/Desktop/chipyard
 cd $chipyard
 
 git checkout stable
@@ -50,9 +66,9 @@ git checkout stable
 
 
 
-## 3. Configure Chipyard
+## 4. Configure Chipyard
 
-By default it initializes/installs things in the following order:&#x20;
+By default, chipyard setup script initializes/installs things in the following order:&#x20;
 
 1. Conda environment
 2. Chipyard submodules
@@ -65,29 +81,35 @@ By default it initializes/installs things in the following order:&#x20;
 9. FireMarshal pre-compile default buildroot Linux sources
 10. Runs repository clean-up
 
+
+
+To execute the setup script, run the following command.
+
 ```bash
 $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
 ```
 
+The script will prompt the following message. Enter "y" and press Enter key to continue.
+
 <figure><img src="../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-to skip the release check prompt, do
+
+
+Alternatively, the release check prompt can be skipped by passing the "--force" flag.
 
 ```bash
-./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
+$chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
 
 
+## 4. On New Terminal
 
-
-Finally, for every new terminal, run
+Finally, for every new terminal, run the following script to set up all the environment variables required by Chipyard.
 
 ```bash
 source $chipyard/env.sh
 ```
-
-
 
 
 

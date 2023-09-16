@@ -8,12 +8,18 @@ On BWRC login servers
 
 ## 1. Set up conda environment
 
+Run the following commands to activate the base conda environment
+
 ```bash
 source /tools/C/chiyufeng/documents/miniconda3/bin/activate
 conda activate base
 ```
 
-If running for the first time, we need to first install conda-lock before running `conda activate`.
+
+
+## 2. Install conda-lock
+
+If this is the first time conda is activated on the user environment, we need to install `conda-lock`.
 
 ```bash
 conda install -n base conda-lock
@@ -21,7 +27,9 @@ conda install -n base conda-lock
 
 
 
-## 2. Clone Chipyard
+## 3. Clone Chipyard
+
+Open terminal in the working directory. Here, we will use the directory `/tools/C/chiyufeng/tapeout/` as an example. In the terminal, execute the following command.
 
 ```bash
 git clone https://github.com/ucb-bar/chipyard.git
@@ -41,41 +49,50 @@ cd $chipyard
 
 ## 3. Configure Chipyard
 
-~~\[Depricated] ssh to any of the following server for faster setup.~~
+By default, chipyard setup script initializes/installs things in the following order:&#x20;
 
-```bash
-ssh -XY bwrcr740-8
-ssh -XY bwrcr740-9
-ssh -XY bwrcix-1
-```
-
-
-
-~~\[Depricated] On old branches:~~
-
-```
-$chipyard/build-setup.sh riscv-tools
-```
+1. Conda environment
+2. Chipyard submodules
+3. Toolchain collateral (Spike, PK, tests, libgloss)
+4. Ctags
+5. Chipyard pre-compile sources
+6. FireSim
+7. FireSim pre-compile sources
+8. FireMarshal
+9. FireMarshal pre-compile default buildroot Linux sources
+10. Runs repository clean-up
 
 
 
-On the newer release branch:
+To execute the setup script, run the following command.
 
 ```bash
 $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
 ```
 
-When it prompts whether to continue setup Chipyard, enter `y`.
+The script will prompt the following message. Enter "y" and press Enter key to continue.
 
-To skip the prompt, do
+Alternatively, the release check prompt can be skipped by passing the "--force" flag.
 
 ```bash
-./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
+$chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
 
 
-If script fails to compile, try running
+## 4. On New Terminal
+
+Finally, for every new terminal, run the following script to set up all the environment variables required by Chipyard.
+
+```bash
+source $chipyard/env.sh
+```
+
+
+
+## 5. Dealing with Failed Setups
+
+If the setup script fails to compile, try running
 
 ```bash
 git clean -fxd
@@ -92,11 +109,7 @@ git submodule deinit -f .
 
 
 
-## 4. On New Terminal
+##
 
-For every new terminal, run the following script.
 
-```bash
-source $chipyard/env.sh
-```
 
