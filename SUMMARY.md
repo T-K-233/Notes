@@ -188,6 +188,4 @@
 * [Some Interview Questions](life/some-interview-questions.md)
 * [Health Insurance](life/page-4.md)
 
-## Group 0
-
 ## Group 1
