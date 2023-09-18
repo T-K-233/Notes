@@ -91,20 +91,21 @@
   * [Setting up Recoil USB-CAN Adapter - Windows](motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-windows.md)
 * [NTC Temperature Sense Resistor Value Calculation](motor-control/ntc-temperature-sense-resistor-value-calculation.md)
 
-## ML/AI
+## ML/RL
 
-* [ROS 2](ml-ai/ros-2/README.md)
-  * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-ai/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
-  * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-ai/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
-* [Google Colab](ml-ai/google-colab/README.md)
-  * [Colab Resource Options](ml-ai/google-colab/colab-resource-options.md)
-  * [so-vits-svc 4.0: Colab Flow](ml-ai/google-colab/so-vits-svc-4.0-colab-flow.md)
-* [OpenAI gym + Mujoco Setup](setup/setting-up-aws-mujoco-training-machine.md)
-* [NVIDIA Omniverse Isaac Sim Setup](ml-ai/nvidia-omniverse-isaac-sim-setup.md)
-* [Gazebo Setup](ml-ai/gazebo-setup.md)
-* [OnShape to URDF](ml-ai/onshape-to-urdf.md)
-* [so-vits-svc 4.2 Runtime](ml-ai/so-vits-svc-4.2-runtime.md)
-* [Setting up MineDojo Environment](ml-ai/setting-up-minedojo-environment.md)
+* [Zoo of RL Algorithms](ml-rl/zoo-of-rl-algorithms.md)
+* [ROS 2](ml-rl/ros-2/README.md)
+  * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+  * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
+* [Google Colab](ml-rl/google-colab/README.md)
+  * [Colab Resource Options](ml-rl/google-colab/colab-resource-options.md)
+  * [so-vits-svc 4.0: Colab Flow](ml-rl/google-colab/so-vits-svc-4.0-colab-flow.md)
+* [OpenAI gym + Mujoco Setup](ml-rl/setting-up-aws-mujoco-training-machine.md)
+* [NVIDIA Omniverse Isaac Sim Setup](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
+* [Gazebo Setup](ml-rl/gazebo-setup.md)
+* [OnShape to URDF](ml-rl/onshape-to-urdf.md)
+* [so-vits-svc 4.2 Runtime](ml-rl/so-vits-svc-4.2-runtime.md)
+* [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 
 ## Tools
 
