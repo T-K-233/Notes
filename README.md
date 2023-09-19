@@ -1,36 +1,21 @@
 # Home
 
 {% embed url="https://app.gitbook.com/s/vVJ0h2a4qMIhB1I8GdV8/" %}
-^ This button is just for my own convenience  :D
+^ This button is just for my own convenience :D
 {% endembed %}
-
-
 
 Hi there,
 
-
-
 Welcome to my memory!
-
-
 
 I store everything I feel like need to memorize here, mostly technical stuff, but also some life hacks in general.
 
-
-
 It would be great if any of these also helps you by any chance.
 
-
-
-Questions? Comments? Concerns? I don't have a comment area here, but I am available on the various social media platforms. Just send me the link / screenshot of the page and I'll get back to you.
-
-
+Questions? Comments? Concerns? I don't have a comment area here, but I am available on the various [social media platforms](https://tk233.xyz/). Just send me the link / screenshot of the page and I'll get back to you.
 
 Cheers,
 
 \-T.K.-
 
-
-
 :D
-
