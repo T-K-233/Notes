@@ -2,8 +2,6 @@
 
 This is the recommended method.
 
-
-
 ## 1. Install RISC-V Toolchain
 
 First, we need to install the following dependencies.
@@ -12,17 +10,13 @@ First, we need to install the following dependencies.
 sudo apt install texinfo bison flex libgmp-dev
 ```
 
-
-
-Clone the RISC-V GNU Toolchain repo.&#x20;
+Clone the RISC-V GNU Toolchain repo.
 
 ```bash
 cd ~/Downloads
 git clone git@github.com:riscv-collab/riscv-gnu-toolchain.git
 cd ~/Downloads/riscv-gnu-toolchain/
 ```
-
-
 
 Run configuration. The prefix is where we want to install the toolchain. Here, we will be installing under the `riscv64-unknown-toolchain` directory.
 
@@ -32,19 +26,19 @@ Run configuration. The prefix is where we want to install the toolchain. Here, w
 ```
 {% endcode %}
 
-
-
 Build the toolchain
 
 ```bash
 make
 ```
 
-
-
-
-
 ## 2. Install OpenOCD
+
+First, we need to install the following dependencies.
+
+```bash
+sudo apt install libftdi-dev
+```
 
 Clone the RISC-V OpenOCD repo
 
@@ -54,12 +48,9 @@ git clone https://github.com/riscv/riscv-openocd.git
 cd ~/Documents/RISCV/riscv-openocd
 ```
 
-
-
 ```bash
 ./bootstrap
 ./configure
 make
 sudo make install
 ```
-
