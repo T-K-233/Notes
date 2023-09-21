@@ -37,6 +37,7 @@ make
 First, we need to install the following dependencies.
 
 ```bash
+sudo apt install libusb-1.0
 sudo apt install libftdi-dev
 ```
 
