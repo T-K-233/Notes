@@ -6,11 +6,9 @@ In **Debugger** tab, change **Debug Probe** to "ST-Link (OpenOCD)".
 
 <figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
-In **Startup** tab, uncheck **Download** to prevent the debugger from flashing Flash.&#x20;
+In **Startup** tab, uncheck **Download** to prevent the debugger from flashing Flash.
 
 <figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## 2. Change Settings
 
@@ -74,9 +72,7 @@ set *(int *)0x40022014=(*(int *)0x40022014) | 0x80000000
 
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### STM32F042
 
@@ -105,8 +101,6 @@ x/16 0x40022000
 0x40022020:	0xffffffff	0x00000000	0x00000000	0x00000000
 0x40022030:	0x00000000	0x00000000	0x00000000	0x00000000
 ```
-
-
 
 ```c
 // FLASH->CR
@@ -196,4 +190,3 @@ set *(int *)0x40022010 |= 1U<<13U
 
 
 ```
-
