@@ -4,7 +4,7 @@
 
 ### Standardized
 
-<table><thead><tr><th>Translation</th><th width="182">Axis</th><th>Rotation</th><th>Axis</th></tr></thead><tbody><tr><td>Right</td><td><mark style="color:red;">X</mark></td><td>Pitch</td><td><mark style="color:red;">X</mark></td></tr><tr><td>Front</td><td><mark style="color:green;">Y</mark></td><td>Roll</td><td><mark style="color:green;">Y</mark></td></tr><tr><td>Up</td><td><mark style="color:blue;">Z</mark></td><td>Yaw</td><td><mark style="color:blue;">Z</mark></td></tr><tr><td></td><td></td><td>(QX, QY, QZ, QW)</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Translation</th><th width="182">Axis</th><th>Rotation</th><th>Axis</th></tr></thead><tbody><tr><td>Right</td><td><mark style="color:red;">X</mark></td><td>Pitch</td><td><mark style="color:red;">X</mark></td></tr><tr><td>Front</td><td><mark style="color:green;">Y</mark></td><td>Roll</td><td><mark style="color:green;">Y</mark></td></tr><tr><td>Up</td><td><mark style="color:blue;">Z</mark></td><td>Yaw</td><td><mark style="color:blue;">Z</mark></td></tr><tr><td></td><td></td><td>(QW, QX, QY, QZ)</td><td></td></tr></tbody></table>
 
 
 
