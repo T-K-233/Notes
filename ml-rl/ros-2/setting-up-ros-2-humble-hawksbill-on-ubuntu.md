@@ -65,8 +65,14 @@ source /opt/ros/humble/setup.zsh
 
 ```bash
 sudo apt install python3-rosdep2
-sudo apt install ros-humble-joint-state-publisher-gui
 rosdep update
+```
+
+other possible required dependencies
+
+```bash
+sudo apt install ros-humble-joint-state-publisher-gui
+sudo apt install ros-humble-xacro
 ```
 
 ### Install Colcon
