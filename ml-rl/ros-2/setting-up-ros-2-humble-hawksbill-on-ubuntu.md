@@ -65,6 +65,7 @@ source /opt/ros/humble/setup.zsh
 
 ```bash
 sudo apt install python3-rosdep2
+sudo apt install ros-humble-joint-state-publisher-gui
 rosdep update
 ```
 
