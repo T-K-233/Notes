@@ -16,21 +16,15 @@ sudo apt install openscad meshlab
 pip install onshape-to-robot
 ```
 
-
-
 Also install ROS2 environment following this guide:
 
 {% content-ref url="ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md" %}
 [setting-up-ros-2-humble-hawksbill-on-ubuntu.md](ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
 {% endcontent-ref %}
 
-
-
 ## Set up Onshape API access key
 
 Set up an API access key at [OnShape developer portal](https://dev-portal.onshape.com/keys).
-
-
 
 Store the API keys in `./scripts/onshape_api_key.sh`
 
@@ -41,15 +35,11 @@ export ONSHAPE_ACCESS_KEY=Your_Access_Key
 export ONSHAPE_SECRET_KEY=Your_Secret_Key
 ```
 
-
-
 On every new terminal opened, run
 
 ```bash
 source ./scripts/onshape_api_key.sh
 ```
-
-
 
 ## Set up the ROS2 workspace
 
@@ -77,17 +67,13 @@ cd ~/Desktop/humanoid-urdf
 colcon build
 ```
 
-
-
-If the package is built without error, try the following command.&#x20;
+If the package is built without error, try the following command.
 
 ```
 colcon_cd humanoid_v1
 ```
 
 colcon\_cd should navigate to our package directory `~/Desktop/humanoid-urdf/src/humanoid_v1`
-
-
 
 ### Create Config Files
 
@@ -101,9 +87,7 @@ touch ~/Desktop/humanoid-urdf/src/humanoid_v1/rviz/rviz_basic_settings.rviz
 touch ~/Desktop/humanoid-urdf/src/humanoid_v1/urdf/robot.urdf.xacro
 ```
 
-
-
-`humanoid_v1.launch.py`:&#x20;
+`humanoid_v1.launch.py`:
 
 ```python
 # Author: Addison Sears-Collins
@@ -225,8 +209,6 @@ def generate_launch_description():
 
 
 ```
-
-
 
 rviz
 
@@ -490,8 +472,6 @@ Window Geometry:
   Y: 77
 ```
 
-
-
 urdf
 
 ```
@@ -618,10 +598,6 @@ urdf
     
 ```
 
-
-
-
-
 ### Change Files
 
 Change `package.xml` by adding these lines:
@@ -642,8 +618,6 @@ Change `package.xml` by adding these lines:
 
 ```
 
-
-
 Change `CMakeLists.txt` by adding these lines:
 
 ```cmake
@@ -659,8 +633,6 @@ install(
 if(BUILD_TESTING)
 ```
 
-
-
 ### Test Build
 
 ```bash
@@ -673,8 +645,6 @@ source install/setup.sh
 
 ros2 launch humanoid\_v1 humanoid\_v1.launch.py
 
-
-
 If the following error is raised, we need to install the gui package separately, suggested [here](https://answers.ros.org/question/344992/missing-joint\_state\_publisher\_gui-when-l-run-displaylaunch/).
 
 ```bash
@@ -685,15 +655,11 @@ If the following error is raised, we need to install the gui package separately,
 sudo apt install ros-humble-joint-state-publisher-gui
 ```
 
-
-
 might also need
 
 ```
 sudo apt install ros-humble-xacro
 ```
-
-
 
 if running into this error:
 
@@ -704,21 +670,31 @@ if running into this error:
 [ERROR] [joint_state_publisher_gui-1]: process has died [pid 8878, exit code 127, cmd '/opt/ros/humble/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args -r __node:=joint_state_publisher_gui'].
 ```
 
-
-
 highly possible that this is a VSCode terminal issue. Do
 
 ```bash
 unset GTK_PATH
 ```
 
+##
 
-
-
+##
 
 ## Onshape Modeling Considerations
 
 When making mate connections, always click child component first, and then parent. (bind child to parent).
+
+By doing so, the order of the mate connectors should look like the one shown in the following diagram.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
 
 
 
@@ -730,8 +706,6 @@ make urdf-build
 
 This command will dump the urdf and related asset files in `./onshape/humanoid_v1` directory, and automatically copy the necessary files to the ROS2 package.
 
-
-
 To clear the previous build, run
 
 ```bash
@@ -742,13 +716,7 @@ make urdf-clean
 onshape-to-robot humanoid_v1
 ```
 
-
-
-
-
 ## Change the exported urdf
-
-
 
 For exported urdf, we need to make several changes
 
@@ -771,8 +739,6 @@ package://mesh.stl -> package://humanoid_v1/meshes/mesh.stl
 
 ### 3. Add position limit
 
-
-
 ### 4. Collision
 
 ```
@@ -782,10 +748,6 @@ translate([65, 0, 0])
 cube([20, 100, 20], center=true);
 
 ```
-
-
-
-
 
 ## Build
 
@@ -801,12 +763,6 @@ and then
 colcon build && ros2 launch humanoid_v1 humanoid_v1.launch.py
 ```
 
-
-
-
-
-
-
 ```bash
 sudo apt install openscad
 ```
@@ -814,4 +770,3 @@ sudo apt install openscad
 ```bash
 onshape-to-robot-edit-shape
 ```
-

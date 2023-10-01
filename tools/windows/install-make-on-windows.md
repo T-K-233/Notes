@@ -4,7 +4,7 @@
 
 Download the installer from [https://www.msys2.org/](https://www.msys2.org/).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Install make with the command:
 
@@ -12,7 +12,7 @@ Install make with the command:
 pacman -S make
 ```
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1).png>)
 
 Add the following path to PATH:
 
@@ -32,7 +32,7 @@ Create a folder for Make in a known location, for example, `D:\Documents\Make`.
 
 Unzip the "make-3.81-bin.zip" first to the newly created folder, then merge the content in "make-3.81-dep.zip" to the newly created folder.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Content inside "bin" after the merge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Content inside "bin" after the merge</p></figcaption></figure>
 
 Add `D:\Documents\Make\bin` to PATH.
 
