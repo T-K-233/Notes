@@ -1,5 +1,100 @@
 # MAD Cycloidal Actuator
 
+## New Method (Updated 2023-09-30)
+
+```python
+# generate_cycloidal_profile.py
+import numpy as np
+import matplotlib.pyplot as plt
+import ezdxf
+
+
+def generateCycloidalGearProfile(r_housing=36, r_roller=4, N=16, eccentricity=2):
+    theta = np.arange(0, 2*np.pi, 0.001)
+
+    psi = - np.arctan(np.sin((1 - N) * theta) / (r_housing / (eccentricity * N) - np.cos((1 - N)*theta)))
+
+    x = r_housing * np.cos(theta) - r_roller * np.cos(theta - psi) - eccentricity * np.cos(N * theta)
+    y = -r_housing * np.sin(theta) + r_roller * np.sin(theta - psi) + eccentricity * np.sin(N * theta)
+
+    return np.concatenate(([x], [y]), axis=0)
+
+
+def writeDXF(filename, fit_points, ref_circle_radius=10):
+    doc = ezdxf.new("R2010") # create a new DXF drawing in R2010 fromat 
+    msp = doc.modelspace()
+
+    fit_points = fit_points.T.tolist()
+
+    start_point = fit_points[0]
+
+    # close the loop
+    fit_points.append(start_point)
+
+    spline = msp.add_spline(fit_points)
+
+    spline.set_closed([(start_point[0], start_point[1], 0)])
+
+    print(spline.dxf.n_fit_points)
+
+    circle = msp.add_circle((0, 0), radius=ref_circle_radius)
+    
+    doc.saveas(filename)
+
+# 5010
+
+fit_points = generateCycloidalGearProfile(
+    r_housing=29.,
+    r_roller=2.5,
+    N=16.,
+    eccentricity=1.25
+    )
+'''
+#fit_points_ = generateCycloidalGearProfile(
+#    r_housing=29.,
+#    r_roller=3.,
+#    N=16.,
+#    eccentricity=1.25
+#    )
+
+'''
+# M6C12
+'''
+fit_points = generateCycloidalGearProfile(
+    r_housing=36,
+    r_roller=4,
+    N=16,
+    eccentricity=2
+    )
+'''
+print(fit_points.shape)
+
+x, y = fit_points
+#x_, y_ = fit_points_
+plt.plot(x, y)
+#plt.plot(x_, y_)
+plt.show()
+
+writeDXF("cycloidal_profile.dxf", fit_points, ref_circle_radius=31)
+
+```
+
+
+
+### RI-60 Parameters
+
+<table><thead><tr><th width="340.3333333333333"></th><th></th><th></th></tr></thead><tbody><tr><td>Housing Radius</td><td>29</td><td>mm</td></tr><tr><td>Housing Roller Diameter</td><td>5</td><td>mm</td></tr><tr><td>Central Hole Diameter</td><td>18</td><td>mm</td></tr><tr><td>Side Hole Diameter</td><td>13</td><td>mm</td></tr><tr><td>Eccentricity</td><td>1.25</td><td>mm</td></tr><tr><td>Spacing Radius of Side Hole</td><td>17</td><td>mm</td></tr></tbody></table>
+
+### RI-70 Parameters
+
+<table><thead><tr><th width="340.3333333333333"></th><th></th><th></th></tr></thead><tbody><tr><td>Housing Radius</td><td>36</td><td>mm</td></tr><tr><td>Housing Roller Diameter</td><td>8</td><td>mm</td></tr><tr><td>Central Hole Diameter</td><td>18</td><td>mm</td></tr><tr><td>Side Hole Diameter</td><td>13</td><td>mm</td></tr><tr><td>Eccentricity</td><td>2</td><td>mm</td></tr><tr><td>Spacing Radius of Side Hole</td><td>20</td><td>mm</td></tr></tbody></table>
+
+
+
+
+
+## Old Method
+
 Go in an active sketch plane
 
 ![](<../.gitbook/assets/image (8) (1) (1).png>)
@@ -168,17 +263,9 @@ def run(context):
 
 ```
 
-
-
 Then we get the cycloidal gear profile
 
 ![](<../.gitbook/assets/image (103).png>)
-
-
-
-
-
-
 
 ![](<../.gitbook/assets/image (144).png>)
 
@@ -219,13 +306,9 @@ Output
 
 ```
 
-
-
 To adapt to the motor we are using, we need to edit the model a bit.
 
 {% embed url="https://www.amazon.com/dp/B082W5B5LZ?psc=1&ref=ppx_yo2ov_dt_b_product_details" %}
-
-
 
 <div align="center">
 
@@ -234,6 +317,3 @@ To adapt to the motor we are using, we need to edit the model a bit.
 </div>
 
 ![](<../.gitbook/assets/image (100).png>)
-
-
-
