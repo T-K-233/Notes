@@ -2,17 +2,15 @@
 description: Chipyard Arty Flow
 ---
 
-# Prototyping Chipyard SoC on FPGA
+# Prototyping Chipyard SoC on FPGA - Ubuntu
 
 ## Setting up Chipyard
 
-Follow the following procedure for different operating system:
+See the following tutorial to install Chipyard.
 
 {% content-ref url="../chipyard-environment-setup/" %}
 [chipyard-environment-setup](../chipyard-environment-setup/)
 {% endcontent-ref %}
-
-
 
 For the FPGA flow, we need to do this additional initialization
 
@@ -20,7 +18,13 @@ For the FPGA flow, we need to do this additional initialization
 $chipyard/scripts/init-fpga.sh
 ```
 
+## Setting up Vivado
 
+See the following tutorial to install Vivado.
+
+{% content-ref url="installing-xilinx-vivado-on-ubuntu-22.04.md" %}
+[installing-xilinx-vivado-on-ubuntu-22.04.md](installing-xilinx-vivado-on-ubuntu-22.04.md)
+{% endcontent-ref %}
 
 ## Setting up Vivado
 
@@ -38,8 +42,6 @@ on BWRC server:
 source /tools/xilinx/Vivado/2022.1/settings64.sh
 ```
 
-
-
 ## Building Bitstream
 
 ```bash
@@ -50,21 +52,13 @@ cd $chipyard/fpga
 bsub -q ee194 -Is -XF make SUB_PROJECT=arty bitstream
 ```
 
-
-
 ```bash
 make SUB_PROJECT=ExampleChipArty35TConfig bitstream
 ```
 
-
-
 ```bash
 make SUB_PROJECT=ExampleChipArty100TConfig bitstream
 ```
-
-
-
-
 
 ## Setting up FT-LINK debugger (Linux)
 
@@ -72,8 +66,6 @@ make SUB_PROJECT=ExampleChipArty100TConfig bitstream
 sudo apt install libconfuse-dev
 sudo apt install libftdi-dev
 ```
-
-
 
 #### Linux: change udev rules
 
@@ -83,7 +75,7 @@ The FT Link comes with vendor id of `0403` and device id of `6010`. To see if th
 lsusb
 ```
 
-or&#x20;
+or
 
 ```bash
 lsusb -d 0403:6010
@@ -95,8 +87,6 @@ to see the specific device:
 lsusb -d 0403:6010
 Bus 003 Device 014: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
 ```
-
-
 
 With the `-v` option, we can see more information
 
@@ -192,8 +182,6 @@ Device Descriptor:
         bInterval               0
 ```
 
-
-
 To grant permission to this device, we need to add
 
 ```bash
@@ -206,15 +194,13 @@ Add the following test to the file:
 SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE:="0666"
 ```
 
-
-
 Now, when running the command
 
 ```bash
 lsusb -d 0403:6010 -v
 ```
 
-&#x20;we should able to see more device status:
+we should able to see more device status:
 
 ```bash
 lsusb -d 0403:6010 -v
@@ -233,10 +219,6 @@ Device Descriptor:
 Device Status:     0x0000
   (Bus Powered)
 ```
-
-
-
-
 
 ### Device not connected
 
@@ -260,4 +242,3 @@ Error: Target not examined yet
 
 Error: Unsupported DTM version: 15
 ```
-
