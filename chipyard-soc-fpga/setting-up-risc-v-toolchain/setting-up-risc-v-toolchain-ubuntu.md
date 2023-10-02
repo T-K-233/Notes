@@ -14,7 +14,7 @@ Clone the RISC-V GNU Toolchain repo.
 
 ```bash
 cd ~/Downloads
-git clone git@github.com:riscv-collab/riscv-gnu-toolchain.git
+git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git
 cd ~/Downloads/riscv-gnu-toolchain/
 ```
 
