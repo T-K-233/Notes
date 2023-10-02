@@ -37,6 +37,7 @@ make
 First, we need to install the following dependencies.
 
 ```bash
+sudo apt install libtool pkg-config
 sudo apt install libusb-1.0
 sudo apt install libftdi-dev
 ```
@@ -49,9 +50,32 @@ git clone https://github.com/riscv/riscv-openocd.git
 cd ~/Documents/RISCV/riscv-openocd
 ```
 
+
+
+Run the following command to generate the necessary configuration and build files for OpenOCD.
+
 ```bash
 ./bootstrap
+```
+
+<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+
+Configure the build process according to the current system and settings by running the following command.
+
+```bash
 ./configure
+```
+
+<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+
+Finally, compile and install the software
+
+```bash
 make
 sudo make install
 ```
+
+<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+
+
+
