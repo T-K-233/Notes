@@ -1,20 +1,33 @@
 # Python converting bettwen JSON and XML
 
+```bash
+pip install cc-xmljson
+```
+
+
+
 ```python
-def xml2json(out_file, in_file):
+import xml
+import json
+from cc.xmljson import XMLJSON
+
+def xml2json(in_file):
     xml_data = ""
     with open(in_file, "r") as f:
         xml_data = f.read()
 
-    json_data = xmljson.gdata.data(xml.etree.ElementTree.fromstring(xml_data))
-    json.dump(json_data, open(out_file, "w"))
+    json_data = XMLJSON.gdata.data(xml.etree.ElementTree.fromstring(xml_data))
+    return json_data
     
-def json2xml(out_file, in_file):
+def json2xml(in_file):
     json_data = json.load(open(in_file, "r"))
     
-    xml_data = xmljson.gdata.etree(json_data, root=xml.etree.ElementTree.Element("root"))
+    xml_data = XMLJSON.gdata.etree(json_data, root=xml.etree.ElementTree.Element("root"))
     xml_data = xml.etree.ElementTree.tostring(xml_data, encoding="utf8")
-    with open(out_file, "wb") as f:
-        f.write(xml_data)
+    return xml_data
+
+print(xml2json("tests/abdera-1.xml"))
+print(json2xml("tests/abdera-1.json"))
+
 
 ```
