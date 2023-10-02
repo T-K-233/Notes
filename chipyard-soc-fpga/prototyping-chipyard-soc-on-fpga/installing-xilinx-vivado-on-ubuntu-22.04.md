@@ -46,6 +46,8 @@ Select the installation path. Here, we will be using `/home/tk/Documents/Xilinx`
 
 <figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
 ## 2. Install Additional Dependencies
 
 Install Vivado runtime dependencies:
@@ -53,6 +55,8 @@ Install Vivado runtime dependencies:
 ```bash
 sudo apt install libtinfo5
 ```
+
+
 
 ## 3. Launching Vivado
 
@@ -74,6 +78,8 @@ To make the change effective, run
 source ~/.bashrc
 ```
 
+
+
 ## 4. Install cable drivers
 
 To connect to FPGA boards, we need to install additional USB drivers by running the following command.
@@ -85,11 +91,13 @@ sudo ./install_drivers
 
 <figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
+
+
 ## 5. Install board support files
 
 Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent/vivado-boards/archive/master.zip) of Digilent's [vivado-boards](https://github.com/Digilent/vivado-boards) Github repository and extract it.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
 
@@ -107,7 +115,9 @@ sudo cp -r ~/Downloads/vivado-boards-master/new/board_files/ ~/Documents/Xilinx/
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Copy contents from the downloaded folder (right) to Vivado installation directory (left)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Copy contents from the downloaded folder (right) to Vivado installation directory (left)</p></figcaption></figure>
+
+
 
 ## References
 

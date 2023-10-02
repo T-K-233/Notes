@@ -38,7 +38,7 @@ First, we need to install the following dependencies.
 
 ```bash
 sudo apt install libtool pkg-config
-sudo apt install libusb-1.0
+sudo apt install libusb-1.0-0-dev
 sudo apt install libftdi-dev
 ```
 
@@ -66,7 +66,9 @@ Configure the build process according to the current system and settings by runn
 ./configure
 ```
 
-<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
 
 Finally, compile and install the software
 

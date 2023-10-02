@@ -12,11 +12,7 @@ See the following tutorial to install Chipyard.
 [chipyard-environment-setup](../chipyard-environment-setup/)
 {% endcontent-ref %}
 
-For the FPGA flow, we need to do this additional initialization
 
-```bash
-$chipyard/scripts/init-fpga.sh
-```
 
 ## Setting up Vivado
 
@@ -33,7 +29,7 @@ add vivado to env.sh script
 on local machine:
 
 ```bash
-PATH=/home/tk/Documents/Xilinx/Vivado/2022.1/bin:$PATH
+PATH=/home/tk/Documents/Xilinx/Vivado/2023.1/bin:$PATH
 ```
 
 on BWRC server:
