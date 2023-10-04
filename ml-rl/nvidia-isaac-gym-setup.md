@@ -24,7 +24,7 @@ Check the "I Agree To ..." checkbox, and in the expanded section, click the butt
 
 Extract the downloaded "IsaacGym\_Preview\_4\_Package.tar.gz" file. Then, move the folder to a known location.
 
-<figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -78,5 +78,5 @@ python joint_monkey.py --asset_id 0
 
 
 
-
+<figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
 
