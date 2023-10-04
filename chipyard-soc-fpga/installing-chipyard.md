@@ -28,6 +28,8 @@ Open terminal in the download folder and execute the ".sh" script.
 
 Follow the installation prompt. The program will prompt you to input the installation location. Here, we are using `/home/tk/Documents/mambaforge`.
 
+After installation, it will ask whether to execute `conda init`. Enter "yes" to the prompt.
+
 <figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Install conda-lock
