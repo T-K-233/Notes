@@ -8,8 +8,8 @@ description: Chipyard Arty Flow
 
 See the following tutorial to install Chipyard.
 
-{% content-ref url="../setting-up-chipyard/" %}
-[setting-up-chipyard](../setting-up-chipyard/)
+{% content-ref url="../chipyard-environment-setup/" %}
+[chipyard-environment-setup](../chipyard-environment-setup/)
 {% endcontent-ref %}
 
 

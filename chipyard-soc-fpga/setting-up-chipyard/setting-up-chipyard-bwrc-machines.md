@@ -4,8 +4,6 @@
 
 On BWRC login servers
 
-
-
 ## 1. Set up conda environment
 
 Run the following commands to activate the base conda environment
@@ -15,8 +13,6 @@ source /tools/C/chiyufeng/documents/miniconda3/bin/activate
 conda activate base
 ```
 
-
-
 ## 2. Install conda-lock
 
 If this is the first time conda is activated on the user environment, we need to install `conda-lock`.
@@ -24,8 +20,6 @@ If this is the first time conda is activated on the user environment, we need to
 ```bash
 conda install -n base conda-lock
 ```
-
-
 
 ## 3. Clone Chipyard
 
@@ -45,11 +39,9 @@ export chipyard=/tools/C/chiyufeng/tapeout/chipyard
 cd $chipyard
 ```
 
-
-
 ## 3. Configure Chipyard
 
-By default, chipyard setup script initializes/installs things in the following order:&#x20;
+By default, chipyard setup script initializes/installs things in the following order:
 
 1. Conda environment
 2. Chipyard submodules
@@ -61,8 +53,6 @@ By default, chipyard setup script initializes/installs things in the following o
 8. FireMarshal
 9. FireMarshal pre-compile default buildroot Linux sources
 10. Runs repository clean-up
-
-
 
 To execute the setup script, run the following command.
 
@@ -78,8 +68,6 @@ Alternatively, the release check prompt can be skipped by passing the "--force" 
 $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
-
-
 ## 4. On New Terminal
 
 Finally, for every new terminal, run the following script to set up all the environment variables required by Chipyard.
@@ -87,8 +75,6 @@ Finally, for every new terminal, run the following script to set up all the envi
 ```bash
 source $chipyard/env.sh
 ```
-
-
 
 ## 5. Dealing with Failed Setups
 
@@ -98,8 +84,6 @@ If the setup script fails to compile, try running
 git clean -fxd
 ```
 
-
-
 Worst case, run this to re-link the submodules
 
 ```bash
@@ -107,9 +91,4 @@ git submodule deinit -f .
 ./scripts/init-submodules-no-riscv-tools.sh 
 ```
 
-
-
 ##
-
-
-

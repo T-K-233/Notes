@@ -1,6 +1,6 @@
 # Setting up RV32 Toolchain on BWRC
 
-The default RISCV toolchain that comes with Chipyard does not support RV32 / software floating-point compilation.&#x20;
+The default RISCV toolchain that comes with Chipyard does not support RV32 / software floating-point compilation.
 
 We need to set up a new toolchain.
 
@@ -8,8 +8,6 @@ We need to set up a new toolchain.
 git clone git@github.com:riscv-collab/riscv-gnu-toolchain.git
 cd riscv-gnu-toolchain/
 ```
-
-
 
 ### Install Prerequisites
 
@@ -19,8 +17,6 @@ on Ubuntu 22.04 machine, we need to do
 sudo apt update
 sudo apt install gawk
 ```
-
-
 
 ## Compile
 
@@ -38,15 +34,8 @@ This takes eternity to compile...
 make
 ```
 
-
-
 Or, can just source this environment
 
 ```bash
 source /tools/C/chiyufeng/documents/riscv_env.sh
 ```
-
-
-
-
-

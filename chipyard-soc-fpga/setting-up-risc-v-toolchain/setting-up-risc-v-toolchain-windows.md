@@ -8,8 +8,6 @@ Follow the tutorial Install Make on Windows.
 [install-make-on-windows.md](../../tools/windows/install-make-on-windows.md)
 {% endcontent-ref %}
 
-
-
 ## 2. Download RISC-V Toolchain
 
 Download RISC-V toolchain from [here](https://www.sifive.com/software). We are going to need the toolchain and OpenOCD.
@@ -22,8 +20,6 @@ Download RISC-V toolchain from [here](https://www.sifive.com/software). We are g
 >
 > [riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86\_64-w64-mingw32.zip](https://github.com/ucb-ee290c/ucb-ee290c.github.io/releases/download/RISC-V\_toolchain\_win/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86\_64-w64-mingw32.zip)
 
-
-
 Extract them to known locations, and put the path to system PATH.
 
 ```
@@ -33,8 +29,3 @@ D:\Documents\RISCV\riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-min
 ```
 D:\Documents\RISCV\riscv-openocd-0.10.0-2020.12.1-x86_64-w64-mingw32\bin
 ```
-
-
-
-
-
