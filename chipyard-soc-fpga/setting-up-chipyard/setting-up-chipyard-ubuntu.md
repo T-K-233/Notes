@@ -14,11 +14,11 @@ Download conda from the miniforge release page.
 
 Select the corresponding version and download the file ending with ".sh".
 
-<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
 After download, we need to mark the script as executable. Right click the file, and select "Properties..." option. In the Properties window, go to "Permissions" tab. Check the "Allow executing file as program" selection.
 
-<figure><img src="../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open terminal in the download folder and execute the ".sh" script.
 
@@ -30,7 +30,7 @@ Follow the installation prompt. The program will prompt you to input the install
 
 After installation, it will ask whether to execute `conda init`. Enter "yes" to the prompt.
 
-<figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Install conda-lock
 
@@ -79,7 +79,7 @@ $chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9
 
 The script will prompt the following message. Enter "y" and press Enter key to continue.
 
-<figure><img src="../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Alternatively, the release check prompt can be skipped by passing the "--force" flag.
 

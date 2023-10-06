@@ -45,15 +45,16 @@
 ## Chipyard SoC / FPGA
 
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
-* [Setting up Chipyard](chipyard-soc-fpga/chipyard-environment-setup/README.md)
-  * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/chipyard-environment-setup/installing-chipyard-windows-subsystem-linux.md)
-  * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/installing-chipyard.md)
-  * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
-  * [Setting up Metals (Scala Language Server)](chipyard-soc-fpga/setting-up-metals-scala-language-server.md)
-* [Setting up RISC-V Toolchain](chipyard-soc-fpga/setting-up-risc-v-toolchain/README.md)
-  * [Setting up RISC-V Toolchain - Windows](chipyard-soc-fpga/setting-up-risc-v-toolchain/setting-up-risc-v-toolchain-windows.md)
-  * [Setting up RISC-V Toolchain - Ubuntu](chipyard-soc-fpga/setting-up-risc-v-toolchain/setting-up-risc-v-toolchain-ubuntu.md)
-  * [Setting up RV32 Toolchain on BWRC](finance/page-3.md)
+* [Setting up Chipyard](chipyard-soc-fpga/setting-up-chipyard/README.md)
+  * [Setting up Chipyard - Windows Subsystem Linux](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-windows-subsystem-linux.md)
+  * [Setting up Chipyard - Ubuntu](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-ubuntu.md)
+  * [Setting Up Chipyard - BWRC Machines](chipyard-soc-fpga/setting-up-chipyard/setting-up-chipyard-bwrc.md)
+  * [Setting up Metals (Scala Language Server)](chipyard-soc-fpga/setting-up-chipyard/setting-up-metals-scala-language-server.md)
+* [Setting up RISC-V Toolchain](chipyard-soc-fpga/setting-up-riscv-toolchain/README.md)
+  * [Setting up RISC-V Toolchain - Windows](chipyard-soc-fpga/setting-up-riscv-toolchain/setting-up-riscv-toolchain-windows.md)
+  * [Setting up RISC-V Toolchain - Ubuntu](chipyard-soc-fpga/setting-up-riscv-toolchain/setting-up-riscv-toolchain-ubuntu.md)
+  * [Setting up RV32 Toolchain on BWRC](chipyard-soc-fpga/setting-up-riscv-toolchain/setting-up-riscv-toolchain-bwrc.md)
+  * [Setting up RISC-V Toolchain - Mac](chipyard-soc-fpga/setting-up-riscv-toolchain/setting-up-risc-v-toolchain-mac.md)
 * [Running Chipyard Simulation](chipyard-soc-fpga/running-chipyard-simulation/README.md)
   * [Running Chipyard Simulation - Ubuntu](chipyard-soc-fpga/running-chipyard-simulation/running-chipyard-simulation-ubuntu.md)
   * [Running Chipyard Simulation - BWRC](chipyard-soc-fpga/running-chipyard-simulation/running-chipyard-simulation-bwrc.md)
@@ -72,6 +73,7 @@
   * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
 * [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
+* [Page](chipyard-soc-fpga/page.md)
 
 ## Motor Control
 
