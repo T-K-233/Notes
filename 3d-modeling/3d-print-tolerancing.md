@@ -4,7 +4,7 @@ The tolerancing of the part is controlled by the `TOLERANCE_OFFSET` variable in 
 
 
 
-<table><thead><tr><th>Desired Fit</th><th>Clearance Gap (mm)</th><th width="135">Multiplier</th></tr></thead><tbody><tr><td>Press Fit</td><td>Line to line (0)</td><td>0 x</td></tr><tr><td>Tight Fit</td><td>0.1</td><td>1 x</td></tr><tr><td>Normal Fit</td><td>0.2</td><td>2 x</td></tr><tr><td>Loss Fit</td><td>0.3</td><td>1.5 x</td></tr></tbody></table>
+<table><thead><tr><th>Desired Fit</th><th>Clearance Gap (mm)</th><th width="135">Multiplier</th></tr></thead><tbody><tr><td>Press Fit</td><td>Line to line (0)</td><td>0 x</td></tr><tr><td>Tight Fit</td><td>0.1</td><td>1 x</td></tr><tr><td>Normal Fit</td><td>0.2</td><td>2 x</td></tr><tr><td>Loss Fit</td><td>0.3</td><td>3 x</td></tr></tbody></table>
 
 ### Press Fit
 
