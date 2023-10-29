@@ -142,6 +142,7 @@
 * [Clang-Format Style Config](tools/clang-format-style-config.md)
 * [CrazyFlie Setting Up](tools/crazyflie-setting-up.md)
 * [Using Oscilloscope: x1 vs x10](tools/using-oscilloscope-x1-vs-x10.md)
+* [Using the BWRC 3D Printer](tools/using-the-bwrc-3d-printer.md)
 * [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 * [Pair XBoxController to Raspberry Pi with Bluetooth](tools/pair-xboxcontroller-to-raspberry-pi-with-bluetooth.md)
 
@@ -172,6 +173,7 @@
 
 ## 3D Modeling
 
+* [3D Print Tolerancing](3d-modeling/3d-print-tolerancing.md)
 * [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
 
 ## Maintainance Log
