@@ -129,7 +129,7 @@
   * [Test Disk Read/Write Speed](tools/ubuntu/test-disk-read-write-speed.md)
   * [Configure USB Access Permissions (udev rules) on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
   * [Screen Commands](tools/ubuntu/screen-commands.md)
-  * [Disable "\<Application> is not responding." Message on Ubuntu](tools/ubuntu/disable-less-than-application-greater-than-is-not-responding.-message-on-ubuntu.md)
+  * [Disabling the "\<Application> is not responding." System Message on Ubuntu](tools/ubuntu/disabling-the-less-than-application-greater-than-is-not-responding.-system-message-on-ubuntu.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)

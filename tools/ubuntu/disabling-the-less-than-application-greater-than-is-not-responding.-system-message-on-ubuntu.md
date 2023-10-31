@@ -1,4 +1,4 @@
-# Disable "\<Application> is not responding." Message on Ubuntu
+# Disabling the "\<Application> is not responding." System Message on Ubuntu
 
 When running computationally heavy applications like Isaac Gym or Blender, it's common that the computation loop takes longer such that the application cannot meet Ubuntu's refresh time limit.&#x20;
 
