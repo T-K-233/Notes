@@ -129,6 +129,7 @@
   * [Test Disk Read/Write Speed](tools/ubuntu/test-disk-read-write-speed.md)
   * [Configure USB Access Permissions (udev rules) on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
   * [Screen Commands](tools/ubuntu/screen-commands.md)
+  * [Disable "window is unresponsive" Message](tools/ubuntu/disable-window-is-unresponsive-message.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
