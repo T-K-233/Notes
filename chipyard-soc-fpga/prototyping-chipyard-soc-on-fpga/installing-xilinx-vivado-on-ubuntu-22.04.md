@@ -97,7 +97,7 @@ sudo ./install_drivers
 
 Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent/vivado-boards/archive/master.zip) of Digilent's [vivado-boards](https://github.com/Digilent/vivado-boards) Github repository and extract it.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
 
@@ -115,7 +115,7 @@ sudo cp -r ~/Downloads/vivado-boards-master/new/board_files/ ~/Documents/Xilinx/
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Copy contents from the downloaded folder (right) to Vivado installation directory (left)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Copy contents from the downloaded folder (right) to Vivado installation directory (left)</p></figcaption></figure>
 
 
 
