@@ -106,6 +106,7 @@
 * [OpenAI gym + Mujoco Setup](ml-rl/setting-up-aws-mujoco-training-machine.md)
 * [NVIDIA Omniverse Isaac Sim Setup](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
 * [NVIDIA Isaac Gym Setup](ml-rl/nvidia-isaac-gym-setup.md)
+* [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
 * [Gazebo Setup](ml-rl/gazebo-setup.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
 * [so-vits-svc 4.2 Runtime](ml-rl/so-vits-svc-4.2-runtime.md)
