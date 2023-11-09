@@ -1,8 +1,18 @@
-# so-vits-svc 4.2 Runtime
+# so-vits-svc 4.2
 
-Python 3.10.11
+## Reference
 
-pip 23.1.2
+[https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents)
+
+
+
+## Environment
+
+Linux (millennium-A24)
+
+Python 3.10.13
+
+
 
 ```
 Python 3.10.11 (main, Apr  5 2023, 14:15:10) [GCC 9.4.0]

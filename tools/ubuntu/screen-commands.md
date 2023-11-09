@@ -37,3 +37,14 @@ inside screen:
 $ echo $TERM
 screen.xterm-256color
 ```
+
+
+
+scrolling in screen:
+
+`Ctrl`+`A` - `[`
+
+Press `ESC` to resume normal operation
+
+
+

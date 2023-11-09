@@ -109,7 +109,7 @@
 * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
 * [Gazebo Setup](ml-rl/gazebo-setup.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
-* [so-vits-svc 4.2 Runtime](ml-rl/so-vits-svc-4.2-runtime.md)
+* [so-vits-svc 4.2](ml-rl/so-vits-svc-4.2-runtime.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 
 ## Tools
