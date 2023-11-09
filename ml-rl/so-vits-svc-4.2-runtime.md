@@ -107,5 +107,11 @@ python preprocess_hubert_f0.py --f0_predictor dio --use_diff
 
 
 
+## Training
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py -c configs/config.json -m 44k
+```
+
 {% embed url="https://github.com/Anjok07/ultimatevocalremovergui" %}
 
