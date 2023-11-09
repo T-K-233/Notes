@@ -1,4 +1,4 @@
-# Unreal Engine Communicate with SteamVR and External Python
+# Unreal Engine Communicate with SteamVR
 
 ## 0. Environment
 
@@ -8,15 +8,21 @@ Unreal Engine 5.1.1
 
 SteamVR 1.25.8
 
-## 1. Create project
+## 1. Create a new Unreal project
+
+Select "Film / Video & Live Events" -> "Blank". Leave "Starter Content" and "Raytracing" unchecked.
+
+Click "Create" button.
 
 <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Add plugin
 
+Click "Edit" -> "Plugins" to open the plugins window.
+
 <figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-Add the following plugins
+Search and add the following plugins.
 
 <figure><img src="../.gitbook/assets/image (9) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -24,13 +30,17 @@ Add the following plugins
 
 <figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
-Unreal Engine needs a restart.
+
+
+After adding the plugin, Unreal Engine needs to be restarted.
 
 Before restart, make sure SteamVR is running
 
 <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Set up VR devices
+
+
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,10 +64,6 @@ In the "Subject Representation" field, select the desired VR device to bind.
 
 Now the virtual camera should be controlled by the VR device.
 
-
-
-
-
 ## Reference
 
 {% embed url="https://www.youtube.com/watch?v=HwAra3yXVHs" %}
@@ -69,9 +75,5 @@ Other possible methods:
 {% embed url="https://dev.epicgames.com/community/learning/tutorials/LdR2/unreal-engine-how-to-use-vive-trackers-in-ue-5-2-and-later-versions" %}
 
 {% embed url="https://github.com/ValveSoftware/openxr_engine_plugins" %}
-
-
-
-
 
 {% embed url="https://docs.unrealengine.com/4.26/en-US/BlueprintAPI/SteamVR/GetTrackedDevicePositionandOrien-/" %}

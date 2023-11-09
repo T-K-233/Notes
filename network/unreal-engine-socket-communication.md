@@ -1,7 +1,5 @@
 # Unreal Engine Socket Communication
 
-
-
 ## 0. Environment
 
 Windows 10
@@ -10,19 +8,23 @@ Unreal Engine 5.1.1
 
 SteamVR 1.25.8
 
+## 1. Create a new Unreal project
 
+Select "Film / Video & Live Events" -> "Blank". Leave "Starter Content" and "Raytracing" unchecked.
 
-## 1. Add plugin
+Click "Create" button.
+
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
+
+## 2. Add plugin
+
+Search and add the following plugin.
 
 <figure><img src="../.gitbook/assets/image (19) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
-## 2. Create a new GameModeBase class
+## 3. Create a new GameModeBase class
 
 <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Choose "GameModeBase" as the parent class.
 
@@ -30,17 +32,13 @@ Choose "GameModeBase" as the parent class.
 
 <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Finally, update the GameModeBase class
 
 <figure><img src="../.gitbook/assets/image (11) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-## 3. External Python server
+## 4. External Python server
 
 ```python
 import socket
@@ -72,4 +70,3 @@ while True:
 s.close()
 
 ```
-
