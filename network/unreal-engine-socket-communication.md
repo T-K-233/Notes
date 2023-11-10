@@ -18,11 +18,21 @@ Click "Create" button.
 
 ## 2. Add plugin
 
+Click "Edit" -> "Plugins" to open the plugins window.
+
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+
 Search and add the following plugin.
 
 <figure><img src="../.gitbook/assets/image (19) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-## 3. Create a new GameModeBase class
+After adding the plugin, Unreal Engine needs to be restarted.
+
+
+
+## 3. Set up a new GameModeBase class
+
+Click the Blueprint button, select "New Empty Blueprint Class...".
 
 <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
