@@ -63,6 +63,10 @@ lsusb -t
 
 ```bash
 udevadm info /dev/ttyACM0
+
+udevadm monitor --subsystem-match=usb --property
+
+udevadm test $(udevadm info -q path -n /dev/ttyACM0)
 ```
 
 
