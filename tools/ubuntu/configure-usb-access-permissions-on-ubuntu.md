@@ -25,7 +25,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0b12", GROUP="use
 ```
 
 ```bash
-sudo udevadm control --reload
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 ```
 
 
