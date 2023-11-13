@@ -53,6 +53,20 @@ udev db)
 
 
 
+### Some other useful commands
+
+```bash
+lsusb -t
+```
+
+
+
+```bash
+udevadm info /dev/ttyACM0
+```
+
+
+
 ## References
 
 {% embed url="https://hackaday.com/2009/09/18/how-to-write-udev-rules/" %}
