@@ -58,6 +58,22 @@ The AMS should auto-load the selected filament.
 
 
 
+PLA (AMS slot 0) is recommended for normal prints.
+
+PLA-Tough (AMS slot 1) is recommended for mechanical parts.
+
+PC (AMS slot 2) is used for transparent parts.
+
+Sup.PLA (AMS slot 3) is used for breakaway supports for PLA.
+
+
+
+
+
+\<TBD>
+
+
+
 ### 4.? After printing
 
 {% tabs %}
@@ -91,7 +107,7 @@ Recommend to use [OnShape](https://www.onshape.com/en/) for modeling.
 
 
 
-
+\<TBD>
 
 
 
