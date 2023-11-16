@@ -39,6 +39,16 @@ Normal: 1.5 hours of audio
 
 Sampling rate: 48000
 
+### BGM Removal
+
+<figure><img src="../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
 ### Noise Removal
 
 
