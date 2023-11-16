@@ -75,7 +75,7 @@
   * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
 * [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
-* [Page](chipyard-soc-fpga/page.md)
+* [Kendryte K230 Bringup](chipyard-soc-fpga/kendryte-k230-bringup.md)
 
 ## Motor Control
 
