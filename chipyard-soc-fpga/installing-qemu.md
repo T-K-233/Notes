@@ -8,13 +8,34 @@ sudo apt install ninja-build flex bison
 
 
 
+## Install slirp
+
+```bash
+git clone https://github.com/utmapp/libslirp.git
+cd libslirp
+```
+
+
+
+```bash
+sudo apt install meson
+```
+
+
+
+```bash
+meson build
+```
+
+
+
 ```bash
 git clone https://gitlab.com/qemu-project/qemu.git
 cd qemu
 git submodule init
 git submodule update --recursive
 ./configure
-make
+make -j8
 ```
 
 
