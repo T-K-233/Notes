@@ -4,7 +4,7 @@ When running computationally heavy applications like Isaac Gym or Blender, it's 
 
 If this response deadline is missed, Ubuntu will show a pop-up window to notify the user, which is annoying.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Solution
 

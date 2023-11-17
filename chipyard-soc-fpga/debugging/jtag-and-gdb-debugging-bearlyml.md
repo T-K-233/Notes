@@ -37,13 +37,9 @@ in the `.vscode` folder, create `launch.json`
 }
 ```
 
-
-
 Launch the RISC-V Debug routine.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Terminal-Only Method
 
@@ -52,8 +48,6 @@ Terminal A:
 ```bash
 openocd -f .\debug\bearlyml.cfg
 ```
-
-
 
 ```bash
 PS C:\Users\TK\Desktop\HAL> openocd -f .\debug\bearlyml.cfg
@@ -74,8 +68,6 @@ Info : Listening on port 6666 for tcl connections
 Info : Listening on port 4444 for telnet connections
 
 ```
-
-
 
 Terminal B:
 
@@ -105,8 +97,6 @@ Type "apropos word" to search for commands related to "word"...
 Reading symbols from .\build\firmware.elf...
 (gdb) 
 ```
-
-
 
 #### Connect to target
 
@@ -164,4 +154,3 @@ Note: automatically using hardware breakpoints for read-only addresses.gs
 _start () at bsp/bearlyml/startup/bearlyml_startup.S:108
 108       li x2, 0
 ```
-

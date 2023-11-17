@@ -686,7 +686,7 @@ When making mate connections, always click child component first, and then paren
 
 By doing so, the order of the mate connectors should look like the one shown in the following diagram.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
