@@ -2,7 +2,15 @@
 
 ## Reference
 
-[https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents](https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents)
+{% embed url="https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents" %}
+
+[https://www.bilibili.com/video/BV1Hr4y197Cy](https://www.bilibili.com/video/BV1Hr4y197Cy/?p=22\&spm\_id\_from=333.880.my\_history.page.click\&vd\_source=1077d0b350f0a7b3167e4ce477f95e9f)
+
+
+
+{% embed url="https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents" %}
+
+
 
 
 
