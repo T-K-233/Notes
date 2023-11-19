@@ -129,6 +129,7 @@
   * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
   * [Setting up Docker on Ubuntu 22.04](tools/ubuntu/setting-up-docker-on-ubuntu-22.04.md)
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
+  * [Partitioning SD card](tools/ubuntu/partitioning-sd-card.md)
   * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
   * [Test Disk Read/Write Speed](tools/ubuntu/test-disk-read-write-speed.md)
   * [Configure USB Access Permissions (udev rules) on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
