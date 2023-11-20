@@ -114,6 +114,11 @@
 * [so-vits-svc 4.2](ml-rl/so-vits-svc-4.2-runtime.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 
+## 3D Modeling
+
+* [3D Print Tolerancing](3d-modeling/3d-print-tolerancing.md)
+* [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
+
 ## Tools
 
 * [Windows](tools/windows/README.md)
@@ -170,30 +175,21 @@
 * [AS5600 Modification](electrical/as5600-modification.md)
 * [FT-LINK FTDI Debugger Design Considerations](electrical/ft-link-ftdi-debugger-design-considerations.md)
 
-## AR/VR/XR
+## UW
 
-* [Digital-Twin Communication System](network/digital-twin-communication-system.md)
-* [Unreal Engine Communicate with SteamVR](network/unreal-engine-communicate-with-steamvr-and-external-python.md)
-* [Unreal Engine Socket Communication](network/unreal-engine-socket-communication.md)
-* [A Note on Coordinate Systems](ar-vr-xr/a-note-on-coordinate-systems.md)
-* [NewLine Serialization Method](network/newline-serialization-method.md)
-* [Blender Python Related](3d-modeling/blender-python-related.md)
-
-## 3D Modeling
-
-* [3D Print Tolerancing](3d-modeling/3d-print-tolerancing.md)
-* [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
+* [Digital-Twin Communication System](uw/digital-twin-communication-system.md)
+* [Unreal Engine Communicate with SteamVR](uw/unreal-engine-communicate-with-steamvr-and-external-python.md)
+* [Unreal Engine Socket Communication](uw/unreal-engine-socket-communication.md)
+* [A Note on Coordinate Systems](uw/a-note-on-coordinate-systems.md)
+* [NewLine Serialization Method](uw/newline-serialization-method.md)
+* [Blender Python Related](uw/blender-python-related.md)
+* [Humanoid Design Notes](uw/ai233-design-notes/README.md)
+  * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
+  * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
 
 ## Maintainance Log
 
 * [RISC-V Toolbox Website](maintainance-log/risc-v-toolbox-website.md)
-
-## UW
-
-* [AI233 Design Notes](uw/ai233-design-notes/README.md)
-  * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
-  * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
-* [Network Setup](uw/network-setup.md)
 
 ## Finance
 
@@ -204,5 +200,3 @@
 
 * [Some Interview Questions](life/some-interview-questions.md)
 * [Health Insurance](life/page-4.md)
-
-## Group 1
