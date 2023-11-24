@@ -24,6 +24,8 @@ Click "Edit" -> "Plugins" to open the plugins window.
 
 Search and add the following plugins.
 
+> _**Update:** As of 2023-11-23, the SteamVR (deprecated) plugin does not need to be included anymore._
+
 <figure><img src="../.gitbook/assets/image (9) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
