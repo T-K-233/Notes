@@ -1,14 +1,10 @@
-# so-vits-svc 4.2
+# NAI-SVC Experiment Log
 
 ## Reference
 
 {% embed url="https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents" %}
 
 [https://www.bilibili.com/video/BV1Hr4y197Cy](https://www.bilibili.com/video/BV1Hr4y197Cy/?p=22\&spm\_id\_from=333.880.my\_history.page.click\&vd\_source=1077d0b350f0a7b3167e4ce477f95e9f)
-
-
-
-{% embed url="https://github.com/SUC-DriverOld/so-vits-svc-Chinese-Detaild-Documents" %}
 
 
 
@@ -20,18 +16,45 @@ Linux (millennium-A24)
 
 Python 3.10.13
 
-
-
-```
-Python 3.10.11 (main, Apr  5 2023, 14:15:10) [GCC 9.4.0]
-Numpy 1.22.4
-numba 0.57.0
-PyTorch 1.13.1+cu117
-fairseq 0.12.2
-librosa 0.10.0.post2
+```bash
+conda activate nai-svc
 ```
 
+```bash
+> python3 show_env.py
+Python 3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:07:37) [GCC 12.3.0] ✓
+Numpy 1.23.5 ✓
+Torch 2.1.0+cu121 ✓
+TorchVision 0.16.1+cu121 ✓
+TorchAudio 2.1.0+cu121 ✓
+gradio 3.50.2 ✓
+numba 0.58.1 ✓
+pyworld 0.3.4 ✓
+scipy 1.10.0 ✓
+tqdm 4.66.1 ✓
+parselmouth 0.4.3 ✓
+fairseq 0.12.2 ✓
+librosa 0.9.1 ✓
+```
 
+
+
+```bash
+> nvidia-smi
+NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2
+```
+
+
+
+### Pretrain Model Downloads
+
+
+
+```bash
+./scripts/get_base_model.sh
+./scripts/get_contentvec_model.sh
+./scripts/get_nsf_gan.sh
+```
 
 
 
@@ -101,11 +124,13 @@ Finally, click "Run" to run loudness matching.
 
 
 
-### Preprocess
+
 
 Put wav files in dataset\_raw/\<speaker>/\*.wav
 
 
+
+### Preprocess
 
 ```bash
 python resample.py --skip_loudnorm
@@ -126,6 +151,18 @@ python preprocess_hubert_f0.py --f0_predictor dio --use_diff
 
 
 ## Training
+
+
+
+#### Shallow Diffusion Model
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train_diff.py -c configs/diffusion.yaml
+```
+
+
+
+#### Main Model
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python train.py -c configs/config.json -m 44k
