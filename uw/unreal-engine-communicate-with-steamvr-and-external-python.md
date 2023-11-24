@@ -50,7 +50,7 @@ Before restart, make sure SteamVR is running
 
 <figure><img src="../.gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-## 4. Bind to virtual camera
+## 4.1 Bind to virtual camera
 
 Create a virtual camera.
 
@@ -65,6 +65,16 @@ In the "Subject Representation" field, select the desired VR device to bind.
 <figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 Now the virtual camera should be controlled by the VR device.
+
+
+
+## 4.2 Read from Blueprint
+
+The following Blueprint code shows how to read the location of the tracker.
+
+<figure><img src="../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Reference
 
