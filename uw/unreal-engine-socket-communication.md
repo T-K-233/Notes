@@ -80,3 +80,18 @@ while True:
 s.close()
 
 ```
+
+
+
+
+
+### A Note on FPS
+
+
+
+Since we might want to use EventTick to transmit messages, it could be useful if we limit event tick rate on the gamemode base.
+
+
+
+To set the rate, go to Blueprint setting of the GameModeBase, select "GameModeBase" on the Components view. Then, on the Details panel, change the "Tick Interval" value to desired value.
+
