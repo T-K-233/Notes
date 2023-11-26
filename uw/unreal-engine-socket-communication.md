@@ -95,3 +95,5 @@ Since we might want to use EventTick to transmit messages, it could be useful if
 
 To set the rate, go to Blueprint setting of the GameModeBase, select "GameModeBase" on the Components view. Then, on the Details panel, change the "Tick Interval" value to desired value.
 
+<figure><img src="../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+
