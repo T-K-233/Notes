@@ -136,6 +136,7 @@
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
   * [Partitioning SD card](tools/ubuntu/partitioning-sd-card.md)
   * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
+  * [Check Disk / Folder / File Size](tools/ubuntu/check-disk-folder-file-size.md)
   * [Test Disk Read/Write Speed](tools/ubuntu/test-disk-read-write-speed.md)
   * [Configure USB Access Permissions (udev rules) on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
   * [Screen Commands](tools/ubuntu/screen-commands.md)
