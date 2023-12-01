@@ -9,7 +9,7 @@ On BWRC login servers
 Run the following commands to activate the base conda environment
 
 ```bash
-source /tools/C/chiyufeng/documents/miniconda3/bin/activate
+source /tools/C/chiyufeng/Documents/miniconda3/bin/activate
 conda activate base
 ```
 
@@ -32,7 +32,7 @@ git clone https://github.com/ucb-bar/chipyard.git
 Set chipyard path to an environment variable. We will be referencing this path for our script locations from now on.
 
 ```bash
-export chipyard=/tools/C/chiyufeng/tapeout/chipyard
+export chipyard=/tools/C/chiyufeng/Desktop/chipyard
 ```
 
 ```bash
