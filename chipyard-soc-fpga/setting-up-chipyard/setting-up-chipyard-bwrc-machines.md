@@ -9,7 +9,7 @@ On BWRC login servers
 Run the following commands to activate the base conda environment
 
 ```bash
-source /tools/C/chiyufeng/Documents/miniconda3/bin/activate
+source /tools/C/chiyufeng/Documents/mambaforge/bin/activate
 conda activate base
 ```
 
