@@ -45,18 +45,32 @@ conda activate base
 
 ## 3. Clone Chipyard
 
-Here, we will use the directory `/home/tk/Desktop/`. In the terminal, execute the following command.
+
+
+
+
+Open terminal in a known location. Here, we will use the directory `/home/tk/Desktop/`. In the terminal, execute the following command.
 
 ```bash
-cd /home/tk/Desktop/
-
 git clone https://github.com/ucb-bar/chipyard.git
+```
 
+if you are a Chipyard maintainer, use the ssh url instead:
+
+```bash
+git clone git@github.com:ucb-bar/chipyard.git
+```
+
+
+
+```bash
 export chipyard=/home/tk/Desktop/chipyard
 cd $chipyard
 
-git checkout stable
+git checkout 1.10.0
 ```
+
+
 
 <figure><img src="../../.gitbook/assets/image (1) (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 

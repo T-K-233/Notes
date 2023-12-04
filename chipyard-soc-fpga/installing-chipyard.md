@@ -49,11 +49,21 @@ Open terminal in a known location. Here, we will use the directory `/home/tk/Des
 
 ```bash
 git clone https://github.com/ucb-bar/chipyard.git
+```
 
+if you are a Chipyard maintainer, use the ssh url instead:
+
+```bash
+git clone git@github.com:ucb-bar/chipyard.git
+```
+
+
+
+```bash
 export chipyard=/home/tk/Desktop/chipyard
 cd $chipyard
 
-git checkout stable
+git checkout 1.10.0
 ```
 
 ## 4. Configure Chipyard
