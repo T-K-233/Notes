@@ -8,18 +8,18 @@
 
 ## 1. Download and Install Vivado
 
-Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx\_Unified\_2023.1\_0507\_1903\_Lin64.bin).
+Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=FPGAs\_AdaptiveSoCs\_Unified\_2023.2\_1013\_2256\_Lin64.bin).
 
 After download, run the following command to grant executable right to the binary file.
 
 ```bash
-chmod +x ~/Downloads/Xilinx_Unified_2023.1_0507_1903_Lin64.bin
+chmod +x ~/Downloads/Xilinx_Unified_2023.2_1013_2256_Lin64.bin
 ```
 
 Then, run the file using
 
 ```bash
-sudo ~/Downloads/Xilinx_Unified_2023.1_0507_1903_Lin64.bin
+sudo ~/Downloads/Xilinx_Unified_2023.2_1013_2256_Lin64.bin
 ```
 
 In the pop-up window, log in with AMD account.
@@ -63,13 +63,13 @@ sudo apt install libtinfo5
 By default, vivado can only be executed by invoking the program with the installation path:
 
 ```bash
-~/Documents/Xilinx/Vivado/2023.1/bin/vivado
+~/Documents/Xilinx/Vivado/2023.2/bin/vivado
 ```
 
 To be able to directly invoke vivado, we need to add the installational path to PATH environment variable. Optionally, add this command to `~/.bashrc` file to support launching vivado in new terminals.
 
 ```bash
-export PATH="/home/tk/Documents/Xilinx/Vivado/2023.1/bin:$PATH"
+export PATH="/home/tk/Documents/Xilinx/Vivado/2023.2/bin:$PATH"
 ```
 
 To make the change effective, run
@@ -85,7 +85,7 @@ source ~/.bashrc
 To connect to FPGA boards, we need to install additional USB drivers by running the following command.
 
 ```bash
-cd ~/Documents/Xilinx/Vivado/2023.1/data/xicom/cable_drivers/lin64/install_script/install_drivers
+cd ~/Documents/Xilinx/Vivado/2023.2/data/xicom/cable_drivers/lin64/install_script/install_drivers
 sudo ./install_drivers
 ```
 
@@ -101,7 +101,7 @@ Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent
 
 Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
 
-Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2023.1/data/boards/board_files`). If this folder doesn't exist, create it.
+Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2023.2/data/boards/board_files`). If this folder doesn't exist, create it.
 
 **Copy** all of the folders under vivado-boards' `new/board_files` folder, then **paste** them into this folder.
 
@@ -110,7 +110,7 @@ Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, n
 Or do it using terminal commands:
 
 ```bash
-sudo cp -r ~/Downloads/vivado-boards-master/new/board_files/ ~/Documents/Xilinx/Vivado/2023.1/data/boards/
+sudo cp -r ~/Downloads/vivado-boards-master/new/board_files/ ~/Documents/Xilinx/Vivado/2023.2/data/boards/
 ```
 
 

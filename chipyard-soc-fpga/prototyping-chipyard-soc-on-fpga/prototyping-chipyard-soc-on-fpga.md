@@ -8,8 +8,8 @@ description: Chipyard Arty Flow
 
 See the following tutorial to install Chipyard.
 
-{% content-ref url="../chipyard-environment-setup/" %}
-[chipyard-environment-setup](../chipyard-environment-setup/)
+{% content-ref url="../installing-chipyard.md" %}
+[installing-chipyard.md](../installing-chipyard.md)
 {% endcontent-ref %}
 
 
@@ -22,26 +22,23 @@ See the following tutorial to install Vivado.
 [installing-xilinx-vivado-on-ubuntu-22.04.md](installing-xilinx-vivado-on-ubuntu-22.04.md)
 {% endcontent-ref %}
 
-## Setting up Vivado
-
 add vivado to env.sh script
 
-on local machine:
-
 ```bash
-PATH=/home/tk/Documents/Xilinx/Vivado/2023.1/bin:$PATH
+PATH=/home/tk/Documents/Xilinx/Vivado/2023.2/bin:$PATH
 ```
 
-on BWRC server:
 
-```bash
-source /tools/xilinx/Vivado/2022.1/settings64.sh
-```
 
 ## Building Bitstream
 
 ```bash
-cd $chipyard/fpga
+cd $chipyard/
+source ./env.sh
+```
+
+```bash
+cd $chipyard/fpga/
 ```
 
 ```bash
