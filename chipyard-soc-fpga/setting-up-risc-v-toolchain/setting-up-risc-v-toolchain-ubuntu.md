@@ -81,3 +81,13 @@ sudo make install
 
 
 
+
+
+
+
+## Common Error
+
+### libtool: Version mismatch error when building openocd
+
+{% embed url="https://github.com/riscv/riscv-openocd/issues/974" %}
+
