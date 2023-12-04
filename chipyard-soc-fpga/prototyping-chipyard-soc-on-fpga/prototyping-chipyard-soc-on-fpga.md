@@ -61,6 +61,14 @@ make SUB_PROJECT=ExampleChipArty100TConfig bitstream
 
 
 
+```bash
+make LD_SCRIPT=./bsp/examplechip/examplechip_scratch.ld ARCH=rv32imaczicsr ABI=ilp32
+```
+
+
+
+
+
 ## JTAG Debugging
 
 See the following tutorial to set up FT-LINK.
