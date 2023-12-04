@@ -105,6 +105,7 @@
 * [ROS 2](ml-rl/ros-2/README.md)
   * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
   * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
+  * [ROS 2 Issue in Ubuntu with conda](ml-rl/ros-2/ros-2-issue-in-ubuntu-with-conda.md)
 * [Google Colab](ml-rl/google-colab/README.md)
   * [Colab Resource Options](ml-rl/google-colab/colab-resource-options.md)
   * [so-vits-svc 4.0: Colab Flow](ml-rl/google-colab/so-vits-svc-4.0-colab-flow.md)
