@@ -169,6 +169,10 @@ sudo udevadm control --reload
 
 
 
+Then, unplug FT-LINK and plug in it back again after a few seconds
+
+
+
 Now, when running the command
 
 ```bash
