@@ -7,7 +7,7 @@ This is the recommended method.
 First, we need to install the following dependencies.
 
 ```bash
-sudo apt install texinfo bison flex libgmp-dev
+sudo apt install texinfo bison flex libgmp-dev gawk
 ```
 
 Clone the RISC-V GNU Toolchain repo.
