@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Conventions in this doc](conventions-in-this-doc.md)
+* [Convention Used](convention-used.md)
 
 ## STM32
 
@@ -63,7 +63,7 @@
 * [Installing QEMU](chipyard-soc-fpga/installing-qemu.md)
 * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
   * [Prototyping Chipyard SoC on FPGA - Ubuntu](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga.md)
-  * [Prototyping Chipyard SoC on FPGA - BWRC](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga-bwrc.md)
+  * [Prototyping Chipyard SoC on FPGA - BWRC](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/page.md)
   * [Installing Xilinx Vivado - Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/installing-xilinx-vivado-on-ubuntu-22.04.md)
   * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
   * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
