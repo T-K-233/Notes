@@ -100,7 +100,7 @@ The script will prompt the following message. Enter "y" and press Enter key to c
 Alternatively, the release check prompt can be skipped by passing the "--force" flag.
 
 ```bash
-$chipyard/build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
+./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
 ## 4. On New Terminal
