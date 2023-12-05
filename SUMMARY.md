@@ -142,6 +142,7 @@
   * [Windows Ubuntu Dual Boot Issues](tools/ubuntu/windows-ubuntu-dual-boot-issues.md)
   * [Check Disk / Folder / File Size](tools/ubuntu/check-disk-folder-file-size.md)
   * [Test Disk Read/Write Speed](tools/ubuntu/test-disk-read-write-speed.md)
+  * [Cannot Start Chrome in Ubuntu 22.04 After Changing Network Settings](tools/ubuntu/cannot-start-chrome-in-ubuntu-22.04-after-changing-network-settings.md)
   * [Configure USB Access Permissions (udev rules) on Ubuntu](tools/ubuntu/configure-usb-access-permissions-on-ubuntu.md)
   * [Screen Commands](tools/ubuntu/screen-commands.md)
   * [Disabling the "\<Application> is not responding." System Message on Ubuntu](tools/ubuntu/disabling-the-less-than-application-greater-than-is-not-responding.-system-message-on-ubuntu.md)
