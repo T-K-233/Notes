@@ -32,7 +32,7 @@ git clone https://github.com/ucb-bar/chipyard.git
 Set chipyard path to an environment variable. We will be referencing this path for our script locations from now on.
 
 ```bash
-export chipyard=/tools/C/chiyufeng/Desktop/chipyard
+export chipyard=/tools/C/chiyufeng/Desktop/chipyard/
 ```
 
 ```bash

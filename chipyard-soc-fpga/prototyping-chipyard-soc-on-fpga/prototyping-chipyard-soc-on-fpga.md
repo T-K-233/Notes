@@ -25,7 +25,7 @@ See the following tutorial to install Vivado.
 add vivado to env.sh script
 
 ```bash
-PATH=/home/tk/Documents/Xilinx/Vivado/2023.2/bin:$PATH
+PATH=/home/tk/Documents/Xilinx/Vivado/2023.2/bin/:$PATH
 ```
 
 

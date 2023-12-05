@@ -21,7 +21,7 @@ source /tools/xilinx/Vivado/2022.1/settings64.sh
 ## Building Bitstream
 
 ```bash
-cd $chipyard/
+cd $chipyard
 source ./env.sh
 ```
 

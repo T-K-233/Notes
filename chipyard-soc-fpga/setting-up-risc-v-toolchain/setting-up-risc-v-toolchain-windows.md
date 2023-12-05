@@ -23,9 +23,9 @@ Download RISC-V toolchain from [here](https://www.sifive.com/software). We are g
 Extract them to known locations, and put the path to system PATH.
 
 ```
-D:\Documents\RISCV\riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32\bin
+D:\Documents\RISCV\riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-w64-mingw32\bin\
 ```
 
 ```
-D:\Documents\RISCV\riscv-openocd-0.10.0-2020.12.1-x86_64-w64-mingw32\bin
+D:\Documents\RISCV\riscv-openocd-0.10.0-2020.12.1-x86_64-w64-mingw32\bin\
 ```

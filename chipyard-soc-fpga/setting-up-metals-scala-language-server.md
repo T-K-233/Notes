@@ -17,7 +17,7 @@ After installation, click "Switch to Pre-Release Version".
 Set Java Home location to:
 
 ```bash
-/bwrcq/C/chiyufeng/tapeout/sp23-chips/.conda-env/lib/jvm
+/bwrcq/C/chiyufeng/tapeout/sp23-chips/.conda-env/lib/jvm/
 ```
 
 And set Sbt Script location to:

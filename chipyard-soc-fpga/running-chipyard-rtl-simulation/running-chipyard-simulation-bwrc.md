@@ -17,15 +17,11 @@ Or, run this:
 source /tools/C/chiyufeng/documents/vcs_env.sh
 ```
 
-
-
 Might also need to run this command to get license
 
 ```bash
 source /tools/flexlm/flexlm.sh
 ```
-
-
 
 if run into JDK\_HOME issue (JDK/lib/tools.jar not found), do this:
 
@@ -33,15 +29,11 @@ if run into JDK\_HOME issue (JDK/lib/tools.jar not found), do this:
 export JDK_HOME=/usr/lib/jvm/java-1.8.0/
 ```
 
-
-
 ## 2. Run Simulation
 
 ```bash
-cd sims/vcs
+cd sims/vcs/
 ```
-
-
 
 To build simulation code:
 
@@ -49,14 +41,10 @@ To build simulation code:
 bsub -q ee194 -Is -XF make CONFIG=BearlyConfig
 ```
 
-
-
 To run the simulation with a program:
 
 <pre class="language-bash"><code class="lang-bash"><strong>bsub -q ee194 -Is -XF make run-binary CONFIG=BearlyConfig BINARY=../../tests/hello.riscv
 </strong></code></pre>
-
-
 
 To run the simulation with a program, and generate waveform:
 
@@ -64,10 +52,7 @@ timeout\_cycles can be set to a small value to make the waveform dump process fa
 
 ```bash
 bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
-
 ```
-
-
 
 ## 3. Examine Waveform
 
@@ -76,14 +61,3 @@ Launch verdi to examine the waveform
 ```bash
 bsub -q ee194 -Is -XF verdi
 ```
-
-
-
-
-
-
-
-
-
-
-

@@ -64,7 +64,7 @@ git clone git@github.com:ucb-bar/chipyard.git
 
 
 ```bash
-export chipyard=/home/tk/Desktop/chipyard
+export chipyard=/home/tk/Desktop/chipyard/
 cd $chipyard
 
 git checkout 1.10.0

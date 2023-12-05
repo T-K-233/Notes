@@ -13,7 +13,7 @@ sudo apt install texinfo bison flex libgmp-dev gawk
 Clone the RISC-V GNU Toolchain repo.
 
 ```bash
-cd ~/Downloads
+cd ~/Downloads/
 git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git
 cd ~/Downloads/riscv-gnu-toolchain/
 ```
@@ -47,7 +47,7 @@ Clone the RISC-V OpenOCD repo
 ```bash
 cd ~/Documents/RISCV/
 git clone https://github.com/riscv/riscv-openocd.git
-cd ~/Documents/RISCV/riscv-openocd
+cd ~/Documents/RISCV/riscv-openocd/
 ```
 
 

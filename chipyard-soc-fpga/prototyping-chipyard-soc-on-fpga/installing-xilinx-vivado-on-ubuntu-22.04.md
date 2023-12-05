@@ -40,7 +40,7 @@ Accept the License Agreements.
 
 <figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
-Select the installation path. Here, we will be using `/home/tk/Documents/Xilinx`.
+Select the installation path. Here, we will be using `/home/tk/Documents/Xilinx/`.
 
 <figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +69,7 @@ By default, vivado can only be executed by invoking the program with the install
 To be able to directly invoke vivado, we need to add the installational path to PATH environment variable. Optionally, add this command to `~/.bashrc` file to support launching vivado in new terminals.
 
 ```bash
-export PATH="/home/tk/Documents/Xilinx/Vivado/2023.2/bin:$PATH"
+export PATH="/home/tk/Documents/Xilinx/Vivado/2023.2/bin/:$PATH"
 ```
 
 To make the change effective, run
@@ -85,7 +85,7 @@ source ~/.bashrc
 To connect to FPGA boards, we need to install additional USB drivers by running the following command.
 
 ```bash
-cd ~/Documents/Xilinx/Vivado/2023.2/data/xicom/cable_drivers/lin64/install_script/install_drivers
+cd ~/Documents/Xilinx/Vivado/2023.2/data/xicom/cable_drivers/lin64/install_script/install_drivers/
 sudo ./install_drivers
 ```
 
@@ -99,11 +99,11 @@ Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Open the folder extracted from the archive and navigate to its `new/board_files` folder. You will be copying all of this folder's subfolders.
+Open the folder extracted from the archive and navigate to its `new/board_files/` folder. You will be copying all of this folder's subfolders.
 
-Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files` directory (e.g. `~/Documents/Xilinx/Vivado/2023.2/data/boards/board_files`). If this folder doesn't exist, create it.
+Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files/` directory (e.g. `~/Documents/Xilinx/Vivado/2023.2/data/boards/board_files/`). If this folder doesn't exist, create it.
 
-**Copy** all of the folders under vivado-boards' `new/board_files` folder, then **paste** them into this folder.
+**Copy** all of the folders under vivado-boards' `new/board_files/` folder, then **paste** them into this folder.
 
 
 
