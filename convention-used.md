@@ -2,6 +2,12 @@
 
 This document will obey the following convention:
 
+
+
+## Chars
+
+✓  ✗  ▹
+
 ## File Path
 
 When target is a directory (folder), the path will end with a slash delimiter
