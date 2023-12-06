@@ -39,7 +39,7 @@ in the `.vscode` folder, create `launch.json`
 
 Launch the RISC-V Debug routine.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Terminal-Only Method
 

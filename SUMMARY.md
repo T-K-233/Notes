@@ -180,6 +180,7 @@
 * [LiPo Safety](electrical/lipo-safety.md)
 * [AS5600 Modification](electrical/as5600-modification.md)
 * [FT-LINK FTDI Debugger Design Considerations](electrical/ft-link-ftdi-debugger-design-considerations.md)
+* [A Study on Reset Pin Connection](electrical/a-study-on-reset-pin-connection.md)
 
 ## UW
 
