@@ -36,7 +36,7 @@ The input Schmit trigger has a high level of 0.7 \* VDD, which when VDD is 3.3V,
 
 
 
-The capacitor also functions as a power-on-reset. Here, yellow channel probes the reset voltage, and magenta channel probes the 3V3 voltage. The MCU is released from reset after 59.4 ms after the board is powered on, which gives sufficient time for components on the chip to properly initialize.
+The capacitor also functions as a power-on-reset. Here, yellow channel probes the reset voltage, and magenta channel probes the 3V3 voltage. The MCU is released from reset after 59.4 ms after the board is powered on (most of the time is controlled by the ST-LINK debugger), which gives sufficient time for components on the chip to properly initialize.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
