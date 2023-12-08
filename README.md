@@ -4,7 +4,7 @@
 ^ This button is just for my own convenience :D
 {% endembed %}
 
-Hi there,
+Hi Hi!
 
 Welcome to my memory!
 
