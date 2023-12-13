@@ -122,6 +122,7 @@
 
 * [3D Print Tolerancing](3d-modeling/3d-print-tolerancing.md)
 * [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
+* [Setting up FBX Plugin for Python on Ubuntu 22.04](3d-modeling/setting-up-fbx-plugin-for-python-on-ubuntu-22.04.md)
 
 ## Tools
 
