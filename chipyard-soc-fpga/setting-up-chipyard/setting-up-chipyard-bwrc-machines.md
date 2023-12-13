@@ -18,7 +18,7 @@ conda activate base
 If this is the first time conda is activated on the user environment, we need to install `conda-lock`.
 
 ```bash
-conda install -n base conda-lock
+conda install -n base conda-lock==1.4.0
 ```
 
 ## 3. Clone Chipyard
