@@ -6,13 +6,9 @@ USB requires a relatively precise 48MHz clock supplied to the peripheral module.
 
 In the RCC section, enable HSE.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Configure the clock tree to supply 48MHz to USB clock domain.
-
-
-
-
 
 ## As Virtual COM Port (COM)
 
@@ -28,8 +24,6 @@ Select class as "Communication Device Class (Vistual Port Com)"
 
 Generate code
 
-
-
 In addition to the default folders, it will also generate "USB\_DEVICE" folder.
 
 <figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
@@ -39,8 +33,6 @@ In the usbd\_cdc\_if.c file, we have the receive and transmit functions
 Every message received will invoke the `static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)` function.
 
 And we can use the `uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)` function to transmit data.
-
-
 
 ### Simple Echo USB VCP Device
 
@@ -76,13 +68,9 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 
 ```
 
-
-
 ### CAN-USB Adapter
 
 Here's a more complete code example, implementing CAN-USB message transfer.
-
-
 
 ```c
 void APP_main() {
@@ -92,12 +80,6 @@ void APP_main() {
   HAL_Delay(1000);
 }
 ```
-
-
-
-
-
-
 
 main.c:
 
@@ -171,8 +153,6 @@ void APP_handleCANMessage() {
 
 ```
 
-
-
 usbd\_cdc\_if.c:
 
 ```c
@@ -200,8 +180,3 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 }
 
 ```
-
-
-
-
-

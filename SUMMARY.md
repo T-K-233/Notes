@@ -164,6 +164,7 @@
 * [Using the Leica Microscope at BWRC](tools/using-the-leica-microscope-at-bwrc.md)
 * [Pair XBoxController to Raspberry Pi with Bluetooth](tools/pair-xboxcontroller-to-raspberry-pi-with-bluetooth.md)
 * [Configuring the FrSky TARANIS X9D Plus 2019 RC Controller](tools/configuring-the-frsky-taranis-x9d-plus-2019-rc-controller.md)
+* [Applying Notion for Education](tools/applying-notion-for-education.md)
 
 ## Mechanical
 

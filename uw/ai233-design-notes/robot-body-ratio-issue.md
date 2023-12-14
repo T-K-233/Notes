@@ -2,7 +2,7 @@
 
 尽管已经在 VRoid 里面调整过了，但真实的 Human Body Scale 和 Anime 的仍有些差距
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>RealWorld Scale</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (4).png" alt=""><figcaption><p>RealWorld Scale</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
