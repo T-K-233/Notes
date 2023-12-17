@@ -4,8 +4,8 @@
 
 See the following tutorial to install Chipyard.
 
-{% content-ref url="../setting-up-chipyard/setting-up-chipyard-bwrc-machines.md" %}
-[setting-up-chipyard-bwrc-machines.md](../setting-up-chipyard/setting-up-chipyard-bwrc-machines.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 

@@ -1,2 +1,0 @@
-# Running Chipyard Simulation
-

@@ -1,2 +1,0 @@
-# Running QEMU Simulation
-

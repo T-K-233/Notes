@@ -144,8 +144,7 @@ To grant permission to this device, we need to add a new rule to the system
 sudo nano /etc/udev/rules.d/48-ft-link-usb.rules
 ```
 
-```bash
-###########################################################################
+<pre class="language-bash"><code class="lang-bash">###########################################################################
 #                                                                         #
 #  48-ft-link-usb.rules -- UDEV rules for FT-LINK JTAG Debugger           #
 #                                                                         #
@@ -157,9 +156,8 @@ sudo nano /etc/udev/rules.d/48-ft-link-usb.rules
 # Create "/dev" entries for device with read and write permission         
 # granted to all users.
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", GROUP="users", MODE:="0666"
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", GROUP="users", MODE:="0666"
-
-```
+<strong>
+</strong></code></pre>
 
 After adding the rule file, use the following command to reload the udev rules
 
