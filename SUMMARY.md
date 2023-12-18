@@ -108,7 +108,9 @@
 
 * [3D Print Tolerancing](3d-modeling/3d-print-tolerancing.md)
 * [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
+* [Onshape to Blender Workflow](3d-modeling/onshape-to-blender-workflow.md)
 * [Setting up FBX Plugin for Python on Ubuntu 22.04](3d-modeling/setting-up-fbx-plugin-for-python-on-ubuntu-22.04.md)
+* [Blender Python Related](3d-modeling/blender-python-related.md)
 
 ## Tools
 
@@ -177,7 +179,6 @@
 * [Unreal Engine Socket Communication](uw/unreal-engine-socket-communication.md)
 * [A Note on Coordinate Systems](uw/a-note-on-coordinate-systems.md)
 * [NewLine Serialization Method](uw/newline-serialization-method.md)
-* [Blender Python Related](uw/blender-python-related.md)
 * [Humanoid Design Notes](uw/ai233-design-notes/README.md)
   * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
   * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
