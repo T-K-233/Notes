@@ -42,6 +42,10 @@ Now the animation file should be able to be imported to Blender.
 
 
 
+When importing to Blender, click the "Automatic Bone Orientation" option under "Armature" tab.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 
 
 
