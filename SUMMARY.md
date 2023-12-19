@@ -46,16 +46,12 @@
 ## Chipyard SoC / FPGA
 
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
+* [Chipyard Tutorials](chipyard-soc-fpga/chipyard-tutorials.md)
 * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
-  * [Installing Xilinx Vivado - Ubuntu 22.04](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/installing-xilinx-vivado-on-ubuntu-22.04.md)
-  * [Prototyping Chipyard SoC on FPGA - Ubuntu](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/prototyping-chipyard-soc-on-fpga.md)
-  * [Prototyping Chipyard SoC on FPGA - BWRC](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/page.md)
   * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
   * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
   * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
-  * [Installing QEMU](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/installing-qemu.md)
 * [Debugging the SoC](chipyard-soc-fpga/debugging/README.md)
-  * [Page 2](chipyard-soc-fpga/debugging-the-soc/page-2.md)
   * [Debugging OsciArty with JTAG and command line GDB](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
   * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
   * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
