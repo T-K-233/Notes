@@ -2,6 +2,46 @@
 
 
 
+## BVH Approach
+
+Download .bvh animation data from the [SFU website](https://mocap.cs.sfu.ca/).
+
+
+
+Enable the BVH import plugin in Blender
+
+
+
+File -> Import -> Motion Capture (.bvh)
+
+Use the following import settings
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Autodesk MotionBuilder uses Z forward and Y up frame.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+The animations are all in 120 FPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+## FBX Approach
+
+> <mark style="color:red;">**Warning:**</mark> This approach does NOT work, since the fbx does not contain the original T-pose data.
+
 Download .fbx animation data from the [SFU website](https://mocap.cs.sfu.ca/).
 
 
@@ -44,7 +84,7 @@ Now the animation file should be able to be imported to Blender.
 
 When importing to Blender, click the "Automatic Bone Orientation" option under "Armature" tab.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
