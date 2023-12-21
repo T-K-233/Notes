@@ -9,17 +9,11 @@ On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 | PA11 | CAN1\_RX |   |
 | PA12 | CAN1\_TX |   |
 
-
-
 ## 1. Configure STM32
 
 First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
 
-
-
 Assuming system clock is configured to be **160 MHz**.
-
-
 
 In the left sidebar, select **Connectivity** -> **CAN1**.
 
@@ -27,7 +21,7 @@ Enable **Activated** checkbox.
 
 Set **Bit Timings Parameters** -> **Prescaler** to 32. Time Quantum should be 1000 ns.
 
-Set **Bit Timings Parameters** -> **Time Quanta in Bit Segment 1** to 3.&#x20;
+Set **Bit Timings Parameters** -> **Time Quanta in Bit Segment 1** to 3.
 
 Set **Bit Timings Parameters** -> **Time Quanta in Bit Segment 2** to 1.
 
@@ -35,33 +29,21 @@ This way, we get a **250 kbps** CAN bus with a sampling point at **75%** positio
 
 We can also change the prescaler value to **16** to get a **500 kbps** bus, or **8** to get a **1 Mbps** bus.
 
-
-
 The optimal sampling point is **87.5%**, and we are pretty close to it.
 
 This is a useful website for [CAN bit-timing](http://www.bittiming.can-wiki.info/).
 
-![](<../../.gitbook/assets/image (5) (1) (1) (1).png>)
-
-
-
-
+![](<../../.gitbook/assets/image (5) (1) (1) (1) (1).png>)
 
 To debug the CAN bus, set **Advanced Parameters** -> **Operating Mode** to "Loopback".
 
-&#x20;
-
 ![](<../../.gitbook/assets/image (142).png>)
-
-
 
 > Errata: When using loopback mode, the RX pin should still be pulled-up externally. We can do this simply by configuring the PA11 GPIO to enable the internal pull-up resistor, but please remember to do this. Otherwise, the `HAL_CAN_Start()` method will timeout. Detailed information can be found [here](https://electronics.stackexchange.com/questions/353005/can-initialization-timeout-error-in-stm32f4).
 
 ## 2. Code
 
 First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
-
-
 
 In `main.c`, add the following code
 
@@ -147,19 +129,11 @@ In `main.c`, add the following code
   /* USER CODE END 3 */
 ```
 
-
-
 After saving, upload the code.
-
-
 
 Detailed information on how CAN filter works can be found [here](https://schulz-m.github.io/2017/03/23/stm32-can-id-filter/).
 
 ## 3. Result
-
-
-
-
 
 ## 4. Using both CAN1 and CAN2
 
@@ -174,4 +148,3 @@ HAL_CAN_ConfigFilter(&hcan1, &filter_config);
 HAL_CAN_Start(&hcan1);
 HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 ```
-

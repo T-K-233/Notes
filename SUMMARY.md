@@ -175,6 +175,7 @@
 * [NewLine Serialization Method](uw/newline-serialization-method.md)
 * [Humanoid Design Notes](uw/ai233-design-notes/README.md)
   * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
+  * [VRM Parameters](uw/ai233-design-notes/vrm-parameters.md)
   * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
 
 ## Maintainance Log
