@@ -96,6 +96,7 @@
 * [NAI-SVC Experiment Log](ml-rl/so-vits-svc-4.2-runtime.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 * [Processing the SFU Motion Capture Dataset](ml-rl/processing-the-sfu-motion-capture-dataset.md)
+* [Setting up TensorRT on PyTorch](ml-rl/setting-up-tensorrt-on-pytorch.md)
 
 ## 3D Modeling
 
