@@ -1,5 +1,21 @@
 # Setting up TensorRT on PyTorch
 
+## Summary
+
+NVIDIA driver version: 535
+
+CUDA version: 12.1.1
+
+cuDNN version:&#x20;
+
+protobuf version:
+
+TensorRT version:&#x20;
+
+
+
+
+
 ```bash
 sudo apt install gcc
 ```
@@ -20,6 +36,27 @@ roughly follow this tutorial
 
 <figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-07-21.png" alt=""><figcaption></figcaption></figure>
 
+or from command line, [reference](https://ubuntu.com/server/docs/nvidia-drivers-installation):
+
+first list all available drivers
+
+```bash
+sudo ubuntu-drivers list
+```
+
+
+
+then do
+
+```bash
+sudo ubuntu-drivers install --gpgpu nvidia:535-server
+sudo apt install nvidia-utils-535-server
+```
+
+
+
+
+
 nvidia-smi should work after restart.
 
 
@@ -38,7 +75,16 @@ nvidia-smi should work after restart.
 
 
 
-
+```bash
+# new trial
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda-repo-ubuntu2004-12-1-local_12.1.1-530.30.02-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2004-12-1-local_12.1.1-530.30.02-1_amd64.deb
+sudo cp /var/cuda-repo-ubuntu2004-12-1-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda
+```
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -58,8 +104,8 @@ Finally, add CUDA to \~/.bashrc:
 ...
 
 # CUDA
-export PATH="/usr/local/cuda-12.0/bin/:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda-12.0/lib64/:$LD_LIBRARY_PATH"
+export PATH="/usr/local/cuda-12.1/bin/:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64/:$LD_LIBRARY_PATH"
 
 ...
 ```
@@ -80,11 +126,20 @@ Build cuda_12.0.r12.0/compiler.31968024_0
 
 
 
+sudo reboot to make nvidia-smi work again
+
+otherwise it will give
+
+```bash
+$ nvidia-smi
+Failed to initialize NVML: Driver/library version mismatch
+```
+
 
 
 ## Install cuDNN
 
-
+{% embed url="https://developer.nvidia.com/rdp/cudnn-download" %}
 
 <figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
 
