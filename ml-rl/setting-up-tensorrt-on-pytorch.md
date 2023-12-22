@@ -2,15 +2,15 @@
 
 ## Summary
 
-NVIDIA driver version: 535
+NVIDIA driver version: 535 (530.30.02)
 
 CUDA version: 12.1.1
 
-cuDNN version:&#x20;
+cuDNN version: 8.9.7 for CUDA 12.X
 
-protobuf version:
+protobuf version: 3.6.1
 
-TensorRT version:&#x20;
+TensorRT version: 8
 
 
 
@@ -134,6 +134,38 @@ otherwise it will give
 $ nvidia-smi
 Failed to initialize NVML: Driver/library version mismatch
 ```
+
+
+
+after reboot:
+
+```bash
+tk@DESKTOP-Scratch:~$ nvidia-smi
+Fri Dec 22 13:48:54 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1070         On | 00000000:27:00.0 Off |                  N/A |
+| 34%   37C    P8                8W / 190W|    178MiB /  8192MiB |      1%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A       987      G   /usr/lib/xorg/Xorg                           44MiB |
+|    0   N/A  N/A      1259      G   /usr/bin/gnome-shell                        131MiB |
++---------------------------------------------------------------------------------------+
+
+```
+
+
 
 
 
@@ -292,6 +324,12 @@ sudo cp -r ./stubs/ /usr/include/google/protobuf/
 
 FINALLY WORKS
 
+```bash
+sudo apt install autogen autoconf libtool
+```
+
+
+
 
 
 ```bash
@@ -313,7 +351,7 @@ git submodule update --init --recursive
 ./autogen.sh
 
 ./configure --prefix=/usr
-make
+make -j8
 make check
 sudo make install
 sudo ldconfig # refresh shared library cache.
@@ -359,10 +397,15 @@ move the unpacked directory to the installation path
 
 
 
-
+Add to bashrc
 
 ```bash
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/tk/Documents/TensorRT-8.6.1.6/lib/
+...
+
+# TensorRT
+export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$LD_LIBRARY_PATH"
+
+...
 ```
 
 ```bash
