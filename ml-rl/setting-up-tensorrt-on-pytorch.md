@@ -49,8 +49,8 @@ sudo ubuntu-drivers list
 then do
 
 ```bash
-sudo ubuntu-drivers install --gpgpu nvidia:535-server
 sudo apt install nvidia-utils-535-server
+sudo ubuntu-drivers install --gpgpu nvidia:535-server
 ```
 
 
@@ -592,8 +592,6 @@ pip install onnxruntime
 pip install onnxruntime-gpu
 pip install onnx-simplifier
 ```
-
-
 
 
 
