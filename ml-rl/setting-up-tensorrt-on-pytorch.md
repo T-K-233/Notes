@@ -181,7 +181,9 @@ Fri Dec 22 13:48:54 2023
 
 
 
-following does NOT work
+Follow this:
+
+[https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb)
 
 ```bash
 sudo dpkg -i ./cudnn-local-repo-ubuntu2004-8.9.7.29_1.0-1_amd64.deb 
@@ -197,27 +199,35 @@ sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.7.29/cudnn-local-30472A84-keyring.g
 sudo apt update
 ```
 
-1.  Install the runtime library.
+Install the runtime library.
 
-    ```bash
-    sudo apt-get install libcudnn8=8.9.7.29-1+cuda12.0
-    ```
-2.  Install the developer library.
+```bash
+sudo apt-get install libcudnn8=8.9.7.29-1+cuda12.2
+```
 
-    ```bash
-    sudo apt-get install libcudnn8-dev=8.9.7.29-1+cuda12.0
-    ```
-3.  Install the code samples (optional).
+Install the developer library.
 
-    ```bash
-    sudo apt-get install libcudnn8-samples=8.9.7.29-1+cuda12.0
-    ```
+```bash
+sudo apt-get install libcudnn8-dev=8.9.7.29-1+cuda12.2
+```
+
+Install the code samples.
+
+```bash
+sudo apt-get install libcudnn8-samples=8.9.7.29-1+cuda12.2
+```
 
 
 
+run the test program to see if success
 
 
-this works
+
+[https://forums.developer.nvidia.com/t/verify-cudnn-install-failed/167220/4](https://forums.developer.nvidia.com/t/verify-cudnn-install-failed/167220/4)
+
+
+
+this does not work
 
 download the TAR file
 
