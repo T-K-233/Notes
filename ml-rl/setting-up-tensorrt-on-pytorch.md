@@ -8,17 +8,13 @@ CUDA version: 12.1.1
 
 cuDNN version: 8.9.7 for CUDA 12.X
 
-protobuf version: 3.6.1
+~~protobuf version: 3.6.1~~
 
 TensorRT version: 8
 
 
 
 
-
-```bash
-sudo apt install gcc
-```
 
 
 
@@ -36,9 +32,9 @@ roughly follow this tutorial
 
 <figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-07-21.png" alt=""><figcaption></figcaption></figure>
 
-or from command line, [reference](https://ubuntu.com/server/docs/nvidia-drivers-installation):
+or, from this [reference](https://ubuntu.com/server/docs/nvidia-drivers-installation), install from command line:
 
-first list all available drivers
+first, list all available drivers with this command
 
 ```bash
 sudo ubuntu-drivers list
@@ -46,14 +42,19 @@ sudo ubuntu-drivers list
 
 
 
-then do
+then install the driver with following command
 
 ```bash
 sudo apt install nvidia-utils-535-server
-sudo ubuntu-drivers install --gpgpu nvidia:535-server
 ```
 
 
+
+run the following command to apply the changes
+
+```bash
+sudo ubuntu-drivers install --gpgpu nvidia:535-server
+```
 
 
 
@@ -69,14 +70,11 @@ nvidia-smi should work after restart.
 
 {% embed url="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html" %}
 
-
-
-[https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
+Download CUDA from the [CUDA website](https://developer.nvidia.com/cuda-toolkit-archive). Select CUDA 12.1.1
 
 
 
 ```bash
-# new trial
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda-repo-ubuntu2004-12-1-local_12.1.1-530.30.02-1_amd64.deb
@@ -86,19 +84,9 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-```bash
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda-repo-ubuntu2004-12-0-local_12.0.0-525.60.13-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu2004-12-0-local_12.0.0-525.60.13-1_amd64.deb
-sudo cp /var/cuda-repo-ubuntu2004-12-0-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda
-```
 
 
-
-Finally, add CUDA to \~/.bashrc:
+After installation, add CUDA to \~/.bashrc:
 
 ```bash
 ...
@@ -112,58 +100,57 @@ export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64/:$LD_LIBRARY_PATH"
 
 
 
-
+To test cuda installation, run the following command.
 
 ```bash
 $ nvcc -V
 nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2022 NVIDIA Corporation
-Built on Mon_Oct_24_19:12:58_PDT_2022
-Cuda compilation tools, release 12.0, V12.0.76
-Build cuda_12.0.r12.0/compiler.31968024_0
-
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
 ```
 
 
 
-sudo reboot to make nvidia-smi work again
-
-otherwise it will give
-
-```bash
-$ nvidia-smi
-Failed to initialize NVML: Driver/library version mismatch
-```
-
-
-
-after reboot:
-
-```bash
-tk@DESKTOP-Scratch:~$ nvidia-smi
-Fri Dec 22 13:48:54 2023       
-+---------------------------------------------------------------------------------------+
-| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
-|-----------------------------------------+----------------------+----------------------+
-| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                                         |                      |               MIG M. |
-|=========================================+======================+======================|
-|   0  NVIDIA GeForce GTX 1070         On | 00000000:27:00.0 Off |                  N/A |
-| 34%   37C    P8                8W / 190W|    178MiB /  8192MiB |      1%      Default |
-|                                         |                      |                  N/A |
-+-----------------------------------------+----------------------+----------------------+
-                                                                                         
-+---------------------------------------------------------------------------------------+
-| Processes:                                                                            |
-|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
-|        ID   ID                                                             Usage      |
-|=======================================================================================|
-|    0   N/A  N/A       987      G   /usr/lib/xorg/Xorg                           44MiB |
-|    0   N/A  N/A      1259      G   /usr/bin/gnome-shell                        131MiB |
-+---------------------------------------------------------------------------------------+
-
-```
+> Note: nvidia-smi might fail to run with the following error:
+>
+> ```bash
+> $ nvidia-smi
+> Failed to initialize NVML: Driver/library version mismatch
+> ```
+>
+> This happens when the CUDA we installed is a different version than the one comes with the driver. If this happens, reboot the system to let nvidia-smi reload the correct CUDA.
+>
+>
+>
+> After reboot:
+>
+> ```bash
+> tk@DESKTOP-Scratch:~$ nvidia-smi
+> Fri Dec 22 13:48:54 2023       
+> +---------------------------------------------------------------------------------------+
+> | NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+> |-----------------------------------------+----------------------+----------------------+
+> | GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+> | Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+> |                                         |                      |               MIG M. |
+> |=========================================+======================+======================|
+> |   0  NVIDIA GeForce GTX 1070         On | 00000000:27:00.0 Off |                  N/A |
+> | 34%   37C    P8                8W / 190W|    178MiB /  8192MiB |      1%      Default |
+> |                                         |                      |                  N/A |
+> +-----------------------------------------+----------------------+----------------------+
+>                                                                                          
+> +---------------------------------------------------------------------------------------+
+> | Processes:                                                                            |
+> |  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+> |        ID   ID                                                             Usage      |
+> |=======================================================================================|
+> |    0   N/A  N/A       987      G   /usr/lib/xorg/Xorg                           44MiB |
+> |    0   N/A  N/A      1259      G   /usr/bin/gnome-shell                        131MiB |
+> +---------------------------------------------------------------------------------------+
+>
+> ```
 
 
 
@@ -227,7 +214,7 @@ run the test program to see if success
 
 
 
-this does not work
+### this does not work
 
 download the TAR file
 
@@ -247,6 +234,12 @@ tar -xvf ./cudnn-linux-x86_64-8.9.7.29_cuda12-archive.tar.xz
 
 
 ## Install Protobuf
+
+```bash
+sudo apt install gcc
+```
+
+
 
 this does not work:
 
@@ -374,6 +367,10 @@ sudo ldconfig # refresh shared library cache.
 
 ## TensorRT
 
+There are two parts of TensorRT installation
+
+### TensorRT GA
+
 Goto [https://developer.nvidia.com/tensorrt](https://developer.nvidia.com/tensorrt)
 
 Download "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR Package"
@@ -386,33 +383,19 @@ Download "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR Package"
 
 
 
-not working:
-
-```bash
-version="8.6.1.6"
-os="Ubuntu-20.04"
-arch=$(uname -m)
-cuda="cuda-12.0"
-cudnn="cudnn8.0"
-tar xzvf TensorRT-${version}.${os}.${arch}-gnu.${cuda}.${cudnn}.tar.gz
-```
-
 instead do
 
 ```bash
 tar xzvf ./TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0.tar.gz 
 ```
 
-move the unpacked directory to the installation path
-
-
-
-Add to bashrc
+move the unpacked directory to the installation path (\~/Documents/), and add to bashrc
 
 ```bash
 ...
 
 # TensorRT
+export TRT_LIBPATH="/home/tk/Documents/TensorRT-8.6.1.6/"
 export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$LD_LIBRARY_PATH"
 
 ...
@@ -433,6 +416,41 @@ pip install ./graphsurgeon-0.4.5-py2.py3-none-any.whl
 
 
 
+
+### TensorRT OSS
+
+For python:
+
+pip install tensorrt
+
+
+
+
+
+```bash
+git clone -b main https://github.com/nvidia/TensorRT TensorRT
+cd TensorRT
+git submodule update --init --recursive
+```
+
+
+
+```bash
+ cd TensorRT
+ mkdir -p build && cd build
+```
+
+
+
+```bash
+cmake .. -DTRT_LIB_DIR=$TRT_LIBPATH/lib/ -DTRT_OUT_DIR=`pwd`/out
+```
+
+
+
+```bash
+make -j$(nproc)
+```
 
 
 
