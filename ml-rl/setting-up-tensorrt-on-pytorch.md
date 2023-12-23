@@ -647,3 +647,23 @@ sudo chmod 777 /usr/local/lib/python3.8/dist-packages/
 sudo chmod -R 777 /usr/local/bin/
 ```
 
+
+
+
+
+
+
+[https://github.com/pytorch/TensorRT/issues/1026](https://github.com/pytorch/TensorRT/issues/1026)
+
+[https://github.com/pytorch/TensorRT/releases](https://github.com/pytorch/TensorRT/releases)
+
+
+
+
+
+
+
+
+
+
+
