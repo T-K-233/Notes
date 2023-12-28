@@ -46,7 +46,7 @@
 ## Chipyard SoC / FPGA
 
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
-* [Chipyard Tutorials](chipyard-soc-fpga/chipyard-tutorials.md)
+* [Chipyard Tutorials](https://ucb-bar.gitbook.io/chipyard/)
 * [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
   * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
   * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
