@@ -10,6 +10,12 @@ Goto **C/C++** -> **Formatter**, click the **Import** button.
 
 ![](<../../.gitbook/assets/image (91).png>)
 
+
+
+{% file src="../../.gitbook/assets/Deuncertainfy_C_Cpp_Format_Config_STM32CubeIDE.xml" %}
+
+
+
 In the popup window, select the formatter config file
 
 ![](<../../.gitbook/assets/image (134).png>)
@@ -54,7 +60,7 @@ Select "Serial Port", and click **New** button.
 
 Select the correct COM port. Click **Finish**.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)
 
 Change Encoding to "UTF-8". Click **Ok**.
 

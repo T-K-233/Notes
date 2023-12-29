@@ -217,6 +217,28 @@ Download both the "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR 
 
 Install the DEB package with Software Install.
 
+Alternatively, do the following commands
+
+```bash
+sudo dpkg -i ./nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0_1.0-1_amd64.deb
+```
+
+```bash
+sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0/nv-tensorrt-local-42B2FC56-keyring.gpg /usr/share/keyrings/
+```
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0
+```
+
+
+
+
+
 
 
 We also need to link the libraries. Unpack the tar package:
@@ -231,8 +253,8 @@ Then. move the unpacked directory to the installation path (\~/Documents/), and 
 ...
 
 # TensorRT
-export TRT_LIBPATH="/home/tk/Documents/TensorRT-8.6.1.6/"
-export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$LD_LIBRARY_PATH"
+export TRT_LIBPATH="/home/nai/Documents/TensorRT-8.6.1.6/targets/x86_64-linux-gnu/lib/"
+export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$TRT_LIBPATH:$LD_LIBRARY_PATH"
 
 ...
 ```
@@ -243,7 +265,7 @@ Install to Python using the following command
 
 ```bash
 cd ~/Documents/TensorRT-8.6.1.6/python/
-pip install ./tensorrt-8.6.1-cp38-none-linux_x86_64.whl
+pip install ./tensorrt-8.6.1-cp310-none-linux_x86_64.whl
 ```
 
 Might also need to install this dependency

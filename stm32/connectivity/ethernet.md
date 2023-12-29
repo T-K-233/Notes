@@ -1,12 +1,32 @@
 # Ethernet
 
+## Setting up Ethernet PHY Layer
+
+Under "Connectivity" tab, select ETH.
+
 Set ETH mode to RMII, and make sure the pin mapping corresponds to the one on the Nucleo board
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-Enable Lightweight IP
+
+
+On the F429ZI Nucleo board, the pin mapping should look as follows.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Setting up Protocol Layer
+
+Under "Middleware and Software Packs" tab, select LWIP (Lightweight IP).
+
+Enable the Lightweight IP functionality.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
 
 Disable DHCP and manually set the IP
 
@@ -19,6 +39,10 @@ set MEM\_SIZE to 10K
 For Nucleo 144 board, we need to set to LAN8742
 
 <figure><img src="../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 ```c
 /* USER CODE BEGIN 0 */
@@ -42,3 +66,12 @@ extern struct netif gnetif;
   /* USER CODE END 3 */
 
 ```
+
+
+
+
+
+## Reference
+
+{% embed url="https://controllerstech.com/stm32-ethernet-tutorials/" %}
+
