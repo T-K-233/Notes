@@ -97,6 +97,7 @@
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 * [Processing the SFU Motion Capture Dataset](ml-rl/processing-the-sfu-motion-capture-dataset.md)
 * [Setting up TensorRT on PyTorch](ml-rl/setting-up-tensorrt-on-pytorch.md)
+* [Setting up K510 Development Environment](ml-rl/setting-up-k510-development-environment.md)
 
 ## 3D Modeling
 
