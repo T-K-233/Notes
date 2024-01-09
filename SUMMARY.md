@@ -120,6 +120,7 @@
   * [Getting Started with XBee (ZigBee)](tools/windows/getting-started-with-xbee-zigbee.md)
 * [Ubuntu](tools/ubuntu/README.md)
   * [Ubuntu 22.04 Standard Installation Procedure](tools/ubuntu/ubuntu-22.04-standard-installation-procedure.md)
+  * [Protobuf](tools/ubuntu/protobuf.md)
   * [Setting up Docker on Ubuntu 22.04](tools/ubuntu/setting-up-docker-on-ubuntu-22.04.md)
   * [Linux Mounting SD Card](tools/ubuntu/linux-mounting-sd-card.md)
   * [Partitioning SD card](tools/ubuntu/partitioning-sd-card.md)
