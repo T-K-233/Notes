@@ -150,6 +150,7 @@
 * [Configuring the FrSky TARANIS X9D Plus 2019 RC Controller](tools/configuring-the-frsky-taranis-x9d-plus-2019-rc-controller.md)
 * [Applying Notion for Education](tools/applying-notion-for-education.md)
 * [Gitbook Errata](tools/gitbook-errata.md)
+* [Setting up SteamVR without HMD](tools/setting-up-steamvr-without-hmd.md)
 
 ## Mechanical
 
