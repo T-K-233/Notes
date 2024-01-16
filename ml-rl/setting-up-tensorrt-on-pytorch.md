@@ -356,7 +356,29 @@ Follow this repo to use TRT&#x20;
 
 
 
+## FAQ
 
+```bash
+Hit:7 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Err:3 file:/var/nv-tensorrt-local-repo-ubuntu2004-8.6.1-cuda-12.0  InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6694DE8A9A1EDFBA
+Hit:8 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists... Done
+W: GPG error: file:/var/nv-tensorrt-local-repo-ubuntu2004-8.6.1-cuda-12.0  InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6694DE8A9A1EDFBA
+E: The repository 'file:/var/nv-tensorrt-local-repo-ubuntu2004-8.6.1-cuda-12.0  InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+```
+
+
+
+solution:
+
+the key is not installed. run the command in "Installing TensorRT" again
+
+```bash
+sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0/nv-tensorrt-local-42B2FC56-keyring.gpg /usr/share/keyrings/
+```
 
 
 
