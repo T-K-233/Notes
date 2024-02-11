@@ -90,6 +90,7 @@
 * [OpenAI gym + Mujoco Setup](ml-rl/setting-up-aws-mujoco-training-machine.md)
 * [Case Study: No-Mercy Project](ml-rl/case-study-no-mercy-project/README.md)
   * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
+  * [Detecting Phara](ml-rl/case-study-no-mercy-project/detecting-phara.md)
 * [NVIDIA Omniverse Isaac Sim Setup](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
 * [NVIDIA Isaac Gym Setup](ml-rl/nvidia-isaac-gym-setup.md)
 * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
