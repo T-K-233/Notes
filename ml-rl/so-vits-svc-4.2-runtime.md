@@ -21,7 +21,7 @@ conda activate nai-svc
 ```
 
 ```bash
-> python3 show_env.py
+> python3 env_checker.py
 Python 3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:07:37) [GCC 12.3.0] ✓
 Numpy 1.23.5 ✓
 Torch 2.1.0+cu121 ✓
@@ -47,8 +47,6 @@ NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.
 
 
 ### Pretrain Model Downloads
-
-
 
 ```bash
 ./scripts/get_base_model.sh
