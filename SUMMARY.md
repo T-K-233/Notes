@@ -137,6 +137,7 @@
   * [Screen Commands](tools/ubuntu/screen-commands.md)
   * [Disabling the "\<Application> is not responding." System Message on Ubuntu](tools/ubuntu/disabling-the-less-than-application-greater-than-is-not-responding.-system-message-on-ubuntu.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
+  * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
 * [Python](tools/python/README.md)
