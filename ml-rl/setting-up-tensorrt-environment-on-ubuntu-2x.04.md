@@ -1,6 +1,8 @@
-# Setting up TensorRT on PyTorch
+# Setting up TensorRT Environment on Ubuntu 2X.04
 
-Summary
+## Summary
+
+Ubuntu 22.04 or Ubuntu 20.04
 
 NVIDIA driver version: 535 (535.129.03)
 
@@ -16,13 +18,19 @@ TensorRT version: 8.6 GA
 
 ## Installing NVIDIA Driver
 
-Install NVIDIA Driver from the "Software & Updates" window.
+{% tabs %}
+{% tab title="Ubuntu GUI Install" %}
+Install NVIDIA Driver from the "Software & Updates" window. Select `nvidia-driver-535-server`
 
 <figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-07-21.png" alt=""><figcaption></figcaption></figure>
 
-Alternatively, suggested by this [tutorial](https://ubuntu.com/server/docs/nvidia-drivers-installation), we can also install the driver from command line:
+nvidia-smi should work after rebooting the system.
+{% endtab %}
 
-first, list all available drivers with this command
+{% tab title="Ubuntu CLI Install" %}
+Suggested by this [tutorial](https://ubuntu.com/server/docs/nvidia-drivers-installation), we can also install the driver from command line:
+
+First, list all available drivers with this command
 
 ```bash
 sudo ubuntu-drivers list
@@ -30,7 +38,7 @@ sudo ubuntu-drivers list
 
 
 
-then install the driver with following command
+Then, install the driver with following command
 
 ```bash
 sudo apt install nvidia-utils-535-server
@@ -38,15 +46,27 @@ sudo apt install nvidia-utils-535-server
 
 
 
-run the following command to apply the changes
+nvidia-smi should work after rebooting the system.
+
+
+
+(Optional) If the system is not configured correctly, try run the following command and manually select the packages.
 
 ```bash
 sudo ubuntu-drivers install --gpgpu nvidia:535-server
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
-nvidia-smi should work after restart.
+
+
+Verify NVIDIA Driver is correctly installed by running `nvidia-smi`
+
+
+
+
 
 
 
@@ -54,9 +74,11 @@ nvidia-smi should work after restart.
 
 ## Installing CUDA
 
-Follow the official [instruction](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html), download CUDA from [here](https://developer.nvidia.com/cuda-toolkit-archive).
+Follow the official [instruction](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html), download CUDA from [here](https://developer.nvidia.com/cuda-toolkit-archive).&#x20;
 
-Select CUDA 12.2.2 (August 2023), and then execute the following commands.
+Select CUDA 12.2.2 (August 2023), and then execute the commands prompted by the instruction on the website.
+
+Here's an example set of command to run:
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -64,8 +86,8 @@ sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 wget https://developer.download.nvidia.com/compute/cuda/12.2.2/local_installers/cuda-repo-ubuntu2004-12-2-local_12.2.2-535.104.05-1_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu2004-12-2-local_12.2.2-535.104.05-1_amd64.deb
 sudo cp /var/cuda-repo-ubuntu2004-12-2-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda
+sudo apt update
+sudo apt install -y cuda
 ```
 
 
@@ -73,6 +95,7 @@ sudo apt-get -y install cuda
 After installation, add CUDA to \~/.bashrc:
 
 ```bash
+# ~/.bashrc
 ...
 
 # CUDA
@@ -97,46 +120,48 @@ Build cuda_12.1.r12.1/compiler.32688072_0
 
 
 
-> Note: nvidia-smi might fail to run with the following error:
->
-> ```bash
-> $ nvidia-smi
-> Failed to initialize NVML: Driver/library version mismatch
-> ```
->
-> This happens when the CUDA we installed is a different version than the one comes with the driver. If this happens, reboot the system to let nvidia-smi reload the correct CUDA.
->
->
->
-> After reboot:
->
-> ```bash
-> tk@DESKTOP-Scratch:~$ nvidia-smi
-> Fri Dec 22 13:48:54 2023       
-> +---------------------------------------------------------------------------------------+
-> | NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
-> |-----------------------------------------+----------------------+----------------------+
-> | GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-> | Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-> |                                         |                      |               MIG M. |
-> |=========================================+======================+======================|
-> |   0  NVIDIA GeForce GTX 1070         On | 00000000:27:00.0 Off |                  N/A |
-> | 34%   37C    P8                8W / 190W|    178MiB /  8192MiB |      1%      Default |
-> |                                         |                      |                  N/A |
-> +-----------------------------------------+----------------------+----------------------+
->                                                                                          
-> +---------------------------------------------------------------------------------------+
-> | Processes:                                                                            |
-> |  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
-> |        ID   ID                                                             Usage      |
-> |=======================================================================================|
-> |    0   N/A  N/A       987      G   /usr/lib/xorg/Xorg                           44MiB |
-> |    0   N/A  N/A      1259      G   /usr/bin/gnome-shell                        131MiB |
-> +---------------------------------------------------------------------------------------+
->
-> ```
+{% hint style="info" %}
+**Note:**&#x20;
+
+nvidia-smi might fail to run with the following error:
+
+```bash
+$ nvidia-smi
+Failed to initialize NVML: Driver/library version mismatch
+```
+
+This happens when the CUDA we installed is a different version than the one comes with the driver. If this happens, reboot the system to let nvidia-smi reload the correct CUDA.
+
+After reboot:
+
+```bash
+tk@DESKTOP-Scratch:~$ nvidia-smi
+Fri Dec 22 13:48:54 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1070         On | 00000000:27:00.0 Off |                  N/A |
+| 34%   37C    P8                8W / 190W|    178MiB /  8192MiB |      1%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A       987      G   /usr/lib/xorg/Xorg                           44MiB |
+|    0   N/A  N/A      1259      G   /usr/bin/gnome-shell                        131MiB |
++---------------------------------------------------------------------------------------+
+
+```
 
 
+{% endhint %}
 
 
 
@@ -144,22 +169,29 @@ Build cuda_12.1.r12.1/compiler.32688072_0
 
 Follow the official [instruction](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb), download cuDNN [here](https://developer.nvidia.com/rdp/cudnn-download).
 
-Download "cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x", select the .deb file.
-
 <figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
 
-Run the following commands
+Select "cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x" with the .deb file option, and then execute the commands prompted by the instruction on the website.
+
+Here's an example set of command to run:
 
 ```bash
-sudo dpkg -i ./cudnn-local-repo-ubuntu2004-8.9.7.29_1.0-1_amd64.deb
-sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.7.29/cudnn-local-30472A84-keyring.gpg /usr/share/keyrings/
-```
-
-
-
-```bash
+wget https://developer.download.nvidia.com/compute/cudnn/9.0.0/local_installers/cudnn-local-repo-ubuntu2004-9.0.0_1.0-1_amd64.deb
+sudo dpkg -i cudnn-local-repo-ubuntu2004-9.0.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2004-9.0.0/cudnn-*-keyring.gpg /usr/share/keyrings/
 sudo apt update
+sudo apt install -y cudnn
 ```
+
+
+
+```bash
+sudo apt install -y cudnn-cuda-12
+```
+
+
+
+(might not need do the following)
 
 Install the runtime library.
 
@@ -183,21 +215,7 @@ sudo apt-get install libcudnn8-samples=8.9.7.29-1+cuda12.2
 
 run the test program to see if success
 
-
-
 [https://forums.developer.nvidia.com/t/verify-cudnn-install-failed/167220/4](https://forums.developer.nvidia.com/t/verify-cudnn-install-failed/167220/4)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -209,9 +227,11 @@ There are two parts of TensorRT installation
 
 Goto [https://developer.nvidia.com/tensorrt](https://developer.nvidia.com/tensorrt)
 
-Download both the "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR Package" and the DEB package
+Download **both** the "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR Package" and the DEB package
 
-> Be careful to download to match with your CUDA install method. For example, if you installed CUDA with deb file, download TensorRT deb file also. Otherwise, it won't work.
+{% hint style="warning" %}
+**Warning:** Be careful to download the version matching with system CUDA version.
+{% endhint %}
 
 
 
@@ -221,17 +241,13 @@ Alternatively, do the following commands
 
 ```bash
 sudo dpkg -i ./nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0_1.0-1_amd64.deb
-```
-
-```bash
 sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0/nv-tensorrt-local-42B2FC56-keyring.gpg /usr/share/keyrings/
 ```
 
-```bash
-sudo apt update
-```
+
 
 ```bash
+sudo apt update
 sudo apt install nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0
 ```
 
