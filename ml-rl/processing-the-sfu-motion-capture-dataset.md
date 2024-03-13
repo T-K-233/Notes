@@ -20,7 +20,7 @@ Use the following import settings
 
 Autodesk MotionBuilder uses Z forward and Y up frame.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
