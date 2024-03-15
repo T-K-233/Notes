@@ -51,6 +51,40 @@ NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.
 
 
 
+### File Structure
+
+**./dataset\_raw/**
+
+store wave files, something like
+
+```bash
+dataset_raw
+ |- singer0
+   |- singer_0.wav
+   |- singer_1.wav
+   
+```
+
+
+
+**./filelists/**
+
+store wav file names, referenced from root path
+
+
+
+**./raw/**
+
+inference source
+
+
+
+**./results/**
+
+generated results
+
+
+
 ### Pretrain Model Downloads
 
 ```bash
