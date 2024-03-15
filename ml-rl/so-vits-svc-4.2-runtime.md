@@ -207,3 +207,19 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/config.json -m 44k
 
 {% embed url="https://github.com/Anjok07/ultimatevocalremovergui" %}
 
+
+
+### Loss
+
+loss/g/f0、loss/g/mel 和 loss/g/total 应当是震荡下降的，并最终收敛在某个值
+
+loss/g/kl 应当是低位震荡的
+
+loss/g/fm 应当在训练的中期持续上升，并在后期放缓上升趋势甚至开始下降
+
+
+
+
+
+
+
