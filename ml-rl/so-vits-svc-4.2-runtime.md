@@ -16,9 +16,14 @@ Linux (millennium-A24)
 
 Python 3.10.13
 
+
+
 ```bash
-conda activate nai-svc
+cd /rscratch/tk/Desktop/NAI-SVC-Workspace/
+conda activate ./.conda-env/
 ```
+
+
 
 ```bash
 > python3 env_checker.py
