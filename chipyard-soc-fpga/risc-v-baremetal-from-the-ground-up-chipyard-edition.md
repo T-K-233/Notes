@@ -1,30 +1,45 @@
+---
+description: >-
+  This article will walk you through the behind-the-scenes of how a baremetal C
+  program is compiled and linked as a RISC-V binary file.
+---
+
 # RISC-V: Baremetal From The Ground Up (Chipyard Edition)
 
-Let's start with something simple. The "hello world" equivalent program in the embedded systems world would be the blinkly LED program.
+
+
+Let's start with something simple. The "hello world" equivalent program in the embedded systems world would be the blinkly LED program:
 
 ```c
+// some handy macros to do bit operations
 #define SET_BITS(REG, BIT)              ((REG) |= (BIT))
 #define CLEAR_BITS(REG, BIT)            ((REG) &= !(BIT))
 
-#define GPIOA_BASE                      0x10010100UL
+// peripheral MMIO addresses
+#define GPIOA_OUTPUT_VAL                0x1001000CUL
+#define GPIOA_OUTPUT_EN                 0x10010008UL
+#define CLINT_MTIME                     0x0200BFF8UL
 
+#define ENABLE_GPIOA()                  SET_BITS(GPIOA_OUTPUT_EN, 0x01)
+
+// a global counter
 volatile unsigned int counter;
 
-void simple_delay() {
-  for (int i=0; i<1000; i+=1) {
-    asm volatile("nop");
-  }
+// A simple delay function. 
+void delay(unsigned int ticks) {
+  unsigned int mtime_start;
+  while ((*(volatile unsigned int *)CLINT_MTIME) - mtime_start < ticks) {}
 }
 
 int main() {
-  *(unsigned int volatile *)(GPIOA_BASE + 0x00) = 0x01;
+  ENABLE_GPIOA();
 
   while (1) {
-    SET_BITS(*(unsigned int volatile *)(GPIOA_BASE + 0x00), 0x01);
-    simple_delay();
+    SET_BITS(*(volatile unsigned int *)GPIOA_OUTPUT_EN, 0x01);
+    delay(1000);
     
-    CLEAR_BITS(*(unsigned int volatile *)(GPIOA_BASE + 0x00), 0x01);
-    simple_delay();
+    CLEAR_BITS(*(unsigned int volatile *)GPIOA_OUTPUT_EN, 0x01);
+    delay(1000);
     
     counter += 1;
   }
@@ -37,8 +52,6 @@ Embedded programs, most of the time, are all about MMIO register manipulations.
 
 Now, in order to compile this C program to something our SoC can understand, we need to use the RISC-V Toolchain.
 
-
-
 ## RISC-V Toolchain
 
 The RISC-V Toolchain is a collection of executables that helps us to compile, assemble, and link the program we write in C/C++ to binary format. It can also provide tools for us to debug and analyze the generated binaries.
@@ -50,8 +63,6 @@ There is a wide range of choices of toolchains, usually marked by different pref
 Here, we will use the [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) from [riscv-collab](https://github.com/riscv-collab) (it comes with the prefix `riscv64-unknown-elf-`).
 
 For toolchain installation, see \[TODO link]
-
-
 
 After installation, we can see that we have a set of executables in the installation directory.
 
@@ -67,17 +78,13 @@ After installation, we can see that we have a set of executables in the installa
 
 All of these toolchain executables will run on the host machine, but it knows the architecture of the target SoC, and thus can build the binary in the format that our target can understand.
 
-
-
 ## Build Process
 
 ### Pre-processing Stage
 
 <figure><img src="../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
-The first stage is the pre-processing stage. In this stage, the compiler will resolve all the [compiler macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html) (basically, everything we defined with "#" marks).&#x20;
-
-
+The first stage is the pre-processing stage. In this stage, the compiler will resolve all the [compiler macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html) (basically, everything we defined with "#" marks).
 
 By default, the compiler will not generate this intermediate "main.i" file for us. To do this, we will pass the `-E` argument to tell the compiler stop after pre-processing. We use the `-o` argument to specify the output file.
 
@@ -86,8 +93,6 @@ By default, the compiler will not generate this intermediate "main.i" file for u
 ```bash
 $RISCV/riscv64-unknown-elf-gcc -E -o main.i main.c
 ```
-
-
 
 We can see that in `main.i`, all of the macro defines are processed and replaced with their actual contents.
 
@@ -126,43 +131,27 @@ int main() {
 
 ```
 
-
-
 ### Code Generation Stage
 
 <figure><img src="../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 ### Assembling Stage
 
 <figure><img src="../.gitbook/assets/image (15) (4).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Linking Stage
 
-
-
 <figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Format Converison
 
 <figure><img src="../.gitbook/assets/image (18) (4).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Startup Code
 
-Our LED has successfully blinked. However, if we try running other more complex programs, they might fail. This is because we have made a lot of assumptions about the state of the SoC when we enter the main() function.&#x20;
+Our LED has successfully blinked. However, if we try running other more complex programs, they might fail. This is because we have made a lot of assumptions about the state of the SoC when we enter the main() function.
 
 This is usually set up with a startup file. This piece of the program will be responsible for setting up the interrupt vector, initializing the stack, zeroing out the `.bss` section, and sometimes also copying the `.data` section to SRAM. Hence, we will write our own startup file to properly initialize the SoC.
-
-
 
 // TODO: change
 
@@ -187,21 +176,9 @@ Boot Flow:
 17. Single or multi-hart design redirection step
 18. If design is a single hart only, or a multi-hart design without a C-implemented function secondary\_main, ONLY the boot hart will continue to main(). b. For multi-hart designs, all other CPUs will enter sleep via WFI instruction via the weak secondary\_main label in crt0.S, while boot hart runs the application program. c. In a multi-hart design which includes a C-defined secondary\_main function, all harts will enter secondary\_main as the primary C function.
 
-&#x20;
-
-
-
 ### Interrupt Vector
 
-
-
 ### Stack Initialization
-
-
-
-
-
-
 
 \_\_stack\_size
 
@@ -216,10 +193,3 @@ metal\_segment\_bss\_target\_start & metal\_segment\_bss\_target\_end ◦ Used t
 metal\_segment\_data\_source\_start, metal\_segment\_data\_target\_start, metal\_segment\_data\_target\_end ◦ Used to copy data from image to its destination in RAM.
 
 metal\_segment\_itim\_source\_start, metal\_segment\_itim\_target\_start, metal\_segment\_itim\_target\_end ◦ Code or data can be placed in itim sections using the \_\_attribute\_\_section(".itim")
-
-
-
-
-
-
-
