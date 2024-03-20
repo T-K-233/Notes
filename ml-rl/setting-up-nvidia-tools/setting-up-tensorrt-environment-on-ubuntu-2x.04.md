@@ -22,7 +22,7 @@ TensorRT version: 8.6 GA
 {% tab title="Ubuntu GUI Install" %}
 Install NVIDIA Driver from the "Software & Updates" window. Select `nvidia-driver-535-server`
 
-<figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-07-21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2023-12-22 01-07-21.png" alt=""><figcaption></figcaption></figure>
 
 nvidia-smi should work after rebooting the system.
 {% endtab %}
@@ -169,7 +169,7 @@ Fri Dec 22 13:48:54 2023
 
 Follow the official [instruction](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb), download cuDNN [here](https://developer.nvidia.com/rdp/cudnn-download).
 
-<figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
 
 Select "cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x" with the .deb file option, and then execute the commands prompted by the instruction on the website.
 

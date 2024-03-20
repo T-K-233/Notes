@@ -91,9 +91,12 @@
 * [Case Study: No-Mercy Project](ml-rl/case-study-no-mercy-project/README.md)
   * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
   * [Detecting Phara](ml-rl/case-study-no-mercy-project/detecting-phara.md)
-* [NVIDIA Omniverse Isaac Sim Setup](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
-* [NVIDIA Isaac Gym Setup](ml-rl/nvidia-isaac-gym-setup.md)
-* [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
+* [Setting up NVIDIA Tools](ml-rl/setting-up-nvidia-tools/README.md)
+  * [Setting up NVIDIA Driver on Ubuntu 22.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04.md)
+  * [NVIDIA Isaac Gym Setup](ml-rl/setting-up-nvidia-tools/nvidia-isaac-gym-setup.md)
+  * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/setting-up-nvidia-tools/nvidia-isaac-gym-urdf-import-notes.md)
+  * [Setting up TensorRT Environment on Ubuntu 2X.04](ml-rl/setting-up-nvidia-tools/setting-up-tensorrt-environment-on-ubuntu-2x.04.md)
+  * [Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04](ml-rl/setting-up-nvidia-tools/nvidia-omniverse-isaac-sim-setup.md)
 * [URDF to MJCF Mujoco Notes](ml-rl/urdf-to-mjcf-mujoco-notes.md)
 * [Gazebo Setup](ml-rl/gazebo-setup.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
@@ -101,7 +104,6 @@
 * [GPTSoVITS](ml-rl/gptsovits.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 * [Processing the SFU Motion Capture Dataset](ml-rl/processing-the-sfu-motion-capture-dataset.md)
-* [Setting up TensorRT Environment on Ubuntu 2X.04](ml-rl/setting-up-tensorrt-environment-on-ubuntu-2x.04.md)
 * [Setting up K510 Development Environment](ml-rl/setting-up-k510-development-environment.md)
 
 ## 3D Modeling
