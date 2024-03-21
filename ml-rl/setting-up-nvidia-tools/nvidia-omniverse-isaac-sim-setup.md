@@ -49,11 +49,7 @@ Launch the application by either double-clicking it or via the terminal.
 
 Set up the directories in the launcher. Here's an example setup:
 
-TODO: modify the image
-
-<figure><img src="../../.gitbook/assets/image (27) (2).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 ## Install Isaac Sim
 
