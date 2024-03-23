@@ -230,6 +230,26 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/config.json -m 44k
 
 
 
+### Model Fusion
+
+```json
+{
+  "/tmp/gradio/bfb6032133f82121787fe12bda7a72772ea1ded5/G_24000.pth": 20,
+  "/tmp/gradio/0b96f6ff59483d973613dbc911688d02d68d959a/G_104000.pth": 20,
+  "/tmp/gradio/c44409950386074c71bcfedbc2a155e64413cdc8/G_84000.pth": 30,
+  "/tmp/gradio/b6807f32bc6c649e73f5b52eda19b6e7388f0cd3/G_152000.pth": 10,
+  "/tmp/gradio/9ef9a8f73dd2ff8de416f708a0174d1d72d2e6e5/G_108000.pth": 20
+}
+```
+
+
+
+
+
+
+
+
+
 ### Loss
 
 loss/g/f0、loss/g/mel 和 loss/g/total 应当是震荡下降的，并最终收敛在某个值
