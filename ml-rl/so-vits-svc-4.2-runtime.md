@@ -18,9 +18,21 @@ Python 3.10.13
 
 
 
+## Initial Setup
+
 ```bash
-cd /rscratch/tk/Desktop/NAI-SVC-Workspace/
+git clone git@github.com:T-K-233/NAI-SVC-WS.git NAI-SVC-Workspace
+git clone git@github.com:T-K-233/NAI-SVC-WS.git Inference
+```
+
+
+
+```bash
+conda create --prefix ./.conda-env python=3.10
 conda activate ./.conda-env/
+
+cd ./Inference
+pip install -r ./requirements.txt
 ```
 
 
@@ -47,6 +59,15 @@ librosa 0.9.1 ✓
 ```bash
 > nvidia-smi
 NVIDIA-SMI 535.86.10              Driver Version: 535.86.10    CUDA Version: 12.2
+```
+
+
+
+## Usage
+
+```bash
+cd /scratch/NAI-SVC-Workspace/
+conda activate ./.conda-env/
 ```
 
 
