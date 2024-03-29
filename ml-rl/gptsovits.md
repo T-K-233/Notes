@@ -15,7 +15,7 @@ cd ./GPT-SoVITS/
 
 
 ```bash
-conda create -n GPTSoVits python=3.9
+conda create -p ./.conda-env python=3.9
 ```
 
 
