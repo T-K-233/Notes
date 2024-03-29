@@ -1,4 +1,4 @@
-# NVIDIA Isaac Gym Setup
+# Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04
 
 ## 1. Download Isaac Gym Installation File
 
