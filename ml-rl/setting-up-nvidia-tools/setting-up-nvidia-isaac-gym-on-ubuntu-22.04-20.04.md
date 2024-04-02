@@ -46,12 +46,18 @@ pip install -e .
 
 
 
+```bash
+pip install protobuf==3.20
+```
+
+
+
 Create a new file called "env.sh" and write the following content in the file
 
 ```bash
 # env.sh
 export LD_LIBRARY_PATH=/home/tk/Documents/mambaforge/envs/gym/lib/
-export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+#export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 ```
 
 
