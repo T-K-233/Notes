@@ -1,4 +1,4 @@
-# Setting up TensorRT Environment on Ubuntu 2X.04
+# Setting up TensorRT Environment on Ubuntu 22.04 / 20.04
 
 ## Summary
 
@@ -123,7 +123,7 @@ Fri Dec 22 13:48:54 2023
 
 Follow the official [instruction](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb), download cuDNN [here](https://developer.nvidia.com/rdp/cudnn-download).
 
-<figure><img src="../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
 
 Select "cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x" with the .deb file option, and then execute the commands prompted by the instruction on the website.
 
@@ -241,8 +241,8 @@ pip install ./tensorrt-8.6.1-cp310-none-linux_x86_64.whl
 Might also need to install this dependency
 
 ```bash
-cd ~/Documents/TensorRT-8.6.1.6/graphsurgeon]/
-pip install ./graphsurgeon-0.4.5-py2.py3-none-any.whl
+cd ~/Documents/TensorRT-8.6.1.6/graphsurgeon/
+pip install ./graphsurgeon-0.4.6-py2.py3-none-any.whl
 ```
 
 
