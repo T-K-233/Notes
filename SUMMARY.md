@@ -177,6 +177,7 @@
 * [ESP32 Cam](electrical/esp32-cam.md)
 * [LiPo Safety](electrical/lipo-safety.md)
 * [AS5600 Modification](electrical/as5600-modification.md)
+* [OpenOCD and FTDI Chips](electrical/openocd-and-ftdi-chips.md)
 * [FT-LINK FTDI Debugger Design Considerations](electrical/ft-link-ftdi-debugger-design-considerations.md)
 * [A Study on Reset Pin Connection](electrical/a-study-on-reset-pin-connection.md)
 
