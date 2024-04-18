@@ -97,6 +97,7 @@
   * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
   * [Setting up TensorRT Environment on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-tensorrt-environment-on-ubuntu-22.04-20.04.md)
   * [Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
+* [Setting up ExecuTorch on Ubuntu 22.04](ml-rl/setting-up-executorch-on-ubuntu-22.04.md)
 * [URDF to MJCF Mujoco Notes](ml-rl/urdf-to-mjcf-mujoco-notes.md)
 * [Gazebo Setup](ml-rl/gazebo-setup.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
