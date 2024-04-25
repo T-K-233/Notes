@@ -166,7 +166,10 @@
 ## Mechanical
 
 * [MAD Cycloidal Actuator](mechanical/mad-cycloidal-actuator.md)
-* [Fixing the Unitree A1 Robot Dog](mechanical/fixing-the-unitree-a1-robot-dog.md)
+* [Dog Stuff](mechanical/dog-stuff/README.md)
+  * [Fixing the Unitree A1 Robot Dog Leg Motor](mechanical/dog-stuff/fixing-the-unitree-a1-robot-dog-leg-motor.md)
+  * [Fixing the Unitree A1 Robot Dog Ethernet Port](mechanical/dog-stuff/fixing-the-unitree-a1-robot-dog.md)
+  * [Fixing MIT Mini Cheetah](mechanical/dog-stuff/fixing-mit-mini-cheetah.md)
 * [3D Printer Profile](mechanical/3d-printer-profile.md)
 
 ## Electrical
