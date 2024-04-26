@@ -2,7 +2,19 @@
 
 
 
+For some reason the rear right calf motor is dead...
 
+<figure><img src="../../.gitbook/assets/PXL_20220629_193927558.MP.jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+Initially I was looking these screws to figure out how to disassemble the leg structure
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_193921271.jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+Turns out we don't need to touch those. Instead, the leg is mounted with the screws around the motors.
 
 
 
@@ -15,6 +27,46 @@ I've later talked with the USC ppl, and they suggested that we can take a L-shap
 Haven't attempted this yet.
 
 
+
+Since initially we could not remove those screws, I decided to remove the screws holding the actuator together, to see if we can diagnose anything.
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_195614756.MP.jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_195618721.MP.jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+Driver board seems fine...
+
+<div>
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_195629572.jpg" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_195907062.jpg" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_200352061.jpg" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_200343272.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+
+
+Later with a newer hex wrench we were able to remove the motor.
+
+
+
+<figure><img src="../../.gitbook/assets/PXL_20220629_203049875.MP.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
