@@ -185,6 +185,7 @@
 * [OpenOCD and FTDI Chips](electrical/openocd-and-ftdi-chips.md)
 * [FT-LINK FTDI Debugger Design Considerations](electrical/ft-link-ftdi-debugger-design-considerations.md)
 * [A Study on Reset Pin Connection](electrical/a-study-on-reset-pin-connection.md)
+* [Note on CAN Termination Resistor](electrical/note-on-can-termination-resistor.md)
 
 ## UW
 
