@@ -74,6 +74,18 @@ INTERFACE basically indicates that we don't need to build anything
 
 
 
+## DO NOT
+
+1. Don't use macros that affect all targets:
+   * `INCLUDE_DIRECTORIES()`
+   * `ADD_DEFINITIONS()`
+   * `LINK_LIBRARIES`
+2. Dont' use `TARGET_INCLUDE_LIBRARIES()` with path outside your own module
+3. Don't use `TARGET_LINK_LIBRARIES()` without specifying scope (PUBLIC, PRIVATE, or INTERFACE)
+4. Don't use `TARGET_COMPILE_OPTIONS()` to set flags that affect the ABI
+
+
+
 
 
 
