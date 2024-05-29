@@ -162,6 +162,7 @@
 * [Applying Notion for Education](tools/applying-notion-for-education.md)
 * [Gitbook Errata](tools/gitbook-errata.md)
 * [Setting up SteamVR without HMD](tools/setting-up-steamvr-without-hmd.md)
+* [CMake Best Practices](tools/cmake-best-practices.md)
 
 ## Mechanical
 
