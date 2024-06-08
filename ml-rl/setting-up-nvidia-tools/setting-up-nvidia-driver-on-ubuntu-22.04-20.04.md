@@ -28,6 +28,7 @@ Then, install the driver with following command
 
 ```bash
 sudo apt install nvidia-utils-535-server
+sudo apt install nvidia-driver-535-server
 ```
 
 
