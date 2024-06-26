@@ -80,7 +80,6 @@
 
 ## ML/RL
 
-* [Zoo of RL Algorithms](ml-rl/zoo-of-rl-algorithms.md)
 * [ROS 2](ml-rl/ros-2/README.md)
   * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
   * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
@@ -89,6 +88,7 @@
   * [Colab Resource Options](ml-rl/google-colab/colab-resource-options.md)
   * [so-vits-svc 4.0: Colab Flow](ml-rl/google-colab/so-vits-svc-4.0-colab-flow.md)
 * [OpenAI gym + Mujoco Setup](ml-rl/setting-up-aws-mujoco-training-machine.md)
+* [Case Study: A Dive Into LeggedGym](ml-rl/case-study-a-dive-into-leggedgym.md)
 * [Case Study: No-Mercy Project](ml-rl/case-study-no-mercy-project/README.md)
   * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
   * [Detecting Phara](ml-rl/case-study-no-mercy-project/detecting-phara.md)
