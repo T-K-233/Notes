@@ -88,6 +88,14 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
+Then, see if lsusb can see the full information of the device
+
+```bash
+lsusb -d 1532: -v
+```
+
+
+
 ### **4. Test with `jstest`**
 
 Install `jstest-gtk` to test your joystick:
