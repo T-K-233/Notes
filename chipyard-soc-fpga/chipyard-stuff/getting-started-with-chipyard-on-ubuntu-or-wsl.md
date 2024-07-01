@@ -104,6 +104,168 @@ The set up process will take around 10-30 minutes, depending on the system confi
 
 ## Running RTL Simulation
 
+### Step 1. Preparing the Environment <a href="#id-1.-prepare-environment" id="id-1.-prepare-environment"></a>
+
+{% tabs %}
+{% tab title="Ubuntu" %}
+On Ubuntu, we will use the open-source Verilator to simulate.
+
+We don't need to do anything special to use Verilator. Just remember to source the env.sh script.
+
+```bash
+source $chipyard/env.sh
+```
+{% endtab %}
+
+{% tab title="BWRC" %}
+On BWRC machine, we need to source the VCS simulator path. This can be done by executing the following commands.
+
+```bash
+export VCS_HOME=/tools/synopsys/vcs/S-2021.09-SP1-1/
+export VERDI_HOME=/tools/synopsys/verdi/S-2021.09-SP1-1/
+export VCS_64=1
+export PATH=$VCS_HOME/bin:$VERDI_HOME/bin:$PATH
+```
+
+Alternatively, run the following all-in-one script
+
+```bash
+source /tools/C/chiyufeng/documents/vcs_env.sh
+```
+
+
+
+If running into license issues, try running the following command
+
+```bash
+source /tools/flexlm/flexlm.sh
+```
+
+
+
+If running into JDK\_HOME issue(JDK/lib/tools.jar not found), try the following command
+
+```bash
+export JDK_HOME=/usr/lib/jvm/java-1.8.0/
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### Step 2. Build the RISC-V binaries <a href="#id-2.-run-simulation" id="id-2.-run-simulation"></a>
+
+To build simulation code:
+
+```bash
+# inside chipyard directory
+cd ./tests/
+make
+```
+
+
+
+### Step 3. Running the Simulation
+
+Then, we go to the corresponding simulator folder and run the simulation.
+
+{% tabs %}
+{% tab title="Ubuntu" %}
+```bash
+cd $chipyard/sims/verilator/
+```
+
+
+
+To run a simulation
+
+```bash
+make run-binary CONFIG=ExampleChipConfig BINARY=../../tests/hello.riscv
+```
+
+To run a simulation and generate waveform
+
+{% code overflow="wrap" %}
+```bash
+bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+```
+{% endcode %}
+
+`timeout_cycles` can be set to a small value to make the waveform dump process faster.
+{% endtab %}
+
+{% tab title="BWRC" %}
+```bash
+cd $chipyard/sims/vcs/
+```
+
+
+
+{% code overflow="wrap" %}
+```bash
+bsub -q ee194 -Is -XF make run-binary CONFIG=ExampleChipConfig BINARY=../../tests/hello.riscv
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+
+
+### Step 3. Examine Waveform <a href="#id-3.-examine-waveform" id="id-3.-examine-waveform"></a>
+
+Launch verdi to examine the waveform.
+
+
+
+## Prototype the design on FPGA
+
+### Step 1. Source the tool scripts
+
+Use the following command to add vivado to PATH
+
+{% tabs %}
+{% tab title="Ubuntu" %}
+```bash
+source ~/Documents/Xilinx/Vivado/2023.2/settings64.sh
+```
+{% endtab %}
+
+{% tab title="BWRC" %}
+```bash
+source /tools/xilinx/Vivado/2022.2/settings64.sh
+```
+{% endtab %}
+
+{% tab title="Millennium" %}
+```bash
+source /ecad/tools/xilinx/Vivado/2023.2/settings64.sh
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### Step 2. Building Bitstream
+
+```bash
+# in chipyard folder
+cd ./fpga/
+```
+
+
+
+```bash
+make SUB_PROJECT=arty100t bitstream
+```
+
+
+
+
+
+## Debugging
+
+### Debug the design with JTAG
+
 
 
 
