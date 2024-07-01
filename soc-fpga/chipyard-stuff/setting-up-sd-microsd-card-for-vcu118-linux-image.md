@@ -4,8 +4,6 @@ Recommend using this SanDisk 32GB 32G Ultra Micro SD HC Class 10 TF Flash SDHC M
 
 {% embed url="https://www.amazon.com/gp/product/B010NE3QHQ" %}
 
-
-
 Insert the SD card to a Ubuntu host machine. Run the following command to list all disks
 
 ```bash
@@ -14,9 +12,7 @@ sudo fdisk -l
 
 Find the target SD card and note down the drive path. Here, it's `/dev/sda` for this 32GB SD card.
 
-<figure><img src="../.gitbook/assets/image (2) (3) (2).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (2) (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 Remove all existing partitions on this card by using `sudo gdisk <path_to_the_card>`.
 
@@ -50,8 +46,6 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 
 ```
-
-
 
 create new partition
 
@@ -96,8 +90,6 @@ The operation has completed successfully.
 
 ```
 
-
-
 The first section then can be used to load the Linux binary image.
 
 Use `dd` to transfer the binary content directly.
@@ -111,12 +103,6 @@ sudo dd if=~/Desktop/eaglex_bringup/eaglex_bbl.bin of=/dev/sda1
 
 ```
 
-
-
-
-
-
-
 ## Additional Info
 
 Here's a list of properties of Windows file system
@@ -129,9 +115,4 @@ Here's a list of properties of Windows file system
 
 4 is NTFS
 
-<figure><img src="../.gitbook/assets/image (1) (4) (3).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
+<figure><img src="../../.gitbook/assets/image (1) (4) (3).png" alt=""><figcaption></figcaption></figure>

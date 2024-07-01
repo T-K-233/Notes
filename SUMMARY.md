@@ -43,23 +43,21 @@
 * [Software Pack](stm32/software-pack/README.md)
   * [STMicroelectronics.X-CUBE-AI - Sine Approximator](stm32/software-pack/stmicroelectronics.x-cube-ai-sine-approximator.md)
 
-## Chipyard SoC / FPGA
+## SoC / FPGA
 
-* [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](chipyard-soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
-* [Chipyard Stuff](chipyard-soc-fpga/chipyard-stuff/README.md)
-  * [Getting Started With Chipyard on Ubuntu or WSL](chipyard-soc-fpga/chipyard-stuff/getting-started-with-chipyard-on-ubuntu-or-wsl.md)
+* [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
+* [Chipyard Stuff](soc-fpga/chipyard-stuff/README.md)
+  * [Getting Started With Chipyard on Ubuntu or WSL](soc-fpga/chipyard-stuff/getting-started-with-chipyard-on-ubuntu-or-wsl.md)
+  * [Debugging OsciArty with JTAG and command line GDB](soc-fpga/chipyard-stuff/gdb-debugging-osciarty.md)
+  * [Debugging BearlyML with JTAG and GDB](soc-fpga/chipyard-stuff/jtag-and-gdb-debugging-bearlyml.md)
+  * [Booting BearlyML With External SPI Flash](soc-fpga/chipyard-stuff/booting-bearlyml-with-external-spi-flash.md)
+  * [Setting Up SD / microSD Card for vcu118 Linux Image](soc-fpga/chipyard-stuff/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
   * [More Chipyard Stuff](https://ucb-bar.gitbook.io/chipyard/)
-* [Prototyping Chipyard SoC on FPGA](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/README.md)
-  * [Arty 35T / 100T UART Pins](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-100t-uart-pins.md)
-  * [Arty 35T Using DDR DRAM](chipyard-soc-fpga/prototyping-chipyard-soc-on-fpga/arty-35t-using-ddr-dram.md)
-  * [Vivado Generate Flash Config .mcs File From Bitstream](chipyard-soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
-* [Debugging the SoC](chipyard-soc-fpga/debugging/README.md)
-  * [Debugging OsciArty with JTAG and command line GDB](chipyard-soc-fpga/debugging/gdb-debugging-osciarty.md)
-  * [Debugging BearlyML with JTAG and GDB](chipyard-soc-fpga/debugging/jtag-and-gdb-debugging-bearlyml.md)
-  * [Booting BearlyML With External SPI Flash](chipyard-soc-fpga/debugging/booting-bearlyml-with-external-spi-flash.md)
-* [Setting Up SD / microSD Card for vcu118 Linux Image](chipyard-soc-fpga/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
-* [Kendryte K230 Bringup](chipyard-soc-fpga/kendryte-k230-bringup.md)
-* [Intel FPGA Quartus](chipyard-soc-fpga/intel-fpga-quartus.md)
+* [Arty 35T / 100T UART Pins](soc-fpga/arty-35t-100t-uart-pins.md)
+* [Arty 35T Using DDR DRAM](soc-fpga/arty-35t-using-ddr-dram.md)
+* [Vivado Generate Flash Config .mcs File From Bitstream](soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
+* [Kendryte K230 Bringup](soc-fpga/kendryte-k230-bringup.md)
+* [Intel FPGA Quartus](soc-fpga/intel-fpga-quartus.md)
 
 ## Motor Control
 
