@@ -130,7 +130,7 @@ Sampling rate: 48000
 
 ### BGM Removal
 
-<figure><img src="../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -152,7 +152,7 @@ Sampling rate: 48000
 
 {% embed url="https://github.com/flutydeer/audio-slicer/releases" %}
 
-<figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -166,7 +166,7 @@ Remove audio clips that are shorter than 4 seconds, and cut the clips that are l
 
 In Adobe Audition, select "Window" -> "Match Loudness" to open the loudness-matching panel.
 
-<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
 Set the settings to use
 

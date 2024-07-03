@@ -16,7 +16,7 @@ Signal Mapping for FT2232H
 
 
 
-### PMOD Header
+### PMOD Header Pinout
 
 FT header
 
