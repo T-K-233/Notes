@@ -55,6 +55,7 @@
   * [More Chipyard Stuff](https://ucb-bar.gitbook.io/chipyard/)
 * [Arty 35T / 100T UART Pins](soc-fpga/arty-35t-100t-uart-pins.md)
 * [Arty 35T Using DDR DRAM](soc-fpga/arty-35t-using-ddr-dram.md)
+* [Configuring the DDR MIG controller on NexysVideo FPGA](soc-fpga/configuring-the-ddr-mig-controller-on-nexysvideo-fpga.md)
 * [Vivado Generate Flash Config .mcs File From Bitstream](soc-fpga/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
 * [Kendryte K230 Bringup](soc-fpga/kendryte-k230-bringup.md)
 * [Intel FPGA Quartus](soc-fpga/intel-fpga-quartus.md)
