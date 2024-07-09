@@ -117,6 +117,14 @@ source $chipyard/env.sh
 ```
 {% endtab %}
 
+{% tab title="Millennium" %}
+Use the following script to source vcs and other related tools.
+
+```bash
+source /ecad/tools/vlsi.bashrc
+```
+{% endtab %}
+
 {% tab title="BWRC" %}
 On BWRC machine, we need to source the VCS simulator path. This can be done by executing the following commands.
 
@@ -230,15 +238,15 @@ source ~/Documents/Xilinx/Vivado/2023.2/settings64.sh
 ```
 {% endtab %}
 
-{% tab title="BWRC" %}
-```bash
-source /tools/xilinx/Vivado/2022.2/settings64.sh
-```
-{% endtab %}
-
 {% tab title="Millennium" %}
 ```bash
 source /ecad/tools/xilinx/Vivado/2023.2/settings64.sh
+```
+{% endtab %}
+
+{% tab title="BWRC" %}
+```bash
+source /tools/xilinx/Vivado/2022.2/settings64.sh
 ```
 {% endtab %}
 {% endtabs %}
