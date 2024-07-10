@@ -46,6 +46,7 @@
 ## SoC / FPGA
 
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](soc-fpga/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
+* [Installing Xilinx Vivado on Ubuntu 22.04](soc-fpga/installing-xilinx-vivado-on-ubuntu-22.04.md)
 * [Chipyard Stuff](soc-fpga/chipyard-stuff/README.md)
   * [Getting Started With Chipyard on Ubuntu or WSL](soc-fpga/chipyard-stuff/getting-started-with-chipyard-on-ubuntu-or-wsl.md)
   * [Debugging OsciArty with JTAG and command line GDB](soc-fpga/chipyard-stuff/gdb-debugging-osciarty.md)

@@ -4,7 +4,7 @@
 
 Log in to the computer.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Open the "LAS V4.4" software.
 

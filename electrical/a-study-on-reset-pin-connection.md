@@ -10,13 +10,13 @@ We will use the STM32F446 Nucleo board to conduct the study.
 
 From the schematic, we can observe that both the STM32F446 chip and the STM32F103 chip (used as the ST-LINK debugger) uses a 100nF capacitor between NRST pin and GND. Additionally, the STM32F103 uses an external 100k pull-up resistor.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This matches the recommended reset circuit in the datasheet. $$R_{PU}$$ is typically 40k.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -38,7 +38,7 @@ The input Schmit trigger has a high level of 0.7 \* VDD, which when VDD is 3.3V,
 
 The capacitor also functions as a power-on-reset. Here, yellow channel probes the reset voltage, and magenta channel probes the 3V3 voltage. The MCU is released from reset after 59.4 ms after the board is powered on (most of the time is controlled by the ST-LINK debugger), which gives sufficient time for components on the chip to properly initialize.
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
