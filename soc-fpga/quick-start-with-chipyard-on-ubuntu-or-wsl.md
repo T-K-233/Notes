@@ -1,4 +1,4 @@
-# Getting Started With Chipyard on Ubuntu or WSL
+# Quick Start With Chipyard on Ubuntu or WSL
 
 {% hint style="info" %}
 **Note:**
@@ -20,7 +20,7 @@ Download Conda from the miniforge [release page](https://github.com/conda-forge/
 
 Select the corresponding version and download the file ending with ".sh".
 
-<figure><img src="../../.gitbook/assets/conda.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conda.png" alt=""><figcaption></figcaption></figure>
 
 After download, we need to mark the script as executable.&#x20;
 
@@ -38,7 +38,7 @@ Follow the installation prompt. The program will prompt you to input the install
 
 After installation, it will ask whether to execute `conda init`. Enter "yes" to the prompt.
 
-<figure><img src="../../.gitbook/assets/conda (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conda (1).png" alt=""><figcaption></figcaption></figure>
 
 Conda is now installed on the system.
 
@@ -185,21 +185,45 @@ cd $chipyard/sims/verilator/
 
 
 
-To run a simulation
+Running a simple RocketConfig simulation
 
 ```bash
-make run-binary CONFIG=ExampleChipConfig BINARY=../../tests/hello.riscv
+make run-binary CONFIG=RocketConfig BINARY=../../tests/hello.riscv
 ```
 
-To run a simulation and generate waveform
+Running a simulation and generating waveform
 
 {% code overflow="wrap" %}
 ```bash
-bsub -q ee194 -Is -XF make run-binary-debug CONFIG=BearlyConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
 ```
 {% endcode %}
 
 `timeout_cycles` can be set to a small value to make the waveform dump process faster.
+{% endtab %}
+
+{% tab title="Millennium" %}
+```bash
+cd $chipyard/sims/verilator/
+```
+
+
+
+Running a simple RocketConfig simulation
+
+```bash
+make run-binary CONFIG=RocketConfig BINARY=../../tests/hello.riscv
+```
+
+Running a simulation and generating waveform
+
+{% code overflow="wrap" %}
+```bash
+bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+```
+{% endcode %}
+
+&#x20;`timeout_cycles` can be set to a small value to make the waveform dump process faster.
 {% endtab %}
 
 {% tab title="BWRC" %}
@@ -209,9 +233,21 @@ cd $chipyard/sims/vcs/
 
 
 
+Dispatch the job on ee194 queue
+
 {% code overflow="wrap" %}
 ```bash
-bsub -q ee194 -Is -XF make run-binary CONFIG=ExampleChipConfig BINARY=../../tests/hello.riscv
+bsub -q ee194 -Is -XF make run-binary CONFIG=RocketConfig BINARY=../../tests/hello.riscv
+```
+{% endcode %}
+
+
+
+Dispatch the job on ix queue
+
+{% code overflow="wrap" %}
+```bash
+bsub -q ??? -Is -XF make run-binary CONFIG=RocketConfig BINARY=../../tests/hello.riscv
 ```
 {% endcode %}
 {% endtab %}
@@ -219,9 +255,13 @@ bsub -q ee194 -Is -XF make run-binary CONFIG=ExampleChipConfig BINARY=../../test
 
 
 
+
+
 ### Step 3. Examine Waveform <a href="#id-3.-examine-waveform" id="id-3.-examine-waveform"></a>
 
 Launch verdi to examine the waveform.
+
+
 
 
 
@@ -234,7 +274,7 @@ Use the following command to add vivado to PATH
 {% tabs %}
 {% tab title="Ubuntu" %}
 ```bash
-source ~/Documents/Xilinx/Vivado/2023.2/settings64.sh
+source ~/Documents/Xilinx/Vivado/2024.1/settings64.sh
 ```
 {% endtab %}
 
