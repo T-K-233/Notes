@@ -204,7 +204,7 @@ bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tes
 
 {% tab title="Millennium" %}
 ```bash
-cd $chipyard/sims/verilator/
+cd $chipyard/sims/vcs/
 ```
 
 
