@@ -200,6 +200,16 @@ bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tes
 {% endcode %}
 
 `timeout_cycles` can be set to a small value to make the waveform dump process faster.
+
+
+
+With fast memory loading
+
+```bash
+make run-binary CONFIG=RocketConfig BINARY=../../tests/hello.riscv LOADMEM=1
+```
+
+
 {% endtab %}
 
 {% tab title="Millennium" %}
@@ -252,6 +262,8 @@ bsub -q ??? -Is -XF make run-binary CONFIG=RocketConfig BINARY=../../tests/hello
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
