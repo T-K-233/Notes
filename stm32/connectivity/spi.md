@@ -37,7 +37,7 @@ Clock Polarity: CPOL
 
 Clock Phase: CPHA
 
-<table><thead><tr><th width="122">Mode</th><th width="152">Clock Polarity</th><th width="154">Clock Phase</th><th>Output Edge</th><th>Data Capture</th></tr></thead><tbody><tr><td>MODE 0</td><td>0</td><td>0</td><td>Falling</td><td>Rising</td></tr><tr><td>MODE 1</td><td>0</td><td>1</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 2</td><td>1</td><td>0</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 3</td><td>1</td><td>1</td><td>Falling</td><td>Rising</td></tr></tbody></table>
+<table><thead><tr><th width="122">Mode</th><th width="152">Clock Polarity</th><th width="154">Clock Phase</th><th>Output Edge</th><th>Data Capture</th></tr></thead><tbody><tr><td>MODE 0</td><td>Low</td><td>1 Edge</td><td>Falling</td><td>Rising</td></tr><tr><td>MODE 1</td><td>Low</td><td>2 Edge</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 2</td><td>High</td><td>1 Edge</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 3</td><td>High</td><td>2 Edge</td><td>Falling</td><td>Rising</td></tr></tbody></table>
 
 
 
