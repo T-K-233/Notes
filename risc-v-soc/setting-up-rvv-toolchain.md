@@ -26,8 +26,13 @@ To enable fp16 support, we need GCC 14.1.0
 
 ```bash
 cd ./gcc/
+
 # checkout to gcc 14.1.0 release tag
-git checkout cd0059a1976303638cea95f216de129334fc04d1
+git checkout releases/gcc-14.1.0
+
+# or do
+# git checkout cd0059a1976303638cea95f216de129334fc04d1
+
 cd ../
 ```
 
