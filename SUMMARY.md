@@ -34,6 +34,7 @@
   * [FDCAN](stm32/connectivity/fdcan.md)
   * [I2C](stm32/connectivity/i2c.md)
   * [SPI](stm32/connectivity/spi.md)
+  * [SPI - RFID](stm32/connectivity/spi-1.md)
   * [SPI - SD Card](stm32/ntc-temperature-sense-resistor-value-calculation/spi-sd-card.md)
   * [Ethernet](stm32/connectivity/ethernet.md)
   * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)

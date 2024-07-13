@@ -1,8 +1,6 @@
-# SPI
+# SPI - RFID
 
 ## 0. Pin Map
-
-On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
 |     |      |              |
 | --- | ---- | ------------ |
@@ -10,40 +8,6 @@ On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 | PA5 | MOSI | PWM/MOSI/D11 |
 | PA6 | MISO | MISO/D12     |
 | PA7 | SCLK | SCK/D13      |
-
-## 1. Configure STM32
-
-First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
-
-Set PA4 as GPIO Output.
-
-In the left sidebar, select **Connectivity** -> **SPI1**.
-
-Select **Mode** to "Full-Duplex Master".
-
-Select **Hardware NSS Signal** to "Disable".
-
-Set **Clock Parameters** -> **Prescaler** to 128 or more, to ensure the Baud Rate is slower than 1MBits/s.
-
-![](<../../.gitbook/assets/image (135) (1).png>)
-
-> Errata: the hardware-driven NSS on STM32 is a bit mysterious. It seems that we need to deinit the SPI module and re-init to control the CS pin. Also, the CS pin is open-drain, so it requires an external pull-up resistor to function. We will save all the hassle and just use software-controlled CS pin. Detailed discussion of hardware NSS can be found [here](https://stackoverflow.com/questions/35780290/how-to-use-hardware-nss-spi-on-stm32f4).
-
-
-
-### SPI Mode
-
-Clock Polarity: CPOL
-
-Clock Phase: CPHA
-
-<table><thead><tr><th width="122">Mode</th><th width="152">Clock Polarity</th><th width="154">Clock Phase</th><th>Output Edge</th><th>Data Capture</th></tr></thead><tbody><tr><td>MODE 0</td><td>0</td><td>0</td><td>Falling</td><td>Rising</td></tr><tr><td>MODE 1</td><td>0</td><td>1</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 2</td><td>1</td><td>0</td><td>Rising</td><td>Falling</td></tr><tr><td>MODE 3</td><td>1</td><td>1</td><td>Falling</td><td>Rising</td></tr></tbody></table>
-
-
-
-
-
-
 
 ## 2. Code
 
