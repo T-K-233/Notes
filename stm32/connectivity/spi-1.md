@@ -1,59 +1,51 @@
-# SPI - RFID
+# SPI - GC9A01A LCD Screen
 
-## 0. Pin Map
+## 0. Connection
 
-|     |      |              |
-| --- | ---- | ------------ |
-| PA4 | CS   | A2           |
-| PA5 | MOSI | PWM/MOSI/D11 |
-| PA6 | MISO | MISO/D12     |
-| PA7 | SCLK | SCK/D13      |
+| STM32 | GC9A01A |                        |
+| ----- | ------- | ---------------------- |
+| 3V3   | VIN     | 5V or 3V3 power supply |
+| GND   | GND     | Ground                 |
+| PA5   | SCL     | SPI 1 SCLK             |
+| PA7   | SDA     | SPI 1 MOSI             |
+| PA9   | RES     | IC Reset N             |
+| PA8   | DC      | Data / Command select  |
+| PB6   | CS      | SPI 1 Chip Select N    |
+| PC7   | BLK     | Backlight enable       |
+
+
+
+## 1. Configure STM32
+
+In the left sidebar, select **Connectivity** -> **SPI1**.
+
+Select **Mode** to "Transmit Only Master".
+
+Select **Hardware NSS Signal** to "Disable".
+
+Set SPI Mode to MODE0
+
+Set **Clock Parameters** -> **Prescaler** to 2. The chip can run up to 40 Mbits/s.
+
+<figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## 2. Code
 
-First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+The code is adapted from Adafruit library
 
-In `main.c`, add the following code
+{% embed url="https://github.com/adafruit/Adafruit_GC9A01A/blob/main/Adafruit_GC9A01A.h" %}
 
-```c
-  /* USER CODE BEGIN 2 */
-  char str[64];
-  /* USER CODE END 2 */
+{% embed url="https://github.com/adafruit/Adafruit-GFX-Library/blob/master/Adafruit_SPITFT.h" %}
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
+One tricky think is the SPI\_WRITE16 function. The byte order is easy to mess up.
 
-    /* USER CODE BEGIN 3 */
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
-    uint8_t spi_tx_data[4];
-    uint8_t spi_rx_data[4];
-    spi_tx_data[0] = 0b10000000 | (0x36 << 1);
-    spi_tx_data[1] = 0;
-    spi_tx_data[2] = 0;
-    spi_tx_data[3] = 0;
-    HAL_SPI_TransmitReceive(&hspi1, spi_tx_data, spi_rx_data, 2, 100);
-    while (hspi1.State == HAL_SPI_STATE_BUSY) {}
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
-    sprintf(str, "TX: %d %d %d %d\tRX: %d %d %d %d\r\n",
-        spi_tx_data[0],
-        spi_tx_data[1],
-        spi_tx_data[2],
-        spi_tx_data[3],
-        spi_rx_data[0],
-        spi_rx_data[1],
-        spi_rx_data[2],
-        spi_rx_data[3]
-        );
-    HAL_UART_Transmit(&huart2, (uint8_t *)str, strlen(str), 100);
-    HAL_Delay(100);
-  }
-  /* USER CODE END 3 */
-```
+In STM, when passing the uint16\_t value to the transmit function, the lower byte in the memory address is transmitted first. However, we want to maintain the byte order, and thus we need to swap the uint16\_t btyes before we invoke the transmission function.
 
-After saving, upload the code.
+
+
+
 
 ## 3. Result
 
