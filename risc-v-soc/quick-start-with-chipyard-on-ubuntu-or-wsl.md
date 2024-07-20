@@ -289,6 +289,12 @@ verdi -ssf ./sims/vcs/output/chipyard.harness.TestHarness.REFV256D128ShuttleConf
 
 
 
+Quick Reference:
+
+`Ctrl` + `W`: add to current waveform
+
+
+
 
 
 ## Prototype the design on FPGA
