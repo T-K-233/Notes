@@ -273,6 +273,20 @@ bsub -q ??? -Is -XF make run-binary CONFIG=RocketConfig BINARY=../../tests/hello
 
 Launch verdi to examine the waveform.
 
+```bash
+verdi -ssf <fsdb file>
+```
+
+
+
+{% code overflow="wrap" %}
+```bash
+verdi -ssf ./sims/vcs/output/chipyard.harness.TestHarness.REFV256D128ShuttleConfig/tests.fsdb 
+```
+{% endcode %}
+
+
+
 
 
 
