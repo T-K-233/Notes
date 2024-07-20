@@ -1,4 +1,12 @@
-# Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04
+# \[Deprecated] Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04
+
+{% hint style="warning" %}
+**2024-07-20 Update:**
+
+Omniverse Isaac Sim is deprecated. Please refer to NVIDIA Isaac Lab note: [getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md](setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md "mention")
+{% endhint %}
+
+
 
 ## System Overview
 

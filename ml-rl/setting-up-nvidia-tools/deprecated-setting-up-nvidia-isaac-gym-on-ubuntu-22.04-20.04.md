@@ -1,4 +1,12 @@
-# Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04
+# \[Deprecated] Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04
+
+{% hint style="warning" %}
+**2024-07-20 Update:**
+
+Isaac Gym is deprecated. Please refer to NVIDIA Isaac Lab note: [getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md](getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md "mention")
+{% endhint %}
+
+
 
 ## 1. Download Isaac Gym Installation File
 
