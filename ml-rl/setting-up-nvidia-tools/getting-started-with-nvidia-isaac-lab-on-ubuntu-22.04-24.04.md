@@ -72,3 +72,25 @@ Verify installation
 
 
 
+## Example Train and Play script
+
+{% code overflow="wrap" %}
+```bash
+python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --run_name example_run
+```
+{% endcode %}
+
+
+
+{% code overflow="wrap" %}
+```bash
+python source/standalone/workflows/rsl_rl/play.py --task Isaac-Velocity-Flat-G1-v0 --num_envs 4
+```
+{% endcode %}
+
+
+
+
+
+
+
