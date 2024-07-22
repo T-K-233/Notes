@@ -25,7 +25,7 @@ Select **Hardware NSS Signal** to "Disable".
 
 Set **Clock Parameters** -> **Prescaler** to 128 or more, to ensure the Baud Rate is slower than 1Mbits/s.
 
-![](<../../.gitbook/assets/image (135) (1).png>)
+![](<../../../.gitbook/assets/image (135) (1).png>)
 
 > Errata: the hardware-driven NSS on STM32 is a bit mysterious. It seems that we need to deinit the SPI module and re-init to control the CS pin. Also, the CS pin is open-drain, so it requires an external pull-up resistor to function. We will save all the hassle and just use software-controlled CS pin. Detailed discussion of hardware NSS can be found [here](https://stackoverflow.com/questions/35780290/how-to-use-hardware-nss-spi-on-stm32f4).
 
@@ -95,6 +95,6 @@ After saving, upload the code.
 
 After connecting an RFID-RC522 SPI module, we can see that we can read the register from the sensor. The SPI signal looks like this:
 
-![](<../../.gitbook/assets/image (118).png>)
+![](<../../../.gitbook/assets/image (118).png>)
 
 [https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0](https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0)

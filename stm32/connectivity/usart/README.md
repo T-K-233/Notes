@@ -1,8 +1,6 @@
 # USART
 
-A minimal UART setup can be achieved by setting up the [Starter Project](../getting-started-stm32-edition/going-through-a-starter-project.md). This section will introduce some advanced concepts like interrupt and DMA transfer.
-
-
+A minimal UART setup can be achieved by setting up the [Starter Project](../../getting-started-stm32-edition/going-through-a-starter-project.md). This section will introduce some advanced concepts like interrupt and DMA transfer.
 
 ## 1. Interrupt
 
@@ -12,15 +10,10 @@ A minimal UART setup can be achieved by setting up the [Starter Project](../gett
 >
 > We need to manually move the `DMA_init()` piece to the top.
 
-
-
-![](<../../.gitbook/assets/image (70).png>)
+![](<../../../.gitbook/assets/image (70).png>)
 
 {% embed url="https://community.st.com/s/question/0D50X0000BbKaA5SQK/haluarttransmitdma-doesnt" %}
-
-
 
 HAL\_UARTEx\_RxEventCallback
 
 {% embed url="https://community.st.com/s/question/0D53W00000cyh6MSAQ/uartdmarxhalfcplt-is-bugged-for-stm32g0" %}
-

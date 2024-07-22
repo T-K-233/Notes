@@ -27,7 +27,7 @@ Set SPI Mode to MODE0
 
 Set **Clock Parameters** -> **Prescaler** to 2. The chip can run up to 40 Mbits/s.
 
-<figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -51,6 +51,6 @@ In STM, when passing the uint16\_t value to the transmit function, the lower byt
 
 After connecting an RFID-RC522 SPI module, we can see that we can read the register from the sensor. The SPI signal looks like this:
 
-![](<../../.gitbook/assets/image (118).png>)
+![](<../../../.gitbook/assets/image (118).png>)
 
 [https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0](https://community.st.com/s/question/0D53W00001nAhvYSAS/how-to-use-spi-nss-on-stm32g0)

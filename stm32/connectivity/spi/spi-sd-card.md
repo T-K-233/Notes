@@ -6,15 +6,9 @@
 
 SD card supports multiple protocols. We will use SPI here.
 
-<figure><img src="../../.gitbook/assets/sd-card-pinout.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sd-card-pinout.png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-30 202933.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-01-30 202933.png" alt=""><figcaption></figcaption></figure>
 
 ### Initialization
 
@@ -26,45 +20,31 @@ Before performing data read and write, we need to first initialize the SD card, 
 4. Send CMD8 (interface condition), e.g. `0x48 00 00 01 AA 87` (see "4.3.13 Send Interface Condition Command (CMD8)"). The '1' in the argument states that we support 2.7-3.6 V, the 'AA' is a check pattern that we will receive again by the card and use to check if the connection and supply are good. The reply is described in "7.3.2.6 Format R7" and "4.9.6 R7 (Card interface condition)". If the card's response starts with `0x05` (illegal cmd) or `0x0D` (+CRC error), it is likely that we have an old V1.X SD Card (<= 2 GB) that doesn't support the command. Otherwise, the response should be `0x01 .. .. .1 AA` (. = 4 bits of don't care, 1 = voltage range 2.7-3.6 V, AA = our check pattern). If this worked (or the command is not supported), continue.
 5. Send CMD55 (to signalize the next command is an application-specific command, so ACMDxx), i.e. `0x77 00 00 00 00 65`. Response should be `0x01` (or `0x00`).
 6. Send ACMD41 (send operation condition). Set HCS to 1 (argument: `0x40000000`) to support SDHC/SDXC cards (otherwise you would only support standard capacity cards <= 2 GB): `0x69 40 00 00 00 77`. The response should be either `0x01` (which means we are still in "idle" state and need to repeat steps 6-7 (send CMD55+ACMD41) or `0x00`, which means that the SD card left the "idle" state and is ready to operate. Only continue with step 8 if you receive `0x00`.
-7.  Send CMD58 again (read OCR) `7A 00 00 00 00 FD`. This time the "Card power up status bit" should be 1. If it is, the Card capacity status (CCS) (bit 30) is valid. If the CCS bit is 1, we have a SDHC (2-32 GB) or SDXC (32GB-2TB) card. If it is 0, we have an SDSC card (<= 2 GB).
+7. Send CMD58 again (read OCR) `7A 00 00 00 00 FD`. This time the "Card power up status bit" should be 1. If it is, the Card capacity status (CCS) (bit 30) is valid. If the CCS bit is 1, we have a SDHC (2-32 GB) or SDXC (32GB-2TB) card. If it is 0, we have an SDSC card (<= 2 GB).
 
-
-
-<figure><img src="../../.gitbook/assets/sdinit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sdinit.png" alt=""><figcaption></figcaption></figure>
 
 ### Read Sector
 
 SD card performs read in unit of sectors. The default sector size is 512 bytes.
 
-
-
 ## 1. Configuration
 
 Set SPI to MODE0, MSB, with a speed not greater than 400kHz.
 
-<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/image (75).png>)
+![](<../../../.gitbook/assets/image (75).png>)
 
-NOTE: the MISO pin needs to be configured to be pull-up on STM32 to be compatible with the SD card.&#x20;
-
-
-
-
+NOTE: the MISO pin needs to be configured to be pull-up on STM32 to be compatible with the SD card.
 
 In APP\_init(), we use the function `SDCARD_init(&card, &hspi1, GPIOB, GPIO_PIN_6)` to initialize the `SDCard card` struct with our SPI and GPIO settings.
 
-
-
-In the `SDCARD_initializeCard(&card, 2000)` function, we execute the SD card initialization routine.&#x20;
-
-
+In the `SDCARD_initializeCard(&card, 2000)` function, we execute the SD card initialization routine.
 
 ### Card Used
 
 {% embed url="https://www.amazon.com/gp/product/B010NE3QHQ" %}
-
-
 
 ## Reference
 
@@ -79,6 +59,3 @@ SD v2 Initialization. Rob's personal collection: [http://bikealive.nl/sd-v2-init
 [https://github.com/hazelnusse/crc7](https://github.com/hazelnusse/crc7)
 
 [https://github.com/erley/stm32-sdcard/blob/master/sdcard/sys/BSP/stm32\_sd\_spi.c](https://github.com/erley/stm32-sdcard/blob/master/sdcard/sys/BSP/stm32\_sd\_spi.c)
-
-
-
