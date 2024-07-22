@@ -60,7 +60,7 @@
 * [Arty 35T Using DDR DRAM](risc-v-soc/arty-35t-using-ddr-dram.md)
 * [Configuring the DDR MIG controller on NexysVideo FPGA](risc-v-soc/configuring-the-ddr-mig-controller-on-nexysvideo-fpga.md)
 * [Vivado Generate Flash Config .mcs File From Bitstream](risc-v-soc/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
-* [Kendryte K230 Bringup](risc-v-soc/kendryte-k230-bringup/README.md)
+* [Kendryte K230 Bringup](risc-v-soc/kendryte-k230-bringup.md)
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
 * [Intel FPGA Quartus](risc-v-soc/intel-fpga-quartus.md)
 * [Setting up RVV Toolchain](risc-v-soc/setting-up-rvv-toolchain.md)

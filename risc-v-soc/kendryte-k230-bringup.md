@@ -75,7 +75,7 @@ make CONF=k230_evb_defconfig
 
 If encounter this error, need to apply the patch
 
-<figure><img src="../../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 wget https://raw.githubusercontent.com/keyfour/openwrt/2722d51c5cf6a296b8ecf7ae09e46690403a6c3d/tools/m4/patches/011-fix-sigstksz.patch
@@ -95,7 +95,7 @@ Reference [here](https://github.com/openwrt/openwrt/issues/9055) for more inform
 sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
