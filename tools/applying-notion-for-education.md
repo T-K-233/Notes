@@ -2,7 +2,7 @@
 
 Go to Notion for Education [website](https://www.notion.so/product/notion-for-education). Scroll down to the “Free for student orgs” section and click the "Apply now" button.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

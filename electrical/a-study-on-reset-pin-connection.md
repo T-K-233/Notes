@@ -10,7 +10,7 @@ We will use the STM32F446 Nucleo board to conduct the study.
 
 From the schematic, we can observe that both the STM32F446 chip and the STM32F103 chip (used as the ST-LINK debugger) uses a 100nF capacitor between NRST pin and GND. Additionally, the STM32F103 uses an external 100k pull-up resistor.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
