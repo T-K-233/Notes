@@ -117,6 +117,38 @@ cd /mnt/
 
 
 
+```bash
+dd if=/mnt/sysimage-sdcard.img of=/dev/mmcblk0 bs=1M oflag=sync
+```
+
+
+
+
+
+
+
+## 5. Set up Ethernet connection
+
+Plug USB to Ethernet adapter to **USB0** port. USB1 port DOES NOT WORK.
+
+
+
+```bash
+ifconfig eth0 up
+```
+
+```bash
+ifconfig eth0 10.0.0.2 netmask 255.255.255.0
+```
+
+
+
+```bash
+scp tk@10.0.0.1:/home/tk/Downloads/Baremetal-NN/build/tests/tests
+```
+
+
+
 
 
 
