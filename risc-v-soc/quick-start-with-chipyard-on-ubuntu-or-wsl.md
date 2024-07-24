@@ -195,7 +195,7 @@ Running a simulation and generating waveform
 
 {% code overflow="wrap" %}
 ```bash
-bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
 ```
 {% endcode %}
 
@@ -229,7 +229,7 @@ Running a simulation and generating waveform
 
 {% code overflow="wrap" %}
 ```bash
-bsub -q ee194 -Is -XF make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
+make run-binary-debug CONFIG=RocketConfig BINARY=../../tests/hello.riscv timeout_cycles=10000
 ```
 {% endcode %}
 
