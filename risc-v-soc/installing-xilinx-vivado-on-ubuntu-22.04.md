@@ -8,7 +8,7 @@
 
 ### 1. Download and Install Vivado <a href="#id-1.-download-and-install-vivado" id="id-1.-download-and-install-vivado"></a>
 
-Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=FPGAs\_AdaptiveSoCs\_Unified\_2023.2\_1013\_2256\_Lin64.bin).
+Download Vivado installer from [download page](https://www.xilinx.com/member/forms/download/xef.html?filename=FPGAs\_AdaptiveSoCs\_Unified\_2024.1\_0522\_2023\_Lin64.bin).
 
 After download, run the following command to grant executable right to the binary file.
 
