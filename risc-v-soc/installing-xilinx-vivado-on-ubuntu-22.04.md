@@ -107,10 +107,12 @@ source ~/.bashrc
 
 To connect to FPGA boards, we need to install additional USB drivers by running the following command.
 
+{% code overflow="wrap" %}
 ```bash
-cd ~/Documents/Xilinx/Vivado/2023.2/data/xicom/cable_drivers/lin64/install_script/install_drivers/
+cd ~/Documents/Xilinx/Vivado/2024.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/
 sudo ./install_drivers
 ```
+{% endcode %}
 
 <figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
@@ -124,7 +126,7 @@ Download the most recent [Master Branch ZIP Archive](https://github.com/Digilent
 
 Open the folder extracted from the archive and navigate to its `new/board_files/` folder. You will be copying all of this folder's subfolders.
 
-Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files/` directory (e.g. `~/Documents/Xilinx/Vivado/2023.2/data/boards/board_files/`). If this folder doesn't exist, create it.
+Open Vivado installation path `~/Documents/Xilinx/Vivado/`. Under this folder, navigate to its `<version>/data/boards/board_files/` directory (e.g. `~/Documents/Xilinx/Vivado/2024.1/data/boards/board_files/`). If this folder doesn't exist, create it.
 
 **Copy** all of the folders under vivado-boards' `new/board_files/` folder, then **paste** them into this folder.
 
