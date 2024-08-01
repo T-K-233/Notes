@@ -1,4 +1,14 @@
-# Arty 35T Using DDR DRAM
+# Configuring Vivado DDR MIG on Arty 35T
+
+
+
+The configuration parameters are taken from the Arty 100T Reference Manual
+
+<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+
+
+
+In the MIG configuration tab, choose "Create Design". Check "AXI4 Interface" if the target design requires AXI4. Otherwise, a FIFO-like native interface will be used.&#x20;
 
 ![](<../.gitbook/assets/image (9) (1) (1).png>)
 
@@ -6,11 +16,21 @@
 
 ![](<../.gitbook/assets/image (14) (1) (1).png>)
 
+For the Memory Part, "MT41K128M16XX-15E" should be chosen, according to [this link](https://forum.digilent.com/topic/2709-which-memory-chip-on-the-arty/).
+
 ![](<../.gitbook/assets/image (29) (1).png>)
 
 ![](<../.gitbook/assets/image (125).png>)
 
 ![](<../.gitbook/assets/image (57).png>)
+
+
+
+<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 ![](<../.gitbook/assets/image (38).png>)
 
@@ -18,11 +38,23 @@
 
 ![](<../.gitbook/assets/image (112).png>)
 
-The pin configuration file can be downloaded [here](https://github.com/Digilent/Arty/tree/master/Resources/Arty\_MIG\_DDR3?\_ga=2.161862332.183027093.1669435108-1257577490.1663646590).
 
-It seems that Vivado cannot load the `mig.prj` file, so the only way is to set up the project manually and import the `Arty_C_mig.ucf` pinout file....
+
+Download the pin configuration file from [here](https://github.com/Digilent/Arty/tree/master/Resources/Arty\_MIG\_DDR3?\_ga=2.161862332.183027093.1669435108-1257577490.1663646590).
+
+In this page, first click the "Read XDC/UCF" button and load the "Arty\_C\_mig.ucf" file.&#x20;
+
+Then, click "Validate". The window should show that the pinout is valid.
+
+The Next button should then be enabled.
 
 ![](<../.gitbook/assets/image (9) (1) (2).png>)
+
+
+
+<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ![](<../.gitbook/assets/image (106).png>)
 
@@ -45,7 +77,7 @@ MIG Output Options:
    Selected Compatible Device(s)   : --
 
 FPGA Options:
-   System Clock Type               : Single-Ended
+   System Clock Type               : No Buffer
    Reference Clock Type            : No Buffer
    Debug Port                      : OFF
    Internal Vref                   : enabled
@@ -64,7 +96,7 @@ Extended FPGA Options:
 /*******************************************************/
 Controller Options :
    Memory                        : DDR3_SDRAM
-   Interface                     : AXI
+   Interface                     : NATIVE
    Design Clock Frequency        : 3000 ps (333.33 MHz)
    Phy to Controller Clock Ratio : 4:1
    Input Clock Period            : 5999 ps
@@ -80,7 +112,7 @@ Controller Options :
    ORDERING                      : Strict
 
 AXI Parameters :
-   Data Width                    : 32
+   Data Width                    : 128
    Arbitration Scheme            : RD_PRI_REG
    Narrow Burst Support          : 0
    ID Width                      : 4
@@ -103,10 +135,6 @@ Bank Selections:
 		Byte Group T2:	Address/Ctrl-0
 		Byte Group T3:	Address/Ctrl-1
 
-System_Clock: 
-	SignalName: sys_clk_i
-		PadLocation: D5  Bank: 35
-
 System_Control: 
 	SignalName: sys_rst
 		PadLocation: No connect  Bank: Select Bank
@@ -116,9 +144,11 @@ System_Control:
 		PadLocation: No connect  Bank: Select Bank
 
 
-
-    
-
-
-
 ```
+
+
+
+
+
+
+
