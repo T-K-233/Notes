@@ -104,9 +104,37 @@ make
 
 
 
+Example program
+
+{% code title="main.c" %}
+```c
+#include <stdint.h>
+#include <stdio.h>
+
+
+int main(void) {
+
+  asm volatile("testinst x1, x0, x4\n");
+  
+  printf("hello\n");
+
+  return 0;
+}
+
+```
+{% endcode %}
 
 
 
+```bash
+riscv64-unknown-elf-gcc main.c -o main.elf
+```
+
+
+
+```bash
+riscv64-unknown-elf-objdump -d main.elf > disassemble.S
+```
 
 
 
