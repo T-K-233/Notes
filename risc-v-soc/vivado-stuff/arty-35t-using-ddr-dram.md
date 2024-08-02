@@ -4,39 +4,39 @@
 
 The configuration parameters are taken from the Arty 100T Reference Manual
 
-<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
 
 
 In the MIG configuration tab, choose "Create Design". Check "AXI4 Interface" if the target design requires AXI4. Otherwise, a FIFO-like native interface will be used.&#x20;
 
-![](<../.gitbook/assets/image (9) (1) (1).png>)
+![](<../../.gitbook/assets/image (9) (1) (1).png>)
 
-![](<../.gitbook/assets/image (30) (1).png>)
+![](<../../.gitbook/assets/image (30) (1).png>)
 
-![](<../.gitbook/assets/image (14) (1) (1).png>)
+![](<../../.gitbook/assets/image (14) (1) (1).png>)
 
 For the Memory Part, "MT41K128M16XX-15E" should be chosen, according to [this link](https://forum.digilent.com/topic/2709-which-memory-chip-on-the-arty/).
 
-![](<../.gitbook/assets/image (29) (1).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
-![](<../.gitbook/assets/image (125).png>)
+![](<../../.gitbook/assets/image (125).png>)
 
-![](<../.gitbook/assets/image (57).png>)
-
-
-
-<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+![](<../../.gitbook/assets/image (57).png>)
 
 
 
+<figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
 
-![](<../.gitbook/assets/image (38).png>)
 
-![](<../.gitbook/assets/image (101) (1).png>)
 
-![](<../.gitbook/assets/image (112).png>)
+
+![](<../../.gitbook/assets/image (38).png>)
+
+![](<../../.gitbook/assets/image (101) (1).png>)
+
+![](<../../.gitbook/assets/image (112).png>)
 
 
 
@@ -48,15 +48,15 @@ Then, click "Validate". The window should show that the pinout is valid.
 
 The Next button should then be enabled.
 
-![](<../.gitbook/assets/image (9) (1) (2).png>)
+![](<../../.gitbook/assets/image (9) (1) (2).png>)
 
 
 
-<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
 
 
-![](<../.gitbook/assets/image (106).png>)
+![](<../../.gitbook/assets/image (106).png>)
 
 Configuration Parameters:
 
