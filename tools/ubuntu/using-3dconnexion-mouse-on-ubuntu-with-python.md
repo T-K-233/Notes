@@ -18,6 +18,10 @@ sudo nano /etc/udev/rules.d/50-hidraw.rules
 
 {% code title="50-hidraw.rules" %}
 ```bash
+# 3Dconnexion SpaceMouse Compact
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c635", GROUP:="users", MODE:="0666"
+
+# Logitech, Inc. 3Dconnexion Space Navigator 3D Mouse
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c626", GROUP:="users", MODE:="0666"
 ```
 {% endcode %}

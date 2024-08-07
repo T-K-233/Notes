@@ -16,23 +16,33 @@ TensorRT version: 8.6 GA
 
 
 
-##
-
-
-
-
-
-
-
-
-
 ## Installing CUDA
 
 Follow the official [instruction](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html), download CUDA from [here](https://developer.nvidia.com/cuda-toolkit-archive).&#x20;
 
+
+
+{% tabs %}
+{% tab title="Ubuntu 22.04" %}
+Select CUDA 12.4.0 (March 2024), and then execute the commands prompted by the instruction on the website.
+
+Here's an example set of commands to run:
+
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/cuda-repo-ubuntu2204-12-4-local_12.4.0-550.54.14-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2204-12-4-local_12.4.0-550.54.14-1_amd64.deb
+sudo cp /var/cuda-repo-ubuntu2204-12-4-local/cuda-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-4
+```
+{% endtab %}
+
+{% tab title="Ubuntu 20.04" %}
 Select CUDA 12.2.2 (August 2023), and then execute the commands prompted by the instruction on the website.
 
-Here's an example set of command to run:
+Here's an example set of commands to run:
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -43,6 +53,8 @@ sudo cp /var/cuda-repo-ubuntu2004-12-2-local/cuda-*-keyring.gpg /usr/share/keyri
 sudo apt update
 sudo apt install -y cuda
 ```
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -53,8 +65,8 @@ After installation, add CUDA to \~/.bashrc:
 ...
 
 # CUDA
-export PATH="/usr/local/cuda-12.2/bin/:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda-12.2/lib64/:$LD_LIBRARY_PATH"
+export PATH="/usr/local/cuda-12.4/bin/:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64/:$LD_LIBRARY_PATH"
 
 ...
 ```
@@ -66,10 +78,10 @@ To test cuda installation, run the following command. The system should be able 
 ```bash
 $ nvcc -V
 nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2023 NVIDIA Corporation
-Built on Mon_Apr__3_17:16:06_PDT_2023
-Cuda compilation tools, release 12.1, V12.1.105
-Build cuda_12.1.r12.1/compiler.32688072_0
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Tue_Feb_27_16:19:38_PST_2024
+Cuda compilation tools, release 12.4, V12.4.99
+Build cuda_12.4.r12.4/compiler.33961263_0
 ```
 
 
@@ -121,11 +133,31 @@ Fri Dec 22 13:48:54 2023
 
 ## Installing cuDNN
 
-Follow the official [instruction](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb), download cuDNN [here](https://developer.nvidia.com/rdp/cudnn-download).
+Follow the official [instruction](https://docs.nvidia.com/deeplearning/cudnn/latest/installation/linux.html#package-manager-local-installation), download cuDNN [here](https://developer.nvidia.com/rdp/cudnn-download).
 
 <figure><img src="../../.gitbook/assets/Screenshot from 2023-12-22 01-42-04.png" alt=""><figcaption></figcaption></figure>
 
+{% tabs %}
+{% tab title="Ubuntu 22.04" %}
+Select "cuDNN v9.3.0, for CUDA 12.x" with the .deb file option, and then execute the commands prompted by the instruction on the website.
+
+
+
+Here's an example set of command to run:
+
+```bash
+wget https://developer.download.nvidia.com/compute/cudnn/9.3.0/local_installers/cudnn-local-repo-ubuntu2204-9.3.0_1.0-1_amd64.deb
+sudo dpkg -i cudnn-local-repo-ubuntu2204-9.3.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-9.3.0/cudnn-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cudnn
+```
+{% endtab %}
+
+{% tab title="Ubuntu 20.04" %}
 Select "cuDNN v8.9.7 (December 5th, 2023), for CUDA 12.x" with the .deb file option, and then execute the commands prompted by the instruction on the website.
+
+
 
 Here's an example set of command to run:
 
@@ -136,6 +168,12 @@ sudo cp /var/cudnn-local-repo-ubuntu2004-9.0.0/cudnn-*-keyring.gpg /usr/share/ke
 sudo apt update
 sudo apt install -y cudnn
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+
 
 
 
@@ -181,7 +219,7 @@ There are two parts of TensorRT installation
 
 Goto [https://developer.nvidia.com/tensorrt](https://developer.nvidia.com/tensorrt)
 
-Download **both** the "TensorRT 8.6 GA for Linux x86\_64 and CUDA 12.0 and 12.1 TAR Package" and the DEB package
+Download **both** the "TensorRT 10.3 GA for Linux x86\_64 and CUDA 12.0 to 12.5 TAR Package" and the DEB package
 
 {% hint style="warning" %}
 **Warning:** Be careful to download the version matching with system CUDA version.
@@ -194,27 +232,23 @@ Install the DEB package with Software Install.
 Alternatively, do the following commands
 
 ```bash
-sudo dpkg -i ./nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0_1.0-1_amd64.deb
-sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0/nv-tensorrt-local-42B2FC56-keyring.gpg /usr/share/keyrings/
+sudo dpkg -i ./nv-tensorrt-local-repo-ubuntu2204-10.3.0-cuda-12.5_1.0-1_amd64.deb
+sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-10.3.0-cuda-12.5/nv-tensorrt-local-620E7D29-keyring.gpg /usr/share/keyrings/
 ```
 
 
 
 ```bash
 sudo apt update
-sudo apt install nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-12.0
+sudo apt install nv-tensorrt-local-repo-ubuntu2204-10.3.0-cuda-12.5
 ```
-
-
-
-
 
 
 
 We also need to link the libraries. Unpack the tar package:
 
 ```bash
-tar xzvf ./TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0.tar.gz 
+tar xzvf ./TensorRT-10.3.0.26.Linux.x86_64-gnu.cuda-12.5.tar.gz
 ```
 
 Then. move the unpacked directory to the installation path (\~/Documents/), and add to bashrc
@@ -223,8 +257,8 @@ Then. move the unpacked directory to the installation path (\~/Documents/), and 
 ...
 
 # TensorRT
-export TRT_LIBPATH="/home/nai/Documents/TensorRT-8.6.1.6/targets/x86_64-linux-gnu/lib/"
-export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$TRT_LIBPATH:$LD_LIBRARY_PATH"
+export TRT_LIBPATH="/home/tk/Documents/TensorRT-10.3.0.26/targets/x86_64-linux-gnu/lib/"
+export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-10.3.0.26/lib/:$TRT_LIBPATH:$LD_LIBRARY_PATH"
 
 ...
 ```
@@ -234,11 +268,15 @@ export LD_LIBRARY_PATH="/home/tk/Documents/TensorRT-8.6.1.6/lib/:$TRT_LIBPATH:$L
 Install to Python using the following command
 
 ```bash
-cd ~/Documents/TensorRT-8.6.1.6/python/
-pip install ./tensorrt-8.6.1-cp310-none-linux_x86_64.whl
+cd ~/Documents/TensorRT-10.3.0.26/python/
+pip install ./tensorrt-10.3.0-cp38-none-linux_x86_64.whl
 ```
 
-Might also need to install this dependency
+
+
+
+
+For TensorRT < 10.3, it might also need this dependency
 
 ```bash
 cd ~/Documents/TensorRT-8.6.1.6/graphsurgeon/
