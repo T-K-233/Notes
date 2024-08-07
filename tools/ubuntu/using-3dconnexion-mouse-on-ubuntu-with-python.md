@@ -18,7 +18,7 @@ sudo nano /etc/udev/rules.d/50-hidraw.rules
 
 {% code title="50-hidraw.rules" %}
 ```bash
-SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c626", GROUP:="users", MODE:="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c626", GROUP:="users", MODE:="0666"
 ```
 {% endcode %}
 
@@ -33,10 +33,54 @@ sudo udevadm trigger
 
 
 
+An easy way to check if the udev rule is applied successfully is through lsusb command.
+
+Run
+
 ```bash
-sudo usermod -aG plugdev $USER
-newgrp plugdev
+lsusb -d 046d: -v
 ```
+
+
+
+If the access is granted, there will be no errors at the top of the log:
+
+```bash
+> lsusb -d 046d: -v
+
+Bus 001 Device 022: ID 046d:c626 Logitech, Inc. 3Dconnexion Space Navigator 3D Mouse
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        32
+...
+```
+
+
+
+Otherwise, it will show the `Couldn't open device` error message:
+
+```bash
+lsusb -d 046d: -v
+
+Bus 001 Device 024: ID 046d:c626 Logitech, Inc. 3Dconnexion Space Navigator 3D Mouse
+Couldn't open device, some information will be missing
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        32
+...
+```
+
+
 
 
 
