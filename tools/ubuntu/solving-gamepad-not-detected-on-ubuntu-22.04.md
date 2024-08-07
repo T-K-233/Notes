@@ -77,9 +77,11 @@ Add the following content:
 
 {% code title="50-xboxcontroller.rules" %}
 ```bash
+# Microsoft Corp. Xbox Wireless Controller (model 1914)
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0b12", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
+
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="02d1", ATTRS{idProduct}=="0a29", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="02ea", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0b12", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
 
 # Razer USA, Ltd Razer Wolverine V2
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="0a29", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
