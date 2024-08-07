@@ -46,7 +46,7 @@ I have tried many, many method on the Internet, but turns out Chat has the best 
 `xboxdrv` is a driver for Xbox controllers. You can install it using the following command:
 
 ```bash
-bashCopy codesudo apt-get install xboxdrv
+sudo apt-get install xboxdrv
 ```
 
 ### **2. Check if `xpad` module is loaded**
@@ -75,11 +75,25 @@ sudo nano /etc/udev/rules.d/50-xboxcontroller.rules
 
 Add the following content:
 
+{% code title="50-xboxcontroller.rules" %}
 ```bash
-SUBSYSTEM=="input", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="02d1", MODE="0666", ENV{ID_INPUT_JOYSTICK}="1"
+SUBSYSTEM=="input", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="02d1", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
 ```
+{% endcode %}
 
 Replace `idVendor` and `idProduct` with the corresponding values from your device.
+
+
+
+i'm not sure:
+
+```bash
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="02ea", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0b12", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="0a29", GROUP:="users", MODE:="0666", ENV{ID_INPUT_JOYSTICK}:="1"
+```
+
+
 
 Reload udev rules:
 

@@ -156,6 +156,7 @@
   * [Disabling the "\<Application> is not responding." System Message on Ubuntu](tools/ubuntu/disabling-the-less-than-application-greater-than-is-not-responding.-system-message-on-ubuntu.md)
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
   * [Solving Gamepad not Detected on Ubuntu 22.04](tools/ubuntu/solving-gamepad-not-detected-on-ubuntu-22.04.md)
+  * [Using 3DConnexion Mouse on Ubuntu with Python](tools/ubuntu/using-3dconnexion-mouse-on-ubuntu-with-python.md)
   * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
