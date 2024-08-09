@@ -115,6 +115,7 @@
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
 * [Audio Stuff](ml-rl/audio-stuff/README.md)
   * [GPTSoVITS](ml-rl/audio-stuff/gptsovits.md)
+  * [深入浅出理解 So-VITS-SVC 原理](ml-rl/audio-stuff/shen-ru-qian-chu-li-jie-sovitssvc-yuan-li.md)
   * [NAI-SVC Experiment Log](ml-rl/audio-stuff/so-vits-svc-4.2-runtime.md)
   * [Setting up ChatTTS on Ubuntu 22.04](ml-rl/audio-stuff/setting-up-chattts-on-ubuntu-22.04.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
