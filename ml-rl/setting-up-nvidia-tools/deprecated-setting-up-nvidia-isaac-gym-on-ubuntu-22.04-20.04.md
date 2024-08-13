@@ -60,13 +60,17 @@ pip install protobuf==3.20
 
 
 
-Create a new file called "env.sh" and write the following content in the file
+Create a new file (here we put it under the isaac gym installation directory: `~/Documents/isaacgym/env.sh`) with the following content in the file.
 
+{% code title="env.sh " %}
 ```bash
-# env.sh
-export LD_LIBRARY_PATH=/home/tk/Documents/mambaforge/envs/gym/lib/
-#export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+# solve libpython3.8.so.1.0 not found issue
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$LD_LIBRARY_PATH
+
+# solve "generated code is out of date and must be regenerated with protoc >= 3.19.0" issue
+# export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 ```
+{% endcode %}
 
 
 

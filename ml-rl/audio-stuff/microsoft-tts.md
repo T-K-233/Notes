@@ -2,7 +2,7 @@
 
 
 
-
+{% embed url="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts" %}
 
 
 
