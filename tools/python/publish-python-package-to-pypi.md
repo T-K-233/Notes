@@ -5,6 +5,7 @@
 ```bash
 py -m pip install --upgrade pip
 py -m pip install --upgrade build
+py -m pip install --upgrade twine
 ```
 
 ### Project Directory Structure
