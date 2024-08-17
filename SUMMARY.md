@@ -129,6 +129,7 @@
 * [Blender to OnShape Workflow](3d-modeling/blender-to-onshape-workflow.md)
 * [Onshape to Blender Workflow](3d-modeling/onshape-to-blender-workflow.md)
 * [Setting up FBX Plugin for Python on Ubuntu 22.04](3d-modeling/setting-up-fbx-plugin-for-python-on-ubuntu-22.04.md)
+* [Install Blender on Ubuntu 22.04](3d-modeling/install-blender-on-ubuntu-22.04.md)
 * [Blender Python Related](3d-modeling/blender-python-related.md)
 * [VRoid, MMD, Blender Workflow](3d-modeling/vroid-mmd-blender-workflow.md)
 
