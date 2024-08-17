@@ -25,7 +25,7 @@ Edit the following entries of blender.desktop
 {% code title="blender.desktop" %}
 ```bash
 Exec=/home/tk/Documents/Blender/blender %f
-Icon=/home/tk/Documents/Blender/blender
+Icon=/home/tk/Documents/Blender/blender.svg
 ```
 {% endcode %}
 
@@ -45,6 +45,20 @@ To create a synlink, do
 ```bash
 sudo ln -s ~/Documents/Blender/blender /usr/local/bin/blender
 ```
+
+
+
+## Create File Association
+
+Edit `/usr/share/applications/defaults.list`, add the following line
+
+{% code title="defaults.list" %}
+```
+application/x-blender=blender.desktop
+```
+{% endcode %}
+
+
 
 
 
