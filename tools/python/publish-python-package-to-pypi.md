@@ -7,8 +7,6 @@ py -m pip install --upgrade pip
 py -m pip install --upgrade build
 ```
 
-
-
 ### Project Directory Structure
 
 ```
@@ -19,16 +17,24 @@ package_name/
 ├── examples/
 ├── src/
 │   └── cc/
-│       ├── package_name/
+│       ├── package_name_a/
 │       │   ├── __init__.py
 │       │   └── module.py
-│       └── __init__.py
+│       └── package_name_b/
+│           ├── __init__.py
+│           └── module.py
 ├── LICENSE
 ├── pyproject.toml
 ├── README.md
 ├── setup.py
 └── tests/
 ```
+
+See here for namespaced package structure:
+
+{% embed url="https://packaging.python.org/en/latest/guides/packaging-namespace-packages/" %}
+
+
 
 ### Commands
 
@@ -49,6 +55,3 @@ Upload
 ```bash
 py -m twine upload .\dist\*
 ```
-
-
-
