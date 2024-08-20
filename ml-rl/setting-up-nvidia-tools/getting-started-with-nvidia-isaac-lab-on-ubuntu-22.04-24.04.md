@@ -16,10 +16,25 @@ sudo apt install cmake build-essential
 
 
 
+Clone repository
+
+```bash
+git clone git@github.com:isaac-sim/IsaacLab.git
+```
+
+```bash
+cd ./IsaacLab/
+```
+
+
+
 Create conda environment
 
 ```bash
 conda create -yn isaaclab python=3.10
+
+# alternatively,
+# conda create -yp ./.conda-env/ python=3.10
 ```
 
 ```bash
@@ -30,10 +45,6 @@ conda activate isaaclab
 
 Install Python packages
 
-```bash
-pip install torch
-```
-
 {% code overflow="wrap" %}
 ```bash
 pip install isaacsim-rl isaacsim-replicator isaacsim-extscache-physics isaacsim-extscache-kit-sdk isaacsim-extscache-kit isaacsim-app --extra-index-url https://pypi.nvidia.com
@@ -42,13 +53,7 @@ pip install isaacsim-rl isaacsim-replicator isaacsim-extscache-physics isaacsim-
 
 
 
-Clone repository and install rsl\_rl component
-
-```bash
-cd ~/Desktop/
-git clone git@github.com:isaac-sim/IsaacLab.git
-cd ./IsaacLab/
-```
+Install rsl\_rl component
 
 ```bash
 ./isaaclab.sh --install rsl_rl
@@ -87,6 +92,50 @@ python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1
 python source/standalone/workflows/rsl_rl/play.py --task Isaac-Velocity-Flat-G1-v0 --num_envs 4
 ```
 {% endcode %}
+
+
+
+{% code overflow="wrap" %}
+```bash
+./isaaclab.sh -p source/standalone/workflows/rsl_rl/train.py --task Isaac-Reach-Franka-v0 --headless
+# run script for playing with 32 environments
+./isaaclab.sh -p source/standalone/workflows/rsl_rl/play.py --task Isaac-Reach-Franka-v0 --num_envs 32 --load_run run_folder_name --checkpoint model.pt
+# run script for recording video of a trained agent (requires installing `ffmpeg`)
+./isaaclab.sh -p source/standalone/workflows/rsl_rl/play.py --task Isaac-Reach-Franka-v0 --headless --video --video_length 200
+```
+{% endcode %}
+
+
+
+
+
+## Errata
+
+If encounter this error
+
+{% code overflow="wrap" %}
+```bash
+.isaac.core/omni/isaac/core/robots`: errno=28/No space left on device
+2024-08-20 07:19:57 [9,094ms] [Error] [carb] Failed to create change watch for `/home/tk/Desktop/IsaacLab/.conda-env/lib/python3.10/site-packages/isaacsim/exts/omni.isaac.core/omni/isaac/core/simulation_context`: errno=28/No space left on device
+2024-08-20 07:19:57 [9,094ms] [Error] [carb] Failed to create change watch for `/home/tk/Desktop/IsaacLab/.conda-env/lib/python3.10/site-packages/isaacsim/exts/omni.isaac.core/omni/isaac/core/objects`: errno=28/No space left on device
+2024-08-20 07:19:57 [9,094ms] [Error] [carb] Failed to create change watch for `/home/tk/Desktop/IsaacLab/.conda-env/lib/python3.10/site-packages/isaacsim/exts/omni.isaac.core/omni/isaac/core/scenes`: errno=28/No space left on device
+2024-08-20 07:19:57 [9,094ms] [Error] [carb] Failed to create change watch for `/home/tk/Desktop/IsaacLab/.conda-env/lib/python3.10/site-packages/isaacsim/exts/omni.isaac.core/omni/isaac/core/world`: errno=28/No space left on device
+```
+{% endcode %}
+
+
+
+solution:&#x20;
+
+[https://docs.omniverse.nvidia.com/dev-guide/latest/linux-troubleshooting.html#q11-getting-many-failures-similar-to-failed-to-create-change-watch-for-xxx-errno-28-no-space-left-on-device](https://docs.omniverse.nvidia.com/dev-guide/latest/linux-troubleshooting.html#q11-getting-many-failures-similar-to-failed-to-create-change-watch-for-xxx-errno-28-no-space-left-on-device)
+
+
+
+
+
+
+
+
 
 
 
