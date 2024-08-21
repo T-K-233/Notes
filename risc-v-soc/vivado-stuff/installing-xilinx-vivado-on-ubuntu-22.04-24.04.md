@@ -1,10 +1,14 @@
-# Installing Xilinx Vivado on Ubuntu 22.04
+# Installing Xilinx Vivado on Ubuntu 22.04 / 24.04
 
 #### Updates <a href="#updates" id="updates"></a>
 
 2024-07-10 update to Vivado 2024.1
 
 2023-12-20 update to Vivado 2023.2
+
+2024-08-20 update instruction for Ubuntu 24.04
+
+
 
 ### 1. Download and Install Vivado <a href="#id-1.-download-and-install-vivado" id="id-1.-download-and-install-vivado"></a>
 
@@ -74,9 +78,24 @@ Summary Page
 
 Install Vivado runtime dependencies:
 
+{% tabs %}
+{% tab title="Ubuntu 24.04" %}
+libtinfo5 is no longer supported on Ubuntu 24.04 by default, so we need to download the version from older release.
+
+<pre class="language-bash" data-overflow="wrap"><code class="lang-bash"><strong>wget http://mirrors.kernel.org/ubuntu/pool/universe/n/ncurses/libtinfo5_6.4-2ubuntu0.1_amd64.deb
+</strong></code></pre>
+
+```bash
+sudo dpkg -i libtinfo5_6.4-2ubuntu0.1_amd64.deb
+```
+{% endtab %}
+
+{% tab title="Ubuntu 22.04" %}
 ```bash
 sudo apt install libtinfo5
 ```
+{% endtab %}
+{% endtabs %}
 
 
 

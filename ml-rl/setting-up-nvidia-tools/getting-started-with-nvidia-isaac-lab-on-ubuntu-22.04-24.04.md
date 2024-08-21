@@ -131,7 +131,17 @@ solution:&#x20;
 
 
 
+## Set up in Headless Mode
 
+
+
+```bash
+rm _isaac_sim
+(base) chiyufeng@a27:/rscratch/tk/Desktop/G1Workspace/IsaacLab$ ln -s /rscratch/tk/Documents/isaac-sim-4.1.0 _isaac_sim
+(base) chiyufeng@a27:/rscratch/tk/Desktop/G1Workspace/IsaacLab$ export ISAACSIM_PATH="/rscratch/tk/Documents/isaac-sim-4.1.0"
+(base) chiyufeng@a27:/rscratch/tk/Desktop/G1Workspace/IsaacLab$ export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
+(base) chiyufeng@a27:/rscratch/tk/Desktop/G1Workspace/IsaacLab$ ${ISAACSIM_PYTHON_EXE} -c "print('Isaac Sim configuration is now complete.')"
+```
 
 
 
