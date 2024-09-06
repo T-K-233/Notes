@@ -91,6 +91,14 @@ By default, chipyard setup script initializes/installs things in the following o
 To execute the setup script, run the following command.
 
 ```bash
+./build-setup.sh riscv-tools --use-lean-conda
+```
+
+
+
+On older chipyard versions, do this instead:
+
+```bash
 ./build-setup.sh riscv-tools -s 6 -s 7 -s 8 -s 9 --force
 ```
 
