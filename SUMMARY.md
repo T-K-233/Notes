@@ -68,6 +68,7 @@
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
 * [Intel FPGA Quartus](risc-v-soc/intel-fpga-quartus.md)
 * [Setting up RVV Toolchain](risc-v-soc/setting-up-rvv-toolchain.md)
+* [C Library Compile Magic](risc-v-soc/c-library-compile-magic.md)
 
 ## Motor Control
 
