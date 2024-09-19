@@ -69,3 +69,11 @@ sudo apt install python3-rosdep
 
 
 
+## Install catkin
+
+{% code overflow="wrap" %}
+```bash
+sudo apt install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip python3-catkin-tools
+```
+{% endcode %}
+
