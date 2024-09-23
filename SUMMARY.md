@@ -126,6 +126,8 @@
   * [Setting up ChatTTS on Ubuntu 22.04](ml-rl/audio-stuff/setting-up-chattts-on-ubuntu-22.04.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 * [Processing the SFU Motion Capture Dataset](ml-rl/processing-the-sfu-motion-capture-dataset.md)
+* [Torch Profiling](ml-rl/torch-profiling.md)
+* [Setting up Unitree A1](ml-rl/setting-up-unitree-a1.md)
 
 ## 3D Modeling
 
