@@ -93,6 +93,13 @@
 
 ## ML/RL
 
+* [RL Frameworks](ml-rl/rl-frameworks/README.md)
+  * [Case Study: A Dive Into LeggedGym and RSL-RL Framework](ml-rl/rl-frameworks/case-study-a-dive-into-leggedgym-and-rsl-rl-framework.md)
+  * [Case Study: No-Mercy Project](ml-rl/rl-frameworks/case-study-no-mercy-project/README.md)
+    * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/rl-frameworks/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
+    * [Detecting Phara](ml-rl/rl-frameworks/case-study-no-mercy-project/detecting-phara.md)
+  * [OpenAI gym + Mujoco Setup](ml-rl/rl-frameworks/setting-up-aws-mujoco-training-machine.md)
+  * [Gazebo Setup](ml-rl/rl-frameworks/gazebo-setup.md)
 * [Setting up NVIDIA Tools](ml-rl/setting-up-nvidia-tools/README.md)
   * [Setting up NVIDIA Driver on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md)
   * [Getting Started with NVIDIA Isaac Lab on Ubuntu 22.04 / 24.04](ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md)
@@ -110,13 +117,6 @@
 * [Google Colab](ml-rl/google-colab/README.md)
   * [Colab Resource Options](ml-rl/google-colab/colab-resource-options.md)
   * [so-vits-svc 4.0: Colab Flow](ml-rl/google-colab/so-vits-svc-4.0-colab-flow.md)
-* [RL Frameworks](ml-rl/rl-frameworks/README.md)
-  * [Case Study: A Dive Into LeggedGym](ml-rl/rl-frameworks/case-study-a-dive-into-leggedgym.md)
-  * [Case Study: No-Mercy Project](ml-rl/rl-frameworks/case-study-no-mercy-project/README.md)
-    * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/rl-frameworks/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
-    * [Detecting Phara](ml-rl/rl-frameworks/case-study-no-mercy-project/detecting-phara.md)
-  * [OpenAI gym + Mujoco Setup](ml-rl/rl-frameworks/setting-up-aws-mujoco-training-machine.md)
-  * [Gazebo Setup](ml-rl/rl-frameworks/gazebo-setup.md)
 * [URDF to MJCF Mujoco Notes](ml-rl/urdf-to-mjcf-mujoco-notes.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
 * [Audio Stuff](ml-rl/audio-stuff/README.md)

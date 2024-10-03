@@ -1,4 +1,4 @@
-# Case Study: A Dive Into LeggedGym
+# Case Study: A Dive Into LeggedGym and RSL-RL Framework
 
 ## Code Organization
 
@@ -28,73 +28,31 @@ How to record the training process and keep the most optimal policy
 
 
 
-<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+To understand the code, we can begin by following through the code execution flow, and see step by step how the environment and agent is set up, and how the simulation is driven.
 
 
 
+## The entry script
 
+We start by looking at the script that user will invoke, which are either `legged_gym/scripts/train.py` for training, or  `legged_gym/scripts/play.py` for policy inference.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## The entry function
-
-play.py and train.py
-
-interacts with `task_registry` module
+The script interacts with `task_registry` module.
 
 
 
 ## Step 1: Parse command line arguments
 
+The first immediate step is to parse the command line arguments with the `get_args()` helper function.
+
+Table 1 shows the overview of the default supported commands.
+
 <table data-full-width="true"><thead><tr><th width="186">name</th><th width="71">type</th><th width="88">default</th><th>help</th></tr></thead><tbody><tr><td>task</td><td>str</td><td>go2</td><td>Resume training or start testing from a checkpoint. Overrides config file if provided.</td></tr><tr><td>resume</td><td>bool</td><td>False</td><td>Resume training from a checkpoint</td></tr><tr><td>experiment_name</td><td>str</td><td></td><td>Name of the experiment to run or load. Overrides config file if provided.</td></tr><tr><td>run_name</td><td>str</td><td></td><td>Name of the run. Overrides config file if provided.</td></tr><tr><td>load_run</td><td>str</td><td></td><td>Name of the run to load when resume=True. If -1: will load the last run. Overrides config file if provided.</td></tr><tr><td>checkpoint</td><td>int</td><td></td><td>Saved model checkpoint number. If -1: will load the last checkpoint. Overrides config file if provided.</td></tr><tr><td>headless</td><td>bool</td><td>False</td><td>Force display off at all times</td></tr><tr><td>horovod</td><td>bool</td><td>False</td><td>Use horovod for multi-gpu training</td></tr><tr><td>rl_device</td><td>str</td><td>cuda:0</td><td>Device used by the RL algorithm, (cpu, gpu, cuda:0, cuda:1 etc..)</td></tr><tr><td>num_envs</td><td>int</td><td></td><td>Number of environments to create. Overrides config file if provided.</td></tr><tr><td>seed</td><td>int</td><td></td><td>Random seed. Overrides config file if provided.</td></tr><tr><td>max_iterations</td><td>int</td><td></td><td>Maximum number of training iterations. Overrides config file if provided.</td></tr></tbody></table>
 
 
 
-The arguments are then sent to isaacgym to parse
+The arguments are then sent to isaacgym to parse with the `gymutil.parse_arguments()` function.
 
-input (custom\_parameters):&#x20;
+The input to the function is our command line options as a dict (`custom_parameters`):&#x20;
 
 ```python
 [
@@ -106,7 +64,7 @@ input (custom\_parameters):&#x20;
   ]
 ```
 
-output (args):
+and the function returns a config Namespace as output (`args`):
 
 ```python
 Namespace(
@@ -142,9 +100,41 @@ Namespace(
 
 ## Step 2: Make envrionment
 
-uses `task_registry.make_env()` function
+Then, the `task_registry.make_env()` function is used to create the simulation environment.
 
-this function finds the corresponding `VecEnv` instance and the configurations (`LeggedRobotCfg` for base, and `LeggedRobotCfgPPO` for training) in the registered environments.
+This function finds the corresponding `VecEnv` instance and the configurations (`LeggedRobotCfg` for base, and `LeggedRobotCfgPPO` for training) in the registered environments.
+
+{% hint style="info" %}
+It might be a bit hard to understand the different classes defined by the legged\_gym and rsl\_rl.
+
+`VecEnv` is a rsl\_rl abstract environment. It defines the generic environment that can be utilized by the learning algorithm to have the following attributes and methods:
+
+* num\_envs: int - Number of environments
+* num\_obs: int - Number of observations
+* num\_privileged\_obs: int - Number of privileged observations
+* num\_actions: int - Number of actions
+* max\_episode\_length: int - Maximum episode length
+* privileged\_obs\_buf: torch.Tensor - Buffer for privileged observations
+* obs\_buf: torch.Tensor - Buffer for observations
+* rew\_buf: torch.Tensor - Buffer for rewards
+* reset\_buf: torch.Tensor - Buffer for resets
+* episode\_length\_buf: torch.Tensor - Buffer for current episode lengths
+* extras: dict - Extra information (metrics), containing metrics such as the episode reward, episode length, etc. Additional information can be stored in the dictionary such as observations for the critic network, etc
+* device: torch.device - Device to use.
+* get\_observations(self) -> tuple\[torch.Tensor, dict]
+* reset(self) -> tuple\[torch.Tensor, dict]
+* step(self, actions: torch.Tensor) -> tuple\[torch.Tensor, torch.Tensor, torch.Tensor, dict]
+
+
+
+The `LeggedRobot` environment, which is a subclass of `BaseTask`, is an environment defined by legged\_gym which also satisfies the `VecEnv` requirements and provides the implementation of the three methods.
+
+
+
+There is no direct inheritance relation between these two classes, but they are defined to match and thus can be used interchangably.
+{% endhint %}
+
+
 
 A custom environment can be registered using the function
 
@@ -158,21 +148,47 @@ task_registry.register(name: str, task_class: VecEnv, env_cfg: LeggedRobotCfg, t
 
 The registation happens in `envs/__init__.py` file.
 
-By default, the environment does not need to be changed. It's all LeggedRobot environment. Only the configurations need to be changed for different robot training environments.
+
+
+### The base environment
+
+By default, the environment need not to be changed. It's all `LeggedRobot` environment. Only the configurations need to be changed for different robot training environments.
 
 
 
-There are several files that defines the fundamental components.
+The base environment `LeggedRobot` is defined in `envs/base/legged_robot.py`
 
-`envs/base/legged_robot.py`
+It provides all the necessary functions to perform the following tasks:
 
-this file defines the `LeggedRobot` environment. It performs the following tasks:
-
-* define how reward and observations are computed, including the definition of each reward terms in `_reward_<term>()`.
+* defines how reward and observations are computed, including the definition of each reward terms in `_reward_<term>()`.
 * defines the joint level PID controller to map from actions to raw torques in `_compute_torques()`
-* initialize the tensor buffers that can be loaded on GPU.
-* loads the URDF asset into the environment.
+* initializes the tensor buffers that can be loaded on GPU.
+* configures and loads the URDF asset into the environment.
 * implements the step() function.
+
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
+### Environment initialization
+
+When creating the `LeggedRobot` class, it will initialize the environment with the following procedure:
+
+1. Parses the configuration class which converts subclasses into dictionaries, and setting up the time delta.
+2. Initializes the parent `BaseTask` class, which performs several tasks.
+   1. acquires gym handler
+   2. set up simulation device
+   3. initialize base parameters including `num_envs`, `num_obs`, `num_priviledged_obs`, `num_actions` from the config dict
+   4. create tensor buffers that is required by VecEnv, such as `obs_buf`, `rew_buf` , etc.
+   5. create gym simulation environment
+   6. create viewer if not in headless mode
+3. Set up camera.
+4.  Create tensor buffers that interfaces with the gym simulation tensor data on GPU, such as `root_states`, `dof_pos`, and tensor buffers for reward calculations, such as `torques`, `feet_air_time`.&#x20;
+
+    Addtionaly, this part will also initialize the default joint position and PD parameters to be the correct value specified in the config class.
+5. Initialize reward functions as a list.
+
+
 
 
 
