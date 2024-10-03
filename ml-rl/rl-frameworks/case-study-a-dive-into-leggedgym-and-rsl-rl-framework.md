@@ -170,7 +170,7 @@ It provides all the necessary functions to perform the following tasks:
 
 <figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
-### Environment initialization
+### Environment initialization logic
 
 When creating the `LeggedRobot` class, it will initialize the environment with the following procedure:
 
@@ -190,39 +190,29 @@ When creating the `LeggedRobot` class, it will initialize the environment with t
 
 
 
-
-
 ### Environment stepping logic
 
-clips the input actions argument and send it to GPU
+The `step()` function is abstract in the `BaseTask` class, and is implemented in the `LeggedRobot` class. It performs the following operations for each environment step:
 
-render the current scene
-
-for each rendering FPS, perform `decimation` number of physics updates:
-
-&#x20;   compute torques from the input action and set it in sim
-
-&#x20;   step the physics for one iteration
-
-&#x20;   in test mode, delay for correspoinding amout of time to ensure rendering synced to real-time
-
-&#x20;   updates the dof\_state tensor
-
-calculates the root pose and velocity
-
-resamples command for the next step
-
-push robot, if applied
-
-checks termination condition
-
-computes reward
-
-resets the environment instance that is terminated
-
-compute observations for the next step
-
-update the action, dof\_vel, and root\_vel history buffer
+1. Clips the input actions argument according to the value specified in the config, and send it to GPU
+2. Renders the current scene in `self.render()`. The render function also checks keyboard input events.
+3. For each rendering FPS (also control frequency), perform `decimation` number of physics updates:
+   1. compute torques from the input action and set it in sim
+   2. step the physics for one iteration
+   3. updates the dof\_state tensor
+4. Then, do the following in `self.post_physics_step()`
+   1. refreshes the actor root state and net contact force tensors
+   2. calculates the root pose and velocity
+   3. performs `self._post_physics_step_callback()`, which includes
+      1. resamples command for the next step
+      2. calculate the surrounding terrian height, if applicable
+      3. push robot, if applicable
+   4. checks termination condition of either collision or timeout
+   5. computes reward from the reward function list
+   6. resets the environment instance that is terminated
+   7. compute observations for the next step
+   8. update the `action`, `dof_vel`, and `root_vel` history buffer
+   9. finally, draw debug visualization if applicable
 
 
 
@@ -239,6 +229,12 @@ The rsl\_rl library currently only supports PPO algorithm.
 ### PPO algorithm
 
 Proximal Policy Optimization (PPO) is an actor-critic method, meaning it utilizes both a policy network (the actor) and a value network (the critic). The actor is responsible for selecting actions, while the critic estimates the value function (expected reward). PPO aims to improve the policy by taking small steps to ensure stable and reliable updates.
+
+
+
+## Step 4: Learn
+
+By invoking the  `ppo_runner.learn(num_learning_iterations, init_at_random_ep_len)` function, the rsl\_rl framework automatically performs the policy training iterations.
 
 
 
@@ -336,23 +332,21 @@ def compute_returns(self, last_values, gamma, lam):
 
 **4: Update actor network**
 
-\<TODO>
+The actor and critic are updated in the `update()` function.&#x20;
 
 
 
 #### **5: Update value (critic) network**
 
-\<TODO>
+The actor and critic are updated in the `update()` function.&#x20;
 
 
 
+## Step 5: Inference
+
+To perform interence, the `ppo_runner.get_inference_policy(device)` function returns the forward() method of the actor network.
 
 
-
-
-## Step 4: Train policy / Get inference policy
-
-uses either the `ppo_runner.learn(num_learning_iterations, init_at_random_ep_len)` or the `ppo_runner.get_inference_policy(device)` function
 
 
 
