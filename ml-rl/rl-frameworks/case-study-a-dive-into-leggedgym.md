@@ -1,5 +1,81 @@
 # Case Study: A Dive Into LeggedGym
 
+## Code Organization
+
+The majority of the logic is implemented in the `legged_gym/env/base/legged_robot.py` file. The code can be partitioned into the following five sections:
+
+#### 1. Environment creation
+
+How to create the physics environment
+
+#### 2. Adding the agent asset
+
+How to initialize the agent asset (urdf) in the environment, dealing with initial position, joint characteristics etc.
+
+#### 3. Reward design
+
+How to formulate reward to enable efficient learning
+
+#### 4. Exploration mechanism
+
+How to control the aggressiveness of the policy to explore new policy spaces
+
+#### 5. Driving the simulation
+
+How to record the training process and keep the most optimal policy
+
+
+
+
+
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## The entry function
