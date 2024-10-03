@@ -167,6 +167,7 @@
   * [Install and Configure GlobalProtect UC Berkeley VPN Service on Ubuntu 22.04](tools/ubuntu/install-and-configure-globalprotect-uc-berkeley-vpn-service-on-ubuntu-22.04.md)
   * [Solving Gamepad not Detected on Ubuntu 22.04](tools/ubuntu/solving-gamepad-not-detected-on-ubuntu-22.04.md)
   * [Using 3DConnexion Mouse on Ubuntu with Python](tools/ubuntu/using-3dconnexion-mouse-on-ubuntu-with-python.md)
+  * [Install Cursor the AI Editor on Ubuntu 22.04/24.04](tools/ubuntu/install-cursor-the-ai-editor-on-ubuntu-22.04-24.04.md)
   * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
