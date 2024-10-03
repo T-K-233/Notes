@@ -55,7 +55,7 @@ sudo mv ~/Downloads/cursor.png /opt/cursor/cursor.png
 
 
 
-Create&#x20;
+Create a new cursor.desktop application description file and input the following content
 
 ```bash
 sudo nano /usr/share/applications/cursor.desktop
@@ -74,6 +74,8 @@ Categories=Development;
 {% endcode %}
 
 
+
+For icon, this image can be used, taken from [cursor GitHub repo](https://github.com/getcursor/cursor).
 
 <figure><img src="../../.gitbook/assets/cursor.png" alt=""><figcaption></figcaption></figure>
 
