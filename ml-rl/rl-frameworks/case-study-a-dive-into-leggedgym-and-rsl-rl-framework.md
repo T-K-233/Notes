@@ -342,6 +342,204 @@ The actor and critic are updated in the `update()` function.&#x20;
 
 
 
+### Reward design
+
+LeggedGym provides a bunch of reward terms by default.
+
+#### lin\_vel\_z
+
+$$
+reward = v_z^2
+$$
+
+Penalize the z axis base linear velocity. Prevents the robot from shaking up and down.
+
+The reward coefficient of this term should be **negative**.
+
+#### ang\_vel\_xy
+
+$$
+reward = \omega_x^2 + \omega_y^2
+$$
+
+Penalize the xy axes base angular velocity. Prevents the robot from vibrates and rotating sideway.
+
+The reward coefficient of this term should be **negative**.
+
+#### base\_orientation
+
+$$
+reward = g_x^2 + g_y^2
+$$
+
+Penalize non-flat base orientation.
+
+The reward coefficient of this term should be **negative**.
+
+#### base\_height
+
+$$
+reward = (pos_z - pos_{z, target})^2
+$$
+
+Penalize the base height tracking error.
+
+The reward coefficient of this term should be **negative**.
+
+#### torques
+
+$$
+reward = \sum\tau^2
+$$
+
+Penalize large torque and energy consumption.
+
+The reward coefficient of this term should be **negative**.
+
+#### dof\_vel
+
+$$
+reward = \sum\omega_i^2
+$$
+
+Penalize joint velocities.
+
+The reward coefficient of this term should be **negative**.
+
+#### dof\_acc
+
+$$
+reward = \sum (\frac{\omega_{i,prev} - \omega_i}{dt} )^2
+$$
+
+Penalize joint accelerations.
+
+The reward coefficient of this term should be **negative**.
+
+#### action\_rate
+
+$$
+reward = \sum (\frac{acs_{i,prev} - acs_i}{dt} )^2
+$$
+
+Penalize change in actions. Prevents glitches.
+
+The reward coefficient of this term should be **negative**.
+
+#### collision
+
+$$
+reward = \sum\|f_i\| \quad where \quad f_i > 0.1
+$$
+
+Penalize collisions on selected bodies.
+
+The reward coefficient of this term should be **negative**.
+
+#### termination
+
+$$
+reward = 1 \quad if \quad \text{termination}
+$$
+
+Penalize for termination
+
+The reward coefficient of this term should be **negative**.
+
+#### dof\_pos\_limits
+
+$$
+reward = \sum |q_{i, out-of-range}|
+$$
+
+Penalize joint states that violates joint limit
+
+The reward coefficient of this term should be **negative**.
+
+#### dof\_vel\_limits
+
+$$
+reward = \sum clip(|\omega_i| - \omega_{lim}, 0, 1)
+$$
+
+Penalize joint velocities that violates the velocity limit.
+
+The reward coefficient of this term should be **negative**.
+
+#### torque\_limites
+
+$$
+reward = \sum max(|\tau_i| - \tau_{lim}, 0)
+$$
+
+Penalize joint torques that violates the torque limit
+
+The reward coefficient of this term should be **negative**.
+
+#### tracking\_lin\_vel
+
+$$
+reward = e^{-\frac{(v_x - v_{x,goal})^2 + (v_y - v_{y,goal})^2}{\sigma}}
+$$
+
+<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+
+Rewards for tracking the command xy velocity goals.
+
+The reward coefficient of this term should be **positive**.
+
+#### tracking\_ang\_vel
+
+$$
+reward = e^{-\frac{(v_z - v_{z,goal})^2}{\sigma}}
+$$
+
+Rewards for tracking the command yaw angular velocity goals.
+
+The reward coefficient of this term should be **positive**.
+
+#### feet\_air\_time
+
+$$
+reward = \|cmd_x + cmd_y\|\int t dt
+$$
+
+Reward for how long the robot's feet stay in the air during steps. Encourages longer steps and prevents dragging feet on ground. The reward for each leg is only granted upon the contact with ground after airtime.
+
+The reward coefficient of this term should be **positive**.
+
+#### stumble
+
+$$
+reward = 1 \quad if \quad \text{contact vertical surface}
+$$
+
+Penalizes feet hitting vertical surfaces.
+
+The reward coefficient of this term should be **negative**.
+
+#### stand\_still
+
+$$
+reward = (\sum|q_i - q_{i, init}|) \quad if \quad \|cmd_x + cmd_y\| < 0.1
+$$
+
+Penalize motion at zero commands
+
+The reward coefficient of this term should be **negative**.
+
+#### feet\_contact\_forces
+
+$$
+reward = max(\sum \|f_{contact}\| - f_{max}, 0)
+$$
+
+Penalizes high contact forces
+
+The reward coefficient of this term should be **negative**.
+
+
+
 ## Step 5: Inference
 
 To perform interence, the `ppo_runner.get_inference_policy(device)` function returns the forward() method of the actor network.
