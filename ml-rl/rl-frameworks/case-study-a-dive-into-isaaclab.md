@@ -10,7 +10,15 @@ The folder `source/standalone` provides a set of demo programs, tools, and the e
 
 
 
-### Task definitions
+
+
+## Environment Definitions
+
+
+
+
+
+## Task definitions
 
 The tasks are defined in the `source/extensions/omni.isaac.lab_tasks/omni/isaac/lab_tasks/manager_based` folder.
 
@@ -73,6 +81,99 @@ commands: CommandManager
 #### LocomotionVelocityRoughEnvCfg
 
 It instanciates the managers upon initialization, and provides a custom `__post_init__` routine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Adding Camera View
+
+```python
+import omni.ui as ui
+
+...
+
+def run_simulator(sim: sim_utils.SimulationContext, scene: InteractiveScene):
+    # im = plt.imshow(np.zeros((480, 640, 1), dtype=np.float32))
+    # # set scale to 1.0
+    # im.set_clim(0, 10)
+    # plt.colorbar(im)
+    # cv2.namedWindow("Depth Image", cv2.WINDOW_NORMAL)
+    # cv2.resizeWindow("Depth Image", 640, 480)
+
+    depth_window = ui.Window("Depth Image", width=640, height=480)
+    with depth_window.frame:
+        bytes_provider = ui.ByteImageProvider()
+        bytes_provider.set_bytes_data(np.zeros((480, 640, 1), dtype=np.float32).flatten().data, [480, 640], ui.TextureFormat.R32_SFLOAT)
+        depth_image_widget = ui.ImageWithProvider(bytes_provider)  # Create an image widget
+
+
+
+```
+
+```python
+
+    while simulation_app.is_running():
+        # print information from the sensors
+        # print("-------------------------------")
+        # print(scene["camera"])
+        # print("Received shape of rgb   image: ", scene["camera"].data.output["rgb"].shape)
+
+        # visualize depth image
+        depth_image = scene["camera"].data.output["distance_to_image_plane"]
+        depth_image = depth_image[0, ...].cpu().numpy().astype(np.float32)
+
+        depth_image /= 1000.0
+        
+        # im.set_data(depth_image)
+        # plt.pause(0.001)  # Allow the plot to update
+
+        # cv2.imshow("Depth Image", depth_image)
+        # cv2.waitKey(1)
+        bytes_provider.set_bytes_data(depth_image.flatten().data, [480, 640], ui.TextureFormat.R32_SFLOAT)
+
+        print("depth_image.shape: ", depth_image.shape)
+
+        # print("Received shape of depth image: ", scene["camera"].data.output["distance_to_image_plane"].shape)
+        # print("-------------------------------")
+        # print(scene["height_scanner"])
+        # print("Received max height value: ", torch.max(scene["height_scanner"].data.ray_hits_w[..., -1]).item())
+        # print("-------------------------------")
+        # print(scene["contact_forces"])
+        # print("Received max contact force of: ", torch.max(scene["contact_forces"].data.net_forces_w).item())
+
+
+```
+
+
+
+{% embed url="https://github.com/Toni-SM/semu.data.visualizer/blob/main/src/semu.data.visualizer/semu/data/visualizer/visualizer.py#L285" %}
 
 
 
