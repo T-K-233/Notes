@@ -73,18 +73,7 @@ import g1_demo.tasks  # noqa: F401
 
 
 
-### Adapting to the new IsaacLab version
 
-It seems that the Extension Template is built for an older version of IsaacLab. There's only a few things that need to be changed to work with the upstream IsaacLab:
-
-* Remove `DirectRLEnvCfg` and `DirectMARLEnvCfg`
-* Remove the following block
-
-```python
-    # convert to single-agent instance if required by the RL algorithm
-    if isinstance(env.unwrapped, DirectMARLEnv):
-        env = multi_agent_to_single_agent(env)
-```
 
 
 
