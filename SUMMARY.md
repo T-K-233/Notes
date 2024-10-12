@@ -93,6 +93,14 @@
 
 ## ML/RL
 
+* [Setting up NVIDIA Tools](ml-rl/setting-up-nvidia-tools/README.md)
+  * [Setting up NVIDIA Driver on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md)
+  * [Getting Started with NVIDIA Isaac Lab on Ubuntu 22.04 / 24.04](ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md)
+  * [Creating Custom Training Environment in IsaacLab via Extensions](ml-rl/setting-up-nvidia-tools/creating-custom-training-environment-in-isaaclab-via-extensions.md)
+  * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
+  * [Setting up TensorRT Environment on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-tensorrt-environment-on-ubuntu-22.04-20.04.md)
+  * [\[Deprecated\] Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/deprecated-setting-up-nvidia-isaac-gym-on-ubuntu-22.04-20.04.md)
+  * [\[Deprecated\] Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
 * [RL Frameworks](ml-rl/rl-frameworks/README.md)
   * [Case Study: A Dive Into LeggedGym and RSL-RL Framework](ml-rl/rl-frameworks/case-study-a-dive-into-leggedgym-and-rsl-rl-framework.md)
   * [Case Study: A Dive Into IsaacLab](ml-rl/rl-frameworks/case-study-a-dive-into-isaaclab.md)
@@ -101,13 +109,6 @@
     * [Detecting Phara](ml-rl/rl-frameworks/case-study-no-mercy-project/detecting-phara.md)
   * [OpenAI gym + Mujoco Setup](ml-rl/rl-frameworks/setting-up-aws-mujoco-training-machine.md)
   * [Gazebo Setup](ml-rl/rl-frameworks/gazebo-setup.md)
-* [Setting up NVIDIA Tools](ml-rl/setting-up-nvidia-tools/README.md)
-  * [Setting up NVIDIA Driver on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md)
-  * [Getting Started with NVIDIA Isaac Lab on Ubuntu 22.04 / 24.04](ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md)
-  * [NVIDIA Isaac Gym URDF Import Notes](ml-rl/nvidia-isaac-gym-urdf-import-notes.md)
-  * [Setting up TensorRT Environment on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-tensorrt-environment-on-ubuntu-22.04-20.04.md)
-  * [\[Deprecated\] Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/deprecated-setting-up-nvidia-isaac-gym-on-ubuntu-22.04-20.04.md)
-  * [\[Deprecated\] Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04](ml-rl/nvidia-omniverse-isaac-sim-setup.md)
 * [ROS](ml-rl/ros/README.md)
   * [Setting up ROS on Ubuntu 20.04](ml-rl/ros/setting-up-ros-on-ubuntu-20.04.md)
   * [Setting up ETH ANYbotics/elevation\_mapping on Ubuntu 20.04](ml-rl/ros/setting-up-eth-anybotics-elevation\_mapping-on-ubuntu-20.04.md)
