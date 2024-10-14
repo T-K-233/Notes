@@ -94,6 +94,21 @@ It instanciates the managers upon initialization, and provides a custom `__post_
 
 
 
+## Fixing the robot in-place
+
+Sometimes when debugging, we wish to pin the robot in a fixed location. This can be achieved by changing the following attribute:
+
+```python
+class EnvCfg():
+    def __post_init__(self):
+        super().__post_init__()
+        # assume self.scene.robot is already defined
+        self.scene.robot.spawn.articulation_props.fix_root_link = True
+
+```
+
+
+
 
 
 
