@@ -116,3 +116,11 @@ We need to source the script to use it ([reference](https://colcon.readthedocs.i
 source /usr/share/colcon_cd/function/colcon_cd.sh
 ```
 
+
+
+### Install Gazebo support
+
+```bash
+sudo apt install ros-humble-gazebo-ros2-control ros-humble-gazebo-ros
+```
+
