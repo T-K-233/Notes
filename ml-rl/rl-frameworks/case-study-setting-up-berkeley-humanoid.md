@@ -23,6 +23,9 @@ sudo apt install build-essential
 
 ```bash
 sudo apt install ros-humble-pinocchio
+sudo apt install ros-humble-ros2-control
+sudo apt install ros-humble-gazebo-ros2-control
+sudo apt install ros-humble-joint-state-broadcaster
 ```
 
 
@@ -60,7 +63,6 @@ mkdir ./berkeley-humanoid/
 cd ./berkeley-humanoid/
 git clone https://github.com/isaac-sim/IsaacLab.git
 git clone https://github.com/HybridRobotics/isaac_berkeley_humanoid.git
-git clone git@github.com:qiayuanl/legged_control2.git
 ```
 
 
@@ -163,6 +165,7 @@ cd ./ros2_ws/src/
 ```bash
 # cd ./ros2_ws/src/
 git clone git@github.com:qiayuanl/berkeley_humanoid_description.git
+git clone git@github.com:qiayuanl/legged_control2.git
 
 # cd ./ros2_ws/src/berkeley_humanoid_description
 git checkout feature/ament_cmake
@@ -174,6 +177,16 @@ git checkout feature/ament_cmake
 # cd ./ros2_ws/
 colcon build --packages-select berkeley_humanoid_description
 ```
+
+{% code overflow="wrap" %}
+```bash
+colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo --event-handlers console_direct+ --packages-up-to legged_rl_controllers
+```
+{% endcode %}
+
+
+
+
 
 ```bash
 source ./install/setup.bash
@@ -192,14 +205,6 @@ ros2 launch berkeley_humanoid_description gazebo.launch.py
 ```
 
 
-
-
-
-{% code overflow="wrap" %}
-```bash
-colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo --event-handlers console_direct+ --packages-up-to legged_rl_controller
-```
-{% endcode %}
 
 
 
