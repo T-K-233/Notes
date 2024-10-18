@@ -86,6 +86,42 @@ It instanciates the managers upon initialization, and provides a custom `__post_
 
 
 
+## Inference Logic
+
+Similar to LeggedGym, we start off from `play.py`.
+
+
+
+We first create the simulation environment `env` with the `gym.make()` function.&#x20;
+
+The env returned is an instance of ManagerBasedRLEnv
+
+
+
+Then, we wrap it inside the RslRlVecEnvWrapper, which provides the following methods
+
+get\_observations()
+
+reset()
+
+step()
+
+episode\_length\_buf
+
+
+
+Step() logic is mostly implemented in ManagerBasedRLEnv.
+
+```python
+1. Process the actions.
+2. Perform physics stepping.
+3. Perform rendering if gui is enabled.
+4. Update the environment counters and compute the rewards and terminations.
+5. Reset the environments that terminated.
+6. Compute the observations.
+7. Return the observations, rewards, resets and extras.
+```
+
 
 
 
