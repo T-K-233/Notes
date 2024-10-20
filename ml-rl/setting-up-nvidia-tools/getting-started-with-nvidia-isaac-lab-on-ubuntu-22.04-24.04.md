@@ -85,6 +85,16 @@ python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1
 ```
 {% endcode %}
 
+Train headless and record video
+
+{% code overflow="wrap" %}
+```bash
+python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --video --video_length 1000 --video_interval 2000 --headless
+```
+{% endcode %}
+
+
+
 
 
 {% code overflow="wrap" %}
