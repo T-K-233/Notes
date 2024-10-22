@@ -76,6 +76,19 @@ source /opt/ros/humble/setup.zsh
 
 
 
+
+
+## Install Colcon
+
+Colcon is a tool used to build ROS 2 software packages.
+
+```bash
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+```
+
+
+
 ## Additional Tools
 
 ```bash
@@ -90,14 +103,7 @@ sudo apt install ros-humble-joint-state-publisher-gui
 sudo apt install ros-humble-xacro
 ```
 
-### Install Colcon
 
-Colcon is a tool used to build ROS 2 software packages.
-
-```bash
-sudo apt update
-sudo apt install python3-colcon-common-extensions
-```
 
 
 
