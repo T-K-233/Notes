@@ -1,10 +1,20 @@
 # Setting up ROS on Ubuntu 20.04
 
+## Environment
 
+Ubuntu 20.04
 
 {% embed url="https://wiki.ros.org/noetic/Installation/Ubuntu" %}
 
-### Setup your sources.list <a href="#installation.2fubuntu.2fsources.setup_your_sources.list" id="installation.2fubuntu.2fsources.setup_your_sources.list"></a>
+### Setup Sources <a href="#installation.2fubuntu.2fsources.setup_your_sources.list" id="installation.2fubuntu.2fsources.setup_your_sources.list"></a>
+
+First install curl
+
+{% code overflow="wrap" %}
+```bash
+sudo apt update && sudo apt install curl
+```
+{% endcode %}
 
 {% code overflow="wrap" %}
 ```bash
@@ -12,13 +22,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 ```
 {% endcode %}
 
-### Set up your keys <a href="#installation.2fubuntu.2fsources.set_up_your_keys" id="installation.2fubuntu.2fsources.set_up_your_keys"></a>
-
-{% code overflow="wrap" %}
-```bash
-sudo apt install curl # if you haven't already installed curl
-```
-{% endcode %}
+Add the ROS key with apt.
 
 {% code overflow="wrap" %}
 ```bash
@@ -33,6 +37,14 @@ sudo apt update
 ```
 
 ```bash
+sudo apt install ros-noetic-desktop
+```
+
+
+
+To install support for 2D/3D visualization tools
+
+```bash
 sudo apt install ros-noetic-desktop-full
 ```
 
@@ -42,14 +54,11 @@ sudo apt install ros-noetic-desktop-full
 
 Put this line in bashrc
 
-{% code title="bash.rc" %}
-```bash
+<pre class="language-bash" data-title="~/.bashrc"><code class="lang-bash">...
+<strong># ROS Noetic
+</strong>source /opt/ros/noetic/setup.bash
 ...
-# ROS Noetic
-source /opt/ros/noetic/setup.bash
-...
-```
-{% endcode %}
+</code></pre>
 
 
 
@@ -57,15 +66,11 @@ source /opt/ros/noetic/setup.bash
 
 {% code overflow="wrap" %}
 ```bash
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install build-essential
+sudo apt install python3-pip
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool
 ```
 {% endcode %}
-
-
-
-```bash
-sudo apt install python3-rosdep
-```
 
 
 
@@ -73,7 +78,7 @@ sudo apt install python3-rosdep
 
 {% code overflow="wrap" %}
 ```bash
-sudo apt install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip python3-catkin-tools
+sudo apt install python3-catkin-lint python3-catkin-tools
 ```
 {% endcode %}
 

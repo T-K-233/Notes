@@ -2,7 +2,7 @@
 
 ## Environment
 
-Ubuntu 22.02
+Ubuntu 22.04
 
 {% embed url="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html" %}
 
@@ -56,28 +56,6 @@ sudo apt install ros-humble-desktop
 
 
 
-### Sourcing
-
-```bash
-source /opt/ros/humble/setup.bash
-```
-
-or
-
-```bash
-source /opt/ros/humble/setup.sh
-```
-
-or
-
-```bash
-source /opt/ros/humble/setup.zsh
-```
-
-
-
-
-
 ## Install Colcon
 
 Colcon is a tool used to build ROS 2 software packages.
@@ -86,6 +64,29 @@ Colcon is a tool used to build ROS 2 software packages.
 sudo apt update
 sudo apt install python3-colcon-common-extensions
 ```
+
+
+
+## Adding Environment Variables
+
+{% code title="~/.bashrc" %}
+```bash
+# ROS 2 Humble
+source /opt/ros/humble/setup.sh
+```
+{% endcode %}
+
+
+
+Colcon also has a tool, `colcon_cd`, to help navigating to package directories.
+
+{% code title="~/.bashrc" %}
+```bash
+# ROS 2 Humble
+...
+source /usr/share/colcon_cd/function/colcon_cd.sh
+```
+{% endcode %}
 
 
 
@@ -114,13 +115,7 @@ pip install empy
 pip install lark
 ```
 
-Colcon also has a tool, `colcon_cd`, to help navigating to package directories.
 
-We need to source the script to use it ([reference](https://colcon.readthedocs.io/en/released/user/installation.html?highlight=colcon\_cd#quick-directory-changes)), so either source it or add it to `~/.bashrc`
-
-```bash
-source /usr/share/colcon_cd/function/colcon_cd.sh
-```
 
 
 
