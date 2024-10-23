@@ -183,7 +183,6 @@
   * [Python converting bettwen JSON and XML](tools/python/python-converting-bettwen-json-and-xml.md)
   * [Retrieve Github user avatar with Github API](tools/python/retrieve-github-user-avatar-with-github-api.md)
   * [Jupyter Notebook Error](tools/python/jupyter-notebook-error.md)
-* [SSH](tools/ssh.md)
 * [Raspberry Pi Setup](tools/raspberry-pi-setup.md)
 * [Clang-Format Style Config](tools/clang-format-style-config.md)
 * [CrazyFlie Setting Up](tools/crazyflie-setting-up.md)
