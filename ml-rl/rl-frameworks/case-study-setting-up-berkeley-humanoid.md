@@ -22,12 +22,13 @@ sudo apt install build-essential
 
 
 ```bash
-sudo apt install ros-humble-pinocchio
-sudo apt install ros-humble-ros2-control
-sudo apt install ros-humble-gazebo-ros2-control
-sudo apt install ros-humble-joint-state-broadcaster
-sudo apt install ros-humble-joint-state-publisher-gui
-sudo apt install ros-humble-xacro
+sudo apt install \
+  ros-humble-pinocchio \
+  ros-humble-ros2-control \
+  ros-humble-gazebo-ros2-control \
+  ros-humble-joint-state-broadcaster \
+  ros-humble-joint-state-publisher-gui \
+  ros-humble-xacro
 ```
 
 
