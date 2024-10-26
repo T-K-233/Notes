@@ -55,11 +55,27 @@ export TORCH_DIR=/home/tk/Documents/libtorch/
 
 
 
+```bash
+export Torch_DIR=/home/tk/Documents/libtorch/
+```
+
+
+
 Build source
 
 ```bash
 # cd ./ros_ws/
 catkin build
+```
+
+
+
+## Sim2Sim
+
+
+
+```bash
+source ./devel/setup.sh
 ```
 
 
