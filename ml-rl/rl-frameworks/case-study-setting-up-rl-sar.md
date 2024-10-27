@@ -75,8 +75,32 @@ catkin build
 
 
 ```bash
-source ./devel/setup.sh
+source ./devel/setup.bash
 ```
+
+
+
+```bash
+roslaunch rl_sar gazebo_a1_isaacgym.launch
+```
+
+
+
+```bash
+rosrun rl_sar rl_sim
+```
+
+
+
+## Sim2Real
+
+
+
+```bash
+rosrun rl_sar rl_real_a1
+```
+
+
 
 
 
