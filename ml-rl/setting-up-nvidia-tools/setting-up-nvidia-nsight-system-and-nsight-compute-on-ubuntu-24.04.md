@@ -25,14 +25,14 @@ Download Nsight Compute from the [website](https://developer.nvidia.com/tools-ov
 Mark the downloaded file as executable, and then do
 
 ```bash
-sudo ./nsight-compute-linux-2024.3.2.3-34861637.run 
+sudo ~/Downloads/nsight-compute-linux-2024.3.2.3-34861637.run 
 ```
 
 
 
-The default installation directory is `/usr/local/NVIDIA-Nsight-Compute-2024.3`
+The default installation directory is `/usr/local/NVIDIA-Nsight-Compute-2024.3/`
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -47,6 +47,62 @@ Launch Nsight Compute
 
 
 
+
+## Install Nsight Systems
+
+Download from [website](https://developer.nvidia.com/nsight-systems/get-started).
+
+Mark as executable, and then run
+
+```bash
+sudo ~/Downloads/NsightSystems-linux-public-2024.6.1.90-3490548.run
+```
+
+
+
+
+
+Default installation directory is `/opt/nvidia/nsight-systems/2024.6.1/`
+
+
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Launch Nsight Systems
+
+```bash
+sudo /opt/nvidia/nsight-systems/2024.6.1/bin/nsys-ui
+```
+
+
+
+
+
+## Add to PATH
+
+{% code title="~/.bashrc" %}
+```bash
+...
+
+# NVIDIA
+export PATH="/opt/nvidia/nsight-systems/2024.6.1/bin/:$PATH"
+export PATH="/usr/local/NVIDIA-Nsight-Compute/:$PATH"
+
+...
+```
+{% endcode %}
+
+
+
+
+
+## Start Profiling
+
+
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
