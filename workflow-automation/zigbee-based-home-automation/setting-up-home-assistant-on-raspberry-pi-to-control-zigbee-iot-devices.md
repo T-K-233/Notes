@@ -1,11 +1,8 @@
----
-description: >-
-  In this article, we will introduce how to set up Home Assistant OS on a
-  Raspberry Pi 3 B+ and configure Zigbee2MQTT to connect and control the Zigbee
-  based IoT devices.
----
-
 # Setting up Home Assistant on Raspberry Pi to Control Zigbee IoT Devices
+
+In this article, we will introduce how to set up Home Assistant OS on a Raspberry Pi 3 B+ and configure Zigbee2MQTT to connect and control the Zigbee based IoT devices. The entire process takes around 1 hour to finish.
+
+***
 
 
 
