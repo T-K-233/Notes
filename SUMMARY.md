@@ -211,6 +211,8 @@
 
 ## Electrical
 
+* [Zigbee-Based Home Automation](electrical/zigbee-based-home-automation/README.md)
+  * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](electrical/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)
 * [A Note on the Polarity of the Famous TT Motor](electrical/a-note-on-the-polarity-of-the-famous-tt-motor.md)
 * [Wiring Convention](electrical/wiring-convention.md)
 * [MCU Pinmap Convention](electrical/mcu-pinmap-convention.md)
