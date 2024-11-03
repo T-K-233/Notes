@@ -211,8 +211,6 @@
 
 ## Electrical
 
-* [Zigbee-Based Home Automation](electrical/zigbee-based-home-automation/README.md)
-  * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](electrical/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)
 * [A Note on the Polarity of the Famous TT Motor](electrical/a-note-on-the-polarity-of-the-famous-tt-motor.md)
 * [Wiring Convention](electrical/wiring-convention.md)
 * [MCU Pinmap Convention](electrical/mcu-pinmap-convention.md)
@@ -237,9 +235,12 @@
   * [VRM Parameters](uw/ai233-design-notes/vrm-parameters.md)
   * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
 
-## Maintainance Log
+## Workflow Automation
 
-* [RISC-V Toolbox Website](maintainance-log/risc-v-toolbox-website.md)
+* [RISC-V Toolbox Website](workflow-automation/risc-v-toolbox-website.md)
+* [Zigbee-Based Home Automation](workflow-automation/zigbee-based-home-automation/README.md)
+  * [Setting up Home Assistant on Raspberry Pi to Control Zigbee IoT Devices](workflow-automation/zigbee-based-home-automation/setting-up-home-assistant-on-raspberry-pi-to-control-zigbee-iot-devices.md)
+  * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](workflow-automation/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)
 
 ## Finance
 
