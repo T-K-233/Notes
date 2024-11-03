@@ -95,7 +95,7 @@ Reference [here](https://github.com/openwrt/openwrt/issues/9055) for more inform
 sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

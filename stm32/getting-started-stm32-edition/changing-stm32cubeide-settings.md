@@ -60,7 +60,7 @@ Select "Serial Port", and click **New** button.
 
 Select the correct COM port. Click **Finish**.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Change Encoding to "UTF-8". Click **Ok**.
 

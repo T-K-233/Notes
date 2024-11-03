@@ -33,7 +33,7 @@ We can rename the template to a custom extension name. Here, we will use `g1_dem
 python scripts/rename_template.py g1_demo
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After executing this command, all the `ext_template` text inside this repo should be replace to `g1_demo`.
 

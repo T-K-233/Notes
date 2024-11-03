@@ -34,7 +34,7 @@ After adding the plugin, Unreal Engine needs to be restarted.
 
 Click the Blueprint button, select "New Empty Blueprint Class...".
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Choose "GameModeBase" as the parent class.
 
@@ -42,7 +42,7 @@ Choose "GameModeBase" as the parent class.
 
 <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Finally, update the GameModeBase class
 

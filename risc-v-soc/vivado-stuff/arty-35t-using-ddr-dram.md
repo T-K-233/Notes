@@ -10,7 +10,7 @@ The configuration parameters are taken from the Arty 100T Reference Manual
 
 In the MIG configuration tab, choose "Create Design". Check "AXI4 Interface" if the target design requires AXI4. Otherwise, a FIFO-like native interface will be used.&#x20;
 
-![](<../../.gitbook/assets/image (9) (1) (1).png>)
+![](<../../.gitbook/assets/image (9) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (30) (1).png>)
 
