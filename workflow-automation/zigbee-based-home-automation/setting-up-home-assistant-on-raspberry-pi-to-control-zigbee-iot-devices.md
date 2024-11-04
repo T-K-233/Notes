@@ -127,3 +127,15 @@ I observed that the pairing time is much faster than when using ZHA.
 
 
 
+
+
+## Configuring Apple HomeKit
+
+{% embed url="https://www.home-assistant.io/integrations/homekit/" %}
+
+
+
+
+
+
+
