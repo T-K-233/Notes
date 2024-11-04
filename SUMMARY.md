@@ -108,6 +108,7 @@
   * [Case Study: A Dive Into Unitree-Mujoco](ml-rl/rl-frameworks/case-study-a-dive-into-unitree-mujoco.md)
   * [Case Study: Setting up Berkeley Humanoid](ml-rl/rl-frameworks/case-study-setting-up-berkeley-humanoid.md)
   * [Case Study: Setting up RL-SAR](ml-rl/rl-frameworks/case-study-setting-up-rl-sar.md)
+  * [Case Study: Getting Started with LeRobot](ml-rl/rl-frameworks/case-study-getting-started-with-lerobot.md)
   * [Case Study: No-Mercy Project](ml-rl/rl-frameworks/case-study-no-mercy-project/README.md)
     * [Python Mouse and Keyboard Interaction in Game Environment](ml-rl/rl-frameworks/case-study-no-mercy-project/python-mouse-and-keyboard-interaction-in-game-environment.md)
     * [Detecting Phara](ml-rl/rl-frameworks/case-study-no-mercy-project/detecting-phara.md)
