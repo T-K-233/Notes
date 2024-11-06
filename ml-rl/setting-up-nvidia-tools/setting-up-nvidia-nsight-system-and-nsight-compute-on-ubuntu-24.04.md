@@ -32,7 +32,7 @@ sudo ~/Downloads/nsight-compute-linux-2024.3.2.3-34861637.run
 
 The default installation directory is `/usr/local/NVIDIA-Nsight-Compute-2024.3/`
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -66,7 +66,7 @@ Default installation directory is `/opt/nvidia/nsight-systems/2024.6.1/`
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

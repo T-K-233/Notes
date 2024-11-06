@@ -1,4 +1,4 @@
-# Getting Started with Jetson AGX Orin
+# Using Jetson AGX Orin with Provided Ubuntu 20.04 System
 
 
 
@@ -16,7 +16,7 @@
 
 Connect USB keyboard and mouse, DisplayPort port, and USB Type-C power cable
 
-<figure><img src="../../.gitbook/assets/1000005996.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1000005996.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -34,7 +34,7 @@ cat /etc/nv_tegra_release
 
 As seen in the output, the BSP is up-to-date, the apt sources lists are the latest, and we can proceed
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2023-03-15 08-08-56.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot from 2023-03-15 08-08-56.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -71,7 +71,7 @@ Now it should detect CUDA
 nvcc --version
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot from 2024-11-05 17-09-10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot from 2024-11-05 17-09-10.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -81,8 +81,8 @@ nvcc --version
 
 Install conda according to the "Install Conda" section in this guide
 
-{% content-ref url="../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md" %}
-[quick-start-with-chipyard-on-ubuntu-or-wsl.md](../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
+{% content-ref url="../../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md" %}
+[quick-start-with-chipyard-on-ubuntu-or-wsl.md](../../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
 {% endcontent-ref %}
 
 
@@ -91,15 +91,11 @@ Install conda according to the "Install Conda" section in this guide
 conda create -yn tensorrt python=3.10
 ```
 
+```bash
+pip install torch
+```
 
 
-
-
-
-
-
-
-## Install TensorRT
 
 
 
