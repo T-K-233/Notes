@@ -6,6 +6,8 @@
 
 {% embed url="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/developer_kit_layout.html" %}
 
+{% embed url="https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/IN/QuickStart.html" %}
+
 
 
 
@@ -62,6 +64,42 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 {% endcode %}
 
 
+
+Now it should detect CUDA
+
+```bash
+nvcc --version
+```
+
+<figure><img src="../../.gitbook/assets/Screenshot from 2024-11-05 17-09-10.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+## Install PyTorch
+
+Install conda according to the "Install Conda" section in this guide
+
+{% content-ref url="../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md" %}
+[quick-start-with-chipyard-on-ubuntu-or-wsl.md](../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
+{% endcontent-ref %}
+
+
+
+```bash
+conda create -yn tensorrt python=3.10
+```
+
+
+
+
+
+
+
+
+
+## Install TensorRT
 
 
 
