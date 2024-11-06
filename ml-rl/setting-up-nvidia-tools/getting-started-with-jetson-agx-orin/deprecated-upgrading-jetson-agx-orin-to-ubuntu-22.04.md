@@ -1,4 +1,4 @@
-# Upgrading Jetson AGX Orin to Ubuntu 22.04
+# \[Deprecated] Upgrading Jetson AGX Orin to Ubuntu 22.04
 
 {% embed url="https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/IN/QuickStart.html" %}
 
@@ -9,6 +9,38 @@
 Connect to the host computer with the provided USB Type-C to Type A cable using the port near the 40 pin header.
 
 Connect power cable as the last step.
+
+
+
+
+
+
+
+{% embed url="https://developer.nvidia.com/sdk-manager" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

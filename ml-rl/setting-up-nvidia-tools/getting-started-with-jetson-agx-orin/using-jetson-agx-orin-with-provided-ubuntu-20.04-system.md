@@ -1,6 +1,6 @@
 # Using Jetson AGX Orin with Provided Ubuntu 20.04 System
 
-
+We broadly follow these instructions:
 
 {% embed url="https://developer.nvidia.com/embedded/learn/get-started-jetson-agx-orin-devkit" %}
 
@@ -91,9 +91,11 @@ Install conda according to the "Install Conda" section in this guide
 conda create -yn tensorrt python=3.10
 ```
 
+{% code overflow="wrap" %}
 ```bash
-pip install torch
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
+{% endcode %}
 
 
 
