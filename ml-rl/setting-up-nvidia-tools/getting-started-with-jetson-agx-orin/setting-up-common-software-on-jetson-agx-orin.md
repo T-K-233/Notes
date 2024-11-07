@@ -10,23 +10,7 @@ In general, we need to install the `aarch64` distro of the software, since this 
 
 ## Install CUDA
 
-CUDA should be included with the Jetpack 6.1 SDK. We just need to add it to PATH
-
-{% code title=".bashrc" %}
-```bash
-...
-
-# CUDA
-export PATH="/usr/local/cuda/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
-
-...
-```
-{% endcode %}
-
-
-
-
+CUDA should be included with the Jetpack 6.1 SDK.&#x20;
 
 To test installation, do
 
@@ -67,23 +51,60 @@ chmod +x ~/Downloads/Mambaforge-24.9.0-0-Linux-aarch64.sh
 
 ## Install PyTorch
 
-dependencies
+PyTorch with CUDA support is not available from the normal pip installation method.
+
+Instead, we need to use jetson-container following this [instruction](https://github.com/dusty-nv/jetson-containers/blob/master/docs/setup.md).
 
 ```bash
-sudo apt install curl libopenblas-dev
+cd ~/Desktop/
+git clone https://github.com/dusty-nv/jetson-containers
+bash jetson-containers/install.sh
 ```
 
 
 
-```bash
-conda create -yn tensorrt python=3.10
-```
+Edit `/etc/docker/daemon.json`
 
-{% code overflow="wrap" %}
-```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+{% code title="daemon.json" %}
+```json
+{
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    },
+
+    "default-runtime": "nvidia"
+}
 ```
 {% endcode %}
+
+```bash
+sudo systemctl restart docker
+```
+
+
+
+If docker fails to start with error message "Failed to start Docker Application Container Engine", use this command to print the error message
+
+```bash
+sudo journalctl -u docker.service
+```
+
+
+
+
+
+Then, do&#x20;
+
+```bash
+jetson-containers run $(autotag pytorch)
+```
+
+
+
+
 
 Test if installation succeed
 
