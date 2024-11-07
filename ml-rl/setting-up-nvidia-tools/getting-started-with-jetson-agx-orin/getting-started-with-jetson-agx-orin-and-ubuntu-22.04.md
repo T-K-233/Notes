@@ -109,5 +109,13 @@ The rest of the installation takes about one hour to finish.
 
 
 
+Finally, to verify the installed version, run the following commands on Jetson
+
+```bash
+sudo apt show nvidia-jetpack -a
+```
+
+
+
 
 
