@@ -38,6 +38,7 @@
     * [SPI - RFID](stm32/connectivity/spi/spi-1.md)
     * [SPI - SD Card](stm32/connectivity/spi/spi-sd-card.md)
   * [Ethernet](stm32/connectivity/ethernet/README.md)
+    * [Ethernet - LWIP](stm32/connectivity/ethernet/ethernet.md)
     * [Ethernet - UDP](stm32/connectivity/ethernet/ethernet-udp.md)
   * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
   * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
