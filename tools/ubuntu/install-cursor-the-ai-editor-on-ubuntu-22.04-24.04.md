@@ -99,7 +99,7 @@ sudo nano /etc/apparmor.d/cursor-appimage
 abi <abi/4.0>,
 include <tunables/global>
 
-profile cursor /opt/cursor/cursor*.AppImage flags=(unconfined) {
+profile cursor /opt/cursor/cursor*.appimage flags=(unconfined) {
   userns,
 
   # Site-specific additions and overrides.  See local/README for details.
