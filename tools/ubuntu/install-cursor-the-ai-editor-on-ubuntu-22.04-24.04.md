@@ -79,3 +79,44 @@ For icon, this image can be used, taken from [cursor GitHub repo](https://github
 
 <figure><img src="../../.gitbook/assets/cursor.png" alt=""><figcaption></figcaption></figure>
 
+
+
+## Set up apparmor to allow executing cursor command at command line
+
+[https://github.com/getcursor/cursor/issues/844#issuecomment-2080288303](https://github.com/getcursor/cursor/issues/844#issuecomment-2080288303)
+
+
+
+```bash
+sudo nano /etc/apparmor.d/cursor-appimage
+```
+
+{% code title="cursor-appimage" %}
+```bash
+# This profile allows everything and only exists to give the
+# application a name instead of having the label "unconfined"
+
+abi <abi/4.0>,
+include <tunables/global>
+
+profile cursor /opt/cursor/cursor*.AppImage flags=(unconfined) {
+  userns,
+
+  # Site-specific additions and overrides.  See local/README for details.
+  include if exists <local/cursor>
+}
+```
+{% endcode %}
+
+
+
+And then run
+
+```bash
+sudo apparmor_parser -r /etc/apparmor.d/cursor-appimage
+```
+
+
+
+
+
