@@ -40,6 +40,7 @@
   * [Ethernet](stm32/connectivity/ethernet/README.md)
     * [Ethernet - LWIP](stm32/connectivity/ethernet/ethernet.md)
     * [Ethernet - UDP](stm32/connectivity/ethernet/ethernet-udp.md)
+    * [Ethernet - UDP Multicast](stm32/connectivity/ethernet/ethernet-udp-multicast.md)
   * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
   * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
 * [Middleware](stm32/middleware/README.md)

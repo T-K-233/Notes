@@ -53,7 +53,7 @@ Launch SDKManager from the app search page.
 
 ## Hardware Connection
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Connect USB keyboard and mouse, and the DisplayPort port to a monitor.
 
