@@ -220,7 +220,7 @@
 ## Electrical
 
 * [A Note on the Polarity of the Famous TT Motor](electrical/a-note-on-the-polarity-of-the-famous-tt-motor.md)
-* [Wiring Convention](electrical/wiring-convention.md)
+* [Wiring Pinmap Convention](electrical/wiring-convention.md)
 * [MCU Pinmap Convention](electrical/mcu-pinmap-convention.md)
 * [PCB Design and Manufacturing Conventions](electrical/pcb-design-and-manufacturing-conventions.md)
 * [ESP32 Cam](electrical/esp32-cam.md)
