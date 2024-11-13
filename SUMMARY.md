@@ -108,6 +108,7 @@
     * [Using Jetson AGX Orin with Provided Ubuntu 20.04 System](ml-rl/setting-up-nvidia-tools/getting-started-with-jetson-agx-orin/using-jetson-agx-orin-with-provided-ubuntu-20.04-system.md)
     * [Setting up Common Software on Jetson AGX Orin](ml-rl/setting-up-nvidia-tools/getting-started-with-jetson-agx-orin/setting-up-common-software-on-jetson-agx-orin.md)
     * [\[Deprecated\] Upgrading Jetson AGX Orin to Ubuntu 22.04](ml-rl/setting-up-nvidia-tools/getting-started-with-jetson-agx-orin/deprecated-upgrading-jetson-agx-orin-to-ubuntu-22.04.md)
+  * [Solving Torch Errors](ml-rl/setting-up-nvidia-tools/solving-torch-errors.md)
   * [\[Deprecated\] Setting up NVIDIA Isaac Gym on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/deprecated-setting-up-nvidia-isaac-gym-on-ubuntu-22.04-20.04.md)
 * [RL Frameworks](ml-rl/rl-frameworks/README.md)
   * [Case Study: A Dive Into LeggedGym and RSL-RL Framework](ml-rl/rl-frameworks/case-study-a-dive-into-leggedgym-and-rsl-rl-framework.md)
