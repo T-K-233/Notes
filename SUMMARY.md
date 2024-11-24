@@ -115,6 +115,7 @@
   * [Case Study: A Dive Into IsaacLab](ml-rl/rl-frameworks/case-study-a-dive-into-isaaclab.md)
   * [Case Study: A Dive Into Unitree-Mujoco](ml-rl/rl-frameworks/case-study-a-dive-into-unitree-mujoco.md)
   * [Case Study: Setting up Berkeley Humanoid](ml-rl/rl-frameworks/case-study-setting-up-berkeley-humanoid.md)
+  * [Case Study: Looking into robot\_lab](ml-rl/rl-frameworks/case-study-looking-into-robot_lab.md)
   * [Case Study: Setting up RL-SAR](ml-rl/rl-frameworks/case-study-setting-up-rl-sar.md)
   * [Case Study: Getting Started with LeRobot](ml-rl/rl-frameworks/case-study-getting-started-with-lerobot.md)
   * [Case Study: No-Mercy Project](ml-rl/rl-frameworks/case-study-no-mercy-project/README.md)
