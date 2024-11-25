@@ -4,7 +4,7 @@
 
 ## Installation
 
-The official instruction is pretty straight forward: [https://isaac-sim.github.io/IsaacLab/source/setup/installation/pip\_installation.html](https://isaac-sim.github.io/IsaacLab/source/setup/installation/pip\_installation.html)
+The official instruction is pretty straight forward: [https://isaac-sim.github.io/IsaacLab/source/setup/installation/pip\_installation.html](https://isaac-sim.github.io/IsaacLab/source/setup/installation/pip_installation.html)
 
 
 
@@ -159,7 +159,29 @@ rm _isaac_sim
 
 
 
+## Helpful Tips
 
+### Logging Directory
+
+A bunch of omni Python module uses the `omni.log.info()` method to log data.
+
+The logging directory is at
+
+{% code overflow="wrap" %}
+```bash
+$CONDA_PREFIX/lib/python3.10/site-packages/omni/logs/Kit/Isaac-Sim/4.2/
+```
+{% endcode %}
+
+
+
+### Robot Joint Order
+
+The joint are searched BFS, and joints at the same depth level are ordered alphabetically.
+
+For example, this is the G1 robot joint order
+
+<table><thead><tr><th width="109">Index</th><th>Joint Name</th></tr></thead><tbody><tr><td>0</td><td>left_hip_pitch_joint</td></tr><tr><td>1</td><td>right_hip_pitch_joint</td></tr><tr><td>2</td><td>torso_joint</td></tr><tr><td>3</td><td>left_hip_roll_joint</td></tr><tr><td>4</td><td>right_hip_roll_joint</td></tr><tr><td>5</td><td>left_shoulder_pitch_joint</td></tr><tr><td>6</td><td>right_shoulder_pitch_joint</td></tr><tr><td>7</td><td>left_hip_yaw_joint</td></tr><tr><td>8</td><td>right_hip_yaw_joint</td></tr><tr><td>9</td><td>left_shoulder_roll_joint</td></tr><tr><td>10</td><td>right_shoulder_roll_joint</td></tr><tr><td>11</td><td>left_knee_joint</td></tr><tr><td>12</td><td>right_knee_joint</td></tr><tr><td>13</td><td>left_shoulder_yaw_joint</td></tr><tr><td>14</td><td>right_shoulder_yaw_joint</td></tr><tr><td>15</td><td>left_ankle_pitch_joint</td></tr><tr><td>16</td><td>right_ankle_pitch_joint</td></tr><tr><td>17</td><td>left_elbow_pitch_joint</td></tr><tr><td>18</td><td>right_elbow_pitch_joint</td></tr><tr><td>19</td><td>left_ankle_roll_joint</td></tr><tr><td>20</td><td>right_ankle_roll_joint</td></tr><tr><td>21</td><td>left_elbow_roll_joint</td></tr><tr><td>22</td><td>right_elbow_roll_joint</td></tr><tr><td>23</td><td>left_five_joint</td></tr><tr><td>24</td><td>left_three_joint</td></tr><tr><td>25</td><td>left_zero_joint</td></tr><tr><td>26</td><td>right_five_joint</td></tr><tr><td>27</td><td>right_three_joint</td></tr><tr><td>28</td><td>right_zero_joint</td></tr><tr><td>29</td><td>left_six_joint</td></tr><tr><td>30</td><td>left_four_joint</td></tr><tr><td>31</td><td>left_one_joint</td></tr><tr><td>32</td><td>right_six_joint</td></tr><tr><td>33</td><td>right_four_joint</td></tr><tr><td>34</td><td>right_one_joint</td></tr><tr><td>35</td><td>left_two_joint</td></tr><tr><td>36</td><td>right_two_joint</td></tr></tbody></table>
 
 
 
