@@ -51,7 +51,43 @@ JOINT_POS_FILENAME = "/home/tk/Downloads/robot_lab/exts/robot_lab/robot_lab/thir
 joint_pos_data = np.loadtxt(JOINT_POS_FILENAME, delimiter=",")
 ```
 
-81 floating point numbers on each line
+81 floating point numbers on each line, which corresponds to 27 marker positions (x, y, z)
+
+mapping is as follows
+
+```python
+0: pelvis
+1: 
+2: 
+3: neck
+4: 
+5: 
+6: hip
+7: 
+8: 
+9: 
+10: toe
+11: hip
+12: 
+13: 
+14: 
+15: toe
+16: hip
+17: 
+18: 
+19: toe
+20: hip
+21: 
+22: 
+23: toe
+24: 
+25: 
+26:
+```
+
+
+
+
 
 then, we clip out the unused frames, after concat
 
@@ -112,6 +148,24 @@ The purpose of these transformations is to match the frame between robot and moc
 
 
 ### Retarget Motion
+
+
+
+the main magic happens in the retarget\_pose() function, which takes in the robot URDF, the default joint pose, and the reference marker positions
+
+
+
+first, it gets the joint limit from the URDF
+
+then, to do the motion retargeting, it will
+
+1.  get ref\_hip\_pos and ref\_toe\_pos, calculate the distance between these two points as ref\_hip\_toe\_delta
+
+    ref\_hip\_toe\_delta = ref\_toe\_pos - ref\_hip\_pos
+2. get hip position in sim as sim\_hip\_pos
+3. the target toe position in sim should be sim\_tar\_toe\_pos = sim\_hip\_pos + ref\_hip\_toe\_delta
+4. however, override the toe height (z) to be directly the mocap height, as we have already calibrated this in the previous step, and we want to maintain the same contact
+5. so far everything is in local frame, now we convert it to world frame by sim\_tar\_toe\_pos += toe\_offset\_world
 
 
 
