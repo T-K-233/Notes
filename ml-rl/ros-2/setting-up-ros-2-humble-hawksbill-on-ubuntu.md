@@ -69,21 +69,12 @@ sudo apt install python3-colcon-common-extensions
 
 ## Adding Environment Variables
 
-{% code title="~/.bashrc" %}
-```bash
-# ROS 2 Humble
-source /opt/ros/humble/setup.sh
-```
-{% endcode %}
-
-
-
 Colcon also has a tool, `colcon_cd`, to help navigating to package directories.
 
 {% code title="~/.bashrc" %}
 ```bash
 # ROS 2 Humble
-...
+source /opt/ros/humble/setup.sh
 source /usr/share/colcon_cd/function/colcon_cd.sh
 ```
 {% endcode %}
