@@ -1,10 +1,8 @@
-# TIM
+---
+description: Using Timer on STM32
+---
 
-
-
-
-
-
+# Using TIM on STM32
 
 ### To Drive Active Low LEDs
 
