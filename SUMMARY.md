@@ -27,6 +27,7 @@
 * [Timers](stm32/timers/README.md)
   * [Using RTC on STM32](stm32/timers/rtc.md)
   * [Using TIM on STM32](stm32/timers/tim.md)
+  * [Page](stm32/timers/page.md)
 * [Connectivity](stm32/connectivity/README.md)
   * [UART](stm32/connectivity/uart.md)
   * [USART](stm32/connectivity/usart/README.md)

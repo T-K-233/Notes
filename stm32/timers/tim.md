@@ -4,6 +4,46 @@ description: Using Timer on STM32
 
 # Using TIM on STM32
 
+
+
+
+
+
+
+## Timer TRGO Events
+
+<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+
+#### Reset
+
+This is rarely used. Software control of the slave device is preferred.
+
+#### Enable
+
+This is rarely used. Software control of the slave device is preferred.
+
+#### Update Event
+
+This event is generated when counter overflows or underflows.
+
+#### Capture Compare
+
+This event is generated when the counter is equal to the channel pulse value. Think this as the PWM signal.
+
+
+
+## Repetition counter settings
+
+<figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+## PWM generation mode
+
 ### To Drive Active Low LEDs
 
 set CH Polarity to Low.
