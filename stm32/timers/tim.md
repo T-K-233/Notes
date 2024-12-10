@@ -28,7 +28,9 @@ This event is generated when counter overflows or underflows.
 
 #### Capture Compare
 
-This event is generated when the counter is equal to the channel pulse value. Think this as the PWM signal.
+This event is generated when the counter is equal to the channel pulse value. Think this as the PWM signal.&#x20;
+
+However, note that when using "Active level on match" or "Inactive level on match", it will only generate one trigger event on TRGO and will not be reset.
 
 
 

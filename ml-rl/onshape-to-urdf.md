@@ -645,7 +645,7 @@ source install/setup.sh
 
 ros2 launch humanoid\_v1 humanoid\_v1.launch.py
 
-If the following error is raised, we need to install the gui package separately, suggested [here](https://answers.ros.org/question/344992/missing-joint\_state\_publisher\_gui-when-l-run-displaylaunch/).
+If the following error is raised, we need to install the gui package separately, suggested [here](https://answers.ros.org/question/344992/missing-joint_state_publisher_gui-when-l-run-displaylaunch/).
 
 ```bash
 [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'joint_state_publisher_gui' not found, searching: ['/home/tk/Desktop/humanoid-urdf/install/humanoid_v1', '/opt/ros/humble']"
@@ -686,7 +686,7 @@ When making mate connections, always click child component first, and then paren
 
 By doing so, the order of the mate connectors should look like the one shown in the following diagram.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

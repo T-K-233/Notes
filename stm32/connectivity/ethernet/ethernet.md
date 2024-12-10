@@ -6,7 +6,7 @@ Under "Connectivity" tab, select ETH.
 
 Set ETH mode to RMII, and make sure the pin mapping corresponds to the one on the Nucleo board
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="NUCLEO-F429ZI" %}
@@ -14,7 +14,7 @@ Set ETH mode to RMII, and make sure the pin mapping corresponds to the one on th
 
 On the F429ZI Nucleo board, the pin mapping should look as follows.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="NUCLEO-H755ZI" %}
@@ -38,7 +38,7 @@ Enable the Lightweight IP functionality.
 
 The Platform Settings will mark a warning icon. We will configure this at the last step.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
