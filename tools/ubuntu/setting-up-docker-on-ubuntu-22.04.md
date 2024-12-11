@@ -2,8 +2,6 @@
 
 
 
-
-
 ```bash
 # Add Docker's official GPG key:
 sudo apt update
@@ -32,6 +30,16 @@ Verify installation
 
 ```bash
 sudo docker run hello-world
+```
+
+
+
+
+
+Grant permission
+
+```bash
+sudo setfacl --modify user:tk:rw /var/run/docker.sock
 ```
 
 
