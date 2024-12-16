@@ -67,6 +67,7 @@
   * [Configuring Vivado DDR MIG on Arty 35T](risc-v-soc/vivado-stuff/arty-35t-using-ddr-dram.md)
   * [Configuring Vivado DDR MIG on Nexys Video](risc-v-soc/vivado-stuff/configuring-vivado-ddr-mig-on-nexys-video.md)
   * [Vivado Generate Flash Config .mcs File From Bitstream](risc-v-soc/vivado-stuff/vivado-generate-flash-config-.mcs-file-from-bitstream.md)
+  * [Vivado TCL Scripts](risc-v-soc/vivado-stuff/vivado-tcl-scripts.md)
 * [Adding Custom Instructions to RISC-V GCC Toolchain](risc-v-soc/adding-custom-instructions-to-risc-v-gcc-toolchain.md)
 * [Kendryte K230 Bringup](risc-v-soc/kendryte-k230-bringup.md)
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
