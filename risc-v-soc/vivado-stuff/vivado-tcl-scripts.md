@@ -42,3 +42,15 @@ add_files -fileset constrs_1 /home/tk/Downloads/MinimalArty/Arty35T-Playground/A
 
 
 
+## Bitstream
+
+```
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+```
+
+
+
+
+
+
+
