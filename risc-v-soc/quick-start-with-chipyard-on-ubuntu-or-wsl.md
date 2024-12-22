@@ -18,27 +18,27 @@ Download Conda from the miniforge [release page](https://github.com/conda-forge/
 
 
 
-Select the corresponding version and download the file ending with ".sh".
+Select the corresponding Miniforge3 version and download the file ending with ".sh".
 
 <figure><img src="../.gitbook/assets/conda.png" alt=""><figcaption></figcaption></figure>
 
 After download, we need to mark the script as executable.&#x20;
 
 ```bash
-chmod +x ~/Downloads/Mambaforge-23.3.1-1-Linux-x86_64.sh
+chmod +x ~/Downloads/Miniforge3-24.11.0-0-Linux-x86_64.sh
 ```
 
 Then, execute the script.
 
 ```bash
-~/Downloads/Mambaforge-23.3.1-1-Linux-x86_64.sh
+~/Downloads/Miniforge3-24.11.0-0-Linux-x86_64.sh
 ```
 
-Follow the installation prompt. The program will prompt you to input the installation location. Here, we are using `/home/tk/Documents/mambaforge`.
+Follow the installation prompt. The program will prompt you to input the installation location. Here, we are using `/home/tk/Documents/miniforge3`.
 
 After installation, it will ask whether to execute `conda init`. Enter "yes" to the prompt.
 
-<figure><img src="../.gitbook/assets/conda (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 
 Conda is now installed on the system.
 
