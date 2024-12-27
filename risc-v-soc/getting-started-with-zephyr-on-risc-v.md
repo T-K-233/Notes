@@ -113,7 +113,7 @@ on windows
 
 
 ```bash
-pacman -s dtc
+pacman -S dtc
 ```
 
 
