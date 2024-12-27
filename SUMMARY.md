@@ -73,6 +73,7 @@
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
 * [Intel FPGA Quartus](risc-v-soc/intel-fpga-quartus.md)
 * [Setting up RVV Toolchain](risc-v-soc/setting-up-rvv-toolchain.md)
+* [Getting Started with Zephyr on RISC-V](risc-v-soc/getting-started-with-zephyr-on-risc-v.md)
 * [C Library Compile Magic](risc-v-soc/c-library-compile-magic.md)
 * [Setting up ExecuTorch on Ubuntu 22.04](risc-v-soc/setting-up-executorch-on-ubuntu-22.04/README.md)
   * [Executorch on ARM](risc-v-soc/setting-up-executorch-on-ubuntu-22.04/executorch-on-arm.md)
