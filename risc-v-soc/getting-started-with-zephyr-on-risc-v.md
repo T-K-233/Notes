@@ -106,13 +106,15 @@ on windows
 
 [https://github.com/ninja-build/ninja/releases](https://github.com/ninja-build/ninja/releases)
 
+[https://www.segger.com/downloads/jlink/](https://www.segger.com/downloads/jlink/)
+
+[https://7-zip.org/download.html](https://7-zip.org/download.html)
 
 
 
-
-
-
-
+```bash
+pacman -s dtc
+```
 
 
 
