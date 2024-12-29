@@ -22,19 +22,7 @@ cd ./riscv-gnu-toolchain/
 
 
 
-To enable fp16 support, we need GCC 14.1.0
-
-```bash
-cd ./gcc/
-
-# checkout to gcc 14.1.0 release tag
-git checkout releases/gcc-14.1.0
-
-# or do
-# git checkout cd0059a1976303638cea95f216de129334fc04d1
-
-cd ../
-```
+To enable fp16 support, we need GCC 14.1.0. By 2024-12-29, the source has already bumped to GCC 14.2, so we don't need to do anything here.
 
 
 
@@ -44,10 +32,11 @@ The gcc submodule is from [https://gcc.gnu.org/git/gcc.git](https://gcc.gnu.org/
 
 Configure the project
 
+{% code overflow="wrap" %}
 ```bash
-./configure --prefix=/scratch/tk^Cocuments/RISCV/riscv64-unknown-too
-lchain/ --with-cmodel=medany --enable-multilib
+./configure --prefix=/scratch/tk/Documents/RISCV/riscv64-unknown-toolchain/ --with-cmodel=medany --enable-multilib
 ```
+{% endcode %}
 
 
 
