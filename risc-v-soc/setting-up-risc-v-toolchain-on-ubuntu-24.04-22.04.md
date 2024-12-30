@@ -5,7 +5,7 @@
 Install dependencies
 
 ```bash
-sudo apt install build-essential gawk
+sudo apt install build-essential gawk texinfo
 ```
 
 
