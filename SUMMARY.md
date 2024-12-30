@@ -72,7 +72,7 @@
 * [Kendryte K230 Bringup](risc-v-soc/kendryte-k230-bringup.md)
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
 * [Intel FPGA Quartus](risc-v-soc/intel-fpga-quartus.md)
-* [Setting up RVV Toolchain](risc-v-soc/setting-up-rvv-toolchain.md)
+* [Setting up RISC-V Toolchain on Ubuntu 24.04/22.04](risc-v-soc/setting-up-risc-v-toolchain-on-ubuntu-24.04-22.04.md)
 * [Getting Started with Zephyr](risc-v-soc/getting-started-with-zephyr/README.md)
   * [Getting Start with Zephyr on RISC-V System - Windows](risc-v-soc/getting-started-with-zephyr/getting-start-with-zephyr-on-risc-v-system-windows.md)
   * [Getting Started with Zephyr on RISC-V - Ubuntu](risc-v-soc/getting-started-with-zephyr/getting-started-with-zephyr-on-risc-v-ubuntu.md)

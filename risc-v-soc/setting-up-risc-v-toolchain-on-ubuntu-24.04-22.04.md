@@ -1,6 +1,14 @@
-# Setting up RVV Toolchain
+# Setting up RISC-V Toolchain on Ubuntu 24.04/22.04
 
-Using Millennium A12 machine
+
+
+Install dependencies
+
+```bash
+sudo apt install build-essential gawk
+```
+
+
 
 
 
@@ -38,9 +46,11 @@ Configure the project
 ```
 {% endcode %}
 
+prefix should match the target installation directory, and must be in absolute path.
 
 
-And build
+
+Finally, build the project
 
 ```bash
 make -j16
@@ -48,7 +58,12 @@ make -j16
 
 
 
+The toolchain should be installed in the target directory. Add the following to \~/.bashrc to include them on PATH
 
+```bash
+export RISCV="/scratch/tk/Documents/RISCV/"
+export PATH="$RISCV/riscv64-unknown-toolchain/bin/:$PATH"
+```
 
 
 
