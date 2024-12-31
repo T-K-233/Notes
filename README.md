@@ -6,7 +6,7 @@
 
 Hi Hi!
 
-Welcome to my memory!
+Welcome to my non-volatile memory!
 
 I store everything I feel like need to memorize here, mostly technical stuff, but also some life hacks in general.
 
@@ -16,6 +16,6 @@ Questions? Comments? Concerns? I don't have a comment area here, but I am availa
 
 Cheers,
 
-\-T.K.-
+-T.K.-
 
 :D
