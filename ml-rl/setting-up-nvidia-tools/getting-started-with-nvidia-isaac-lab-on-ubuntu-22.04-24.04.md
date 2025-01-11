@@ -183,5 +183,32 @@ For example, this is the G1 robot joint order
 
 <figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 
+### File Watch Limit
 
+If running into file watch limit error like the one below:
+
+```bash
+[carb] Failed to create change watch for `xxxxx`: errno=28/No space left on device
+```
+
+
+
+Can increase the system file watch limit by running
+
+```bash
+echo fs.inotify.max_user_watches=1048576 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+```
+
+
+
+and examine the change:
+
+```bash
+cat /proc/sys/fs/inotify/max_user_watches
+```
+
+
+
+{% embed url="https://dev.to/rubiin/ubuntu-increase-inotify-watcher-file-watch-limit-kf4" %}
 
