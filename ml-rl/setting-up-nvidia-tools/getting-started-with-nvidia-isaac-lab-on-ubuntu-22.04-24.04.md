@@ -47,7 +47,7 @@ Install Python packages
 
 {% code overflow="wrap" %}
 ```bash
-pip install isaacsim-rl isaacsim-replicator isaacsim-extscache-physics isaacsim-extscache-kit-sdk isaacsim-extscache-kit isaacsim-app --extra-index-url https://pypi.nvidia.com
+pip install isaacsim[all,extscache]==4.5.0 --extra-index-url https://pypi.nvidia.com
 ```
 {% endcode %}
 
