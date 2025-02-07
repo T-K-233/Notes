@@ -60,7 +60,7 @@
   * [Booting BearlyML With External SPI Flash](risc-v-soc/other-chipyard-stuff/booting-bearlyml-with-external-spi-flash.md)
   * [Setting Up SD / microSD Card for vcu118 Linux Image](risc-v-soc/other-chipyard-stuff/setting-up-sd-microsd-card-for-vcu118-linux-image.md)
   * [More Chipyard Stuff](https://ucb-bar.gitbook.io/chipyard/)
-* [Setting up Minimal Chisel Development Environment with Mill](risc-v-soc/setting-up-minimal-chisel-development-environment-with-mill.md)
+* [A Minimal Chisel Development Environment with Mill](risc-v-soc/a-minimal-chisel-development-environment-with-mill.md)
 * [Vivado Stuff](risc-v-soc/vivado-stuff/README.md)
   * [Installing Xilinx Vivado on Ubuntu 22.04 / 24.04](risc-v-soc/vivado-stuff/installing-xilinx-vivado-on-ubuntu-22.04-24.04.md)
   * [Arty 35T / 100T UART Pins](risc-v-soc/vivado-stuff/arty-35t-100t-uart-pins.md)

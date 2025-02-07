@@ -1,8 +1,6 @@
-# Setting up Minimal Chisel Development Environment with Mill
+# A Minimal Chisel Development Environment with Mill
 
 The project is [here](https://github.com/ucb-bar/A-Minimal-Chisel-Project/tree/main), with instructions of setting everything up in the README file.&#x20;
-
-
 
 So here, instead of reiterrating the set up flow, we will document some design choices of doing things.
 
