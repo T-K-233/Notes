@@ -193,6 +193,7 @@
   * [Using 3DConnexion Mouse on Ubuntu with Python](tools/ubuntu/using-3dconnexion-mouse-on-ubuntu-with-python.md)
   * [Install Cursor the AI Editor on Ubuntu 22.04/24.04](tools/ubuntu/install-cursor-the-ai-editor-on-ubuntu-22.04-24.04.md)
   * [Solving the .nfsXXX file cannot be deleted issue](tools/ubuntu/solving-the-.nfsxxx-file-cannot-be-deleted-issue.md)
+  * [Windows Remote Desktop Issues](tools/ubuntu/windows-remote-desktop-issues.md)
   * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
