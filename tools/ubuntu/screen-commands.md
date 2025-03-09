@@ -48,3 +48,11 @@ Press `ESC` to resume normal operation
 
 
 
+enable normal scrolling:
+
+{% embed url="https://stackoverflow.com/questions/359109/using-the-scrollwheel-in-gnu-screen" %}
+
+
+
+
+
