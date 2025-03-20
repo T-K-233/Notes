@@ -81,7 +81,7 @@ Verify installation
 
 {% code overflow="wrap" %}
 ```bash
-python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --run_name example_run
+python scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --run_name example_run
 ```
 {% endcode %}
 
@@ -89,7 +89,7 @@ Train headless and record video
 
 {% code overflow="wrap" %}
 ```bash
-python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --video --video_length 100 --video_interval 2000 --headless
+python scripts/reinforcement_learning/rsl_rl/train.py --task Isaac-Velocity-Flat-G1-v0 --video --video_length 100 --video_interval 2000 --headless
 ```
 {% endcode %}
 
@@ -99,7 +99,7 @@ python source/standalone/workflows/rsl_rl/train.py --task Isaac-Velocity-Flat-G1
 
 {% code overflow="wrap" %}
 ```bash
-python source/standalone/workflows/rsl_rl/play.py --task Isaac-Velocity-Flat-G1-v0 --num_envs 4
+python scripts/reinforcement_learning/rsl_rl/play.py --task Isaac-Velocity-Flat-G1-v0 --num_envs 4
 ```
 {% endcode %}
 
