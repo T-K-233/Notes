@@ -59,7 +59,7 @@ Connect USB keyboard and mouse, and the DisplayPort port to a monitor.
 
 Connect to the host computer with the provided USB Type-C to Type A cable using the port near the 40 pin header.
 
-Lastly, connect the USB Type-C power cable.
+Lastly, while **holding the recovery button** (middle button), connect the USB Type-C power cable. The device will enter recover mode and can be detected on the USB port.
 
 
 
@@ -116,6 +116,14 @@ sudo apt show nvidia-jetpack -a
 ```
 
 
+
+
+
+
+
+## Reference
+
+[https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/two\_ways\_to\_set\_up\_software.html](https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/two_ways_to_set_up_software.html)
 
 
 
