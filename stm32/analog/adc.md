@@ -40,7 +40,7 @@ $$
 \frac{80 MHz}{(79 + 1) \times (999 + 1)} = 1 kHz
 $$
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 
 

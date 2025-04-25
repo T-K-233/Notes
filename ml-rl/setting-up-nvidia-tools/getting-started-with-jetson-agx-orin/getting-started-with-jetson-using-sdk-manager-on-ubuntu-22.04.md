@@ -2,9 +2,9 @@
 description: The finale version, after many, many attempts
 ---
 
-# Getting Started with Jetson AGX Orin and Ubuntu 22.04
+# Getting Started with Jetson Using SDK Manager on Ubuntu 22.04
 
-This tutorial will cover how to install Ubuntu 22.04 on NVIDIA Jetson AGX Orin with the NVIDIA software tools.
+This tutorial will cover how to install Ubuntu 22.04 on NVIDIA Jetson AGX Orin and Jetson Orin NX with the NVIDIA SDK Manager.
 
 The NVIDIA Jetson AGX Orin ships with Ubuntu 20.04 with relatively easy setup procedures for NVIDIA drivers and tools. If this is sufficient for your application, please refer to this tutorial instead:
 
@@ -16,18 +16,16 @@ The NVIDIA Jetson AGX Orin ships with Ubuntu 20.04 with relatively easy setup pr
 
 ## Requirements
 
-* NVIDIA Jetson AGX Orin Development Kit and its accessories.
+* NVIDIA Jetson AGX Orin Development Kit or NVIDIA Jetson Orin NX Development Kit and its accessories.
 * DisplayPort cable and a compatible monitor.
 * USB Type A keyboard and mouse
 * A Linux host computer with Ubuntu 22.04 or 20.04.
 
-{% hint style="danger" %}
-**WARNING**
-
-Ubuntu 24.04 is not supported as of 2024-11-05.
-{% endhint %}
 
 
+NVIDIA SDK Manager has strict requirement on the host OS version. The system compatibility matrix is available from the [SDK Manager website](https://developer.nvidia.com/sdk-manager):
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -53,7 +51,7 @@ Launch SDKManager from the app search page.
 
 ## Hardware Connection
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Connect USB keyboard and mouse, and the DisplayPort port to a monitor.
 
@@ -103,6 +101,34 @@ If it cannot find the device through the USB connection, try Ethernet connection
 
 
 
+{% hint style="info" %}
+## Note
+
+Sometimes it will report this error:
+
+{% code overflow="wrap" %}
+```sh
+ERROR Flash Jetson Linux - flash: exportfs: Failed to stat /home/tk/Downloads/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/: No such file or directory
+```
+{% endcode %}
+
+In case this happens, a possible solutions is as follows.
+
+```bash
+sudo nano /etc/exports
+```
+
+Remove ALL the uncommented lines in the file.
+
+<img src="../../../.gitbook/assets/image (7).png" alt="" data-size="original">\
+\
+Then, try the installation again.
+{% endhint %}
+
+
+
+
+
 The rest of the installation takes about one hour to finish.
 
 <figure><img src="../../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
@@ -124,6 +150,12 @@ sudo apt show nvidia-jetpack -a
 ## Reference
 
 [https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/two\_ways\_to\_set\_up\_software.html](https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/two_ways_to_set_up_software.html)
+
+
+
+
+
+
 
 
 

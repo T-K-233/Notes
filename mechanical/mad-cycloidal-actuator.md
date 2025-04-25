@@ -97,7 +97,7 @@ writeDXF("cycloidal_profile.dxf", fit_points, ref_circle_radius=31)
 
 Go in an active sketch plane
 
-![](<../.gitbook/assets/image (8) (1) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1) (1).png>)
 
 Run the following script:
 
@@ -310,10 +310,6 @@ To adapt to the motor we are using, we need to edit the model a bit.
 
 {% embed url="https://www.amazon.com/dp/B082W5B5LZ?psc=1&ref=ppx_yo2ov_dt_b_product_details" %}
 
-<div align="center">
-
-<img src="../.gitbook/assets/image (25) (1).png" alt="">
-
-</div>
+<div align="center"><img src="../.gitbook/assets/image (25) (1).png" alt=""></div>
 
 ![](<../.gitbook/assets/image (100).png>)
