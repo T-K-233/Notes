@@ -6,7 +6,7 @@ Setup
 
 ADC is configured to sample one regular channel, trigger sourced set to Timer 2 TRGO event.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 DMA is configured to use normal mode and 16bit transfer size.
 

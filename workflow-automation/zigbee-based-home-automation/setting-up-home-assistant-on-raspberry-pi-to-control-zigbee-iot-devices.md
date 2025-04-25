@@ -44,7 +44,7 @@ In Settings -> integrations, add MQTT integration
 
 Select MQTT
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We will use the provided mosquitto broker to connect the MQTT to Home Assistant service.
 

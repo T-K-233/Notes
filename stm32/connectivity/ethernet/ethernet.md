@@ -14,7 +14,7 @@ Set ETH mode to RMII, and make sure the pin mapping corresponds to the one on th
 
 On the F429ZI Nucleo board, the pin mapping should look as follows.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="NUCLEO-H755ZI" %}

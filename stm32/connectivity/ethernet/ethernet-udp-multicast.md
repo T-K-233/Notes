@@ -14,7 +14,7 @@ Also make sure "MEMP\_NUM\_IGMP\_GROUP" is greater than 1. Here it's defaulted t
 
 Then, in General Settings, enable "LWIP\_IGMP".
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
