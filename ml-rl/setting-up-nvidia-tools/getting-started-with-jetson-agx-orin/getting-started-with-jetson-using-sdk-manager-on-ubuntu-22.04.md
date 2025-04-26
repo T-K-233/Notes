@@ -155,6 +155,16 @@ sudo apt show nvidia-jetpack -a
 
 
 
+### Starting over
+
+To remove all the existing configurations of the SDK Manager, run the following command
+
+```
+rm -rf ~/.nvsdkm/
+```
+
+
+
 
 
 
