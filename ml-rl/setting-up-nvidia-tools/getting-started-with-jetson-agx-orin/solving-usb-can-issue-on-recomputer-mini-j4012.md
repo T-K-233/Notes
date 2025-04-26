@@ -22,9 +22,23 @@ Useful links
 
 
 
+Here, we assume that SDK Manager is used to prepare the Jetson SDK and toolchain.
+
+The installation directory is assumed to be at&#x20;
+
+```
+/home/tk/nvidia/nvidia_sdk/
+```
+
+and the download folder to be at
+
+```
+/home/tk/Downloads/nvidia/sdkm_downloads
+```
 
 
 
+Sync the Kernel Sources with Git
 
 {% code overflow="wrap" %}
 ```
@@ -36,21 +50,23 @@ cd /home/tk/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for
 
 
 
-release note is found here:
-
-[https://docs.nvidia.com/jetson/archives/r36.4.3/ReleaseNotes/Jetson\_Linux\_Release\_Notes\_r36.4.3.pdf](https://docs.nvidia.com/jetson/archives/r36.4.3/ReleaseNotes/Jetson_Linux_Release_Notes_r36.4.3.pdf)
+release note can be found from [Jetson Linux Release Notes](https://docs.nvidia.com/jetson/archives/r36.4.3/ReleaseNotes/Jetson_Linux_Release_Notes_r36.4.3.pdf)
 
 
 
 
 
-to buiuld rt kernel
+
+
+to build rt kernel
 
 ```
 ./generic_rt_build.sh "enable"
 ```
 
 
+
+Change module settings
 
 ```
 nano ./kernel/kernel-jammy-src/arch/arm64/configs/defconfig
@@ -85,28 +101,32 @@ Download toolchain
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+and then do
 
+```bash
+tar xf aarch64--glibc--stable-2022.08-1.tar.bz2 
+```
+
+
+
+### Building the Jetson Linux Kernel
 
 {% code overflow="wrap" %}
-```
-tar xf aarch64--glibc--stable-2022.08-1.tar.bz2 
-
-export CROSS_COMPILE=/home/tk/Downloads/aarch64--glibc--stable-2022.08-1/bin/aarch64-buildroot-linux-gnu-
+```bash
+export CROSS_COMPILE=/home/tk/nvidia/nvidia_sdk/aarch64--glibc--stable-2022.08-1/bin/aarch64-buildroot-linux-gnu-
 ```
 {% endcode %}
 
 
 
-
-
-```
+```bash
 make -C kernel
 ```
 
 
 
 {% code overflow="wrap" %}
-```
+```bash
 export INSTALL_MOD_PATH=/home/tk/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/rootfs
 
 sudo -E make install -C ./kernel/
@@ -120,6 +140,12 @@ cp ./kernel/kernel-jammy-src/arch/arm64/boot/Image /home/tk/nvidia/nvidia_sdk/Je
 
 
 Modules
+
+```
+cd <install-path>/Linux_for_Tegra/source
+```
+
+
 
 
 
@@ -138,9 +164,13 @@ sudo -E make modules_install
 {% endcode %}
 
 ```
-cd ..
-sudo ./tools/l4t_update_initrd.sh
 ```
+
+
+
+Lastly, flash with SDK Manager.
+
+
 
 
 
