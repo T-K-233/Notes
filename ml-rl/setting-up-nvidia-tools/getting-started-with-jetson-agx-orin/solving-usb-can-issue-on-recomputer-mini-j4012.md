@@ -87,6 +87,20 @@ CONFIG_CAN_RCAR_CANFD=m
 
 
 
+Additionally, enable CH340 device driver support by adding
+
+```diff
+CONFIG_USB_SERIAL=m
+CONFIG_USB_SERIAL_CP210X=m
++ CONFIG_USB_SERIAL_CH341=m
+CONFIG_USB_SERIAL_FTDI_SIO=m
+CONFIG_USB_SERIAL_OPTION=m
+```
+
+
+
+
+
 ```
 sudo apt-get install make build-essential libncurses-dev bison flex libssl-dev libelf-dev
 ```
