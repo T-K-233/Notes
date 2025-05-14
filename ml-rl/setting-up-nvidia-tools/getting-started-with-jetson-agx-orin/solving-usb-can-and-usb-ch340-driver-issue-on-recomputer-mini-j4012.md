@@ -1,4 +1,4 @@
-# Solving USB-CAN Issue on reComputer Mini J4012
+# Solving USB-CAN and USB CH340 Driver Issue on reComputer Mini J4012
 
 Official wiki guide:
 
@@ -10,13 +10,21 @@ It seems that gs\_usb is not included by default on Jetpack 6.X.
 
 
 
-Useful links
+Useful links for USB-CAN
 
 [https://forums.developer.nvidia.com/t/does-jetpack-6-0-not-support-gs-usb-usb-to-can/328702](https://forums.developer.nvidia.com/t/does-jetpack-6-0-not-support-gs-usb-usb-to-can/328702)
 
 [https://forums.developer.nvidia.com/t/missing-gs-usb-kernel-module-for-jetpack-6/275287/7](https://forums.developer.nvidia.com/t/missing-gs-usb-kernel-module-for-jetpack-6/275287/7)
 
 [https://forums.developer.nvidia.com/t/flashing-orion-nx-on-seed-recomputer-j4012-success/290669](https://forums.developer.nvidia.com/t/flashing-orion-nx-on-seed-recomputer-j4012-success/290669)
+
+
+
+Useful links for CH340 Driver
+
+[https://forums.developer.nvidia.com/t/issue-with-ch340-usb-to-serial-converter-not-creating-device-files-on-jetson-orin-nano-super/326022](https://forums.developer.nvidia.com/t/issue-with-ch340-usb-to-serial-converter-not-creating-device-files-on-jetson-orin-nano-super/326022)
+
+[https://nvidia-jetson.piveral.com/jetson-orin-nano/orin-nano-wont-detect-arduino-dev-ttyusb-or-dev-ttyacm/](https://nvidia-jetson.piveral.com/jetson-orin-nano/orin-nano-wont-detect-arduino-dev-ttyusb-or-dev-ttyacm/)
 
 
 
@@ -183,6 +191,67 @@ sudo -E make modules_install
 
 
 Lastly, flash with SDK Manager.
+
+
+
+
+
+
+
+after boot, do
+
+```
+sudo modprobe ch341
+```
+
+
+
+on jetson it might conflict with brltty:
+
+can use this command to see system log when plugging and unplugging the device:
+
+```
+sudo dmesg --follow
+```
+
+```
+[ 3763.532473] tegra-xusb 3610000.usb: Firmware timestamp: 2023-02-10 03:48:10 UTC
+[ 3763.827034] usb 3-4: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
+[ 3763.834483] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+[ 3763.834546] ch341 3-4:1.0: device disconnected
+[ 3794.251698] usb 3-4: USB disconnect, device number 16
+[ 3796.370012] usb 3-4: new full-speed USB device number 17 using xhci_hcd
+[ 3796.553318] ch341 3-4:1.0: ch341-uart converter detected
+[ 3796.567375] usb 3-4: ch341-uart converter now attached to ttyUSB0
+[ 3796.660855] tegra-xusb 3610000.usb: Firmware timestamp: 2023-02-10 03:48:10 UTC
+[ 3796.958238] usb 3-4: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
+[ 3796.965900] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+[ 3796.965957] ch341 3-4:1.0: device disconnected
+```
+
+
+
+* **`usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1`**: This suggests a conflict. The CH341 driver claimed the USB interface, but **`brltty`**, a service for braille terminals, also attempted to set the USB configuration at the same time.
+* **`brltty` interfered**: This conflict caused the CH341 device to become unstable or be disconnected.
+
+when this happens, `/dev/ttyUSB`  will not appear.
+
+To resolve this, stop and permanently disable brltty:
+
+```
+sudo systemctl stop brltty
+sudo systemctl disable brltty
+```
+
+
+
+If this **still** does not solve the problem, consider uninstall brltty:
+
+```
+sudo apt remove brltty
+```
+
+
 
 
 
