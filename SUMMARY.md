@@ -54,6 +54,7 @@
 
 * [RISC-V: Baremetal From The Ground Up (Chipyard Edition)](risc-v-soc/risc-v-baremetal-from-the-ground-up-chipyard-edition.md)
 * [Quick Start With Chipyard on Ubuntu or WSL](risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
+* [PPA](risc-v-soc/ppa.md)
 * [Other Chipyard Stuff](risc-v-soc/other-chipyard-stuff/README.md)
   * [Debugging OsciArty with JTAG and command line GDB](risc-v-soc/other-chipyard-stuff/gdb-debugging-osciarty.md)
   * [Debugging BearlyML with JTAG and GDB](risc-v-soc/other-chipyard-stuff/jtag-and-gdb-debugging-bearlyml.md)
@@ -71,7 +72,6 @@
 * [Adding Custom Instructions to RISC-V GCC Toolchain](risc-v-soc/adding-custom-instructions-to-risc-v-gcc-toolchain.md)
 * [Kendryte K230 Bringup](risc-v-soc/kendryte-k230-bringup.md)
   * [K230 EVB Board Resource Overview](risc-v-soc/kendryte-k230-bringup/k230-evb-board-resource-overview.md)
-* [Intel FPGA Quartus](risc-v-soc/intel-fpga-quartus.md)
 * [Setting up RISC-V Toolchain on Ubuntu 24.04/22.04](risc-v-soc/setting-up-risc-v-toolchain-on-ubuntu-24.04-22.04.md)
 * [Getting Started with Zephyr](risc-v-soc/getting-started-with-zephyr/README.md)
   * [Getting Start with Zephyr on RISC-V System - Windows](risc-v-soc/getting-started-with-zephyr/getting-start-with-zephyr-on-risc-v-system-windows.md)
