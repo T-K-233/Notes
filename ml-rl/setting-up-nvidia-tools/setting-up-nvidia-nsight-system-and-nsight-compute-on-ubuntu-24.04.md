@@ -46,6 +46,11 @@ Launch Nsight Compute
 
 
 
+### Uninstall
+
+To uninstall the NVIDIA Nsight Compute, please delete "/usr/local/NVIDIA-Nsight-Compute-2025.2" and remove symlink at "/usr/local/NVIDIA-Nsight-Compute"\
+
+
 
 
 ## Install Nsight Systems
@@ -76,6 +81,11 @@ Launch Nsight Systems
 sudo /opt/nvidia/nsight-systems/2024.6.1/bin/nsys-ui
 ```
 
+
+
+### Uninstall
+
+To uninstall the Nsight Systems 2025.3.1, please delete "/opt/nvidia/nsight-systems/2025.3.1"\
 
 
 
