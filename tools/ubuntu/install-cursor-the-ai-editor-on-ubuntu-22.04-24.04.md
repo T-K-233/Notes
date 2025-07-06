@@ -1,20 +1,6 @@
 ---
 cover: ../../.gitbook/assets/image (227).png
 coverY: 143.150498381877
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Install Cursor the AI Editor on Ubuntu 22.04/24.04
