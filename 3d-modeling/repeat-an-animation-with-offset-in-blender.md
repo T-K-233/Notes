@@ -62,7 +62,7 @@ Now we can see that the green Y-axis value keeps increasing / decreasing indefin
 
 
 
-Final note: this modifier is compatible with our Python API that reads the pose bone values, hence can be used in the PoseLib reference motion generation pipeline.
+Final note: this modifier is compatible with our Python API that reads the pose bone values, hence can be used in the PoseLib-V2 reference motion generation pipeline.
 
 
 
