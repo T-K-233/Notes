@@ -1,4 +1,4 @@
-# Setting up NVIDIA Driver on Ubuntu 22.04 / 20.04
+# Setting up NVIDIA Driver on Ubuntu 24.04 / 22.04
 
 ## Installing NVIDIA Driver
 
@@ -94,6 +94,37 @@ Wed Mar 20 15:09:06 2024
 ```
 
 
+
+
+
+## Uninstall Incorrect Version
+
+When the NVML version does not match the driver version, `nvidia-smi` will prompt an error.
+
+To resolve this, we need to first see what is the expected version by running this command:
+
+```bash
+cat /proc/driver/nvidia/version
+```
+
+
+
+Then, completely remove the existing driver by running these commands:
+
+```bash
+sudo apt-get --purge remove "*nvidia*"
+sudo /usr/bin/nvidia-uninstall
+```
+
+
+
+After removing, install the correct driver from the GUI interface.
+
+
+
+
+
+[https://stackoverflow.com/questions/43022843/nvidia-nvml-driver-library-version-mismatch](https://stackoverflow.com/questions/43022843/nvidia-nvml-driver-library-version-mismatch)
 
 
 

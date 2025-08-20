@@ -102,7 +102,7 @@
 ## ML/RL
 
 * [Setting up NVIDIA Tools](ml-rl/setting-up-nvidia-tools/README.md)
-  * [Setting up NVIDIA Driver on Ubuntu 22.04 / 20.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md)
+  * [Setting up NVIDIA Driver on Ubuntu 24.04 / 22.04](ml-rl/setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-24.04-22.04.md)
   * [Getting Started with NVIDIA Isaac Lab on Ubuntu 22.04 / 24.04](ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md)
   * [Setting up Omniverse on Ubuntu 24.04 (2025 Ver)](ml-rl/setting-up-nvidia-tools/setting-up-omniverse-on-ubuntu-24.04-2025-ver.md)
   * [Creating Custom Training Environment in IsaacLab via Extensions](ml-rl/setting-up-nvidia-tools/creating-custom-training-environment-in-isaaclab-via-extensions.md)

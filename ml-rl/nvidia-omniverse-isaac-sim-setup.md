@@ -1,4 +1,4 @@
-# \[Deprecated] Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04
+# Setting up NVIDIA Omniverse Isaac Sim on Ubuntu 22.04 / 20.04
 
 {% hint style="warning" %}
 **2024-07-20 Update:**
@@ -16,8 +16,8 @@ Ubuntu 22.04 with [standard install](https://notes.tk233.xyz/tools/ubuntu-22.04-
 
 ## Prerequisite: NVIDIA Driver
 
-{% content-ref url="setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md" %}
-[setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md](setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-22.04-20.04.md)
+{% content-ref url="setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-24.04-22.04.md" %}
+[setting-up-nvidia-driver-on-ubuntu-24.04-22.04.md](setting-up-nvidia-tools/setting-up-nvidia-driver-on-ubuntu-24.04-22.04.md)
 {% endcontent-ref %}
 
 
