@@ -197,6 +197,7 @@
   * [Install Cursor the AI Editor on Ubuntu 22.04/24.04](tools/ubuntu/install-cursor-the-ai-editor-on-ubuntu-22.04-24.04.md)
   * [Solving the .nfsXXX file cannot be deleted issue](tools/ubuntu/solving-the-.nfsxxx-file-cannot-be-deleted-issue.md)
   * [Windows Remote Desktop Issues](tools/ubuntu/windows-remote-desktop-issues.md)
+  * [Setting up SteamVR on Ubuntu 24.04](tools/ubuntu/setting-up-steamvr-on-ubuntu-24.04.md)
   * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [Lab Automation](tools/lab-automation.md)
 * [Github-Related Info](tools/github-related-info.md)
