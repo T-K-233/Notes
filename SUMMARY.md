@@ -142,7 +142,7 @@
 * [Google Colab](ml-rl/google-colab/README.md)
   * [Colab Resource Options](ml-rl/google-colab/colab-resource-options.md)
   * [so-vits-svc 4.0: Colab Flow](ml-rl/google-colab/so-vits-svc-4.0-colab-flow.md)
-* [URDF to MJCF Mujoco Notes](ml-rl/urdf-to-mjcf-mujoco-notes.md)
+* [Notes on URDF and MJCF](ml-rl/notes-on-urdf-and-mjcf.md)
 * [OnShape to URDF](ml-rl/onshape-to-urdf.md)
 * [Audio Stuff](ml-rl/audio-stuff/README.md)
   * [Microsoft TTS](ml-rl/audio-stuff/microsoft-tts.md)
