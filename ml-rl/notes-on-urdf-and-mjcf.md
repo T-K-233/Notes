@@ -8,9 +8,7 @@ It is important to note the slight differences between the URDF and MJCF formats
 
 URDF defines a box size with the three side lengths, while MJCF specifies **half-size** length.
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 
 
