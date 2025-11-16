@@ -1,13 +1,12 @@
 # Adding Custom Instructions to RISC-V GCC Toolchain
 
-
+First, clone these repos:
 
 ```bash
 git clone git@github.com:riscv-collab/riscv-gnu-toolchain.git
+cd ./riscv-gnu-toolchain/
 git submodule update --init --recursive
 ```
-
-
 
 ```bash
 git clone git@github.com:riscv/riscv-opcodes.git
@@ -15,9 +14,11 @@ git clone git@github.com:riscv/riscv-opcodes.git
 
 
 
+First, we are going to use `riscv-opcodes` to generate the encoding of our custom instruction.
 
+Under `extensions/unratified/`, create a new file for the new instruction. We will use `rv_testinst`  as an example
 
-Create a new file for the new instruction. We will use `rv_zbme`
+Inside the file, we have our custom instruction:
 
 ```bash
 testinst    rd rs1 rs2 31..25=1  14..12=0 6..2=0x1A 1..0=3
@@ -25,8 +26,10 @@ testinst    rd rs1 rs2 31..25=1  14..12=0 6..2=0x1A 1..0=3
 
 
 
+Then, run the following command to generate C header for this instriction:
+
 ```bash
-./parse.py -c ./unratified/rv_zbme
+uv run riscv_opcodes -c "unratified/rv_testinst"
 ```
 
 
@@ -46,44 +49,130 @@ In the resulting encoding.out.h file, we can see the custom instruction:
 
 
 
-
-
-Then, we go to riscv-gnu-toolchain/binutils.
+Then, we go to riscv-gnu-toolchain repo.
 
 We need to edit the following files:
 
+`./binutils/bfd/elfxx-riscv.c`
+
+`./binutils/include/opcode/riscv-opc.h`
+
+`./binutils/include/opcode/riscv.h`
+
+`./gcc/gcc/common/config/riscv/riscv-common.cc`
 
 
 
+and also the files in `./gdb` that is similar to binutils.
 
-{% code title="riscv-op.h" overflow="wrap" %}
-```c
-#define MATCH_TESTINST 0x200006b
-#define MASK_TESTINST 0xfe00707f
 
-DECLARE_INSN(testinst, MATCH_TESTINST, MASK_TESTINST)
 
+{% code title="./binutils/bfd/elfxx-riscv.c" %}
+```diff
+static struct riscv_supported_ext riscv_supported_vendor_x_ext[] =
+{
+  {"xcvalu",		ISA_SPEC_CLASS_DRAFT,	1, 0, 0 },
+  ...
++  {"xtestinst",		ISA_SPEC_CLASS_DRAFT,	1, 0, 0 },
+
+...
+
+/* Each instuction is belonged to an instruction class INSN_CLASS_*.
+   Call riscv_subset_supports to make sure if the instuction is valid.  */
+
+bool
+riscv_multi_subset_supports (riscv_parse_subset_t *rps,
+			     enum riscv_insn_class insn_class)
+{
+  switch (insn_class)
+    {
+    case INSN_CLASS_I:
+      return riscv_subset_supports (rps, "i");
+    ...
++    case INSN_CLASS_XTESTINST:
++      return riscv_subset_supports (rps, "xtestinst");
+
+...
+
+/* Each instuction is belonged to an instruction class INSN_CLASS_*.
+   Call riscv_subset_supports_ext to determine the missing extension.  */
+
+const char *
+riscv_multi_subset_supports_ext (riscv_parse_subset_t *rps,
+				 enum riscv_insn_class insn_class)
+{
+  switch (insn_class)
+    {
+    case INSN_CLASS_I:
+      return "i";
+    ...
++    case INSN_CLASS_XPENGUIN:
++      return "xpenguin";
 ```
 {% endcode %}
 
 
 
-{% code title="riscv-op.c" overflow="wrap" %}
-```c
-{"testinst", 0, INSN_CLASS_I,       "d,s,t",         MATCH_TESTINST, MASK_TESTINST, match_opcode, 0 },
+{% code title="./binutils/include/opcode/riscv-opc.h" %}
+```diff
+...
+#define MASK_CV_SUB_DIV4           0xfe00707f
+#define MASK_CV_SUB_DIV8           0xfe00707f
+/* Vendor-specific (UC Berkeley) Xpenguin custom instructions.  */
++ #define MATCH_TESTINST 0x200006b
++ #define MASK_TESTINST 0xfe00707f
+...
 
+
+/* Smrnmi instruction */
+DECLARE_INSN(mnret, MATCH_MNRET, MASK_MNRET)
++ /* Vendor-specific (UC Berkeley) Xpenguin custom instructions.  */
++ DECLARE_INSN(testinst, MATCH_TESTINST, MASK_TESTINST)
+```
+{% endcode %}
+
+{% code title="./binutils/include/opcode/riscv.h" %}
+```diff
+
+/* All RISC-V instructions belong to at least one of these classes.  */
+enum riscv_insn_class
+{
+  INSN_CLASS_NONE,
+  ...
+  INSN_CLASS_XCVSIMD,
++  INSN_CLASS_XPENGUIN,
+  INSN_CLASS_XTHEADBA,
+```
+{% endcode %}
+
+{% code title="./binutils/include/opcode/riscv.h" %}
+```diff
+...
+{"cv.sub.div8",           0, INSN_CLASS_XCVSIMD, "d,s,t", MATCH_CV_SUB_DIV8, MASK_CV_SUB_DIV8, match_opcode, 0},
+
++ /* Vendor-specific (UC Berkeley) Xpenguin custom instructions.  */
++ {"testinst", 0, INSN_CLASS_XPENGUIN,       "d,s,t",         MATCH_TESTINST, MASK_TESTINST, match_opcode, 0 },
+
+/* Vendor-specific (T-Head) XTheadBa instructions.  */
+{"th.addsl",    0, INSN_CLASS_XTHEADBA,    "d,s,t,Xtu2@25",   MATCH_TH_ADDSL,    MASK_TH_ADDSL,    match_opcode, 0},
+...
 ```
 {% endcode %}
 
 
 
-Make the same edit in
-
-riscv-gnu-toolchain/gdb/opcodes/riscv-opc.c
-
-riscv-gnu-toolchain/gdb/include/opcode/riscv-opc.h
 
 
+{% code title="./gcc/gcc/common/config/riscv/riscv-common.cc" %}
+```diff
+
+  {"xcvbi", ISA_SPEC_CLASS_NONE, 1, 0},
+
++  {"xpenguin", ISA_SPEC_CLASS_NONE, 1, 0},
+
+  {"xtheadba", ISA_SPEC_CLASS_NONE, 1, 0},
+```
+{% endcode %}
 
 
 
@@ -96,11 +185,15 @@ Build
 make
 ```
 
+Optionally, enable multilib
+
 {% code overflow="wrap" %}
 ```bash
 ./configure --prefix=/scratch/tk/Desktop/riscv-matrix/riscv-unknown-elf/ --with-cmodel=medany --enable-multilib
 ```
 {% endcode %}
+
+
 
 
 
