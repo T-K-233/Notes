@@ -4,7 +4,7 @@
 
 ## Hardware connection
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Connect to the host computer with the provided USB Type-C to Type A cable using the port near the 40 pin header.
 
@@ -50,7 +50,7 @@ download these two files on the host system
 
 {% embed url="https://developer.nvidia.com/embedded/jetson-linux-r3640" %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -94,7 +94,7 @@ Alternatively, hold down the recovery button, and plug in the power cable. To en
 
 Confirm the device is in force recovery mode
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \[[website](https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/IN/QuickStart.html#to-determine-whether-the-developer-kit-is-in-force-recovery-mode)]
 
@@ -104,7 +104,7 @@ Confirm the device is in force recovery mode
 lsusb
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Yes
 
@@ -122,7 +122,7 @@ sudo ./flash.sh jetson-agx-orin-devkit internal
 
 After flashing, it will automatically reset the device and boot it up.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

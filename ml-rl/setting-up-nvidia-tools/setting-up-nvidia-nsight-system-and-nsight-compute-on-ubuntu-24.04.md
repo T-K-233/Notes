@@ -32,7 +32,7 @@ sudo ~/Downloads/nsight-compute-linux-2024.3.2.3-34861637.run
 
 The default installation directory is `/usr/local/NVIDIA-Nsight-Compute-2024.3/`
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -48,8 +48,7 @@ Launch Nsight Compute
 
 ### Uninstall
 
-To uninstall the NVIDIA Nsight Compute, please delete "/usr/local/NVIDIA-Nsight-Compute-2025.2" and remove symlink at "/usr/local/NVIDIA-Nsight-Compute"\
-
+To uninstall the NVIDIA Nsight Compute, please delete "/usr/local/NVIDIA-Nsight-Compute-2025.2" and remove symlink at "/usr/local/NVIDIA-Nsight-Compute"<br>
 
 
 
@@ -71,7 +70,7 @@ Default installation directory is `/opt/nvidia/nsight-systems/2024.6.1/`
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -85,8 +84,7 @@ sudo /opt/nvidia/nsight-systems/2024.6.1/bin/nsys-ui
 
 ### Uninstall
 
-To uninstall the Nsight Systems 2025.3.1, please delete "/opt/nvidia/nsight-systems/2025.3.1"\
-
+To uninstall the Nsight Systems 2025.3.1, please delete "/opt/nvidia/nsight-systems/2025.3.1"<br>
 
 
 

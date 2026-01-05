@@ -166,6 +166,7 @@
 * [Repeat an Animation with Offset in Blender](3d-modeling/repeat-an-animation-with-offset-in-blender.md)
 * [Blender Python Related](3d-modeling/blender-python-related.md)
 * [VRoid, MMD, Blender Workflow](3d-modeling/vroid-mmd-blender-workflow.md)
+* [Making a Finger](3d-modeling/making-a-finger.md)
 
 ## Tools
 
