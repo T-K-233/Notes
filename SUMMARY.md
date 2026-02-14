@@ -273,5 +273,6 @@
 
 ## Life
 
+* [Tesla Lock Chimes](life/tesla-lock-chimes.md)
 * [Some Interview Questions](life/some-interview-questions.md)
 * [Health Insurance](life/page-4.md)
