@@ -222,6 +222,7 @@
 * [Setting up SteamVR without HMD](tools/setting-up-steamvr-without-hmd.md)
 * [CMake Best Practices](tools/cmake-best-practices.md)
 * [Adobe Premiere Pro Audio Level Settings](tools/adobe-premiere-pro-audio-level-settings.md)
+* [AprilTag Tracking with Python](tools/apriltag-tracking-with-python.md)
 
 ## Mechanical
 
