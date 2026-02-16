@@ -25,7 +25,7 @@ The NVIDIA Jetson AGX Orin ships with Ubuntu 20.04 with relatively easy setup pr
 
 NVIDIA SDK Manager has strict requirement on the host OS version. The system compatibility matrix is available from the [SDK Manager website](https://developer.nvidia.com/sdk-manager):
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -45,13 +45,13 @@ sudo apt install ~/Downloads/sdkmanager_2.2.0-12021_amd64.deb
 
 Launch SDKManager from the app search page.
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2024-11-05 21-50-11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2024-11-05 21-50-11.png" alt=""><figcaption></figcaption></figure>
 
 
 
 ## Hardware Connection
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Connect USB keyboard and mouse, and the DisplayPort port to a monitor.
 
@@ -67,25 +67,29 @@ After connecting the hardware and powering up the device, it should automaticall
 
 Select the correct device type.
 
-<figure><img src="../../../.gitbook/assets/Screenshot from 2024-11-05 21-50-48.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot from 2024-11-05 21-50-48.png" alt=""><figcaption></figcaption></figure>
 
 
 
 Choose the desired component to install. Here we select everything.
 
-<figure><img src="../../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+We assume the download directory is set to  `~/Downloads/nvidia/sdkm_downloads/`, and the final SDK installation directory at `~/Documents/nvidia/nvidia_sdk/`.
+
+(image is not showing the correct paths).
+
+<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 
 
 After entering the system password, it will begin to download and install the components.
 
-<figure><img src="../../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
 After it's done, it will prompt to configure the account information and ask for the installation location.
 
 We will install to the built-in eMMC device.
 
-<figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -95,7 +99,7 @@ When this happens, the SDKManager on the host computer will create this prompt.
 
 Wait until the Jetson boots up fully, then log into the system, and then click Install on the host side.
 
-<figure><img src="../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 If it cannot find the device through the USB connection, try Ethernet connection instead.
 
@@ -108,7 +112,7 @@ Sometimes it will report this error:
 
 {% code overflow="wrap" %}
 ```sh
-ERROR Flash Jetson Linux - flash: exportfs: Failed to stat /home/tk/Downloads/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/: No such file or directory
+ERROR Flash Jetson Linux - flash: exportfs: Failed to stat /home/tk/Documents/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/: No such file or directory
 ```
 {% endcode %}
 
@@ -120,7 +124,7 @@ sudo nano /etc/exports
 
 Remove ALL the uncommented lines in the file.
 
-<img src="../../../.gitbook/assets/image (7).png" alt="" data-size="original">\
+<img src="../../.gitbook/assets/image (7).png" alt="" data-size="original">\
 \
 Then, try the installation again.
 {% endhint %}
@@ -131,7 +135,7 @@ Then, try the installation again.
 
 The rest of the installation takes about one hour to finish.
 
-<figure><img src="../../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
 
 

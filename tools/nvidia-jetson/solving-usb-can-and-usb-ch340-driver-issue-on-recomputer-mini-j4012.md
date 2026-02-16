@@ -35,13 +35,13 @@ Here, we assume that SDK Manager is used to prepare the Jetson SDK and toolchain
 The installation directory is assumed to be at&#x20;
 
 ```
-/home/tk/nvidia/nvidia_sdk/
+/home/tk/Documents/nvidia/nvidia_sdk/
 ```
 
 and the download folder to be at
 
 ```
-/home/tk/Downloads/nvidia/sdkm_downloads
+/home/tk/Downloads/nvidia/sdkm_downloads/
 ```
 
 
@@ -50,7 +50,7 @@ Sync the Kernel Sources with Git
 
 {% code overflow="wrap" %}
 ```
-cd /home/tk/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/source/
+cd /home/tk/Documents/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/source/
 ./source_sync.sh -k -t jetson_36.4.3
 
 ```
@@ -121,7 +121,7 @@ Download toolchain
 
 [https://developer.nvidia.com/embedded/jetson-linux-r3643](https://developer.nvidia.com/embedded/jetson-linux-r3643)
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 and then do
 
@@ -135,7 +135,7 @@ tar xf aarch64--glibc--stable-2022.08-1.tar.bz2
 
 {% code overflow="wrap" %}
 ```bash
-export CROSS_COMPILE=/home/tk/nvidia/nvidia_sdk/aarch64--glibc--stable-2022.08-1/bin/aarch64-buildroot-linux-gnu-
+export CROSS_COMPILE=/home/tk/Documents/nvidia/nvidia_sdk/aarch64--glibc--stable-2022.08-1/bin/aarch64-buildroot-linux-gnu-
 ```
 {% endcode %}
 
@@ -149,7 +149,7 @@ make -C kernel
 
 {% code overflow="wrap" %}
 ```bash
-export INSTALL_MOD_PATH=/home/tk/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/rootfs
+export INSTALL_MOD_PATH=/home/tk/Documents/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/rootfs
 
 sudo -E make install -C ./kernel/
 
@@ -180,7 +180,7 @@ make modules
 
 {% code overflow="wrap" %}
 ```
-export INSTALL_MOD_PATH=/home/tk/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/rootfs/
+export INSTALL_MOD_PATH=/home/tk/Documents/nvidia/nvidia_sdk/JetPack_6.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/rootfs/
 sudo -E make modules_install
 ```
 {% endcode %}
