@@ -196,6 +196,7 @@
   * [nsswitch.conf](tools/ubuntu/nsswitch.conf.md)
 * [NVIDIA Jetson](tools/nvidia-jetson/README.md)
   * [Getting Started with Jetson Using SDK Manager on Ubuntu 22.04](tools/nvidia-jetson/getting-started-with-jetson-using-sdk-manager-on-ubuntu-22.04.md)
+  * [Getting Started with Jetson Using Command Line Tools](tools/nvidia-jetson/getting-started-with-jetson-using-command-line-tools.md)
   * [Solving USB-CAN and USB CH340 Driver Issue on reComputer Mini J4012](tools/nvidia-jetson/solving-usb-can-and-usb-ch340-driver-issue-on-recomputer-mini-j4012.md)
   * [Using Jetson AGX Orin with Provided Ubuntu 20.04 System](tools/nvidia-jetson/using-jetson-agx-orin-with-provided-ubuntu-20.04-system.md)
   * [Setting up Common Software on Jetson AGX Orin](tools/nvidia-jetson/setting-up-common-software-on-jetson-agx-orin.md)
