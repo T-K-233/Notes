@@ -8,14 +8,6 @@ This tutorial will cover how to install Ubuntu 22.04 on NVIDIA Jetson AGX Orin a
 
 
 
-{% hint style="info" %}
-## **2026-02-16 Update**
-
-It seems that in the JetPack 6.2.2 release, the shell script has some typo error. At the time of the writing this is not resolved yet. We will introduce the workaround solution down below.
-{% endhint %}
-
-
-
 ## Requirements
 
 * NVIDIA Jetson AGX Orin Development Kit or NVIDIA Jetson Orin NX Development Kit and its accessories (power supply).
@@ -133,20 +125,35 @@ After download, unpack the file to the following directory:
 
 ## Configure the Kernel
 
-{% hint style="info" %}
-This is where we need to apply the typo fix.
-{% endhint %}
-
 Sync the kernel source code with Git
 
 {% code overflow="wrap" %}
 ```bash
 cd /home/tk/Documents/nvidia/nvidia_sdk/JetPack_6.2.2_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/source/
-./source_sync.sh -k
+./source_sync.sh -t jetson_36.5
 ```
 {% endcode %}
 
 A bunch of file will appear under `<install_path>/Linux_for_Tegra/source/` .
+
+This process will take quite a while, depending on the Internet connection. To get a better estimate of progress, make edit to the script to show git clone message:
+
+{% code title="source_sync.sh" %}
+```diff
+  else
+		# Clone repository if it doesn't exist
+		echo "Cloning ${WHAT_SOURCE} repository ..."
+-		if ! git clone ${clone_args} "${REPO_URL}" "${LDK_SOURCE_DIR}" > \
+-     /dev/null 2>&1; then
++		if ! git clone ${clone_args} "${REPO_URL}" "${LDK_SOURCE_DIR}"; then
+			echo "Failed to clone ${WHAT_SOURCE} repository"
+			return 1
+		fi
+	fi
+```
+{% endcode %}
+
+
 
 
 
@@ -189,8 +196,6 @@ CONFIG_USB_SERIAL_FTDI_SIO=m
 CONFIG_USB_SERIAL_OPTION=m
 ```
 {% endcode %}
-
-
 
 
 
@@ -284,49 +289,35 @@ Then, plug in power and USB cable.
 
 
 
-
-
-
-
-
-
-
+Launch the SDK Manager again.
 
 After connecting the hardware and powering up the device, it should automatically detect the USB device connection.
 
-Select the correct device type.
+<figure><img src="../../.gitbook/assets/sdk_again_step1.png" alt=""><figcaption></figcaption></figure>
 
 
 
+This time, in step 02, we select everything.
 
+It should also detect the kernel file we have compiled by indicating "OS image ready".
 
-Choose the desired component to install. Here we select everything.
-
-We assume the download directory is set to  `~/Downloads/nvidia/sdkm_downloads/`, and the final SDK installation directory at `~/Documents/nvidia/nvidia_sdk/`.
-
-(image is not showing the correct paths).
-
-<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sdk_again_step2.png" alt=""><figcaption></figcaption></figure>
 
 
 
-After entering the system password, it will begin to download and install the components.
+In the pop up window, set the username and password of the new Jetson system.
 
-<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+Additionally, in this step we need to configure the storage device to install the OS. For Jetson NX, we are going to install to the NVMe SSD disk. For Jetson AGX, we can choose to install to the built-in eMMC device.
 
-After it's done, it will prompt to configure the account information and ask for the installation location.
-
-We will install to the built-in eMMC device.
-
-<figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sdk_again_step3.png" alt=""><figcaption></figcaption></figure>
 
 
 
-About one third into the installation process, the Jetson will reboot and boot into the system.
+About 30% into the installation process, the Jetson will reboot and boot into the system.
 
-When this happens, the SDKManager on the host computer will create this prompt.
+When this happens, the SDKManager on the host computer will show this window.
 
-Wait until the Jetson boots up fully, then log into the system, and then click Install on the host side.
+Wait until the Jetson boots up fully, then click Install on the host side.
 
 <figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
@@ -360,8 +351,6 @@ Then, try the installation again.
 
 
 
-
-
 The rest of the installation takes about one hour to finish.
 
 <figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
@@ -380,9 +369,56 @@ sudo apt show nvidia-jetpack -a
 
 ### Verify USB-CAN Connection
 
+Detect if the CH341 driver module is loaded:
+
+```bash
+sudo modprobe ch341
+```
 
 
 
+On Jetson, the driver might conflict with `brltty`. In this case, we can use this command to see system log when plugging and unplugging the device:
+
+```bash
+sudo dmesg --follow
+```
+
+```
+[ 3763.532473] tegra-xusb 3610000.usb: Firmware timestamp: 2023-02-10 03:48:10 UTC
+[ 3763.827034] usb 3-4: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
+[ 3763.834483] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+[ 3763.834546] ch341 3-4:1.0: device disconnected
+[ 3794.251698] usb 3-4: USB disconnect, device number 16
+[ 3796.370012] usb 3-4: new full-speed USB device number 17 using xhci_hcd
+[ 3796.553318] ch341 3-4:1.0: ch341-uart converter detected
+[ 3796.567375] usb 3-4: ch341-uart converter now attached to ttyUSB0
+[ 3796.660855] tegra-xusb 3610000.usb: Firmware timestamp: 2023-02-10 03:48:10 UTC
+[ 3796.958238] usb 3-4: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
+[ 3796.965900] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+[ 3796.965957] ch341 3-4:1.0: device disconnected
+```
+
+In the log above, we observe two issues:
+
+* **`usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1`**: This suggests a conflict. The CH341 driver claimed the USB interface, but **`brltty`**, a service for braille terminals, also attempted to set the USB configuration at the same time.
+* **`brltty` interfered**: This conflict caused the CH341 device to become unstable or be disconnected.
+
+When this conflict happens, `/dev/ttyUSB` will not appear.
+
+To resolve this, stop and permanently disable brltty:
+
+```bash
+sudo systemctl stop brltty
+sudo systemctl disable brltty
+```
+
+If this **still** does not solve the problem, consider uninstall brltty:
+
+```bash
+sudo apt remove brltty
+```
+
+<br>
 
 
 
