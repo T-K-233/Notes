@@ -130,7 +130,7 @@
   * [Setting up ROS on Ubuntu 20.04](ml-rl/ros/setting-up-ros-on-ubuntu-20.04.md)
   * [Setting up ETH ANYbotics/elevation\_mapping on Ubuntu 20.04](ml-rl/ros/setting-up-eth-anybotics-elevation_mapping-on-ubuntu-20.04.md)
 * [ROS 2](ml-rl/ros-2/README.md)
-  * [Setting up ROS 2 Humble Hawksbill on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+  * [Setting up ROS 2 Jazzy on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
   * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
   * [ROS 2 Issue in Ubuntu with conda](ml-rl/ros-2/ros-2-issue-in-ubuntu-with-conda.md)
 * [Google Colab](ml-rl/google-colab/README.md)

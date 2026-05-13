@@ -1,10 +1,25 @@
-# Setting up ROS 2 Humble Hawksbill on Ubuntu
+# Setting up ROS 2 Jazzy on Ubuntu
 
 ## Environment
 
-Ubuntu 22.04
+Ubuntu 24.04
 
-{% embed url="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html" %}
+{% embed url="https://docs.ros.org/en/jazzy/Installation.html" %}
+
+### Setup Locale
+
+```bash
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+```
+
+
 
 ### Setup Sources
 
@@ -18,14 +33,16 @@ sudo add-apt-repository universe
 Add the ROS 2 GPG key with apt.
 
 ```bash
-sudo apt update && sudo apt install curl
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+sudo apt update && sudo apt install curl -y
+export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F'"' '{print $4}')
+curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-apt-source_${ROS_APT_SOURCE_VERSION}.$(. /etc/os-release && echo ${UBUNTU_CODENAME:-${VERSION_CODENAME}})_all.deb"
+sudo dpkg -i /tmp/ros2-apt-source.deb
 ```
 
-Add the repository to your sources list.
+Install dev tools.
 
 ```bash
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt update && sudo apt install ros-dev-tools
 ```
 
 
@@ -51,68 +68,16 @@ sudo apt upgrade
 Install Desktop Install, including ROS, RViz, demos, and tutorials.
 
 ```bash
-sudo apt install ros-humble-desktop
+sudo apt install ros-jazzy-desktop
 ```
 
 
 
-## Install Colcon
-
-Colcon is a tool used to build ROS 2 software packages.
+## Install ROS2 Control
 
 ```bash
-sudo apt update
-sudo apt install python3-colcon-common-extensions
+sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
 
 
-
-## Adding Environment Variables
-
-Colcon also has a tool, `colcon_cd`, to help navigating to package directories.
-
-{% code title="~/.bashrc" %}
-```bash
-# ROS 2 Humble
-source /opt/ros/humble/setup.sh
-source /usr/share/colcon_cd/function/colcon_cd.sh
-```
-{% endcode %}
-
-
-
-## Additional Tools
-
-```bash
-sudo apt install python3-rosdep2
-rosdep update
-```
-
-other possible required dependencies
-
-```bash
-sudo apt install ros-humble-joint-state-publisher-gui
-sudo apt install ros-humble-xacro
-```
-
-
-
-
-
-With Ubuntu 22.04 + ROS 2 Humble combination, we also need the following dependencies for building turtlesim:
-
-```bash
-pip install empy
-pip install lark
-```
-
-
-
-
-
-### Install Gazebo support
-
-```bash
-sudo apt install ros-humble-gazebo-ros2-control ros-humble-gazebo-ros
-```
 
