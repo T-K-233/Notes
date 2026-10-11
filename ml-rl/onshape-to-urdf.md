@@ -18,8 +18,8 @@ pip install onshape-to-robot
 
 Also install ROS2 environment following this guide:
 
-{% content-ref url="ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md" %}
-[setting-up-ros-2-humble-hawksbill-on-ubuntu.md](ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+{% content-ref url="ros-2/setting-up-ros-2-jazzy-on-ubuntu.md" %}
+[setting-up-ros-2-jazzy-on-ubuntu.md](ros-2/setting-up-ros-2-jazzy-on-ubuntu.md)
 {% endcontent-ref %}
 
 ## Set up Onshape API access key

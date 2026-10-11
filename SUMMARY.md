@@ -38,7 +38,7 @@
     * [Ethernet - LWIP](stm32/connectivity/ethernet/ethernet.md)
     * [Ethernet - UDP](stm32/connectivity/ethernet/ethernet-udp.md)
     * [Ethernet - UDP Multicast](stm32/connectivity/ethernet/ethernet-udp-multicast.md)
-  * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
+  * [USB - FS](stm32/connectivity/usb-fs.md)
 * [Software Pack](stm32/software-pack/README.md)
   * [STMicroelectronics.X-CUBE-AI - Sine Approximator](stm32/software-pack/stmicroelectronics.x-cube-ai-sine-approximator.md)
 
@@ -115,7 +115,7 @@
   * [Setting up ROS on Ubuntu 20.04](ml-rl/ros/setting-up-ros-on-ubuntu-20.04.md)
   * [Setting up ETH ANYbotics/elevation\_mapping on Ubuntu 20.04](ml-rl/ros/setting-up-eth-anybotics-elevation_mapping-on-ubuntu-20.04.md)
 * [ROS 2](ml-rl/ros-2/README.md)
-  * [Setting up ROS 2 Jazzy on Ubuntu](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-ubuntu.md)
+  * [Setting up ROS 2 Jazzy on Ubuntu](ml-rl/ros-2/setting-up-ros-2-jazzy-on-ubuntu.md)
   * [Setting up ROS 2 Humble Hawksbill on Windows 10](ml-rl/ros-2/setting-up-ros-2-humble-hawksbill-on-windows-10.md)
   * [ROS 2 Issue in Ubuntu with conda](ml-rl/ros-2/ros-2-issue-in-ubuntu-with-conda.md)
 * [Google Colab](ml-rl/google-colab/README.md)
@@ -232,17 +232,17 @@
 
 ## Workflow Automation
 
-* [Zigbee-Based Home Automation](electrical/zigbee-based-home-automation/README.md)
+* [Zigbee-Based Home Automation](workflow-automation/zigbee-based-home-automation/README.md)
   * [Setting up Home Assistant on Raspberry Pi to Control Zigbee IoT Devices](workflow-automation/zigbee-based-home-automation/setting-up-home-assistant-on-raspberry-pi-to-control-zigbee-iot-devices.md)
-  * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](electrical/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)
+  * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](workflow-automation/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)
 
 ## Finance
 
-* [Finance](finance/tax-stuff.md)
+* [Personal Finance Basics](finance/personal-finance-basics.md)
 * [UC Berkeley Reimbursement](finance/uc-berkeley-reimbursement.md)
 
 ## Life
 
 * [Tesla Lock Chimes](life/tesla-lock-chimes.md)
 * [Some Interview Questions](life/some-interview-questions.md)
-* [Health Insurance](life/page-4.md)
+* [Health Insurance](life/health-insurance.md)

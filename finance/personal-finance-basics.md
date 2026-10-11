@@ -1,4 +1,4 @@
-# Finance
+# Personal Finance Basics
 
 ### long-term收入构成
 
