@@ -10,15 +10,15 @@ URDF defines a box size with the three side lengths, while MJCF specifies **half
 
 <figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
+### Isaac Gym: Segmentation Fault When Adding a URDF Actor
 
+```bash
+Adding actor 'humanoid-urdf/gym/urdf/robot.urdf' to env 0
+Segmentation fault (core dumped)
+```
 
+This error could due to multiple reasons, and here's an incomplete checklist
 
-
-
-
-
-
-
-
-
-
+* [ ] Make sure there are \<collision> tags in the link
+* [ ] Make sure mesh filename are correct
+* [ ] Make sure there is at least one DoF

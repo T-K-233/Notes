@@ -19,3 +19,8 @@ redirects:
   tools/python/python-converting-bettwen-json-and-xml: tools/python/python-snippets.md
   tools/python/retrieve-github-user-avatar-with-github-api: tools/python/python-snippets.md
   tools/ubuntu/setting-up-steamvr-on-ubuntu-24.04: tools/setting-up-steamvr-without-hmd.md
+  # Group 4: superseded pages
+  ml-rl/nvidia-omniverse-isaac-sim-setup: ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md
+  ml-rl/setting-up-nvidia-tools/deprecated-setting-up-nvidia-isaac-gym-on-ubuntu-22.04-20.04: ml-rl/setting-up-nvidia-tools/getting-started-with-nvidia-isaac-lab-on-ubuntu-22.04-24.04.md
+  ml-rl/nvidia-isaac-gym-urdf-import-notes: ml-rl/notes-on-urdf-and-mjcf.md
+  motor-control/all-digital-phase-locked-loop-filter: motor-control/recoil-foc-motor-controller/0x04.-firmware-boot-and-state-machine.md
