@@ -81,8 +81,8 @@ nvcc --version
 
 Install conda according to the "Install Conda" section in this guide
 
-{% content-ref url="../../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md" %}
-[quick-start-with-chipyard-on-ubuntu-or-wsl.md](../../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
+{% content-ref url="../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md" %}
+[quick-start-with-chipyard-on-ubuntu-or-wsl.md](../../risc-v-soc/quick-start-with-chipyard-on-ubuntu-or-wsl.md)
 {% endcontent-ref %}
 
 

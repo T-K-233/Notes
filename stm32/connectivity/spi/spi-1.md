@@ -11,7 +11,7 @@
 
 ## 2. Code
 
-First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+First, add the code from the [Template Project](../../getting-started-stm32-edition/going-through-a-starter-project.md).
 
 In `main.c`, add the following code
 

@@ -11,7 +11,7 @@ On the STM32F446RET6 Nucleo board, the SPI1 is connected as below
 
 ## 1. Configure STM32
 
-First, set the configuration from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+First, set the configuration from the [Template Project](../getting-started-stm32-edition/going-through-a-starter-project.md).
 
 Assuming system clock is configured to be **160 MHz**.
 
@@ -43,7 +43,7 @@ To debug the CAN bus, set **Advanced Parameters** -> **Operating Mode** to "Loop
 
 ## 2. Code
 
-First, add the code from the [Template Project](https://notes.tk233.xyz/stm32/0.-template-project).
+First, add the code from the [Template Project](../getting-started-stm32-edition/going-through-a-starter-project.md).
 
 In `main.c`, add the following code
 
