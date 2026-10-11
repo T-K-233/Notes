@@ -1,0 +1,4 @@
+redirects:
+  # Group 2: removed empty pages whose topic lives elsewhere
+  stm32/connectivity/uart: stm32/connectivity/usart/README.md
+  stm32/analog/opamp: stm32/analog/adc.md

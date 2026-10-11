@@ -19,22 +19,17 @@
   * [Some Performance Measurements on STM32 MCUs](stm32/misc/some-performance-measurements-on-stm32-mcus.md)
 * [System Core](stm32/system-core/README.md)
   * [Using GPIO on STM32](stm32/system-core/gpio.md)
-  * [Setting up External Interrupt on STM32](stm32/system-core/external-interrupt.md)
 * [Analog](stm32/analog/README.md)
   * [Using ADC on STM32](stm32/analog/adc.md)
   * [ADC Reading Sequence with DMA on STM32](stm32/analog/adc-reading-sequence-with-dma-on-stm32.md)
-  * [Using OPAMP on STM32](stm32/analog/opamp.md)
   * [Using DAC on STM32](stm32/analog/dac.md)
 * [Timers](stm32/timers/README.md)
-  * [Using RTC on STM32](stm32/timers/rtc.md)
   * [Using TIM on STM32](stm32/timers/tim.md)
 * [Connectivity](stm32/connectivity/README.md)
-  * [UART](stm32/connectivity/uart.md)
   * [USART](stm32/connectivity/usart/README.md)
     * [USART - CAN Dongle (Fixed Size Serializer with Robust Timeout Handling)](stm32/connectivity/usart/usart-can-dongle-fixed-size-serializer-with-robust-timeout-handling.md)
   * [CAN](stm32/connectivity/can.md)
   * [FDCAN](stm32/connectivity/fdcan.md)
-  * [I2C](stm32/connectivity/i2c.md)
   * [SPI](stm32/connectivity/spi/README.md)
     * [SPI - GC9A01A LCD Screen](stm32/connectivity/spi/spi.md)
     * [SPI - RFID](stm32/connectivity/spi/spi-1.md)
@@ -44,9 +39,6 @@
     * [Ethernet - UDP](stm32/connectivity/ethernet/ethernet-udp.md)
     * [Ethernet - UDP Multicast](stm32/connectivity/ethernet/ethernet-udp-multicast.md)
   * [USB - FS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-fs.md)
-  * [USB - HS](stm32/ntc-temperature-sense-resistor-value-calculation/usb-hs.md)
-* [Middleware](stm32/middleware/README.md)
-  * [FreeRTOS](stm32/middleware/freertos.md)
 * [Software Pack](stm32/software-pack/README.md)
   * [STMicroelectronics.X-CUBE-AI - Sine Approximator](stm32/software-pack/stmicroelectronics.x-cube-ai-sine-approximator.md)
 
@@ -147,7 +139,6 @@
 * [Setting up AnythingLLM on Ubuntu 22.04](ml-rl/setting-up-anythingllm-on-ubuntu-22.04.md)
 * [Setting up MineDojo Environment](ml-rl/setting-up-minedojo-environment.md)
 * [Processing the SFU Motion Capture Dataset](ml-rl/processing-the-sfu-motion-capture-dataset.md)
-* [Torch Profiling](ml-rl/torch-profiling.md)
 * [Setting up Unitree A1](ml-rl/setting-up-unitree-a1.md)
 
 ## 3D Modeling
@@ -257,11 +248,9 @@
 * [Humanoid Design Notes](uw/ai233-design-notes/README.md)
   * [Robot Body Ratio Issue](uw/ai233-design-notes/robot-body-ratio-issue.md)
   * [VRM Parameters](uw/ai233-design-notes/vrm-parameters.md)
-  * [Note on Face Design and Manufacture](uw/ai233-design-notes/note-on-face-design-and-manufacture.md)
 
 ## Workflow Automation
 
-* [RISC-V Toolbox Website](maintainance-log/risc-v-toolbox-website.md)
 * [Zigbee-Based Home Automation](electrical/zigbee-based-home-automation/README.md)
   * [Setting up Home Assistant on Raspberry Pi to Control Zigbee IoT Devices](workflow-automation/zigbee-based-home-automation/setting-up-home-assistant-on-raspberry-pi-to-control-zigbee-iot-devices.md)
   * [Update Sonoff Zigbee 3.0 USB Dongle Plus (CC2652P)](electrical/zigbee-based-home-automation/update-sonoff-zigbee-3.0-usb-dongle-plus-cc2652p.md)

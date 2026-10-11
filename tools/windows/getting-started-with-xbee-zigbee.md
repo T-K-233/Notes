@@ -102,7 +102,7 @@ P.S. if the wrong configuration is entered in XBee parameters, XCTU will try to 
 
 ## 3. STM32 Code <a href="#f1b8" id="f1b8"></a>
 
-Because XBee uses simple TX and RX to transmit data, we can simply program the STM32 to transmit and listen to data on the [USART port](../../stm32/connectivity/uart.md).
+Because XBee uses simple TX and RX to transmit data, we can simply program the STM32 to transmit and listen to data on the [USART port](../../stm32/connectivity/usart/README.md).
 
 \
 
