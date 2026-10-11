@@ -1,4 +1,4 @@
-# Fixing the Unitree A1 Robot Dog Ethernet Port
+# Fixing the Unitree A1 / Go1 Robot Dog Ethernet Port
 
 So the two Ethernet ports on our A1 robot are broken when running some unstable RL algorithm experiments. And I was asked to fix them.
 
@@ -75,3 +75,19 @@ We still need to make a small modification to this part. Because the housing pin
 (at least I did not damage the rest of the components...)
 
 <figure><img src="../../.gitbook/assets/983200db067d427b0fc2a6326d7a673.jpg" alt=""><figcaption></figcaption></figure>
+
+## Unitree Go1
+
+Another Ethernet port accident, this time on a Go1. The fix is similar to the A1 above.
+
+It's interesting to see two Jetson Nanos sitting side by side on a board. It must be tricky to route the traces on the base board...
+
+<figure><img src="../../.gitbook/assets/a3ef2f990d60bc22a2cf493c95825df.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/f715df1cc5e8b53026c03397d5c8692.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/3343604fa22f33231d15411c198fc90 (1).jpg" alt=""><figcaption></figcaption></figure>
+
+To prevent future accidents, we ended up printing a small protective case, the case is mounted on the body using that four M2 screw holes.
+
+<figure><img src="../../.gitbook/assets/0f6e4e801d28de523cb04bbd52d2fec (1).jpg" alt=""><figcaption></figcaption></figure>

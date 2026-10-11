@@ -1,10 +1,24 @@
-# Setting up SteamVR without HMD
+# Setting up SteamVR
 
+## Install on Ubuntu 24.04
 
+First, download and install Steam
+
+```bash
+sudo apt install ./steam_latest.deb
+```
+
+When running for the first time, Steam will detect the dependencies and automatically install the missing packages.
+
+<figure><img src="../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+
+Then, download and install SteamVR
+
+<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+
+## Running without HMD
 
 reference [https://vvvv.org/blog/using-htc-vive-trackers-without-headset](https://vvvv.org/blog/using-htc-vive-trackers-without-headset)
-
-
 
 Edit `D:/Documents/Steam/steamapps/common/SteamVR/resources/settings/default.vrsettings`
 
@@ -24,8 +38,6 @@ Edit the following fields
 
 ```
 
-
-
 Next, edit file `D:/Documents/Steam/config/steamvr.vrsettings`
 
 Add the following lines in `steamvr` field
@@ -34,8 +46,6 @@ Add the following lines in `steamvr` field
       "activateMultipleDrivers" : false,
       "forcedDriver" : "null",
 ```
-
-
 
 After change:
 
@@ -50,21 +60,8 @@ After change:
    },
 ```
 
-
-
 Restart SteamVR. Might need to add controller again
-
-
 
 Then it will look like this
 
-
-
 <figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-
-

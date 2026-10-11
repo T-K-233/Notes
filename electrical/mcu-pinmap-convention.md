@@ -1,6 +1,21 @@
-# MCU Pinmap Convention
+# Pinmap Conventions
 
-## As Motor Controller
+## Wiring
+
+![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+6P JTAG:
+
+1. GND
+2. VCC
+3. TMS
+4. TCK
+5. TDI
+6. TDO
+
+## MCU
+
+### As Motor Controller
 
 #### STM32F103CxTx
 
@@ -16,15 +31,10 @@ PB3-PB5 are used to drive indicator RGB LEDs. Red and blue channels are connecte
 
 TIM4 is reserved to be an internal system scheduling timer, but can also be configured to output on PB6 and PB7.
 
-
-
 #### STM32F446RET6
 
 ![](<../.gitbook/assets/image (69).png>)
 
-
-
 #### STM32G431CBT6
 
 <figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
-

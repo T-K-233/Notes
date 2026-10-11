@@ -2,3 +2,20 @@ redirects:
   # Group 2: removed empty pages whose topic lives elsewhere
   stm32/connectivity/uart: stm32/connectivity/usart/README.md
   stm32/analog/opamp: stm32/analog/adc.md
+  # Group 3: pages merged into another page
+  ml-rl/rl-frameworks/setting-up-aws-mujoco-training-machine: ml-rl/rl-frameworks/getting-started-with-mujoco.md
+  3d-modeling/onshape-to-blender-workflow: 3d-modeling/blender-to-onshape-workflow.md
+  motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-ubuntu: motor-control/setting-up-recoil-usb-can-adapter/README.md
+  motor-control/setting-up-recoil-usb-can-adapter/setting-up-recoil-usb-can-adapter-windows: motor-control/setting-up-recoil-usb-can-adapter/README.md
+  tools/ubuntu/test-disk-read-write-speed: tools/ubuntu/check-disk-folder-file-size.md
+  tools/ubuntu/linux-mounting-sd-card: tools/ubuntu/check-disk-folder-file-size.md
+  tools/ubuntu/partitioning-sd-card: tools/ubuntu/check-disk-folder-file-size.md
+  electrical/wiring-convention: electrical/mcu-pinmap-convention.md
+  mechanical/3d-printer-profile: 3d-modeling/3d-print-tolerancing.md
+  mechanical/dog-stuff/fixing-the-unitree-go1-robot-dog-ethernet-port: mechanical/dog-stuff/fixing-the-unitree-a1-robot-dog.md
+  tools/pair-xboxcontroller-to-raspberry-pi-with-bluetooth: tools/raspberry-pi-setup.md
+  tools/python/python-logging-utility: tools/python/python-snippets.md
+  tools/python/jupyter-notebook-error: tools/python/python-snippets.md
+  tools/python/python-converting-bettwen-json-and-xml: tools/python/python-snippets.md
+  tools/python/retrieve-github-user-avatar-with-github-api: tools/python/python-snippets.md
+  tools/ubuntu/setting-up-steamvr-on-ubuntu-24.04: tools/setting-up-steamvr-without-hmd.md

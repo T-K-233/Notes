@@ -1,4 +1,49 @@
-# Retrieve Github user avatar with Github API
+# Python Snippets
+
+## Logging Utility
+
+<figure><img src="../../.gitbook/assets/image (3) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+
+### Logging Formats
+
+```bash
+2024-04-10 15:02:51 [Info] <Main> Starting up...
+2024-04-10 15:02:51 [ERROR] <Module-A> Error doing something
+```
+
+## Converting Between JSON and XML
+
+```bash
+pip install cc-xmljson
+```
+
+```python
+import xml
+import json
+from cc.xmljson import XMLJSON
+
+def xml2json(in_file):
+    xml_data = ""
+    with open(in_file, "r") as f:
+        xml_data = f.read()
+
+    json_data = XMLJSON.gdata.data(xml.etree.ElementTree.fromstring(xml_data))
+    return json_data
+    
+def json2xml(in_file):
+    json_data = json.load(open(in_file, "r"))
+    
+    xml_data = XMLJSON.gdata.etree(json_data, root=xml.etree.ElementTree.Element("root"))
+    xml_data = xml.etree.ElementTree.tostring(xml_data, encoding="utf8")
+    return xml_data
+
+print(xml2json("tests/abdera-1.xml"))
+print(json2xml("tests/abdera-1.json"))
+
+
+```
+
+## Retrieve GitHub User Avatars
 
 ```python
 import time
@@ -45,10 +90,6 @@ for i in range(100):
 print("finished")
 
 ```
-
-
-
-
 
 ```python
 #!/usr/bin/env python3
@@ -109,4 +150,16 @@ for line in git_log_output.splitlines():
     # sleep to avoid hitting Gravatar API too hard
     time.sleep(1)
 
+```
+
+## Jupyter Notebook Error
+
+```bash
+Failed to load model class 'MPLCanvasModel' from module 'jupyter-matplotlib'
+```
+
+Fix:
+
+```bash
+jupyter nbextension enable --py widgetsnbextension
 ```
